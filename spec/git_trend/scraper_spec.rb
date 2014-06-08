@@ -32,7 +32,7 @@ RSpec.describe GitTrend::Scraper do
     context 'with no option' do
       it 'display daily ranking' do
         res = <<-'EOS'.unindent
-          | No Name                                                 Star  Fork
+          |No. Name                                                 Star  Fork
           |--- -------------------------------------------------- ------ -----
           |  1 prat0318/json_resume                                  264    15
           |  2 andlabs/ui                                            185     8

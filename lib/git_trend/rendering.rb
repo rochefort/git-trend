@@ -31,7 +31,7 @@ module GitTrend
       def render_to_header
         f=DEFAULT_RULED_LINE_SIZE.dup
         fmt = "%#{f[0]}s %-#{f[1]}s %#{f[2]}s %#{f[3]}s"
-        puts fmt % ['No', 'Name', 'Star', 'Fork']
+        puts fmt % ['No.', 'Name', 'Star', 'Fork']
         puts fmt % ['-'*f[0], '-'*f[1], '-'*f[2], '-'*f[3]]
       end
 
