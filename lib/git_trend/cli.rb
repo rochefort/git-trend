@@ -16,7 +16,9 @@ module GitTrend
     def show
       scraper = Scraper.new
       scraper.get
+    rescue => e
+      say "An unexpected #{e.class} has occurred.", :red
+      say e.message
     end
-
   end
 end

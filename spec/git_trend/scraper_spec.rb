@@ -15,11 +15,18 @@ RSpec.describe GitTrend::Scraper do
     its(:proxy_port) { should eq 9999 }
   end
 
-
   describe '#get' do
     before do
       @scraper = Scraper.new
       stub_request_get
+    end
+
+    context 'when a network error occurred' do
+      before do
+        stub_request(:get, Scraper::BASE_URL).
+          to_return(:status => 500, :body => '[]')
+      end
+      it { expect{ @scraper.get }.to raise_error(Exception) }
     end
 
     context 'with no option' do
