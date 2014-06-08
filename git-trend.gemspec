@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'git/trend/version'
+require 'git_trend/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'git-trend'
-  spec.version       = Git::Trend::VERSION
+  spec.version       = GitTrend::VERSION
   spec.authors       = ['rochefort']
   spec.email         = ['terasawan@gmail.com']
   spec.summary       = 'cli based; show Trending repository on github'

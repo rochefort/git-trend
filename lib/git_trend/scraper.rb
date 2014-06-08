@@ -1,8 +1,8 @@
 require 'mechanize'
 
-module Git::Trend
+module GitTrend
   class Scraper
-    include Git::Trend::Rendering
+    include GitTrend::Rendering
     BASE_URL = 'https://github.com/trending'
 
     def initialize

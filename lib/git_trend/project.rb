@@ -1,4 +1,4 @@
-module Git::Trend
+module GitTrend
   class Project
     attr_accessor :name, :lang, :description, :star_count, :fork_count
 

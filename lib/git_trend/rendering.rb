@@ -1,4 +1,4 @@
-module Git::Trend
+module GitTrend
   module Rendering
     # 'No', 'Name', 'Star', 'Fork'
     DEFAULT_RULED_LINE_SIZE = [3, 40, 6, 5]

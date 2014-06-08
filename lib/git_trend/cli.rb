@@ -1,6 +1,6 @@
 require 'thor'
 
-module Git::Trend
+module GitTrend
   class CLI < Thor
     map '-v'        => :version,
         '--version' => :version
