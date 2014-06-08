@@ -1,5 +1,4 @@
 require 'mechanize'
-# require 'pp'
 
 module Git::Trend
   class Scraper
@@ -27,7 +26,6 @@ module Git::Trend
         project.star_count  = meta_count(content.search('.repo-leaderboard-meta .repo-leaderboard-meta-item .octicon-star'))
         project.fork_count  = meta_count(content.search('.repo-leaderboard-meta .repo-leaderboard-meta-item .octicon-git-branch'))
 
-        # pp project
         projects << project
       end
       Scraper.render(projects)
@@ -35,13 +33,7 @@ module Git::Trend
 
     private
       def meta_count(elm)
-        if elm.empty?
-          0
-        else
-          # p elm[0].parent.text
-          elm[0].parent.text.to_i
-        end
-        # elm.empty? ? 0 : elm[0].parent.text.to_i
+        elm.empty? ? 0 : elm[0].parent.text.to_i
       end
   end
 end
