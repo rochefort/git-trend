@@ -2,8 +2,9 @@ require 'thor'
 
 module GitTrend
   class CLI < Thor
-    map '-v'        => :version,
-        '--version' => :version
+    map '-v'              => :version,
+        '--version'       => :version,
+        '--all-languages' => :all_languages
 
     default_command :show
 
@@ -19,6 +20,12 @@ module GitTrend
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
       say e.message
+    end
+
+    desc :all_languages, 'show selectable languages'
+    def all_languages
+      scraper = Scraper.new
+      scraper.list_all_languages
     end
   end
 end

@@ -13,6 +13,13 @@ module GitTrend
       render_to_body(projects)
     end
 
+    def render_all_languages(languages)
+      puts languages
+      puts
+      puts "#{languages.size} languages"
+      puts "you can get only selected language list with '-l' option"
+    end
+
     private
       def set_ruled_line_size(projects)
         max_name_size = projects.max_by { |project| project.name.size }.name.size

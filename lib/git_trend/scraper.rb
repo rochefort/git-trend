@@ -31,6 +31,18 @@ module GitTrend
       Scraper.render(projects)
     end
 
+    def list_all_languages
+      languages = []
+      page = @agent.get(BASE_URL)
+      page.search('div.select-menu-item a').each do |content|
+        href = content.attributes['href'].value
+        # objective-c++ =>
+        language = href.match(/github.com\/trending\?l=(.+)/).to_a[1]
+        languages << CGI.unescape(language) if language
+      end
+      Scraper.render_all_languages(languages)
+    end
+
     private
       def meta_count(elm)
         elm.empty? ? 0 : elm[0].parent.text.to_i
