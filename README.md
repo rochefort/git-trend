@@ -21,6 +21,8 @@ Or install it yourself as:
 
 Use the git-trend as follows:
 
+### daily trending
+
     git trend
 
 e.g.:
@@ -56,13 +58,14 @@ No. Name                                                 Star  Fork
  25 jas/swift-playground-builder                           37     0
 ```
 
+### daily trending by language
 
-    git trend -l 
+    git trend -l
 
 e.g.:
 
 ```
-git trend -l ruby
+$ git trend -l ruby
 No. Name                                       Star  Fork
 --- ---------------------------------------- ------ -----
   1 prat0318/json_resume                        412    27
@@ -90,6 +93,27 @@ No. Name                                       Star  Fork
  23 Homebrew/homebrew-php                         0     1
  24 sferik/twitter                                0     1
  25 rightscale/rightscale_cookbooks               0     1
+```
+
+### show languages
+
+    git trend all_languages
+
+e.g.:
+
+```
+$ git trend all_languages
+abap
+as3
+ada
+agda
+alloy
+antlr
+apex
+applescript
+.
+.
+.
 ```
 
 ## Contributing
