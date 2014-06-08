@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>Trending Objective-C++ repositories on GitHub today · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta property="og:url" content="https://github.com">
+      <meta property="og:site_name" content="GitHub">
+      <meta property="og:title" content="Build software better, together">
+      <meta property="og:description" content="GitHub is the best place to build software together. Over 4 million people use GitHub to share code.">
+      <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-logo.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="1200">
+      <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="620">
+      <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-octocat.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="620">
+      <meta property="twitter:site" content="github">
+      <meta property="twitter:site:id" content="13334762">
+      <meta property="twitter:creator" content="github">
+      <meta property="twitter:creator:id" content="13334762">
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:title" content="GitHub">
+      <meta property="twitter:description" content="GitHub is the best place to build software together. Over 4 million people use GitHub to share code.">
+      <meta property="twitter:image:src" content="https://assets-cdn.github.com/images/modules/open_graph/github-logo.png">
+      <meta property="twitter:image:width" content="1200">
+      <meta property="twitter:image:height" content="1200">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="trending_repositories" data-pjax-transient />
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="3A9D7ECD:287E:2313829:539481C8" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico" />
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="ui65qwegvxZl8OsBfw8Ytgj2yGbBkljhE18yDI5WQkKbCe6T+ZwDP8tnQ2qOMIkIqhLfIUEsiP+7kEgUxfTC+g==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-1aeb426322c64c12b92d56bda5b110fc1093f75e.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-b2cccfcac1a522b6ce675606f61388d36bf2c080.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+    <meta http-equiv="x-pjax-version" content="6b9e40027b6fe719e1c3d0a9180a2d6a">
+
+      <meta name="description" content="Build software better, together." />
+  </head>
+
+
+  <body class="logged_out  env-production">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Ftrending%3Fl%3Dobjective-c%252B%252B">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  ">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="s, /" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+  >
+  <div class="display hidden"></div>
+</div>
+
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+        <div class="site clearfix">
+          <div id="site-container" class="context-loader-container" data-pjax-container>
+            
+            
+
+
+<div class="pagehead explore-head">
+  <div class="container">
+    <nav class="pagehead-nav" data-pjax>
+  <a href="/explore" class="js-selected-navigation-item pagehead-nav-item" data-selected-links="explore_main /explore">All</a>
+  <a href="/showcases" class="js-selected-navigation-item pagehead-nav-item" data-selected-links="showcases showcases_search showcases_landing /showcases">Showcases</a>
+  <a href="/trending" class="selected js-selected-navigation-item pagehead-nav-item" data-selected-links="trending_developers trending_repositories /trending">Trending</a>
+</nav>
+
+    <h1>Explore GitHub</h1>
+  </div>
+</div><!-- /.pagehead -->
+
+
+<div class="explore-pjax-container container explore-page js-explore-page">
+  <div class="explore-marketing-header">
+    <h2>Trending repositories</h2>
+    <p class="lead">Find what repositories the GitHub community is most excited about today.</p>
+    <p class="call-to-signup"><a href="/join?return_to=%2Ftrending%3Fl%3Dobjective-c%252B%252B" class="minibutton btn-default primary" rel="nofollow">Sign up for free</a> to get started</p>
+  </div>
+  <div class="columns">
+    <div class="column three-fourths">
+      <div class="tabnav">
+        <div class="tabnav-right">
+          <div class="tabnav-widget">
+            <div class="select-menu js-menu-container js-select-menu right-aligned">
+  <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+    <i>Trending:</i>
+    <span class="js-select-button">today</span>
+  </span>
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Adjust time span</span>
+        <span class="octicon octicon-x js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-list" role="menu">
+        <div>
+          <a class="select-menu-item js-navigation-item selected" href="https://github.com/trending?l=objective-c%2B%2B&amp;since=daily" data-pjax>
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <span class="select-menu-item-text js-select-button-text">today</span>
+          </a> <!-- /.select-menu-item -->
+          <a class="select-menu-item js-navigation-item " href="https://github.com/trending?l=objective-c%2B%2B&amp;since=weekly" data-pjax>
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <span class="select-menu-item-text js-select-button-text">this week</span>
+          </a> <!-- /.select-menu-item -->
+          <a class="select-menu-item js-navigation-item " href="https://github.com/trending?l=objective-c%2B%2B&amp;since=monthly" data-pjax>
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <span class="select-menu-item-text js-select-button-text">this month</span>
+          </a> <!-- /.select-menu-item -->
+        </div>
+
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+          </div>
+        </div>
+        <ul class="tabnav-tabs" data-pjax>
+  <li><a href="https://github.com/trending?l=objective-c%2B%2B" class="selected js-selected-navigation-item tabnav-tab" data-selected-links="trending_repositories https://github.com/trending?l=objective-c%2B%2B">Repositories</a></li>
+  <li><a href="https://github.com/trending/developers?l=objective-c%2B%2B" class="js-selected-navigation-item tabnav-tab" data-selected-links="trending_developers https://github.com/trending/developers?l=objective-c%2B%2B">Developers</a></li>
+</ul>
+
+      </div>
+      <div class="explore-content">
+        <ol class="repo-leaderboard-list leaderboard-list">
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-pop">
+            <a href="#pa-pop" class="leaderboard-list-rank">1</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Ffacebook%2Fpop"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/facebook/pop" class="repository-name"><span class="owner-name">facebook</span><span class="separator">/</span><strong>pop</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Extensible iOS and OS X animation library.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/facebook/pop/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Kimon Tsinteris" class="avatar js-avatar" data-user="164821" height="20" src="https://avatars1.githubusercontent.com/u/164821?s=140" title="kimon" width="20" />
+          <img alt="Grant Paul" class="avatar js-avatar" data-user="163390" height="20" src="https://avatars3.githubusercontent.com/u/163390?s=140" title="grp" width="20" />
+          <img alt="R. Peres" class="avatar js-avatar" data-user="949286" height="20" src="https://avatars2.githubusercontent.com/u/949286?s=140" title="RuiAAPeres" width="20" />
+          <img alt="Ashton Williams" class="avatar js-avatar" data-user="1650398" height="20" src="https://avatars0.githubusercontent.com/u/1650398?s=140" title="Ashton-W" width="20" />
+          <img alt="Niccolò Passolunghi" class="avatar js-avatar" data-user="1663205" height="20" src="https://avatars2.githubusercontent.com/u/1663205?s=140" title="nicopasso" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-Xtrace">
+            <a href="#pa-Xtrace" class="leaderboard-list-rank">2</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fjohnno1962%2FXtrace"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/johnno1962/Xtrace" class="repository-name"><span class="owner-name">johnno1962</span><span class="separator">/</span><strong>Xtrace</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Trace Objective-C method calls by class or instance</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/johnno1962/Xtrace/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="John Holdsworth" class="avatar js-avatar" data-user="1786033" height="20" src="https://avatars0.githubusercontent.com/u/1786033?s=140" title="johnno1962" width="20" />
+          <img alt="Jeroen Leenarts" class="avatar js-avatar" data-user="39677" height="20" src="https://avatars3.githubusercontent.com/u/39677?s=140" title="jeroenleenarts" width="20" />
+          <img alt="Michael Haney" class="avatar js-avatar" data-user="1082754" height="20" src="https://avatars1.githubusercontent.com/u/1082754?s=140" title="mikehaney24" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-cedar">
+            <a href="#pa-cedar" class="leaderboard-list-rank">3</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fpivotal%2Fcedar"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/pivotal/cedar" class="repository-name"><span class="owner-name">pivotal</span><span class="separator">/</span><strong>cedar</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">BDD-style testing using Objective-C</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/pivotal/cedar/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Sam Coward" class="avatar js-avatar" data-user="237596" height="20" src="https://avatars3.githubusercontent.com/u/237596?s=140" title="idoru" width="20" />
+          <img alt="Jeff Hui" class="avatar js-avatar" data-user="68616" height="20" src="https://avatars0.githubusercontent.com/u/68616?s=140" title="jeffh" width="20" />
+          <img alt="Dmitriy Kalinin" class="avatar js-avatar" data-user="185847" height="20" src="https://avatars0.githubusercontent.com/u/185847?s=140" title="cppforlife" width="20" />
+          <img alt="Andrew Kitchen" class="avatar js-avatar" data-user="378648" height="20" src="https://avatars2.githubusercontent.com/u/378648?s=140" title="akitchen" width="20" />
+          <img alt="Brian Croom" class="avatar js-avatar" data-user="1062518" height="20" src="https://avatars3.githubusercontent.com/u/1062518?s=140" title="pivotal-brian-croom" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-bitcloud">
+            <a href="#pa-bitcloud" class="leaderboard-list-rank">4</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fwetube%2Fbitcloud"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/wetube/bitcloud" class="repository-name"><span class="owner-name">wetube</span><span class="separator">/</span><strong>bitcloud</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Bitcloud Project</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/wetube/bitcloud/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="JavierRSobrino" class="avatar js-avatar" data-user="6039997" height="20" src="https://avatars2.githubusercontent.com/u/6039997?s=140" title="JavierRSobrino" width="20" />
+          <img alt="kyletorpey" class="avatar js-avatar" data-user="6266647" height="20" src="https://avatars2.githubusercontent.com/u/6266647?s=140" title="kyletorpey" width="20" />
+          <img alt="cbbcbail" class="avatar js-avatar" data-user="1534910" height="20" src="https://avatars1.githubusercontent.com/u/1534910?s=140" title="cbbcbail" width="20" />
+          <img alt="gga01" class="avatar js-avatar" data-user="5383616" height="20" src="https://avatars1.githubusercontent.com/u/5383616?s=140" title="gga01" width="20" />
+          <img alt="MAT" class="avatar js-avatar" data-user="6550141" height="20" src="https://avatars0.githubusercontent.com/u/6550141?s=140" title="gnostication" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-PopTut">
+            <a href="#pa-PopTut" class="leaderboard-list-rank">5</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fjerols%2FPopTut"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/jerols/PopTut" class="repository-name"><span class="owner-name">jerols</span><span class="separator">/</span><strong>PopTut</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">A simple app demonstrating basic usage of the Pop animation framework.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-OCBorghettiView">
+            <a href="#pa-OCBorghettiView" class="leaderboard-list-rank">6</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fotaviocc%2FOCBorghettiView"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/otaviocc/OCBorghettiView" class="repository-name"><span class="owner-name">otaviocc</span><span class="separator">/</span><strong>OCBorghettiView</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">An easy to use accordion view for iOS</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/otaviocc/OCBorghettiView/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Otavio Cordeiro" class="avatar js-avatar" data-user="139272" height="20" src="https://avatars0.githubusercontent.com/u/139272?s=140" title="otaviocc" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-optaplanner">
+            <a href="#pa-optaplanner" class="leaderboard-list-rank">7</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fdroolsjbpm%2Foptaplanner"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/droolsjbpm/optaplanner" class="repository-name"><span class="owner-name">droolsjbpm</span><span class="separator">/</span><strong>optaplanner</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Java planning engine: OptaPlanner optimizes business resource scheduling and planning.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/droolsjbpm/optaplanner/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Geoffrey De Smet" class="avatar js-avatar" data-user="176880" height="20" src="https://avatars0.githubusercontent.com/u/176880?s=140" title="ge0ffrey" width="20" />
+          <img alt="mdproctor" class="avatar js-avatar" data-user="521762" height="20" src="https://avatars2.githubusercontent.com/u/521762?s=140" title="mdproctor" width="20" />
+          <img alt="laune" class="avatar js-avatar" data-user="525697" height="20" src="https://avatars0.githubusercontent.com/u/525697?s=140" title="laune" width="20" />
+          <img alt="Edson Tirelli" class="avatar js-avatar" data-user="457009" height="20" src="https://avatars1.githubusercontent.com/u/457009?s=140" title="etirelli" width="20" />
+          <img alt="Kris" class="avatar js-avatar" data-user="408314" height="20" src="https://avatars1.githubusercontent.com/u/408314?s=140" title="krisv" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-NHCalendarActivity">
+            <a href="#pa-NHCalendarActivity" class="leaderboard-list-rank">8</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fotaviocc%2FNHCalendarActivity"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/otaviocc/NHCalendarActivity" class="repository-name"><span class="owner-name">otaviocc</span><span class="separator">/</span><strong>NHCalendarActivity</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">A custom UIActivity that adds events and alarms to the Calendar.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/otaviocc/NHCalendarActivity/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Otavio Cordeiro" class="avatar js-avatar" data-user="139272" height="20" src="https://avatars0.githubusercontent.com/u/139272?s=140" title="otaviocc" width="20" />
+          <img alt="Paweł Wrzosek" class="avatar js-avatar" data-user="599145" height="20" src="https://avatars3.githubusercontent.com/u/599145?s=140" title="wzs" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-pop-playground">
+            <a href="#pa-pop-playground" class="leaderboard-list-rank">9</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fcallmeed%2Fpop-playground"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/callmeed/pop-playground" class="repository-name"><span class="owner-name">callmeed</span><span class="separator">/</span><strong>pop-playground</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Some example animations using Facebook&#39;s Pop animation library</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/callmeed/pop-playground/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Erik Dungan" class="avatar js-avatar" data-user="25090" height="20" src="https://avatars3.githubusercontent.com/u/25090?s=140" title="callmeed" width="20" />
+          <img alt="Francescu Santoni" class="avatar js-avatar" data-user="1433362" height="20" src="https://avatars1.githubusercontent.com/u/1433362?s=140" title="Francescu" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-POPdemo">
+            <a href="#pa-POPdemo" class="leaderboard-list-rank">10</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fjxd001%2FPOPdemo"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/jxd001/POPdemo" class="repository-name"><span class="owner-name">jxd001</span><span class="separator">/</span><strong>POPdemo</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">A simple demo for facebook&#39;s pop framework.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/jxd001/POPdemo/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="jxd001" class="avatar js-avatar" data-user="6147714" height="20" src="https://avatars3.githubusercontent.com/u/6147714?s=140" title="jxd001" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-RXPromise">
+            <a href="#pa-RXPromise" class="leaderboard-list-rank">11</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fcouchdeveloper%2FRXPromise"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/couchdeveloper/RXPromise" class="repository-name"><span class="owner-name">couchdeveloper</span><span class="separator">/</span><strong>RXPromise</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">An Objective-C Class which implements the Promises/A+ specification.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/couchdeveloper/RXPromise/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Andreas Grosam" class="avatar js-avatar" data-user="1564701" height="20" src="https://avatars3.githubusercontent.com/u/1564701?s=140" title="couchdeveloper" width="20" />
+          <img alt="Luke Melia" class="avatar js-avatar" data-user="353" height="20" src="https://avatars0.githubusercontent.com/u/353?s=140" title="lukemelia" width="20" />
+          <img alt="Rob Ryan" class="avatar js-avatar" data-user="1530768" height="20" src="https://avatars3.githubusercontent.com/u/1530768?s=140" title="robertmryan" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-XprobePlugin">
+            <a href="#pa-XprobePlugin" class="leaderboard-list-rank">12</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fjohnno1962%2FXprobePlugin"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/johnno1962/XprobePlugin" class="repository-name"><span class="owner-name">johnno1962</span><span class="separator">/</span><strong>XprobePlugin</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Objective-C Memory Browser for Xcode</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/johnno1962/XprobePlugin/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="John Holdsworth" class="avatar js-avatar" data-user="1786033" height="20" src="https://avatars0.githubusercontent.com/u/1786033?s=140" title="johnno1962" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-opios">
+            <a href="#pa-opios" class="leaderboard-list-rank">13</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fopenpeer%2Fopios"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/openpeer/opios" class="repository-name"><span class="owner-name">openpeer</span><span class="separator">/</span><strong>opios</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Open Peer Client SDK for iOS and reference sample application</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/openpeer/opios/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Robin Raymond" class="avatar js-avatar" data-user="2962646" height="20" src="https://avatars0.githubusercontent.com/u/2962646?s=140" title="robin-raymond" width="20" />
+          <img alt="Sergej Jovanovic" class="avatar js-avatar" data-user="3263595" height="20" src="https://avatars0.githubusercontent.com/u/3263595?s=140" title="SergioOpenPeer" width="20" />
+          <img alt="Vladimir Morosev" class="avatar js-avatar" data-user="3501993" height="20" src="https://avatars3.githubusercontent.com/u/3501993?s=140" title="morosev" width="20" />
+          <img alt="lazicb" class="avatar js-avatar" data-user="1027542" height="20" src="https://avatars3.githubusercontent.com/u/1027542?s=140" title="lazicb" width="20" />
+          <img alt="Erik Lagerway" class="avatar js-avatar" data-user="4098156" height="20" src="https://avatars0.githubusercontent.com/u/4098156?s=140" title="elagerway" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-PivotalCoreKit">
+            <a href="#pa-PivotalCoreKit" class="leaderboard-list-rank">14</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fpivotal%2FPivotalCoreKit"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/pivotal/PivotalCoreKit" class="repository-name"><span class="owner-name">pivotal</span><span class="separator">/</span><strong>PivotalCoreKit</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Shared library and test code for Objective-C projects</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/pivotal/PivotalCoreKit/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Andrew Kitchen" class="avatar js-avatar" data-user="378648" height="20" src="https://avatars2.githubusercontent.com/u/378648?s=140" title="akitchen" width="20" />
+          <img alt="pivotalworkstation" class="avatar js-avatar" data-user="1291310" height="20" src="https://avatars0.githubusercontent.com/u/1291310?s=140" title="pivotalworkstation" width="20" />
+          <img alt="Alex Basson" class="avatar js-avatar" data-user="221066" height="20" src="https://avatars3.githubusercontent.com/u/221066?s=140" title="alexbasson" width="20" />
+          <img alt="Wiley Kestner" class="avatar js-avatar" data-user="639729" height="20" src="https://avatars2.githubusercontent.com/u/639729?s=140" title="wileykestner" width="20" />
+          <img alt="Onsi Fakhouri" class="avatar js-avatar" data-user="558230" height="20" src="https://avatars1.githubusercontent.com/u/558230?s=140" title="onsi" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-Swizzlean">
+            <a href="#pa-Swizzlean" class="leaderboard-list-rank">15</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Frbaumbach%2FSwizzlean"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/rbaumbach/Swizzlean" class="repository-name"><span class="owner-name">rbaumbach</span><span class="separator">/</span><strong>Swizzlean</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Swizzlean, an Objective-C Swizzle Helper Class.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/rbaumbach/Swizzlean/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="" class="avatar js-avatar" data-user="1626595" height="20" src="https://avatars2.githubusercontent.com/u/1626595?s=140" title="rbaumbach" width="20" />
+          <img alt="Aaron Koop" class="avatar js-avatar" data-user="1111704" height="20" src="https://avatars0.githubusercontent.com/u/1111704?s=140" title="aaronkoop" width="20" />
+          <img alt="Erik Stromlund" class="avatar js-avatar" data-user="1281026" height="20" src="https://avatars0.githubusercontent.com/u/1281026?s=140" title="estromlund" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-ShapeKit">
+            <a href="#pa-ShapeKit" class="leaderboard-list-rank">16</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fandreacremaschi%2FShapeKit"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/andreacremaschi/ShapeKit" class="repository-name"><span class="owner-name">andreacremaschi</span><span class="separator">/</span><strong>ShapeKit</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">iOS Geometry Library</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/andreacremaschi/ShapeKit/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Andrea Cremaschi" class="avatar js-avatar" data-user="1131165" height="20" src="https://avatars0.githubusercontent.com/u/1131165?s=140" title="andreacremaschi" width="20" />
+          <img alt="Michael Weisman" class="avatar js-avatar" data-user="52495" height="20" src="https://avatars2.githubusercontent.com/u/52495?s=140" title="mweisman" width="20" />
+          <img alt="giladgo" class="avatar js-avatar" data-user="1915716" height="20" src="https://avatars3.githubusercontent.com/u/1915716?s=140" title="giladgo" width="20" />
+          <img alt="Greg Combs" class="avatar js-avatar" data-user="242848" height="20" src="https://avatars3.githubusercontent.com/u/242848?s=140" title="grgcombs" width="20" />
+          <img alt="Johan Karlsteen" class="avatar js-avatar" data-user="910513" height="20" src="https://avatars3.githubusercontent.com/u/910513?s=140" title="snorf" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-iOS_VPNPlugIn">
+            <a href="#pa-iOS_VPNPlugIn" class="leaderboard-list-rank">17</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2FSmartype%2FiOS_VPNPlugIn"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/Smartype/iOS_VPNPlugIn" class="repository-name"><span class="owner-name">Smartype</span><span class="separator">/</span><strong>iOS_VPNPlugIn</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">VPN PlugIn API for iOS</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/Smartype/iOS_VPNPlugIn/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Smartype" class="avatar js-avatar" data-user="64790" height="20" src="https://avatars2.githubusercontent.com/u/64790?s=140" title="Smartype" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-AutoLayoutDSL">
+            <a href="#pa-AutoLayoutDSL" class="leaderboard-list-rank">18</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fhumblehacker%2FAutoLayoutDSL"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/humblehacker/AutoLayoutDSL" class="repository-name"><span class="owner-name">humblehacker</span><span class="separator">/</span><strong>AutoLayoutDSL</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">A straightforward C++ DSL to more concisely define iOS Auto Layout constraints.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/humblehacker/AutoLayoutDSL/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="humblehacker" class="avatar js-avatar" data-user="117582" height="20" src="https://avatars3.githubusercontent.com/u/117582?s=140" title="humblehacker" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-FFTAccelerate">
+            <a href="#pa-FFTAccelerate" class="leaderboard-list-rank">19</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fhoddez%2FFFTAccelerate"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/hoddez/FFTAccelerate" class="repository-name"><span class="owner-name">hoddez</span><span class="separator">/</span><strong>FFTAccelerate</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">A high level class for performing the FFT using the Accelerate framework</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/hoddez/FFTAccelerate/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Tom Hoddes" class="avatar js-avatar" data-user="1078705" height="20" src="https://avatars2.githubusercontent.com/u/1078705?s=140" title="hoddez" width="20" />
+          <img alt="klyatskin" class="avatar js-avatar" data-user="1611725" height="20" src="https://avatars2.githubusercontent.com/u/1611725?s=140" title="klyatskin" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-ofxPanZoom">
+            <a href="#pa-ofxPanZoom" class="leaderboard-list-rank">20</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Farmadillu%2FofxPanZoom"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/armadillu/ofxPanZoom" class="repository-name"><span class="owner-name">armadillu</span><span class="separator">/</span><strong>ofxPanZoom</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Simple OpenFrameworks add-on that handles Zooming and Panning on iDevices, allowing to explore 2D space.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/armadillu/ofxPanZoom/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Oriol Ferrer Mesià" class="avatar js-avatar" data-user="167057" height="20" src="https://avatars1.githubusercontent.com/u/167057?s=140" title="armadillu" width="20" />
+          <img alt="Daniel Rosser" class="avatar js-avatar" data-user="830748" height="20" src="https://avatars1.githubusercontent.com/u/830748?s=140" title="danoli3" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-CsvToSqlite">
+            <a href="#pa-CsvToSqlite" class="leaderboard-list-rank">21</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fdodikk%2FCsvToSqlite"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/dodikk/CsvToSqlite" class="repository-name"><span class="owner-name">dodikk</span><span class="separator">/</span><strong>CsvToSqlite</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">A library to import CSV data to the SQLite database on your iPhone</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/dodikk/CsvToSqlite/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Oleksandr Dodatko" class="avatar js-avatar" data-user="396451" height="20" src="https://avatars0.githubusercontent.com/u/396451?s=140" title="dodikk" width="20" />
+          <img alt="Bitdeli Chef" class="avatar js-avatar" data-user="3092978" height="20" src="https://avatars1.githubusercontent.com/u/3092978?s=140" title="bitdeli-chef" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-TypeStatus">
+            <a href="#pa-TypeStatus" class="leaderboard-list-rank">22</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fhbang%2FTypeStatus"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/hbang/TypeStatus" class="repository-name"><span class="owner-name">hbang</span><span class="separator">/</span><strong>TypeStatus</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">iMessage typing and read receipt indicators for the iOS status bar</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/hbang/TypeStatus/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Adam D" class="avatar js-avatar" data-user="773309" height="20" src="https://avatars3.githubusercontent.com/u/773309?s=140" title="kirb" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-ofxCoreMotion">
+            <a href="#pa-ofxCoreMotion" class="leaderboard-list-rank">23</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Ftrentbrooks%2FofxCoreMotion"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/trentbrooks/ofxCoreMotion" class="repository-name"><span class="owner-name">trentbrooks</span><span class="separator">/</span><strong>ofxCoreMotion</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Openframeworks/ios addon for the Core Motion Framework.</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/trentbrooks/ofxCoreMotion/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Trent Brooks" class="avatar js-avatar" data-user="578782" height="20" src="https://avatars0.githubusercontent.com/u/578782?s=140" title="trentbrooks" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-CeleWare">
+            <a href="#pa-CeleWare" class="leaderboard-list-rank">24</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2FYonsm%2FCeleWare"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/Yonsm/CeleWare" class="repository-name"><span class="owner-name">Yonsm</span><span class="separator">/</span><strong>CeleWare</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">Personal Sample and Base Repository</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/Yonsm/CeleWare/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Yonsm" class="avatar js-avatar" data-user="1648076" height="20" src="https://avatars2.githubusercontent.com/u/1648076?s=140" title="Yonsm" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-miniAudicle">
+            <a href="#pa-miniAudicle" class="leaderboard-list-rank">25</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fccrma%2FminiAudicle"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/ccrma/miniAudicle" class="repository-name"><span class="owner-name">ccrma</span><span class="separator">/</span><strong>miniAudicle</strong></a>
+      <span class="title-meta">Objective-C++</span>
+    </h2>
+  <p class="repo-leaderboard-description">miniAudicle: integrated development + performance environment for chuck</p>
+  <ul class="repo-leaderboard-meta">
+    
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/ccrma/miniAudicle/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Spencer Salazar" class="avatar js-avatar" data-user="250365" height="20" src="https://avatars2.githubusercontent.com/u/250365?s=140" title="spencersalazar" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+        </ol>
+        <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+      </div>
+    </div>
+    <div class="column one-fourth">
+      
+<ul class="filter-list small language-filter-list" data-pjax>
+  <li>
+      <a href="https://github.com/trending" class="filter-item">All languages</a>
+  </li>
+  <li>
+      <a href="https://github.com/trending?l=unknown" class="filter-item">Unknown languages</a>
+  </li>
+    <li>
+        <a href="https://github.com/trending?l=css" class="filter-item">CSS</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=java" class="filter-item">Java</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=javascript" class="filter-item">JavaScript</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=php" class="filter-item">PHP</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=python" class="filter-item">Python</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=ruby" class="filter-item">Ruby</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=bash" class="filter-item">Shell</a>
+    </li>
+</ul>
+
+<div class="select-menu js-menu-container js-select-menu is-showing-clear-item">
+  <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+    <span class="octicon octicon-list-unordered"></span>
+    <i>Other:</i>
+    <span class="js-select-button">Objective-C++</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Other Languages</span>
+        <span class="octicon octicon-x js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-error-shell">
+        <span class="select-menu-error js-select-menu-error">Whoops, there was an error</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" id="text-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter Languages">
+        </div>
+      </div> <!-- /.select-menu-filters -->
+
+      <div class="select-menu-list" data-pjax role="menu">
+
+        <div class="select-menu-clear-item select-menu-item js-navigation-item">
+          <span class="select-menu-item-icon octicon octicon-x"></span>
+          <a href="https://github.com/trending" class="select-menu-item-text">Clear Language</a>
+        </div> <!-- /.select-menu-item -->
+
+        <div data-filterable-for="text-filter-field" data-filterable-type="substring">
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=abap" class="select-menu-item-text js-select-button-text js-navigation-open">ABAP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=as3" class="select-menu-item-text js-select-button-text js-navigation-open">ActionScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ada" class="select-menu-item-text js-select-button-text js-navigation-open">Ada</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=agda" class="select-menu-item-text js-select-button-text js-navigation-open">Agda</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=alloy" class="select-menu-item-text js-select-button-text js-navigation-open">Alloy</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=antlr" class="select-menu-item-text js-select-button-text js-navigation-open">ANTLR</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=apex" class="select-menu-item-text js-select-button-text js-navigation-open">Apex</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=applescript" class="select-menu-item-text js-select-button-text js-navigation-open">AppleScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=arc" class="select-menu-item-text js-select-button-text js-navigation-open">Arc</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=arduino" class="select-menu-item-text js-select-button-text js-navigation-open">Arduino</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=aspx-vb" class="select-menu-item-text js-select-button-text js-navigation-open">ASP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=aspectj" class="select-menu-item-text js-select-button-text js-navigation-open">AspectJ</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nasm" class="select-menu-item-text js-select-button-text js-navigation-open">Assembly</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ats" class="select-menu-item-text js-select-button-text js-navigation-open">ATS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=augeas" class="select-menu-item-text js-select-button-text js-navigation-open">Augeas</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=autohotkey" class="select-menu-item-text js-select-button-text js-navigation-open">AutoHotkey</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=autoit" class="select-menu-item-text js-select-button-text js-navigation-open">AutoIt</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=awk" class="select-menu-item-text js-select-button-text js-navigation-open">Awk</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=blitzbasic" class="select-menu-item-text js-select-button-text js-navigation-open">BlitzBasic</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=bluespec" class="select-menu-item-text js-select-button-text js-navigation-open">Bluespec</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=boo" class="select-menu-item-text js-select-button-text js-navigation-open">Boo</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=brightscript" class="select-menu-item-text js-select-button-text js-navigation-open">Brightscript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=bro" class="select-menu-item-text js-select-button-text js-navigation-open">Bro</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=c" class="select-menu-item-text js-select-button-text js-navigation-open">C</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=csharp" class="select-menu-item-text js-select-button-text js-navigation-open">C#</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cpp" class="select-menu-item-text js-select-button-text js-navigation-open">C++</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ceylon" class="select-menu-item-text js-select-button-text js-navigation-open">Ceylon</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cirru" class="select-menu-item-text js-select-button-text js-navigation-open">Cirru</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=clean" class="select-menu-item-text js-select-button-text js-navigation-open">Clean</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=clips" class="select-menu-item-text js-select-button-text js-navigation-open">CLIPS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=clojure" class="select-menu-item-text js-select-button-text js-navigation-open">Clojure</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cobol" class="select-menu-item-text js-select-button-text js-navigation-open">COBOL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=coffeescript" class="select-menu-item-text js-select-button-text js-navigation-open">CoffeeScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cfm" class="select-menu-item-text js-select-button-text js-navigation-open">ColdFusion</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=common-lisp" class="select-menu-item-text js-select-button-text js-navigation-open">Common Lisp</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=coq" class="select-menu-item-text js-select-button-text js-navigation-open">Coq</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=crystal" class="select-menu-item-text js-select-button-text js-navigation-open">Crystal</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=css" class="select-menu-item-text js-select-button-text js-navigation-open">CSS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cuda" class="select-menu-item-text js-select-button-text js-navigation-open">Cuda</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=d" class="select-menu-item-text js-select-button-text js-navigation-open">D</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dart" class="select-menu-item-text js-select-button-text js-navigation-open">Dart</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dcpu-16-asm" class="select-menu-item-text js-select-button-text js-navigation-open">DCPU-16 ASM</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dm" class="select-menu-item-text js-select-button-text js-navigation-open">DM</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dogescript" class="select-menu-item-text js-select-button-text js-navigation-open">Dogescript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dot" class="select-menu-item-text js-select-button-text js-navigation-open">DOT</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dylan" class="select-menu-item-text js-select-button-text js-navigation-open">Dylan</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=e" class="select-menu-item-text js-select-button-text js-navigation-open">E</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ec" class="select-menu-item-text js-select-button-text js-navigation-open">eC</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=eiffel" class="select-menu-item-text js-select-button-text js-navigation-open">Eiffel</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=elixir" class="select-menu-item-text js-select-button-text js-navigation-open">Elixir</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=elm" class="select-menu-item-text js-select-button-text js-navigation-open">Elm</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=emacs-lisp" class="select-menu-item-text js-select-button-text js-navigation-open">Emacs Lisp</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=erlang" class="select-menu-item-text js-select-button-text js-navigation-open">Erlang</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=fsharp" class="select-menu-item-text js-select-button-text js-navigation-open">F#</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=factor" class="select-menu-item-text js-select-button-text js-navigation-open">Factor</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=fancy" class="select-menu-item-text js-select-button-text js-navigation-open">Fancy</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=fantom" class="select-menu-item-text js-select-button-text js-navigation-open">Fantom</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=flux" class="select-menu-item-text js-select-button-text js-navigation-open">FLUX</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=forth" class="select-menu-item-text js-select-button-text js-navigation-open">Forth</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=fortran" class="select-menu-item-text js-select-button-text js-navigation-open">FORTRAN</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=frege" class="select-menu-item-text js-select-button-text js-navigation-open">Frege</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=game-maker-language" class="select-menu-item-text js-select-button-text js-navigation-open">Game Maker Language</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=gams" class="select-menu-item-text js-select-button-text js-navigation-open">GAMS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=gap" class="select-menu-item-text js-select-button-text js-navigation-open">GAP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=glyph" class="select-menu-item-text js-select-button-text js-navigation-open">Glyph</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=gnuplot" class="select-menu-item-text js-select-button-text js-navigation-open">Gnuplot</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=go" class="select-menu-item-text js-select-button-text js-navigation-open">Go</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=gosu" class="select-menu-item-text js-select-button-text js-navigation-open">Gosu</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=grammatical-framework" class="select-menu-item-text js-select-button-text js-navigation-open">Grammatical Framework</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=groovy" class="select-menu-item-text js-select-button-text js-navigation-open">Groovy</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=harbour" class="select-menu-item-text js-select-button-text js-navigation-open">Harbour</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=haskell" class="select-menu-item-text js-select-button-text js-navigation-open">Haskell</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=haxe" class="select-menu-item-text js-select-button-text js-navigation-open">Haxe</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=hy" class="select-menu-item-text js-select-button-text js-navigation-open">Hy</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=idl" class="select-menu-item-text js-select-button-text js-navigation-open">IDL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=idris" class="select-menu-item-text js-select-button-text js-navigation-open">Idris</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=inform-7" class="select-menu-item-text js-select-button-text js-navigation-open">Inform 7</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=io" class="select-menu-item-text js-select-button-text js-navigation-open">Io</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ioke" class="select-menu-item-text js-select-button-text js-navigation-open">Ioke</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=j" class="select-menu-item-text js-select-button-text js-navigation-open">J</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=java" class="select-menu-item-text js-select-button-text js-navigation-open">Java</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=javascript" class="select-menu-item-text js-select-button-text js-navigation-open">JavaScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=jsoniq" class="select-menu-item-text js-select-button-text js-navigation-open">JSONiq</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=julia" class="select-menu-item-text js-select-button-text js-navigation-open">Julia</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=kotlin" class="select-menu-item-text js-select-button-text js-navigation-open">Kotlin</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=krl" class="select-menu-item-text js-select-button-text js-navigation-open">KRL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=lasso" class="select-menu-item-text js-select-button-text js-navigation-open">Lasso</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=livescript" class="select-menu-item-text js-select-button-text js-navigation-open">LiveScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=logos" class="select-menu-item-text js-select-button-text js-navigation-open">Logos</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=logtalk" class="select-menu-item-text js-select-button-text js-navigation-open">Logtalk</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=lua" class="select-menu-item-text js-select-button-text js-navigation-open">Lua</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=m" class="select-menu-item-text js-select-button-text js-navigation-open">M</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=markdown" class="select-menu-item-text js-select-button-text js-navigation-open">Markdown</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=mathematica" class="select-menu-item-text js-select-button-text js-navigation-open">Mathematica</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=matlab" class="select-menu-item-text js-select-button-text js-navigation-open">Matlab</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=max%2Fmsp" class="select-menu-item-text js-select-button-text js-navigation-open">Max</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=mercury" class="select-menu-item-text js-select-button-text js-navigation-open">Mercury</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ruby" class="select-menu-item-text js-select-button-text js-navigation-open">Mirah</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=monkey" class="select-menu-item-text js-select-button-text js-navigation-open">Monkey</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=moocode" class="select-menu-item-text js-select-button-text js-navigation-open">Moocode</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=moonscript" class="select-menu-item-text js-select-button-text js-navigation-open">MoonScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nemerle" class="select-menu-item-text js-select-button-text js-navigation-open">Nemerle</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nesc" class="select-menu-item-text js-select-button-text js-navigation-open">nesC</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=netlogo" class="select-menu-item-text js-select-button-text js-navigation-open">NetLogo</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nimrod" class="select-menu-item-text js-select-button-text js-navigation-open">Nimrod</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nu" class="select-menu-item-text js-select-button-text js-navigation-open">Nu</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=objective-c" class="select-menu-item-text js-select-button-text js-navigation-open">Objective-C</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=objective-c%2B%2B" class="select-menu-item-text js-select-button-text js-navigation-open">Objective-C++</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=objective-j" class="select-menu-item-text js-select-button-text js-navigation-open">Objective-J</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ocaml" class="select-menu-item-text js-select-button-text js-navigation-open">OCaml</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=omgrofl" class="select-menu-item-text js-select-button-text js-navigation-open">Omgrofl</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ooc" class="select-menu-item-text js-select-button-text js-navigation-open">ooc</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=opa" class="select-menu-item-text js-select-button-text js-navigation-open">Opa</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=openedge-abl" class="select-menu-item-text js-select-button-text js-navigation-open">OpenEdge ABL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=oxygene" class="select-menu-item-text js-select-button-text js-navigation-open">Oxygene</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pan" class="select-menu-item-text js-select-button-text js-navigation-open">Pan</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=parrot" class="select-menu-item-text js-select-button-text js-navigation-open">Parrot</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pascal" class="select-menu-item-text js-select-button-text js-navigation-open">Pascal</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pawn" class="select-menu-item-text js-select-button-text js-navigation-open">PAWN</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=perl" class="select-menu-item-text js-select-button-text js-navigation-open">Perl</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=perl6" class="select-menu-item-text js-select-button-text js-navigation-open">Perl6</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=php" class="select-menu-item-text js-select-button-text js-navigation-open">PHP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pike" class="select-menu-item-text js-select-button-text js-navigation-open">Pike</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pogoscript" class="select-menu-item-text js-select-button-text js-navigation-open">PogoScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=powershell" class="select-menu-item-text js-select-button-text js-navigation-open">PowerShell</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=processing" class="select-menu-item-text js-select-button-text js-navigation-open">Processing</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=prolog" class="select-menu-item-text js-select-button-text js-navigation-open">Prolog</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=propeller-spin" class="select-menu-item-text js-select-button-text js-navigation-open">Propeller Spin</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=puppet" class="select-menu-item-text js-select-button-text js-navigation-open">Puppet</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pure-data" class="select-menu-item-text js-select-button-text js-navigation-open">Pure Data</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=purescript" class="select-menu-item-text js-select-button-text js-navigation-open">PureScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=python" class="select-menu-item-text js-select-button-text js-navigation-open">Python</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=r" class="select-menu-item-text js-select-button-text js-navigation-open">R</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=racket" class="select-menu-item-text js-select-button-text js-navigation-open">Racket</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ragel-in-ruby-host" class="select-menu-item-text js-select-button-text js-navigation-open">Ragel in Ruby Host</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=rdoc" class="select-menu-item-text js-select-button-text js-navigation-open">RDoc</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=realbasic" class="select-menu-item-text js-select-button-text js-navigation-open">REALbasic</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=rebol" class="select-menu-item-text js-select-button-text js-navigation-open">Rebol</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=red" class="select-menu-item-text js-select-button-text js-navigation-open">Red</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=robotframework" class="select-menu-item-text js-select-button-text js-navigation-open">RobotFramework</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=rouge" class="select-menu-item-text js-select-button-text js-navigation-open">Rouge</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ruby" class="select-menu-item-text js-select-button-text js-navigation-open">Ruby</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=rust" class="select-menu-item-text js-select-button-text js-navigation-open">Rust</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=sas" class="select-menu-item-text js-select-button-text js-navigation-open">SAS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=scala" class="select-menu-item-text js-select-button-text js-navigation-open">Scala</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=scheme" class="select-menu-item-text js-select-button-text js-navigation-open">Scheme</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=scilab" class="select-menu-item-text js-select-button-text js-navigation-open">Scilab</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=self" class="select-menu-item-text js-select-button-text js-navigation-open">Self</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=bash" class="select-menu-item-text js-select-button-text js-navigation-open">Shell</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=shellsession" class="select-menu-item-text js-select-button-text js-navigation-open">ShellSession</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=shen" class="select-menu-item-text js-select-button-text js-navigation-open">Shen</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=slash" class="select-menu-item-text js-select-button-text js-navigation-open">Slash</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=smalltalk" class="select-menu-item-text js-select-button-text js-navigation-open">Smalltalk</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=sourcepawn" class="select-menu-item-text js-select-button-text js-navigation-open">SourcePawn</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=sql" class="select-menu-item-text js-select-button-text js-navigation-open">SQL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=squirrel" class="select-menu-item-text js-select-button-text js-navigation-open">Squirrel</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=standard-ml" class="select-menu-item-text js-select-button-text js-navigation-open">Standard ML</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=stata" class="select-menu-item-text js-select-button-text js-navigation-open">Stata</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=supercollider" class="select-menu-item-text js-select-button-text js-navigation-open">SuperCollider</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=swift" class="select-menu-item-text js-select-button-text js-navigation-open">Swift</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=systemverilog" class="select-menu-item-text js-select-button-text js-navigation-open">SystemVerilog</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=tcl" class="select-menu-item-text js-select-button-text js-navigation-open">Tcl</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=tex" class="select-menu-item-text js-select-button-text js-navigation-open">TeX</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=turing" class="select-menu-item-text js-select-button-text js-navigation-open">Turing</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=txl" class="select-menu-item-text js-select-button-text js-navigation-open">TXL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=typescript" class="select-menu-item-text js-select-button-text js-navigation-open">TypeScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=unrealscript" class="select-menu-item-text js-select-button-text js-navigation-open">UnrealScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=vala" class="select-menu-item-text js-select-button-text js-navigation-open">Vala</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=verilog" class="select-menu-item-text js-select-button-text js-navigation-open">Verilog</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=vhdl" class="select-menu-item-text js-select-button-text js-navigation-open">VHDL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=vim" class="select-menu-item-text js-select-button-text js-navigation-open">VimL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=visual-basic" class="select-menu-item-text js-select-button-text js-navigation-open">Visual Basic</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=volt" class="select-menu-item-text js-select-button-text js-navigation-open">Volt</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=wisp" class="select-menu-item-text js-select-button-text js-navigation-open">wisp</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xbase" class="select-menu-item-text js-select-button-text js-navigation-open">xBase</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xc" class="select-menu-item-text js-select-button-text js-navigation-open">XC</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xml" class="select-menu-item-text js-select-button-text js-navigation-open">XML</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xproc" class="select-menu-item-text js-select-button-text js-navigation-open">XProc</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xquery" class="select-menu-item-text js-select-button-text js-navigation-open">XQuery</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xslt" class="select-menu-item-text js-select-button-text js-navigation-open">XSLT</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xtend" class="select-menu-item-text js-select-button-text js-navigation-open">Xtend</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=zephir" class="select-menu-item-text js-select-button-text js-navigation-open">Zephir</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=zimpl" class="select-menu-item-text js-select-button-text js-navigation-open">Zimpl</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-loading-overlay">Loading…</div>
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+      <div class="callout">
+  <p class="tip"><strong class="protip">ProTip</strong> Looking for recently updated Objective-C++ repositories? <a href="/search?l=objective-c%2B%2B&amp;q=stars%3A%3E1&amp;s=updated&amp;type=Repositories">Try this search</a></p>
+</div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div class="modal-backdrop"></div>
+        </div>
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.06544s from github-fe127-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x close js-ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-e87aa86ffae369acf33a96bb6567b2b57183be57.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-100ee281915e20c71d6b0ff254fbbb70b3fcaf3a.js" type="text/javascript"></script>
+      
+      
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>

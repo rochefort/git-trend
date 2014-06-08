@@ -16,9 +16,10 @@ RSpec.describe GitTrend::Scraper do
   end
 
   describe '#get' do
-    before do
-      @scraper = Scraper.new
-      stub_request_get
+    after do
+      # reset initialize
+      # warning measure: already initialized constant
+      [3, 40, 6, 5].each_with_index { |n, i| Rendering::DEFAULT_RULED_LINE_SIZE[i] = n }
     end
 
     context 'when a network error occurred' do
@@ -26,10 +27,17 @@ RSpec.describe GitTrend::Scraper do
         stub_request(:get, Scraper::BASE_URL).
           to_return(:status => 500, :body => '[]')
       end
-      it { expect{ @scraper.get }.to raise_error(Exception) }
+      let(:language) {nil}
+      it { expect{ @scraper.get(language) }.to raise_error(Exception) }
     end
 
     context 'with no option' do
+      before do
+        @scraper = Scraper.new
+        stub_request_get('trending')
+      end
+      let(:language) {nil}
+
       it 'display daily ranking' do
         res = <<-'EOS'.unindent
           |No. Name                                                 Star  Fork
@@ -60,7 +68,91 @@ RSpec.describe GitTrend::Scraper do
           | 24 PistonDevelopers/piston-workspace                      45     0
           | 25 maxpow4h/swiftz                                        43     1
         EOS
-        expect { @scraper.get }.to output(res).to_stdout
+        expect { @scraper.get(language) }.to output(res).to_stdout
+      end
+    end
+
+    describe 'with -l option' do
+      context 'with ruby' do
+        before do
+          @scraper = Scraper.new
+          stub_request_get("trending?l=#{language}")
+        end
+        let(:language) {'ruby'}
+
+        it 'display daily ranking by language' do
+          res = <<-'EOS'.unindent
+            |No. Name                                       Star  Fork
+            |--- ---------------------------------------- ------ -----
+            |  1 prat0318/json_resume                        412    27
+            |  2 dawn/dawn                                    57     2
+            |  3 Homebrew/homebrew                            15     7
+            |  4 etsy/nagios-herald                           18     0
+            |  5 jekyll/jekyll                                14     4
+            |  6 opf/openproject                              11     0
+            |  7 caskroom/homebrew-cask                        9     3
+            |  8 rails/rails                                   6     7
+            |  9 interagent/prmd                               9     0
+            | 10 mitchellh/vagrant                             8     2
+            | 11 discourse/discourse                           7     3
+            | 12 CanCanCommunity/cancancan                     7     1
+            | 13 venmo/synx                                    7     0
+            | 14 laravel/homestead                             6     2
+            | 15 alexreisner/geocoder                          6     0
+            | 16 visionmedia/commander                         5     0
+            | 17 CocoaPods/Specs                               0     3
+            | 18 gitlabhq/gitlabhq                             0     2
+            | 19 puppetlabs/puppetlabs-apache                  0     2
+            | 20 gitlabhq/gitlab-recipes                       0     2
+            | 21 Mixd/wp-deploy                                0     1
+            | 22 svenfuchs/rails-i18n                          0     1
+            | 23 Homebrew/homebrew-php                         0     1
+            | 24 sferik/twitter                                0     1
+            | 25 rightscale/rightscale_cookbooks               0     1
+          EOS
+          expect { @scraper.get(language) }.to output(res).to_stdout
+        end
+      end
+
+      context 'with objective-c++ (including + sign)' do
+        before do
+          @scraper = Scraper.new
+          stub_request_get("trending?l=#{language}")
+        end
+        let(:language) {'objective-c++'}
+
+        it 'display daily ranking by language' do
+          res = <<-'EOS'.unindent
+            |No. Name                                       Star  Fork
+            |--- ---------------------------------------- ------ -----
+            |  1 facebook/pop                                  0     0
+            |  2 johnno1962/Xtrace                             0     0
+            |  3 pivotal/cedar                                 0     0
+            |  4 wetube/bitcloud                               0     0
+            |  5 jerols/PopTut                                 0     0
+            |  6 otaviocc/OCBorghettiView                      0     0
+            |  7 droolsjbpm/optaplanner                        0     0
+            |  8 otaviocc/NHCalendarActivity                   0     0
+            |  9 callmeed/pop-playground                       0     0
+            | 10 jxd001/POPdemo                                0     0
+            | 11 couchdeveloper/RXPromise                      0     0
+            | 12 johnno1962/XprobePlugin                       0     0
+            | 13 openpeer/opios                                0     0
+            | 14 pivotal/PivotalCoreKit                        0     0
+            | 15 rbaumbach/Swizzlean                           0     0
+            | 16 andreacremaschi/ShapeKit                      0     0
+            | 17 Smartype/iOS_VPNPlugIn                        0     0
+            | 18 humblehacker/AutoLayoutDSL                    0     0
+            | 19 hoddez/FFTAccelerate                          0     0
+            | 20 armadillu/ofxPanZoom                          0     0
+            | 21 dodikk/CsvToSqlite                            0     0
+            | 22 hbang/TypeStatus                              0     0
+            | 23 trentbrooks/ofxCoreMotion                     0     0
+            | 24 Yonsm/CeleWare                                0     0
+            | 25 ccrma/miniAudicle                             0     0
+          EOS
+          expect { @scraper.get(language) }.to output(res).to_stdout
+        end
       end
     end
   end
@@ -68,7 +160,7 @@ RSpec.describe GitTrend::Scraper do
   describe '#list_all_languages' do
     before do
       @scraper = Scraper.new
-      stub_request_get
+      stub_request_get('trending')
     end
 
     context 'with no option' do
@@ -267,11 +359,14 @@ RSpec.describe GitTrend::Scraper do
   end
 
   private
-    def stub_request_get
-      stub_request(:get, Scraper::BASE_URL).
+    def stub_request_get(stub_file)
+      params = stub_file.match(/trending\?(.+)/).to_a[1]
+      url = "#{Scraper::BASE_URL}"
+      url << "?#{CGI.escape(params)}" if params
+      stub_request(:get, url).
         to_return(
           :status => 200,
           :headers => {content_type: 'text/html'},
-          :body => load_http_stub('trending'))
+          :body => load_http_stub(stub_file))
     end
 end

@@ -4,6 +4,8 @@ module GitTrend
   class CLI < Thor
     map '-v'              => :version,
         '--version'       => :version,
+        '-l'              => :show,
+        '--list'          => :show,
         '--all-languages' => :all_languages
 
     default_command :show
@@ -14,9 +16,9 @@ module GitTrend
     end
 
     desc :show, 'show Trending repository on github'
-    def show
+    def show(language=nil)
       scraper = Scraper.new
-      scraper.get
+      scraper.get(language)
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
       say e.message

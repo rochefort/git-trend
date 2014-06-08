@@ -13,9 +13,9 @@ module GitTrend
       end
     end
 
-    def get
+    def get(language)
       projects = []
-      page = @agent.get(BASE_URL)
+      page = @agent.get(generate_get_url(language))
 
       page.search('.leaderboard-list-content').each do |content|
         project = Project.new
@@ -44,6 +44,14 @@ module GitTrend
     end
 
     private
+      def generate_get_url(language)
+        if language
+          "#{BASE_URL}?l=#{CGI.escape(language)}"
+        else
+          BASE_URL
+        end
+      end
+
       def meta_count(elm)
         elm.empty? ? 0 : elm[0].parent.text.to_i
       end
