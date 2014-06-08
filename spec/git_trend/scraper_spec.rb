@@ -5,7 +5,7 @@ RSpec.describe GitTrend::Scraper do
 
   describe '#get' do
     before do
-      @trend = Scraper.new
+      @scraper = Scraper.new
       stub_request_get
     end
 
@@ -40,7 +40,7 @@ RSpec.describe GitTrend::Scraper do
           | 24 PistonDevelopers/piston-workspace                      45     0
           | 25 maxpow4h/swiftz                                        43     1
         EOS
-        expect { @trend.get }.to output(res).to_stdout
+        expect { @scraper.get }.to output(res).to_stdout
       end
     end
   end
