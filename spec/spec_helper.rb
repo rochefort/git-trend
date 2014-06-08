@@ -14,6 +14,7 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'webmock/rspec'
 require 'git_trend'
 RSpec.configure do |config|
   config.expose_dsl_globally = false
@@ -77,4 +78,15 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 =end
+end
+
+def load_http_stub(file_name)
+  file_path = File.join(File.dirname(__FILE__), 'fixtures', file_name)
+  File.read(file_path)
+end
+
+class String
+  def unindent
+    gsub(/^\s+\|/, '')
+  end
 end
