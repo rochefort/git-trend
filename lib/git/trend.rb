@@ -1,7 +1,9 @@
-require "git/trend/version"
-
 module Git
   module Trend
-    # Your code goes here...
+    autoload :CLI,       'git/trend/cli'
+    autoload :Project,   'git/trend/project'
+    autoload :Rendering, 'git/trend/rendering'
+    autoload :Scraper,   'git/trend/scraper'
+    autoload :VERSION,   'git/trend/version'
   end
 end
