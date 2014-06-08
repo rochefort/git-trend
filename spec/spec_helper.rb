@@ -14,8 +14,13 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'rspec/its'
 require 'webmock/rspec'
+
+require 'simplecov'
 require 'git_trend'
+SimpleCov.start
+
 RSpec.configure do |config|
   config.expose_dsl_globally = false
 # The settings below are suggested to provide a good initial experience
