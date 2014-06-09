@@ -3,7 +3,7 @@ module GitTrend
     attr_accessor :name, :lang, :description, :star_count, :fork_count
 
     def to_a
-      [@name, @star_count.to_s, @fork_count.to_s]
+      [@name, @lang, @star_count.to_s, @fork_count.to_s]
     end
   end
 end

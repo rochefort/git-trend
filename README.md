@@ -29,33 +29,33 @@ e.g.:
 
 ```
 $ git trend
-No. Name                                                 Star  Fork
---- -------------------------------------------------- ------ -----
-  1 prat0318/json_resume                                  440    30
-  2 Flolagale/mailin                                      177     3
-  3 watilde/beeplay                                       176     3
-  4 daneden/animate.css                                   150    15
-  5 jessepollak/card                                      149     9
-  6 grant/swift-cheat-sheet                               134    10
-  7 numbbbbb/the-swift-programming-language-in-chinese    123    24
-  8 fullstackio/FlappySwift                               117    35
-  9 andlabs/ui                                            101     5
- 10 neovim/neovim                                          81     7
- 11 hiphopapp/hiphop                                       71    11
- 12 austinzheng/swift-2048                                 66    19
- 13 interagent/http-api-design                             61     2
- 14 davidmerfield/randomColor                              60     3
- 15 dawn/dawn                                              56     2
- 16 PistonDevelopers/piston-workspace                      54     0
- 17 mdznr/What-s-New                                       47     1
- 18 PistonDevelopers/piston                                46     2
- 19 lafikl/steady.js                                       46     0
- 20 mikepenz/AboutLibraries                                44     0
- 21 greatfire/wiki                                         37    12
- 22 goagent/goagent                                        36     7
- 23 hippyvm/hippyvm                                        36     3
- 24 dwightwatson/validating                                37     0
- 25 jas/swift-playground-builder                           37     0
+No. Name                                               Lang           Star  Fork
+--- -------------------------------------------------- ------------ ------ -----
+  1 lafikl/steady.js                                   JavaScript      435    12
+  2 rpicard/explore-flask                              Python          316    16
+  3 dc-js/dc.js                                        JavaScript      289    15
+  4 watilde/beeplay                                    JavaScript      272    12
+  5 grant/swift-cheat-sheet                                            263    13
+  6 tictail/bounce.js                                  CSS             260     8
+  7 jessepollak/card                                   CSS             225    15
+  8 prat0318/json_resume                               Ruby            195    17
+  9 addyosmani/psi                                     JavaScript      201     3
+ 10 fullstackio/FlappySwift                            Swift           168    52
+ 11 PythonJS/PythonJS                                  JavaScript      185     9
+ 12 numbbbbb/the-swift-programming-language-in-chinese JavaScript      137    30
+ 13 maxpow4h/swiftz                                    Swift           134     7
+ 14 andlabs/ui                                         Go              116     6
+ 15 interagent/http-api-design                                         100     9
+ 16 dotcloud/docker                                    Go               98    13
+ 17 dwightwatson/validating                            PHP              99     5
+ 18 daneden/animate.css                                CSS              92    18
+ 19 daimajia/AndroidImageSlider                        Java             87    12
+ 20 austinzheng/swift-2048                             Swift            73    14
+ 21 Flolagale/mailin                                   Python           77     4
+ 22 hiphopapp/hiphop                                   CoffeeScript     71     8
+ 23 jas/swift-playground-builder                       JavaScript       62     0
+ 24 medyo/dynamicbox                                   Java             59     2
+ 25 twbs/bootstrap                                     CSS              46    27
 ```
 
 ### daily trending by language
@@ -66,33 +66,33 @@ e.g.:
 
 ```
 $ git trend -l ruby
-No. Name                                       Star  Fork
---- ---------------------------------------- ------ -----
-  1 prat0318/json_resume                        412    27
-  2 dawn/dawn                                    57     2
-  3 Homebrew/homebrew                            15     7
-  4 etsy/nagios-herald                           18     0
-  5 jekyll/jekyll                                14     4
-  6 opf/openproject                              11     0
-  7 caskroom/homebrew-cask                        9     3
-  8 rails/rails                                   6     7
-  9 interagent/prmd                               9     0
- 10 mitchellh/vagrant                             8     2
- 11 discourse/discourse                           7     3
- 12 CanCanCommunity/cancancan                     7     1
- 13 venmo/synx                                    7     0
- 14 laravel/homestead                             6     2
- 15 alexreisner/geocoder                          6     0
- 16 visionmedia/commander                         5     0
- 17 CocoaPods/Specs                               0     3
- 18 gitlabhq/gitlabhq                             0     2
- 19 puppetlabs/puppetlabs-apache                  0     2
- 20 gitlabhq/gitlab-recipes                       0     2
- 21 Mixd/wp-deploy                                0     1
- 22 svenfuchs/rails-i18n                          0     1
- 23 Homebrew/homebrew-php                         0     1
- 24 sferik/twitter                                0     1
- 25 rightscale/rightscale_cookbooks               0     1
+No. Name                                     Lang         Star  Fork
+--- ---------------------------------------- ---------- ------ -----
+  1 prat0318/json_resume                     Ruby          199    16
+  2 dawn/dawn                                Ruby           51     0
+  3 etsy/nagios-herald                       Ruby           27     0
+  4 Homebrew/homebrew                        Ruby           13    15
+  5 CanCanCommunity/cancancan                Ruby           16     0
+  6 venmo/synx                               Ruby           16     0
+  7 joenorton/rubyretriever                  Ruby           14     2
+  8 jekyll/jekyll                            Ruby           10     3
+  9 rapid7/metasploit-framework              Ruby            9     4
+ 10 discourse/discourse                      Ruby            9     3
+ 11 torben/FlappyMotion                      Ruby           10     0
+ 12 rails/rails                              Ruby            6     8
+ 13 visionmedia/commander                    Ruby            9     1
+ 14 interagent/prmd                          Ruby            9     0
+ 15 opf/openproject                          Ruby            9     0
+ 16 mitchellh/vagrant                        Ruby            8     2
+ 17 twbs/bootstrap-sass                      Ruby            8     1
+ 18 sass/sass                                Ruby            7     2
+ 19 github/hub                               Ruby            8     0
+ 20 gitlabhq/gitlabhq                        Ruby            5     5
+ 21 CocoaPods/CocoaPods                      Ruby            7     0
+ 22 plataformatec/devise                     Ruby            5     4
+ 23 wbailey/claws                            Ruby            7     0
+ 24 guard/guard                              Ruby            6     1
+ 25 jordansissel/fpm                         Ruby            6     0
 ```
 
 ### show languages
