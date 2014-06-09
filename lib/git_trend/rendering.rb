@@ -37,17 +37,23 @@ module GitTrend
         end
       end
 
-      def render_to_header
-        f=DEFAULT_RULED_LINE_SIZE.dup
+      def render_with(&block)
+        f = DEFAULT_RULED_LINE_SIZE.dup
         fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s"
-        puts fmt % ['No.', 'Name', 'Lang', 'Star', 'Fork']
-        puts fmt % f.map{ |_f| '-'*_f }
+        yield(f, fmt)
+      end
+
+      def render_to_header
+        render_with do |fields, fmt|
+          puts fmt % ['No.', 'Name', 'Lang', 'Star', 'Fork']
+          puts fmt % fields.map{ |f| '-'*f }
+        end
       end
 
       def render_to_body(projects)
-        f=DEFAULT_RULED_LINE_SIZE.dup
-        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s"
-        projects.each_with_index { |project, i| puts fmt % [i+1, project.to_a].flatten }
+        render_with do |fields, fmt|
+          projects.each_with_index { |project, i| puts fmt % [i+1, project.to_a].flatten }
+        end
       end
   end
 end
