@@ -1,3 +1,6 @@
+[![Gem Version](http://img.shields.io/gem/v/git-trend.svg?style=flat)](http://badge.fury.io/rb/git-trend)
+
+
 # git-trend
 
 git-trend is a command line utitlity to show [Trending repositories on GitHub](https://github.com/trending).  
