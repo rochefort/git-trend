@@ -17,7 +17,9 @@ module GitTrend
       puts languages
       puts
       puts "#{languages.size} languages"
-      puts "you can get only selected language list with '-l' option"
+      puts "you can get only selected language list with '-l' option."
+      puts "if languages is unknown, you can specify 'unkown'."
+      puts
     end
 
     private
