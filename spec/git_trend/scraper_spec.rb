@@ -351,7 +351,9 @@ RSpec.describe GitTrend::Scraper do
           |zimpl
           |
           |183 languages
-          |you can get only selected language list with '-l' option
+          |you can get only selected language list with '-l' option.
+          |if languages is unknown, you can specify 'unkown'.
+          |
         EOS
         expect { @scraper.list_all_languages }.to output(res).to_stdout
       end
