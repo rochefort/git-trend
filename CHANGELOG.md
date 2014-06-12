@@ -1,3 +1,8 @@
+## v0.0.3
+
+* Implement since option (04f1978)
+* Fix star count is incorrect (ce6e07a)
+
 ## v0.0.2
 
 * Implement display lang field (96e4b9c)
