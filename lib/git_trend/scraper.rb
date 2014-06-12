@@ -1,9 +1,12 @@
 require 'mechanize'
+require 'addressable/uri'
 
 module GitTrend
   class Scraper
     include GitTrend::Rendering
-    BASE_URL = 'https://github.com/trending'
+
+    BASE_HOST = 'https://github.com'
+    BASE_URL = "#{BASE_HOST}/trending"
 
     def initialize
       @agent = Mechanize.new
@@ -13,9 +16,9 @@ module GitTrend
       end
     end
 
-    def get(language)
+    def get(language=nil, since=nil)
       projects = []
-      page = @agent.get(generate_get_url(language))
+      page = @agent.get(generate_url_for_get(language, since))
 
       page.search('.leaderboard-list-content').each do |content|
         project = Project.new
@@ -44,12 +47,12 @@ module GitTrend
     end
 
     private
-      def generate_get_url(language)
-        if language
-          "#{BASE_URL}?l=#{CGI.escape(language)}"
-        else
-          BASE_URL
+      def generate_url_for_get(language, since)
+        uri = Addressable::URI.parse(BASE_URL)
+        if language or since
+          uri.query_values = { l: language, since: since}.delete_if{ |k,v| v.nil? }
         end
+        uri.to_s
       end
 
       def meta_count(elm)

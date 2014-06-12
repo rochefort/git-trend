@@ -117,7 +117,7 @@ RSpec.describe GitTrend::Scraper do
       context 'with objective-c++ (including + sign)' do
         before do
           @scraper = Scraper.new
-          stub_request_get("trending?l=#{language}")
+          stub_request_get("trending?l=objective-c%2B%2B")
         end
         let(:language) {'objective-c++'}
 
@@ -152,6 +152,134 @@ RSpec.describe GitTrend::Scraper do
             | 25 ccrma/miniAudicle                        Objective-C++      0     0
           EOS
           expect { @scraper.get(language) }.to output(res).to_stdout
+        end
+      end
+    end
+
+    describe 'with -s option' do
+      context 'with weekly' do
+        before do
+          @scraper = Scraper.new
+          stub_request_get("trending?since=#{since}")
+        end
+        let(:since) {'weekly'}
+
+        it 'display daily ranking since weekly' do
+          res = <<-'EOS'.unindent
+            |No. Name                                               Lang           Star  Fork
+            |--- -------------------------------------------------- ------------ ------ -----
+            |  1 numbbbbb/the-swift-programming-language-in-chinese JavaScript     2495   679
+            |  2 jessepollak/card                                   CSS            2177   153
+            |  3 grant/swift-cheat-sheet                            JavaScript     1906   122
+            |  4 tictail/bounce.js                                  CSS            1540    74
+            |  5 fullstackio/FlappySwift                            Swift          1125   401
+            |  6 GoogleCloudPlatform/kubernetes                     Go             1001    97
+            |  7 andlabs/ui                                         Go             1004    36
+            |  8 facebook/Haxl                                      Haskell         911    53
+            |  9 greatfire/wiki                                                     683   196
+            | 10 interagent/http-api-design                                         757    42
+            | 11 prat0318/json_resume                               Ruby            717    50
+            | 12 lafikl/steady.js                                   JavaScript      717    20
+            | 13 dotcloud/docker                                    Go              617   119
+            | 14 dmytrodanylyk/circular-progress-button             Java            608    69
+            | 15 docker/libswarm                                    Go              606    20
+            | 16 watilde/beeplay                                    JavaScript      594    23
+            | 17 austinzheng/swift-2048                             Swift           518   116
+            | 18 Flolagale/mailin                                   Python          543    14
+            | 19 hiphopapp/hiphop                                   CoffeeScript    507    71
+            | 20 rpicard/explore-flask                              Python          454    27
+            | 21 addyosmani/psi                                     JavaScript      443     8
+            | 22 twbs/bootstrap                                     CSS             290   189
+            | 23 angular/angular.js                                 JavaScript      268   194
+            | 24 mbostock/d3                                        JavaScript      307   113
+            | 25 maxpow4h/swiftz                                    Swift           350    20
+          EOS
+          expect { @scraper.get(nil, since) }.to output(res).to_stdout
+        end
+      end
+
+      context 'with monthly' do
+        before do
+          @scraper = Scraper.new
+          stub_request_get("trending?since=#{since}")
+        end
+        let(:since) {'monthly'}
+
+        it 'display daily ranking since monthly' do
+          res = <<-'EOS'.unindent
+            |No. Name                                               Lang           Star  Fork
+            |--- -------------------------------------------------- ------------ ------ -----
+            |  1 fullstackio/FlappySwift                            Swift          5753  1530
+            |  2 interagent/http-api-design                                        4735   214
+            |  3 jessepollak/card                                   CSS            3944   257
+            |  4 numbbbbb/the-swift-programming-language-in-chinese JavaScript     3159   831
+            |  5 calmh/syncthing                                    Go             2738   123
+            |  6 grant/swift-cheat-sheet                            JavaScript     2254   136
+            |  7 atom/atom                                          CoffeeScript   1761   285
+            |  8 angular/angular.js                                 JavaScript     1389   842
+            |  9 schneiderandre/popping                             Objective-C    1681   129
+            | 10 quilljs/quill                                      CoffeeScript   1655    75
+            | 11 twbs/bootstrap                                     CSS            1235   887
+            | 12 tictail/bounce.js                                  CSS            1553    74
+            | 13 venmo/synx                                         Ruby           1545    40
+            | 14 lovell/sharp                                       JavaScript     1528    39
+            | 15 mbostock/d3                                        JavaScript     1101   424
+            | 16 facebook/jest                                      JavaScript     1287    50
+            | 17 octobercms/october                                 PHP            1190   192
+            | 18 buunguyen/octotree                                 JavaScript     1228    90
+            | 19 felipernb/algorithms.js                            JavaScript     1206    90
+            | 20 strongloop/loopback                                JavaScript     1198    61
+            | 21 greatfire/wiki                                                    1067   254
+            | 22 austinzheng/swift-2048                             Swift          1083   218
+            | 23 dotcloud/docker                                    Go             1057   269
+            | 24 julianshapiro/velocity                             JavaScript     1081    71
+            | 25 babun/babun                                        Shell          1068    46
+          EOS
+          expect { @scraper.get(nil, since) }.to output(res).to_stdout
+        end
+      end
+    end
+
+    describe 'with -l and -s option' do
+      context 'with ruby and weekly' do
+        before do
+          @scraper = Scraper.new
+          stub_request_get("trending?l=#{language}&since=#{since}")
+        end
+        let(:language) {'ruby'}
+        let(:since) {'weekly'}
+
+        it 'display daily ranking since weekly' do
+          res = <<-'EOS'.unindent
+            |No. Name                                     Lang         Star  Fork
+            |--- ---------------------------------------- ---------- ------ -----
+            |  1 prat0318/json_resume                     Ruby          717    50
+            |  2 dawn/dawn                                Ruby          349    11
+            |  3 newrelic/centurion                       Ruby          213     6
+            |  4 Homebrew/homebrew                        Ruby          107    74
+            |  5 rails/rails                              Ruby          100    74
+            |  6 code-mancers/invoker                     Ruby           97     2
+            |  7 CanCanCommunity/cancancan                Ruby           92     5
+            |  8 etsy/nagios-herald                       Ruby           89     0
+            |  9 jekyll/jekyll                            Ruby           74    25
+            | 10 venmo/synx                               Ruby           82     2
+            | 11 interagent/prmd                          Ruby           74     5
+            | 12 discourse/discourse                      Ruby           64    22
+            | 13 gitlabhq/gitlabhq                        Ruby           56    21
+            | 14 vigetlabs/sass-json-vars                 Ruby           65     0
+            | 15 caskroom/homebrew-cask                   Ruby           49    30
+            | 16 mitchellh/vagrant                        Ruby           53    19
+            | 17 harrystech/seed_migration                Ruby           57     0
+            | 18 twbs/bootstrap-sass                      Ruby           47    17
+            | 19 opal/opal                                Ruby           50     2
+            | 20 plataformatec/devise                     Ruby           39    22
+            | 21 sass/sass                                Ruby           43    12
+            | 22 nickjj/orats                             Ruby           46     2
+            | 23 chrishunt/desktop                        Ruby           39     3
+            | 24 chloerei/campo                           Ruby           35     9
+            | 25 jordansissel/fpm                         Ruby           35     4
+          EOS
+          expect { @scraper.get(language, since) }.to output(res).to_stdout
         end
       end
     end
@@ -361,14 +489,16 @@ RSpec.describe GitTrend::Scraper do
   end
 
   private
-    def stub_request_get(stub_file)
-      params = stub_file.match(/trending\?(.+)/).to_a[1]
-      url = "#{Scraper::BASE_URL}"
-      url << "?#{CGI.escape(params)}" if params
-      stub_request(:get, url).
+    def stub_request_get(stub_url)
+      url = Scraper::BASE_HOST.dup
+      url << "/#{stub_url}" if stub_url
+      uri = URI.parse(url)
+
+      stub_request(:get, uri).
         to_return(
           :status => 200,
           :headers => {content_type: 'text/html'},
-          :body => load_http_stub(stub_file))
+          :body => load_http_stub(stub_url))
     end
+
 end

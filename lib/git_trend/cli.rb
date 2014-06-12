@@ -14,9 +14,10 @@ module GitTrend
 
     desc :list, '[List] Trending repository on github'
     option :list, aliases:'-l', required: false
+    option :since, aliases:'-s', required: false
     def list
       scraper = Scraper.new
-      scraper.get(options[:list])
+      scraper.get(options[:list], options[:since])
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
       say e.message

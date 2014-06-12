@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>Trending Ruby repositories on GitHub this week · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta property="og:url" content="https://github.com">
+      <meta property="og:site_name" content="GitHub">
+      <meta property="og:title" content="Build software better, together">
+      <meta property="og:description" content="GitHub is the best place to build software together. Over 4 million people use GitHub to share code.">
+      <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-logo.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="1200">
+      <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="620">
+      <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-octocat.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="620">
+      <meta property="twitter:site" content="github">
+      <meta property="twitter:site:id" content="13334762">
+      <meta property="twitter:creator" content="github">
+      <meta property="twitter:creator:id" content="13334762">
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:title" content="GitHub">
+      <meta property="twitter:description" content="GitHub is the best place to build software together. Over 4 million people use GitHub to share code.">
+      <meta property="twitter:image:src" content="https://assets-cdn.github.com/images/modules/open_graph/github-logo.png">
+      <meta property="twitter:image:width" content="1200">
+      <meta property="twitter:image:height" content="1200">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="trending_repositories" data-pjax-transient />
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="3A9D7ECD:475F:71482AD:5399EF90" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico" />
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HLbTNY3klKjHdQX8z2mcXmw4ogV6fKcWhHz7732yI6NIKm3HzkO+DJErXcncHWPzNt5EW2AN2uR8uxdjGWNltQ==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-e3bc44d99a5c83dfa1f8fd5618b2bf5595dd9023.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-a1fd2161b2d8ea3aef1c3d15c79772ff80eb5523.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+    <meta http-equiv="x-pjax-version" content="23b0beafdcd040e55580512da1436a75">
+
+      <meta name="description" content="Build software better, together." />
+  </head>
+
+
+  <body class="logged_out  env-production">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Ftrending%3Fl%3Druby%26since%3Dweekly">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  ">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="s, /" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+  >
+  <div class="display hidden"></div>
+</div>
+
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+        <div class="site clearfix">
+          <div id="site-container" class="context-loader-container" data-pjax-container>
+            
+            
+
+
+<div class="pagehead explore-head">
+  <div class="container">
+    <nav class="pagehead-nav" data-pjax>
+  <a href="/explore" class="js-selected-navigation-item pagehead-nav-item" data-selected-links="explore_main /explore">All</a>
+    <a href="/showcases" class="js-selected-navigation-item pagehead-nav-item" data-selected-links="showcases showcases_search showcases_landing /showcases">Showcases</a>
+  <a href="/trending" class="selected js-selected-navigation-item pagehead-nav-item" data-selected-links="trending_developers trending_repositories /trending">Trending</a>
+</nav>
+
+    <h1>Explore GitHub</h1>
+  </div>
+</div><!-- /.pagehead -->
+
+
+<div class="explore-pjax-container container explore-page js-explore-page">
+  <div class="explore-marketing-header">
+    <h2>Trending repositories</h2>
+    <p class="lead">Find what repositories the GitHub community is most excited about this week.</p>
+    <p class="call-to-signup"><a href="/join?return_to=%2Ftrending%3Fl%3Druby%26since%3Dweekly" class="minibutton btn-default primary" rel="nofollow">Sign up for free</a> to get started</p>
+  </div>
+  <div class="columns">
+    <div class="column three-fourths">
+      <div class="tabnav">
+        <div class="tabnav-right">
+          <div class="tabnav-widget">
+            <div class="select-menu js-menu-container js-select-menu right-aligned">
+  <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+    <i>Trending:</i>
+    <span class="js-select-button">this week</span>
+  </span>
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Adjust time span</span>
+        <span class="octicon octicon-x js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-list" role="menu">
+        <div>
+          <a class="select-menu-item js-navigation-item " href="https://github.com/trending?l=ruby&amp;since=daily" data-pjax>
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <span class="select-menu-item-text js-select-button-text">today</span>
+          </a> <!-- /.select-menu-item -->
+          <a class="select-menu-item js-navigation-item selected" href="https://github.com/trending?l=ruby&amp;since=weekly" data-pjax>
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <span class="select-menu-item-text js-select-button-text">this week</span>
+          </a> <!-- /.select-menu-item -->
+          <a class="select-menu-item js-navigation-item " href="https://github.com/trending?l=ruby&amp;since=monthly" data-pjax>
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <span class="select-menu-item-text js-select-button-text">this month</span>
+          </a> <!-- /.select-menu-item -->
+        </div>
+
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+          </div>
+        </div>
+        <ul class="tabnav-tabs" data-pjax>
+  <li><a href="https://github.com/trending?l=ruby&amp;since=weekly" class="selected js-selected-navigation-item tabnav-tab" data-selected-links="trending_repositories https://github.com/trending?l=ruby&amp;since=weekly">Repositories</a></li>
+  <li><a href="https://github.com/trending/developers?l=ruby&amp;since=weekly" class="js-selected-navigation-item tabnav-tab" data-selected-links="trending_developers https://github.com/trending/developers?l=ruby&amp;since=weekly">Developers</a></li>
+</ul>
+
+      </div>
+      <div class="explore-content">
+        <ol class="repo-leaderboard-list leaderboard-list">
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-json_resume">
+            <a href="#pa-json_resume" class="leaderboard-list-rank">1</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fprat0318%2Fjson_resume"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/prat0318/json_resume" class="repository-name"><span class="owner-name">prat0318</span><span class="separator">/</span><strong>json_resume</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Generates pretty HTML, LaTeX, markdown, with biodata feeded as input in JSON</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="717 stars this week"><span class="octicon octicon-star"></span>717</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="50 forks this week"><span class="octicon octicon-git-branch"></span>50</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/prat0318/json_resume/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Prateek Agarwal" class="avatar js-avatar" data-user="1528697" height="20" src="https://avatars1.githubusercontent.com/u/1528697?s=140" title="prat0318" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-dawn">
+            <a href="#pa-dawn" class="leaderboard-list-rank">2</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fdawn%2Fdawn"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/dawn/dawn" class="repository-name"><span class="owner-name">dawn</span><span class="separator">/</span><strong>dawn</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Docker-based PaaS in Ruby</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="349 stars this week"><span class="octicon octicon-star"></span>349</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="11 forks this week"><span class="octicon octicon-git-branch"></span>11</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/dawn/dawn/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Corey Powell" class="avatar js-avatar" data-user="1649873" height="20" src="https://avatars3.githubusercontent.com/u/1649873?s=140" title="IceDragon200" width="20" />
+          <img alt="Blaž Hrastnik" class="avatar js-avatar" data-user="1372918" height="20" src="https://avatars3.githubusercontent.com/u/1372918?s=140" title="archSeer" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-centurion">
+            <a href="#pa-centurion" class="leaderboard-list-rank">3</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fnewrelic%2Fcenturion"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/newrelic/centurion" class="repository-name"><span class="owner-name">newrelic</span><span class="separator">/</span><strong>centurion</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">A mass deployment tool for Docker fleets</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="213 stars this week"><span class="octicon octicon-star"></span>213</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="6 forks this week"><span class="octicon octicon-git-branch"></span>6</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/newrelic/centurion/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Karl Matthias" class="avatar js-avatar" data-user="267761" height="20" src="https://avatars1.githubusercontent.com/u/267761?s=140" title="relistan" width="20" />
+          <img alt="Jesse Dearing" class="avatar js-avatar" data-user="176691" height="20" src="https://avatars0.githubusercontent.com/u/176691?s=140" title="jessedearing" width="20" />
+          <img alt="David Celis" class="avatar js-avatar" data-user="36873" height="20" src="https://avatars3.githubusercontent.com/u/36873?s=140" title="davidcelis" width="20" />
+          <img alt="Nic Benders" class="avatar js-avatar" data-user="25198" height="20" src="https://avatars3.githubusercontent.com/u/25198?s=140" title="benders" width="20" />
+          <img alt="Nick" class="avatar js-avatar" data-user="889427" height="20" src="https://avatars0.githubusercontent.com/u/889427?s=140" title="shicholas" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-homebrew">
+            <a href="#pa-homebrew" class="leaderboard-list-rank">4</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2FHomebrew%2Fhomebrew"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/Homebrew/homebrew" class="repository-name"><span class="owner-name">Homebrew</span><span class="separator">/</span><strong>homebrew</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">The missing package manager for OS X.</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="107 stars this week"><span class="octicon octicon-star"></span>107</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="74 forks this week"><span class="octicon octicon-git-branch"></span>74</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/Homebrew/homebrew/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Jack Nagel" class="avatar js-avatar" data-user="568243" height="20" src="https://avatars0.githubusercontent.com/u/568243?s=140" title="jacknagel" width="20" />
+          <img alt="Adam Vandenberg" class="avatar js-avatar" data-user="3566" height="20" src="https://avatars0.githubusercontent.com/u/3566?s=140" title="adamv" width="20" />
+          <img alt="Mike McQuaid" class="avatar js-avatar" data-user="125011" height="20" src="https://avatars2.githubusercontent.com/u/125011?s=140" title="mikemcquaid" width="20" />
+          <img alt="Brett Koonce" class="avatar js-avatar" data-user="518607" height="20" src="https://avatars2.githubusercontent.com/u/518607?s=140" title="asparagui" width="20" />
+          <img alt="Max Howell" class="avatar js-avatar" data-user="58962" height="20" src="https://avatars2.githubusercontent.com/u/58962?s=140" title="mxcl" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-rails">
+            <a href="#pa-rails" class="leaderboard-list-rank">5</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Frails%2Frails"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/rails/rails" class="repository-name"><span class="owner-name">rails</span><span class="separator">/</span><strong>rails</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Ruby on Rails</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="100 stars this week"><span class="octicon octicon-star"></span>100</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="74 forks this week"><span class="octicon octicon-git-branch"></span>74</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/rails/rails/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="David Heinemeier Hansson" class="avatar js-avatar" data-user="2741" height="20" src="https://avatars3.githubusercontent.com/u/2741?s=140" title="dhh" width="20" />
+          <img alt="Aaron Patterson" class="avatar js-avatar" data-user="3124" height="20" src="https://avatars3.githubusercontent.com/u/3124?s=140" title="tenderlove" width="20" />
+          <img alt="Jeremy Kemper" class="avatar js-avatar" data-user="199" height="20" src="https://avatars3.githubusercontent.com/u/199?s=140" title="jeremy" width="20" />
+          <img alt="José Valim" class="avatar js-avatar" data-user="9582" height="20" src="https://avatars0.githubusercontent.com/u/9582?s=140" title="josevalim" width="20" />
+          <img alt="Rafael Mendonça França" class="avatar js-avatar" data-user="47848" height="20" src="https://avatars3.githubusercontent.com/u/47848?s=140" title="rafaelfranca" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-invoker">
+            <a href="#pa-invoker" class="leaderboard-list-rank">6</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fcode-mancers%2Finvoker"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/code-mancers/invoker" class="repository-name"><span class="owner-name">code-mancers</span><span class="separator">/</span><strong>invoker</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">An awesome utility to manage all your processes in development envionment</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="97 stars this week"><span class="octicon octicon-star"></span>97</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="2 forks this week"><span class="octicon octicon-git-branch"></span>2</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/code-mancers/invoker/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Hemant Kumar" class="avatar js-avatar" data-user="278" height="20" src="https://avatars0.githubusercontent.com/u/278?s=140" title="gnufied" width="20" />
+          <img alt="Amitava Basak" class="avatar js-avatar" data-user="93031" height="20" src="https://avatars0.githubusercontent.com/u/93031?s=140" title="abasak" width="20" />
+          <img alt="codemancers-bot" class="avatar js-avatar" data-user="4639619" height="20" src="https://avatars0.githubusercontent.com/u/4639619?s=140" title="codemancers-bot" width="20" />
+          <img alt="Yuva" class="avatar js-avatar" data-user="1108398" height="20" src="https://avatars1.githubusercontent.com/u/1108398?s=140" title="iffyuva" width="20" />
+          <img alt="Takeshi Yabe" class="avatar js-avatar" data-user="87799" height="20" src="https://avatars0.githubusercontent.com/u/87799?s=140" title="tyabe" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-cancancan">
+            <a href="#pa-cancancan" class="leaderboard-list-rank">7</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2FCanCanCommunity%2Fcancancan"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/CanCanCommunity/cancancan" class="repository-name"><span class="owner-name">CanCanCommunity</span><span class="separator">/</span><strong>cancancan</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Continuation of CanCan, the authorization Gem for Ruby on Rails.</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="92 stars this week"><span class="octicon octicon-star"></span>92</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="5 forks this week"><span class="octicon octicon-git-branch"></span>5</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/CanCanCommunity/cancancan/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Ryan Bates" class="avatar js-avatar" data-user="161" height="20" src="https://avatars0.githubusercontent.com/u/161?s=140" title="ryanb" width="20" />
+          <img alt="Bryan Rite" class="avatar js-avatar" data-user="829668" height="20" src="https://avatars1.githubusercontent.com/u/829668?s=140" title="bryanrite" width="20" />
+          <img alt="Mani Tadayon" class="avatar js-avatar" data-user="40264" height="20" src="https://avatars1.githubusercontent.com/u/40264?s=140" title="bowsersenior" width="20" />
+          <img alt="Vasiliy Ermolovich" class="avatar js-avatar" data-user="200500" height="20" src="https://avatars2.githubusercontent.com/u/200500?s=140" title="nashby" width="20" />
+          <img alt="Carlos Figueiredo" class="avatar js-avatar" data-user="1085713" height="20" src="https://avatars0.githubusercontent.com/u/1085713?s=140" title="cefigueiredo" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-nagios-herald">
+            <a href="#pa-nagios-herald" class="leaderboard-list-rank">8</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fetsy%2Fnagios-herald"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/etsy/nagios-herald" class="repository-name"><span class="owner-name">etsy</span><span class="separator">/</span><strong>nagios-herald</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="89 stars this week"><span class="octicon octicon-star"></span>89</span></li>
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/etsy/nagios-herald/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Ryan Frantz" class="avatar js-avatar" data-user="1014715" height="20" src="https://avatars1.githubusercontent.com/u/1014715?s=140" title="RyanFrantz" width="20" />
+          <img alt="Chuck" class="avatar js-avatar" data-user="98927" height="20" src="https://avatars0.githubusercontent.com/u/98927?s=140" title="chuckha" width="20" />
+          <img alt="Nassim Kammah" class="avatar js-avatar" data-user="124953" height="20" src="https://avatars0.githubusercontent.com/u/124953?s=140" title="nkammah" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-jekyll">
+            <a href="#pa-jekyll" class="leaderboard-list-rank">9</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fjekyll%2Fjekyll"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/jekyll/jekyll" class="repository-name"><span class="owner-name">jekyll</span><span class="separator">/</span><strong>jekyll</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Jekyll is a blog-aware, static site generator in Ruby</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="74 stars this week"><span class="octicon octicon-star"></span>74</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="25 forks this week"><span class="octicon octicon-git-branch"></span>25</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/jekyll/jekyll/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Parker Moore" class="avatar js-avatar" data-user="237985" height="20" src="https://avatars0.githubusercontent.com/u/237985?s=140" title="parkr" width="20" />
+          <img alt="Matt Rogers" class="avatar js-avatar" data-user="77174" height="20" src="https://avatars2.githubusercontent.com/u/77174?s=140" title="mattr-" width="20" />
+          <img alt="Tom Preston-Werner" class="avatar js-avatar" data-user="1" height="20" src="https://avatars2.githubusercontent.com/u/1?s=140" title="mojombo" width="20" />
+          <img alt="maul.esel" class="avatar js-avatar" data-user="800556" height="20" src="https://avatars1.githubusercontent.com/u/800556?s=140" title="maul-esel" width="20" />
+          <img alt="Anatol Broder" class="avatar js-avatar" data-user="3617307" height="20" src="https://avatars2.githubusercontent.com/u/3617307?s=140" title="penibelst" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-synx">
+            <a href="#pa-synx" class="leaderboard-list-rank">10</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fvenmo%2Fsynx"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/venmo/synx" class="repository-name"><span class="owner-name">venmo</span><span class="separator">/</span><strong>synx</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">A command-line tool that reorganizes your Xcode project folder to match your Xcode groups</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="82 stars this week"><span class="octicon octicon-star"></span>82</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="2 forks this week"><span class="octicon octicon-git-branch"></span>2</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/venmo/synx/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Mark Larsen" class="avatar js-avatar" data-user="760261" height="20" src="https://avatars3.githubusercontent.com/u/760261?s=140" title="marklarr" width="20" />
+          <img alt="Ayaka Nonaka" class="avatar js-avatar" data-user="504184" height="20" src="https://avatars1.githubusercontent.com/u/504184?s=140" title="ayanonagon" width="20" />
+          <img alt="Mattt Thompson" class="avatar js-avatar" data-user="7659" height="20" src="https://avatars1.githubusercontent.com/u/7659?s=140" title="mattt" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-prmd">
+            <a href="#pa-prmd" class="leaderboard-list-rank">11</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Finteragent%2Fprmd"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/interagent/prmd" class="repository-name"><span class="owner-name">interagent</span><span class="separator">/</span><strong>prmd</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">JSON Schema tools and doc generation for HTTP APIs</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="74 stars this week"><span class="octicon octicon-star"></span>74</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="5 forks this week"><span class="octicon octicon-git-branch"></span>5</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/interagent/prmd/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Wesley Beary" class="avatar js-avatar" data-user="4138" height="20" src="https://avatars0.githubusercontent.com/u/4138?s=140" title="geemus" width="20" />
+          <img alt="Brandur" class="avatar js-avatar" data-user="96890" height="20" src="https://avatars0.githubusercontent.com/u/96890?s=140" title="brandur" width="20" />
+          <img alt="Mark McGranaghan" class="avatar js-avatar" data-user="2432" height="20" src="https://avatars2.githubusercontent.com/u/2432?s=140" title="mmcgrana" width="20" />
+          <img alt="Kousuke Ebihara" class="avatar js-avatar" data-user="9206" height="20" src="https://avatars3.githubusercontent.com/u/9206?s=140" title="co3k" width="20" />
+          <img alt="Timothée Peignier" class="avatar js-avatar" data-user="44535" height="20" src="https://avatars2.githubusercontent.com/u/44535?s=140" title="cyberdelia" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-discourse">
+            <a href="#pa-discourse" class="leaderboard-list-rank">12</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fdiscourse%2Fdiscourse"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/discourse/discourse" class="repository-name"><span class="owner-name">discourse</span><span class="separator">/</span><strong>discourse</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">A platform for community discussion. Free, open, simple.</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="64 stars this week"><span class="octicon octicon-star"></span>64</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="22 forks this week"><span class="octicon octicon-git-branch"></span>22</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/discourse/discourse/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Robin Ward" class="avatar js-avatar" data-user="17538" height="20" src="https://avatars3.githubusercontent.com/u/17538?s=140" title="eviltrout" width="20" />
+          <img alt="Sam" class="avatar js-avatar" data-user="5213" height="20" src="https://avatars0.githubusercontent.com/u/5213?s=140" title="SamSaffron" width="20" />
+          <img alt="Neil Lalonde" class="avatar js-avatar" data-user="151885" height="20" src="https://avatars3.githubusercontent.com/u/151885?s=140" title="nlalonde" width="20" />
+          <img alt="Régis Hanol" class="avatar js-avatar" data-user="362783" height="20" src="https://avatars1.githubusercontent.com/u/362783?s=140" title="ZogStriP" width="20" />
+          <img alt="Jeff Atwood" class="avatar js-avatar" data-user="1522517" height="20" src="https://avatars0.githubusercontent.com/u/1522517?s=140" title="coding-horror" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-gitlabhq">
+            <a href="#pa-gitlabhq" class="leaderboard-list-rank">13</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fgitlabhq%2Fgitlabhq"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/gitlabhq/gitlabhq" class="repository-name"><span class="owner-name">gitlabhq</span><span class="separator">/</span><strong>gitlabhq</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Project management and code hosting  application. Follow us on twitter @gitlabhq</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="56 stars this week"><span class="octicon octicon-star"></span>56</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="21 forks this week"><span class="octicon octicon-git-branch"></span>21</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/gitlabhq/gitlabhq/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Dmitriy Zaporozhets" class="avatar js-avatar" data-user="305940" height="20" src="https://avatars3.githubusercontent.com/u/305940?s=140" title="randx" width="20" />
+          <img alt="Sytse Sijbrandij" class="avatar js-avatar" data-user="22061" height="20" src="https://avatars2.githubusercontent.com/u/22061?s=140" title="dosire" width="20" />
+          <img alt="Riyad Preukschas" class="avatar js-avatar" data-user="99679" height="20" src="https://avatars2.githubusercontent.com/u/99679?s=140" title="riyad" width="20" />
+          <img alt="Jacob Vosmaer" class="avatar js-avatar" data-user="1336311" height="20" src="https://avatars2.githubusercontent.com/u/1336311?s=140" title="jacobvosmaer" width="20" />
+          <img alt="Valeriy Sizov" class="avatar js-avatar" data-user="417636" height="20" src="https://avatars3.githubusercontent.com/u/417636?s=140" title="vsizov" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-sass-json-vars">
+            <a href="#pa-sass-json-vars" class="leaderboard-list-rank">14</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fvigetlabs%2Fsass-json-vars"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/vigetlabs/sass-json-vars" class="repository-name"><span class="owner-name">vigetlabs</span><span class="separator">/</span><strong>sass-json-vars</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Import variables as JSON into Sass</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="65 stars this week"><span class="octicon octicon-star"></span>65</span></li>
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/vigetlabs/sass-json-vars/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Nathan Hunzaker" class="avatar js-avatar" data-user="590904" height="20" src="https://avatars3.githubusercontent.com/u/590904?s=140" title="nhunzaker" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-homebrew-cask">
+            <a href="#pa-homebrew-cask" class="leaderboard-list-rank">15</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fcaskroom%2Fhomebrew-cask"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/caskroom/homebrew-cask" class="repository-name"><span class="owner-name">caskroom</span><span class="separator">/</span><strong>homebrew-cask</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">a CLI workflow for the administration of Mac applications distributed as binaries</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="49 stars this week"><span class="octicon octicon-star"></span>49</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="30 forks this week"><span class="octicon octicon-git-branch"></span>30</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/caskroom/homebrew-cask/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Roland Walker" class="avatar js-avatar" data-user="727482" height="20" src="https://avatars1.githubusercontent.com/u/727482?s=140" title="rolandwalker" width="20" />
+          <img alt="Vítor Galvão" class="avatar js-avatar" data-user="1699443" height="20" src="https://avatars3.githubusercontent.com/u/1699443?s=140" title="vitorgalvao" width="20" />
+          <img alt="Fernando Paredes" class="avatar js-avatar" data-user="1889575" height="20" src="https://avatars3.githubusercontent.com/u/1889575?s=140" title="NanoXD" width="20" />
+          <img alt="Michael Ford" class="avatar js-avatar" data-user="863730" height="20" src="https://avatars2.githubusercontent.com/u/863730?s=140" title="fanquake" width="20" />
+          <img alt="Paul Hinze" class="avatar js-avatar" data-user="37534" height="20" src="https://avatars2.githubusercontent.com/u/37534?s=140" title="phinze" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-vagrant">
+            <a href="#pa-vagrant" class="leaderboard-list-rank">16</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fmitchellh%2Fvagrant"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/mitchellh/vagrant" class="repository-name"><span class="owner-name">mitchellh</span><span class="separator">/</span><strong>vagrant</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Vagrant is a tool for building and distributing development environments.</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="53 stars this week"><span class="octicon octicon-star"></span>53</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="19 forks this week"><span class="octicon octicon-git-branch"></span>19</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/mitchellh/vagrant/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Mitchell Hashimoto" class="avatar js-avatar" data-user="1299" height="20" src="https://avatars1.githubusercontent.com/u/1299?s=140" title="mitchellh" width="20" />
+          <img alt="Fabio Rehm" class="avatar js-avatar" data-user="81859" height="20" src="https://avatars1.githubusercontent.com/u/81859?s=140" title="fgrehm" width="20" />
+          <img alt="John Bender" class="avatar js-avatar" data-user="23505" height="20" src="https://avatars3.githubusercontent.com/u/23505?s=140" title="johnbender" width="20" />
+          <img alt="Teemu Matilainen" class="avatar js-avatar" data-user="79116" height="20" src="https://avatars3.githubusercontent.com/u/79116?s=140" title="tmatilai" width="20" />
+          <img alt="Gilles Cornu" class="avatar js-avatar" data-user="434654" height="20" src="https://avatars3.githubusercontent.com/u/434654?s=140" title="gildegoma" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-seed_migration">
+            <a href="#pa-seed_migration" class="leaderboard-list-rank">17</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fharrystech%2Fseed_migration"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/harrystech/seed_migration" class="repository-name"><span class="owner-name">harrystech</span><span class="separator">/</span><strong>seed_migration</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Seed Migration</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="57 stars this week"><span class="octicon octicon-star"></span>57</span></li>
+    
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/harrystech/seed_migration/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Pierre" class="avatar js-avatar" data-user="717637" height="20" src="https://avatars3.githubusercontent.com/u/717637?s=140" title="pjambet" width="20" />
+          <img alt="Vikram Oberoi" class="avatar js-avatar" data-user="26339" height="20" src="https://avatars2.githubusercontent.com/u/26339?s=140" title="voberoi" width="20" />
+          <img alt="Andy O&#39;Neill" class="avatar js-avatar" data-user="3298" height="20" src="https://avatars0.githubusercontent.com/u/3298?s=140" title="werkshy" width="20" />
+          <img alt="Daniel Schwartz" class="avatar js-avatar" data-user="505433" height="20" src="https://avatars0.githubusercontent.com/u/505433?s=140" title="danielschwartz" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-bootstrap-sass">
+            <a href="#pa-bootstrap-sass" class="leaderboard-list-rank">18</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Ftwbs%2Fbootstrap-sass"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/twbs/bootstrap-sass" class="repository-name"><span class="owner-name">twbs</span><span class="separator">/</span><strong>bootstrap-sass</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Official Sass port of Bootstrap</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="47 stars this week"><span class="octicon octicon-star"></span>47</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="17 forks this week"><span class="octicon octicon-git-branch"></span>17</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/twbs/bootstrap-sass/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Gleb Mazovetskiy" class="avatar js-avatar" data-user="216339" height="20" src="https://avatars3.githubusercontent.com/u/216339?s=140" title="glebm" width="20" />
+          <img alt="Thomas McDonald" class="avatar js-avatar" data-user="197928" height="20" src="https://avatars0.githubusercontent.com/u/197928?s=140" title="thomas-mcdonald" width="20" />
+          <img alt="Tristan Harward" class="avatar js-avatar" data-user="89588" height="20" src="https://avatars3.githubusercontent.com/u/89588?s=140" title="trisweb" width="20" />
+          <img alt="Peter Gumeson" class="avatar js-avatar" data-user="11115" height="20" src="https://avatars1.githubusercontent.com/u/11115?s=140" title="sporkd" width="20" />
+          <img alt="Jonathan Kelley" class="avatar js-avatar" data-user="579300" height="20" src="https://avatars2.githubusercontent.com/u/579300?s=140" title="jkelleyj" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-opal">
+            <a href="#pa-opal" class="leaderboard-list-rank">19</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fopal%2Fopal"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/opal/opal" class="repository-name"><span class="owner-name">opal</span><span class="separator">/</span><strong>opal</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Ruby to Javascript compiler</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="50 stars this week"><span class="octicon octicon-star"></span>50</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="2 forks this week"><span class="octicon octicon-git-branch"></span>2</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/opal/opal/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Adam Beynon" class="avatar js-avatar" data-user="68938" height="20" src="https://avatars1.githubusercontent.com/u/68938?s=140" title="adambeynon" width="20" />
+          <img alt="meh." class="avatar js-avatar" data-user="40204" height="20" src="https://avatars2.githubusercontent.com/u/40204?s=140" title="meh" width="20" />
+          <img alt="Elia Schito" class="avatar js-avatar" data-user="1051" height="20" src="https://avatars3.githubusercontent.com/u/1051?s=140" title="elia" width="20" />
+          <img alt="Dan Allen" class="avatar js-avatar" data-user="79351" height="20" src="https://avatars1.githubusercontent.com/u/79351?s=140" title="mojavelinux" width="20" />
+          <img alt="mike" class="avatar js-avatar" data-user="1255570" height="20" src="https://avatars0.githubusercontent.com/u/1255570?s=140" title="fntzr" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-devise">
+            <a href="#pa-devise" class="leaderboard-list-rank">20</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fplataformatec%2Fdevise"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/plataformatec/devise" class="repository-name"><span class="owner-name">plataformatec</span><span class="separator">/</span><strong>devise</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Flexible authentication solution for Rails with Warden.</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="39 stars this week"><span class="octicon octicon-star"></span>39</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="22 forks this week"><span class="octicon octicon-git-branch"></span>22</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/plataformatec/devise/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="José Valim" class="avatar js-avatar" data-user="9582" height="20" src="https://avatars0.githubusercontent.com/u/9582?s=140" title="josevalim" width="20" />
+          <img alt="Carlos Antonio da Silva" class="avatar js-avatar" data-user="26328" height="20" src="https://avatars0.githubusercontent.com/u/26328?s=140" title="carlosantoniodasilva" width="20" />
+          <img alt="Lucas Mazza" class="avatar js-avatar" data-user="80978" height="20" src="https://avatars1.githubusercontent.com/u/80978?s=140" title="lucasmazza" width="20" />
+          <img alt="Vasiliy Ermolovich" class="avatar js-avatar" data-user="200500" height="20" src="https://avatars2.githubusercontent.com/u/200500?s=140" title="nashby" width="20" />
+          <img alt="Rafael Mendonça França" class="avatar js-avatar" data-user="47848" height="20" src="https://avatars3.githubusercontent.com/u/47848?s=140" title="rafaelfranca" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-sass">
+            <a href="#pa-sass" class="leaderboard-list-rank">21</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fsass%2Fsass"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/sass/sass" class="repository-name"><span class="owner-name">sass</span><span class="separator">/</span><strong>sass</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Sass makes CSS fun again.</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="43 stars this week"><span class="octicon octicon-star"></span>43</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="12 forks this week"><span class="octicon octicon-git-branch"></span>12</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/sass/sass/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Nathan Weizenbaum" class="avatar js-avatar" data-user="188" height="20" src="https://avatars1.githubusercontent.com/u/188?s=140" title="nex3" width="20" />
+          <img alt="Chris Eppstein" class="avatar js-avatar" data-user="1839" height="20" src="https://avatars3.githubusercontent.com/u/1839?s=140" title="chriseppstein" width="20" />
+          <img alt="" class="avatar js-avatar" data-user="15688" height="20" src="https://avatars1.githubusercontent.com/u/15688?s=140" title="thedarkone" width="20" />
+          <img alt="Mislav Marohnić" class="avatar js-avatar" data-user="887" height="20" src="https://avatars3.githubusercontent.com/u/887?s=140" title="mislav" width="20" />
+          <img alt="JonathanTR" class="avatar js-avatar" data-user="4335783" height="20" src="https://avatars0.githubusercontent.com/u/4335783?s=140" title="JonathanTR" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-orats">
+            <a href="#pa-orats" class="leaderboard-list-rank">22</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fnickjj%2Forats"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/nickjj/orats" class="repository-name"><span class="owner-name">nickjj</span><span class="separator">/</span><strong>orats</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Opinionated rails application templates and ansible playbook.</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="46 stars this week"><span class="octicon octicon-star"></span>46</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="2 forks this week"><span class="octicon octicon-git-branch"></span>2</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/nickjj/orats/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Nick Janetakis" class="avatar js-avatar" data-user="813219" height="20" src="https://avatars0.githubusercontent.com/u/813219?s=140" title="nickjj" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-desktop">
+            <a href="#pa-desktop" class="leaderboard-list-rank">23</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fchrishunt%2Fdesktop"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/chrishunt/desktop" class="repository-name"><span class="owner-name">chrishunt</span><span class="separator">/</span><strong>desktop</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">A decent way to change your desktop image</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="39 stars this week"><span class="octicon octicon-star"></span>39</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="3 forks this week"><span class="octicon octicon-git-branch"></span>3</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/chrishunt/desktop/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Chris Hunt" class="avatar js-avatar" data-user="65323" height="20" src="https://avatars3.githubusercontent.com/u/65323?s=140" title="chrishunt" width="20" />
+          <img alt="" class="avatar js-avatar" data-user="1890858" height="20" src="https://avatars3.githubusercontent.com/u/1890858?s=140" title="bjarocki" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-campo">
+            <a href="#pa-campo" class="leaderboard-list-rank">24</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fchloerei%2Fcampo"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/chloerei/campo" class="repository-name"><span class="owner-name">chloerei</span><span class="separator">/</span><strong>campo</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Campo 3</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="35 stars this week"><span class="octicon octicon-star"></span>35</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="9 forks this week"><span class="octicon octicon-git-branch"></span>9</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/chloerei/campo/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Rei" class="avatar js-avatar" data-user="49931" height="20" src="https://avatars1.githubusercontent.com/u/49931?s=140" title="chloerei" width="20" />
+          <img alt="Juanito Fatas" class="avatar js-avatar" data-user="1000669" height="20" src="https://avatars1.githubusercontent.com/u/1000669?s=140" title="JuanitoFatas" width="20" />
+          <img alt="quake wang" class="avatar js-avatar" data-user="8990" height="20" src="https://avatars1.githubusercontent.com/u/8990?s=140" title="quake" width="20" />
+          <img alt="Hor" class="avatar js-avatar" data-user="1332618" height="20" src="https://avatars0.githubusercontent.com/u/1332618?s=140" title="horx" width="20" />
+          <img alt="簡煒航 (Jian Weihang)" class="avatar js-avatar" data-user="809410" height="20" src="https://avatars0.githubusercontent.com/u/809410?s=140" title="tonytonyjan" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-fpm">
+            <a href="#pa-fpm" class="leaderboard-list-rank">25</a>
+            
+
+<span class="mega-octicon octicon-repo"></span>
+<div class="leaderboard-action">  <a href="/login?return_to=%2Fjordansissel%2Ffpm"
+    class="minibutton  star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+</div>
+<div class="leaderboard-list-content">
+  <h2 class="repo-leaderboard-title">
+    <a href="/jordansissel/fpm" class="repository-name"><span class="owner-name">jordansissel</span><span class="separator">/</span><strong>fpm</strong></a>
+      <span class="title-meta">Ruby</span>
+    </h2>
+  <p class="repo-leaderboard-description">Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity.</p>
+  <ul class="repo-leaderboard-meta">
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="35 stars this week"><span class="octicon octicon-star"></span>35</span></li>
+    <li class="repo-leaderboard-meta-item"><span class="collection-stat tooltipped tooltipped-n" aria-label="4 forks this week"><span class="octicon octicon-git-branch"></span>4</span></li>
+    
+      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
+        <a href="/jordansissel/fpm/graphs/contributors">
+        <span class="contributor-avatar-text">built by</span>
+          <img alt="Jordan Sissel" class="avatar js-avatar" data-user="131818" height="20" src="https://avatars3.githubusercontent.com/u/131818?s=140" title="jordansissel" width="20" />
+          <img alt="Pranay Kanwar" class="avatar js-avatar" data-user="629631" height="20" src="https://avatars0.githubusercontent.com/u/629631?s=140" title="r4um" width="20" />
+          <img alt="Jeanine Adkisson" class="avatar js-avatar" data-user="225017" height="20" src="https://avatars0.githubusercontent.com/u/225017?s=140" title="jneen" width="20" />
+          <img alt="Aman Gupta" class="avatar js-avatar" data-user="2567" height="20" src="https://avatars2.githubusercontent.com/u/2567?s=140" title="tmm1" width="20" />
+          <img alt="Matt Sharpe" class="avatar js-avatar" data-user="91418" height="20" src="https://avatars3.githubusercontent.com/u/91418?s=140" title="hatt" width="20" />
+        </a>
+      </li>
+  </ul>
+</div>
+
+          </li>
+        </ol>
+        <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+      </div>
+    </div>
+    <div class="column one-fourth">
+      
+<ul class="filter-list small language-filter-list" data-pjax>
+  <li>
+      <a href="https://github.com/trending?since=weekly" class="filter-item">All languages</a>
+  </li>
+  <li>
+      <a href="https://github.com/trending?l=unknown&amp;since=weekly" class="filter-item">Unknown languages</a>
+  </li>
+    <li>
+        <a href="https://github.com/trending?l=css&amp;since=weekly" class="filter-item">CSS</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=java&amp;since=weekly" class="filter-item">Java</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=javascript&amp;since=weekly" class="filter-item">JavaScript</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=php&amp;since=weekly" class="filter-item">PHP</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?l=python&amp;since=weekly" class="filter-item">Python</a>
+    </li>
+    <li>
+        <a href="https://github.com/trending?since=weekly" class="filter-item selected">
+        Ruby
+</a>    </li>
+    <li>
+        <a href="https://github.com/trending?l=bash&amp;since=weekly" class="filter-item">Shell</a>
+    </li>
+</ul>
+
+<div class="select-menu js-menu-container js-select-menu ">
+  <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+    <span class="octicon octicon-list-unordered"></span>
+    <i>Other:</i>
+    <span class="js-select-button">Languages</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Other Languages</span>
+        <span class="octicon octicon-x js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-error-shell">
+        <span class="select-menu-error js-select-menu-error">Whoops, there was an error</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" id="text-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter Languages">
+        </div>
+      </div> <!-- /.select-menu-filters -->
+
+      <div class="select-menu-list" data-pjax role="menu">
+
+        <div class="select-menu-clear-item select-menu-item js-navigation-item">
+          <span class="select-menu-item-icon octicon octicon-x"></span>
+          <a href="https://github.com/trending?since=weekly" class="select-menu-item-text">Clear Language</a>
+        </div> <!-- /.select-menu-item -->
+
+        <div data-filterable-for="text-filter-field" data-filterable-type="substring">
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=abap&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">ABAP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=as3&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">ActionScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ada&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Ada</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=agda&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Agda</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=alloy&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Alloy</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=antlr&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">ANTLR</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=apex&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Apex</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=applescript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">AppleScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=arc&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Arc</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=arduino&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Arduino</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=aspx-vb&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">ASP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=aspectj&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">AspectJ</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nasm&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Assembly</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ats&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">ATS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=augeas&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Augeas</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=autohotkey&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">AutoHotkey</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=autoit&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">AutoIt</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=awk&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Awk</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=blitzbasic&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">BlitzBasic</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=bluespec&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Bluespec</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=boo&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Boo</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=brightscript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Brightscript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=bro&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Bro</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=c&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">C</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=csharp&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">C#</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cpp&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">C++</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ceylon&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Ceylon</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cirru&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Cirru</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=clean&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Clean</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=clips&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">CLIPS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=clojure&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Clojure</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cobol&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">COBOL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=coffeescript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">CoffeeScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cfm&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">ColdFusion</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=common-lisp&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Common Lisp</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=component-pascal&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Component Pascal</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=coq&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Coq</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=crystal&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Crystal</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=css&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">CSS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cuda&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Cuda</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=d&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">D</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dart&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Dart</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dcpu-16-asm&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">DCPU-16 ASM</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dm&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">DM</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dogescript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Dogescript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dot&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">DOT</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=dylan&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Dylan</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=e&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">E</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ec&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">eC</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=eiffel&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Eiffel</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=elixir&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Elixir</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=elm&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Elm</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=emacs-lisp&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Emacs Lisp</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=erlang&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Erlang</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=fsharp&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">F#</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=factor&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Factor</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=fancy&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Fancy</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=fantom&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Fantom</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=flux&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">FLUX</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=forth&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Forth</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=fortran&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">FORTRAN</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=frege&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Frege</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=game-maker-language&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Game Maker Language</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=gams&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">GAMS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=gap&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">GAP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=glyph&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Glyph</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=gnuplot&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Gnuplot</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=go&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Go</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=gosu&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Gosu</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=grammatical-framework&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Grammatical Framework</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=groovy&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Groovy</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=harbour&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Harbour</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=haskell&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Haskell</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=haxe&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Haxe</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=hy&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Hy</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=idl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">IDL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=idris&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Idris</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=inform-7&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Inform 7</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=io&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Io</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ioke&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Ioke</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=j&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">J</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=java&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Java</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=javascript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">JavaScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=jsoniq&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">JSONiq</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=julia&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Julia</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=kotlin&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Kotlin</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=krl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">KRL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=lasso&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Lasso</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=livescript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">LiveScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=logos&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Logos</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=logtalk&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Logtalk</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=lua&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Lua</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=m&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">M</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=markdown&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Markdown</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=mathematica&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Mathematica</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=matlab&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Matlab</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=max%2Fmsp&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Max</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=mercury&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Mercury</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ruby&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Mirah</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=monkey&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Monkey</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=moocode&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Moocode</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=moonscript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">MoonScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nemerle&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Nemerle</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nesc&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">nesC</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=netlogo&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">NetLogo</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nimrod&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Nimrod</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nu&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Nu</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=objective-c&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Objective-C</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=objective-c%2B%2B&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Objective-C++</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=objective-j&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Objective-J</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ocaml&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">OCaml</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=omgrofl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Omgrofl</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ooc&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">ooc</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=opa&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Opa</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=openedge-abl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">OpenEdge ABL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=oxygene&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Oxygene</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pan&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Pan</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=parrot&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Parrot</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pascal&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Pascal</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pawn&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">PAWN</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=perl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Perl</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=perl6&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Perl6</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=php&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">PHP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pike&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Pike</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pogoscript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">PogoScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=powershell&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">PowerShell</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=processing&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Processing</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=prolog&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Prolog</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=propeller-spin&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Propeller Spin</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=puppet&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Puppet</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=pure-data&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Pure Data</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=purescript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">PureScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=python&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Python</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=r&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">R</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=racket&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Racket</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ragel-in-ruby-host&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Ragel in Ruby Host</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=rdoc&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">RDoc</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=realbasic&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">REALbasic</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=rebol&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Rebol</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=red&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Red</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=robotframework&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">RobotFramework</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=rouge&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Rouge</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ruby&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Ruby</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=rust&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Rust</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=sas&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">SAS</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=scala&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Scala</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=scheme&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Scheme</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=scilab&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Scilab</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=self&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Self</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=bash&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Shell</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=shellsession&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">ShellSession</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=shen&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Shen</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=slash&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Slash</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=smalltalk&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Smalltalk</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=sourcepawn&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">SourcePawn</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=sql&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">SQL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=squirrel&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Squirrel</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=standard-ml&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Standard ML</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=stata&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Stata</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=supercollider&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">SuperCollider</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=swift&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Swift</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=systemverilog&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">SystemVerilog</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=tcl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Tcl</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=tex&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">TeX</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=turing&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Turing</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=txl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">TXL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=typescript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">TypeScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=unrealscript&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">UnrealScript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=vala&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Vala</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=vcl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">VCL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=verilog&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Verilog</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=vhdl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">VHDL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=vim&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">VimL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=visual-basic&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Visual Basic</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=volt&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Volt</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=wisp&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">wisp</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xbase&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">xBase</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xc&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">XC</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xml&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">XML</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xproc&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">XProc</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xquery&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">XQuery</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xslt&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">XSLT</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xtend&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Xtend</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=zephir&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Zephir</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=zimpl&amp;since=weekly" class="select-menu-item-text js-select-button-text js-navigation-open">Zimpl</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-loading-overlay">Loading…</div>
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+      <div class="callout">
+  <p class="tip"><strong class="protip">ProTip</strong> Looking for most starred Ruby repositories? <a href="/search?l=ruby&amp;q=stars%3A%3E1&amp;s=stars&amp;type=Repositories">Try this search</a></p>
+</div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div class="modal-backdrop"></div>
+        </div>
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.10920s from github-fe139-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-a9688556f5cc9cbe487a5c18824184a63311c187.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-2d727fd36dd5f14dffd45a95f75e51e50ff0f0db.js" type="text/javascript"></script>
+      
+      
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>
