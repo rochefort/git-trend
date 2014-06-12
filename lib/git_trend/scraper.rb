@@ -53,7 +53,7 @@ module GitTrend
       end
 
       def meta_count(elm)
-        elm.empty? ? 0 : elm[0].parent.text.to_i
+        elm.empty? ? 0 : elm[0].parent.text.strip.gsub(',', '').to_i
       end
   end
 end
