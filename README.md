@@ -102,6 +102,49 @@ No. Name                                     Lang         Star  Fork
  25 jordansissel/fpm                         Ruby            6     0
 ```
 
+### weekly/monthly trending
+
+    git trend -s weekly
+    git trend -s w
+    
+    or
+    
+    git trend -s monthly
+    git trend -s m
+
+e.g.:
+
+```
+$ git trend -s weekly
+No. Name                                               Lang         Star  Fork
+--- -------------------------------------------------- ---------- ------ -----
+  1 numbbbbb/the-swift-programming-language-in-chinese JavaScript   4161  1201
+  2 justjavac/Google-IPs                                            1499   650
+  3 tictail/bounce.js                                  CSS          1779    90
+  4 grant/swift-cheat-sheet                            JavaScript   1432   109
+  5 GoogleCloudPlatform/kubernetes                     Go           1224   124
+  6 jessepollak/card                                   CSS          1109    88
+  7 facebook/Haxl                                      Haskell      1003    62
+  8 greatfire/wiki                                                   845   252
+  9 docker/libchan                                     Go            945    34
+ 10 lafikl/steady.js                                   JavaScript    783    21
+ 11 dotcloud/docker                                    Go            660   137
+ 12 fullstackio/FlappySwift                            Swift         603   233
+ 13 docker/libswarm                                    Go            691    27
+ 14 uutils/coreutils                                   Rust          610    33
+ 15 watilde/beeplay                                    JavaScript    542    24
+ 16 dmytrodanylyk/circular-progress-button             Java          510    63
+ 17 mooz/percol                                        Python        511    15
+ 18 fengsp/plan                                        Python        496    25
+ 19 interagent/http-api-design                                       481    30
+ 20 rpicard/explore-flask                              Python        477    31
+ 21 jdorn/json-editor                                  JavaScript    387    28
+ 22 twbs/bootstrap                                     CSS           288   200
+ 23 google/cadvisor                                    Go            371    23
+ 24 irssi/irssi                                        C             351    27
+ 25 mbostock/d3                                        JavaScript    288   132
+```
+
 ### show languages
 
     git trend all_languages
