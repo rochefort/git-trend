@@ -3,7 +3,6 @@ require 'addressable/uri'
 
 module GitTrend
   class Scraper
-    include GitTrend::Rendering
 
     BASE_HOST = 'https://github.com'
     BASE_URL = "#{BASE_HOST}/trending"
@@ -31,7 +30,7 @@ module GitTrend
 
         projects << project
       end
-      Scraper.render(projects)
+      projects
     end
 
     def list_all_languages
@@ -43,7 +42,7 @@ module GitTrend
         language = href.match(/github.com\/trending\?l=(.+)/).to_a[1]
         languages << CGI.unescape(language) if language
       end
-      Scraper.render_all_languages(languages)
+      languages
     end
 
     private
