@@ -20,7 +20,7 @@ module GitTrend
     def list
       scraper = Scraper.new
       projects = scraper.get(options[:list], options[:since])
-      CLI.render(projects)
+      render(projects, options[:description])
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
       say e.message
@@ -30,7 +30,7 @@ module GitTrend
     def all_languages
       scraper = Scraper.new
       languages = scraper.list_all_languages
-      CLI.render_all_languages(languages)
+      render_all_languages(languages)
     end
   end
 end
