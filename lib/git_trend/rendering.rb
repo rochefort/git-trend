@@ -7,7 +7,8 @@ module GitTrend
       base.extend(self)
     end
 
-    def render(projects)
+    def render(projects, describable=false)
+      @default_ruled_line_size = DEFAULT_RULED_LINE_SIZE.dup
       set_ruled_line_size(projects)
       render_to_header
       render_to_body(projects)
@@ -29,18 +30,18 @@ module GitTrend
 
       def set_ruled_line_size(projects)
         max_name_size = max_size_of(projects, :name)
-        if max_name_size > DEFAULT_RULED_LINE_SIZE[1]
-          DEFAULT_RULED_LINE_SIZE[1] = max_name_size
+        if max_name_size > @default_ruled_line_size[1]
+          @default_ruled_line_size[1] = max_name_size
         end
 
         max_lang_size = max_size_of(projects, :lang)
-        if max_lang_size > DEFAULT_RULED_LINE_SIZE[2]
-          DEFAULT_RULED_LINE_SIZE[2] = max_lang_size
+        if max_lang_size > @default_ruled_line_size[2]
+          @default_ruled_line_size[2] = max_lang_size
         end
       end
 
       def render_with(&block)
-        f = DEFAULT_RULED_LINE_SIZE.dup
+        f = @default_ruled_line_size.dup
         fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s"
         yield(f, fmt)
       end

@@ -8,12 +8,6 @@ RSpec.describe GitTrend::CLI do
       @cli = CLI.new
     end
 
-    after do
-      # reset initialize
-      # warning measure: already initialized constant
-      [3, 40, 10, 6, 5].each_with_index { |n, i| Rendering::DEFAULT_RULED_LINE_SIZE[i] = n }
-    end
-
     context 'with no option' do
       before do
         stub_request_get('trending')
