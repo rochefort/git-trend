@@ -2,6 +2,8 @@ require 'thor'
 
 module GitTrend
   class CLI < Thor
+    include GitTrend::Rendering
+
     map '-v'              => :version,
         '--version'       => :version
 
@@ -17,7 +19,8 @@ module GitTrend
     option :since, aliases:'-s', required: false
     def list
       scraper = Scraper.new
-      scraper.get(options[:list], options[:since])
+      projects = scraper.get(options[:list], options[:since])
+      CLI.render(projects)
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
       say e.message
@@ -26,7 +29,8 @@ module GitTrend
     desc :all_languages, 'Show selectable languages'
     def all_languages
       scraper = Scraper.new
-      scraper.list_all_languages
+      languages = scraper.list_all_languages
+      CLI.render_all_languages(languages)
     end
   end
 end
