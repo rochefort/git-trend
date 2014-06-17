@@ -1,3 +1,7 @@
+## v0.0.4
+
+* Implement descrition option (4587e56)
+
 ## v0.0.3
 
 * Implement since option (04f1978)
