@@ -1,3 +1,5 @@
+require 'git_trend/ext'
+
 module GitTrend
   autoload :CLI,       'git_trend/cli'
   autoload :Project,   'git_trend/project'

@@ -1,14 +1,16 @@
 module GitTrend
   module Rendering
-    # 'No.', 'Name', 'Lang', 'Star', 'Fork'
-    DEFAULT_RULED_LINE_SIZE = [3, 40, 10, 6, 5]
 
     def self.included(base)
       base.extend(self)
     end
 
+    # header columns:
+    # 'No.', 'Name', 'Lang', 'Star', 'Fork', ['Description']
+    DEFAULT_RULED_LINE_SIZE = [3, 40, 10, 6, 5]
+
     def render(projects, describable=false)
-      @default_ruled_line_size = DEFAULT_RULED_LINE_SIZE.dup
+      @describable = describable
       set_ruled_line_size(projects)
       render_to_header
       render_to_body(projects)
@@ -29,34 +31,64 @@ module GitTrend
       end
 
       def set_ruled_line_size(projects)
+        @ruled_line_size = DEFAULT_RULED_LINE_SIZE.dup
         max_name_size = max_size_of(projects, :name)
-        if max_name_size > @default_ruled_line_size[1]
-          @default_ruled_line_size[1] = max_name_size
+        if max_name_size > @ruled_line_size[1]
+          @ruled_line_size[1] = max_name_size
         end
 
         max_lang_size = max_size_of(projects, :lang)
-        if max_lang_size > @default_ruled_line_size[2]
-          @default_ruled_line_size[2] = max_lang_size
+        if max_lang_size > @ruled_line_size[2]
+          @ruled_line_size[2] = max_lang_size
         end
-      end
 
-      def render_with(&block)
-        f = @default_ruled_line_size.dup
-        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s"
-        yield(f, fmt)
+        if @describable
+          terminal_width, _terminal_height = detect_terminal_size
+          description_width = terminal_width - @ruled_line_size.inject(&:+) - @ruled_line_size.size
+          @ruled_line_size << description_width
+        end
       end
 
       def render_to_header
-        render_with do |fields, fmt|
-          puts fmt % ['No.', 'Name', 'Lang', 'Star', 'Fork']
-          puts fmt % fields.map{ |f| '-'*f }
+        f = @ruled_line_size
+        if @describable
+          fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s %-#{f[5]}s"
+        else
+          fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s"
         end
+        header = ['No.', 'Name', 'Lang', 'Star', 'Fork']
+        header << 'Description' if @describable
+        puts fmt % header
+        puts fmt % @ruled_line_size.map{ |f| '-'*f }
       end
 
       def render_to_body(projects)
-        render_with do |fields, fmt|
-          projects.each_with_index { |project, i| puts fmt % [i+1, project.to_a].flatten }
+        f = @ruled_line_size
+        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s"
+        projects.each_with_index do |project, i|
+          result = fmt % [i+1, project.to_a].flatten
+          result << " " + project.description.mb_slice(f.last).mb_ljust(f.last) if @describable
+          puts result
         end
+      end
+
+      def command_exists?(command)
+        ENV['PATH'].split(File::PATH_SEPARATOR).any? { |d| File.exists? File.join(d, command) }
+      end
+
+      # https://github.com/cldwalker/hirb/blob/master/lib/hirb/util.rb#L61-71
+      def detect_terminal_size
+        if (ENV['COLUMNS'] =~ /^\d+$/) && (ENV['LINES'] =~ /^\d+$/)
+          [ENV['COLUMNS'].to_i, ENV['LINES'].to_i]
+        elsif (RUBY_PLATFORM =~ /java/ || (!STDIN.tty? && ENV['TERM'])) && command_exists?('tput')
+          [`tput cols`.to_i, `tput lines`.to_i]
+        elsif STDIN.tty? && command_exists?('stty')
+          `stty size`.scan(/\d+/).map {  |s| s.to_i }.reverse
+        else
+          nil
+        end
+      rescue Exception => e
+        nil
       end
   end
 end
