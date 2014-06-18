@@ -93,7 +93,7 @@ module GitTrend
         else
           nil
         end
-      rescue Exception => e
+      rescue
         nil
       end
   end
