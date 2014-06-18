@@ -65,6 +65,43 @@ No. Name                                               Lang           Star  Fork
  25 twbs/bootstrap                                     CSS              46    27
 ```
 
+### daily trending with description
+
+    git trend -d
+
+e.g.:
+
+```
+$ g trend -d
+No. Name                                               Lang          Star  Fork Description
+--- -------------------------------------------------- ----------- ------ ----- ----------------------------------------------------------------------------
+  1 hummingbird-me/hummingbird                         JavaScript     535    21 Probably the coolest anime discovery platform around.
+  2 google/flatbuffers                                 Shell          272    14 Memory Efficient Serialization Library
+  3 jakubroztocil/httpie                               Python         248    14 HTTPie is a command line HTTP client, a user-friendly cURL replacement.
+  4 mephux/komanda                                     JavaScript     199     8 IRC for people who write code
+  5 burocratik/outdated-browser                        JavaScript     188    24 A simple tool to identify and upgrade old browsers.
+  6 numbbbbb/the-swift-programming-language-in-chinese Python         140    30 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
+  7 pocketjoso/penthouse                               JavaScript     146     4 Critical Path CSS Generator
+  8 estiens/world_cup_json                             Ruby           126     9 Rails backend for a scraper that outputs World Cup data as JSON
+  9 medialab/artoo                                     JavaScript     126     0 The client-side scraping companion.
+ 10 justjavac/Google-IPs                                               97    36 Google 全球 IP 地址库
+ 11 thusfresh/switchboard                              Erlang         114     0 Switchboard Server
+ 12 greatfire/wiki                                                     97    34
+ 13 montagejs/collections                              JavaScript      96     2 This package contains JavaScript implementations of common data structure...
+ 14 thumbtack/angular-smarty                           JavaScript      94     0 Autocomplete UI written with Angular JS.
+ 15 Vestorly/torii                                     JavaScript      91     0 A set of clean abstractions for authentication in Ember.js
+ 16 angular/angular.js                                 JavaScript      68    40 HTML enhanced for web apps
+ 17 urish/angular-moment                               JavaScript      79     1 Angular.JS directives for Moment.JS (timeago alternative)
+ 18 mattdonnelly/Swifter                               Swift           76     5 A Twitter framework for iOS & OS X written in Swift
+ 19 nimbly/angular-formly                              JavaScript      72     6 AngularJS directive which takes JSON representing a form and renders to H...
+ 20 julianshapiro/velocity                             JavaScript      71     4 Accelerated JavaScript animation.
+ 21 GoogleCloudPlatform/kubernetes                     Go              64     7 Container Cluster Manager
+ 22 twbs/bootstrap                                     CSS             45    34 The most popular front-end framework for developing responsive, mobile fi...
+ 23 google/cadvisor                                    Go              58     4 Analyzes resource usage and performance characteristics of running contai...
+ 24 CartoDB/odyssey.js                                 JavaScript      57     6 Making it easy to merge map and narrative
+ 25 ra1028/RACollectionViewReorderableTripletLayout    Objective-C     55     3 The custom collectionView layout that can perform reordering of cells by ...
+```
+
 ### daily trending by language
 
     git trend -l
