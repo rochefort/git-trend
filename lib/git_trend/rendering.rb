@@ -65,7 +65,7 @@ module GitTrend
         header = ['No.', 'Name', 'Lang', 'Star', 'Fork']
         header << 'Description' if @describable
         puts fmt % header
-        puts fmt % @ruled_line_size.map{ |f| '-'*f }
+        puts fmt % @ruled_line_size.map{ |field| '-'*field }
       end
 
       def render_to_body(projects)
