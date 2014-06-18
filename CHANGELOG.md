@@ -1,3 +1,8 @@
+## unreleased
+
+* Implement terminal width is not enough, does not display description. (7754a71)
+
+
 ## v0.0.5
 
 * Fix lack of addressable gem when installing (54ca275)
