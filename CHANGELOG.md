@@ -1,3 +1,8 @@
+## v0.0.5
+
+* Fix lack of addressable gem when installing (54ca275)
+
+
 ## v0.0.4
 
 * Implement descrition option (4587e56)
