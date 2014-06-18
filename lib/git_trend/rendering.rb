@@ -8,6 +8,7 @@ module GitTrend
     # header columns:
     # 'No.', 'Name', 'Lang', 'Star', 'Fork', ['Description']
     DEFAULT_RULED_LINE_SIZE = [3, 40, 10, 6, 5]
+    DESCRIPTION_MIN_SIZE = 20
 
     def render(projects, describable=false)
       @describable = describable
@@ -42,10 +43,15 @@ module GitTrend
           @ruled_line_size[2] = max_lang_size
         end
 
+        # setting description size
         if @describable
           terminal_width, _terminal_height = detect_terminal_size
           description_width = terminal_width - @ruled_line_size.inject(&:+) - @ruled_line_size.size
-          @ruled_line_size << description_width
+          if description_width >= DESCRIPTION_MIN_SIZE
+            @ruled_line_size << description_width
+          else
+            @describable = false
+          end
         end
       end
 

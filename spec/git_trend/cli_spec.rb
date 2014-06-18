@@ -14,36 +14,7 @@ RSpec.describe GitTrend::CLI do
       end
 
       it 'display daily ranking' do
-        res = <<-'EOS'.unindent
-          |No. Name                                               Lang           Star  Fork
-          |--- -------------------------------------------------- ------------ ------ -----
-          |  1 prat0318/json_resume                               Ruby            264    15
-          |  2 andlabs/ui                                         Go              185     8
-          |  3 jessepollak/card                                   CSS             174     9
-          |  4 fullstackio/FlappySwift                            Swift           148    44
-          |  5 grant/swift-cheat-sheet                                            153    13
-          |  6 Flolagale/mailin                                   Python          155     3
-          |  7 numbbbbb/the-swift-programming-language-in-chinese JavaScript      120    31
-          |  8 hippyvm/hippyvm                                    PHP             113     1
-          |  9 neovim/neovim                                      C                83     8
-          | 10 hiphopapp/hiphop                                   CoffeeScript     77     8
-          | 11 interagent/http-api-design                                          78     4
-          | 12 austinzheng/swift-2048                             Swift            69    16
-          | 13 mdznr/What-s-New                                   Objective-C      72     2
-          | 14 daneden/animate.css                                CSS              65     6
-          | 15 davidmerfield/randomColor                          JavaScript       66     3
-          | 16 dawn/dawn                                          Ruby             62     2
-          | 17 greatfire/wiki                                                      54     9
-          | 18 swift-jp/swift-guide                               CSS              45     9
-          | 19 addyosmani/psi                                     JavaScript       49     0
-          | 20 mtford90/silk                                      Python           47     0
-          | 21 agaue/agaue                                        Go               47     0
-          | 22 mentionapp/mntpulltoreact                          Objective-C      46     1
-          | 23 mikepenz/AboutLibraries                            Java             45     0
-          | 24 PistonDevelopers/piston-workspace                  Shell            45     0
-          | 25 maxpow4h/swiftz                                    Swift            43     1
-        EOS
-        expect { @cli.list }.to output(res).to_stdout
+        expect { @cli.list }.to output(dummy_result_no_options).to_stdout
       end
     end
 
@@ -211,49 +182,64 @@ RSpec.describe GitTrend::CLI do
       end
     end
 
-    context 'with -d option' do
-      before do
-        stub_request_get("trending")
-        ENV['COLUMNS'] = '140'
-        ENV['LINES'] = '40'
-      end
-      
+    describe 'with -d option' do
+
       after do
         ENV['COLUMNS'] = nil
         ENV['LINES'] = nil        
       end
 
-      it 'display daily ranking with description' do
-        res = <<-'EOS'.unindent
-          |No. Name                                               Lang           Star  Fork Description                                                
-          |--- -------------------------------------------------- ------------ ------ ----- -----------------------------------------------------------
-          |  1 prat0318/json_resume                               Ruby            264    15 Generates pretty HTML, LaTeX, markdown, with biodata fee...
-          |  2 andlabs/ui                                         Go              185     8 Platform-native GUI library for Go.                        
-          |  3 jessepollak/card                                   CSS             174     9 make your credit card form better in one line of code      
-          |  4 fullstackio/FlappySwift                            Swift           148    44 swift implementation of flappy bird. More at fullstacked...
-          |  5 grant/swift-cheat-sheet                                            153    13 A short guide to using Apple's new programming language,...
-          |  6 Flolagale/mailin                                   Python          155     3 Artisanal inbound emails for every web app                 
-          |  7 numbbbbb/the-swift-programming-language-in-chinese JavaScript      120    31 中文版 Apple 官方 Swift 教程《The Swift Programming Lang...
-          |  8 hippyvm/hippyvm                                    PHP             113     1 HippyVM - an implementation of the PHP language in RPyth...
-          |  9 neovim/neovim                                      C                83     8 vim's rebirth for the 21st century                         
-          | 10 hiphopapp/hiphop                                   CoffeeScript     77     8 Free music streaming app                                   
-          | 11 interagent/http-api-design                                          78     4 HTTP API design guide extracted from work on the Heroku ...
-          | 12 austinzheng/swift-2048                             Swift            69    16 2048 for Swift                                             
-          | 13 mdznr/What-s-New                                   Objective-C      72     2 Easily present the latest changes and features to your u...
-          | 14 daneden/animate.css                                CSS              65     6 A cross-browser library of CSS animations. As easy to us...
-          | 15 davidmerfield/randomColor                          JavaScript       66     3 A color generator for JavaScript.                          
-          | 16 dawn/dawn                                          Ruby             62     2 Docker-based PaaS in Ruby                                  
-          | 17 greatfire/wiki                                                      54     9                                                            
-          | 18 swift-jp/swift-guide                               CSS              45     9 Appleが公表した新プログラミング言語「Swift」についての資...
-          | 19 addyosmani/psi                                     JavaScript       49     0 PageSpeed Insights for Node - with reporting               
-          | 20 mtford90/silk                                      Python           47     0 Silky smooth profiling for Django                          
-          | 21 agaue/agaue                                        Go               47     0 Golang blog framework                                      
-          | 22 mentionapp/mntpulltoreact                          Objective-C      46     1 One gesture, many actions. An evolution of Pull to Refre...
-          | 23 mikepenz/AboutLibraries                            Java             45     0 AboutLibraries is a library to offer some information of...
-          | 24 PistonDevelopers/piston-workspace                  Shell            45     0 Git submodules of Piston projects                          
-          | 25 maxpow4h/swiftz                                    Swift            43     1 Functional programming in Swift                            
-        EOS
-        expect { @cli.invoke(:list, [], {description: 'description'}) }.to output(res).to_stdout
+      context 'terminal width is enough' do
+        before do
+          stub_request_get("trending")
+          ENV['COLUMNS'] = '140'
+          ENV['LINES'] = '40'
+        end
+
+        it 'display daily ranking with description' do
+          res = <<-'EOS'.unindent
+            |No. Name                                               Lang           Star  Fork Description                                                
+            |--- -------------------------------------------------- ------------ ------ ----- -----------------------------------------------------------
+            |  1 prat0318/json_resume                               Ruby            264    15 Generates pretty HTML, LaTeX, markdown, with biodata fee...
+            |  2 andlabs/ui                                         Go              185     8 Platform-native GUI library for Go.                        
+            |  3 jessepollak/card                                   CSS             174     9 make your credit card form better in one line of code      
+            |  4 fullstackio/FlappySwift                            Swift           148    44 swift implementation of flappy bird. More at fullstacked...
+            |  5 grant/swift-cheat-sheet                                            153    13 A short guide to using Apple's new programming language,...
+            |  6 Flolagale/mailin                                   Python          155     3 Artisanal inbound emails for every web app                 
+            |  7 numbbbbb/the-swift-programming-language-in-chinese JavaScript      120    31 中文版 Apple 官方 Swift 教程《The Swift Programming Lang...
+            |  8 hippyvm/hippyvm                                    PHP             113     1 HippyVM - an implementation of the PHP language in RPyth...
+            |  9 neovim/neovim                                      C                83     8 vim's rebirth for the 21st century                         
+            | 10 hiphopapp/hiphop                                   CoffeeScript     77     8 Free music streaming app                                   
+            | 11 interagent/http-api-design                                          78     4 HTTP API design guide extracted from work on the Heroku ...
+            | 12 austinzheng/swift-2048                             Swift            69    16 2048 for Swift                                             
+            | 13 mdznr/What-s-New                                   Objective-C      72     2 Easily present the latest changes and features to your u...
+            | 14 daneden/animate.css                                CSS              65     6 A cross-browser library of CSS animations. As easy to us...
+            | 15 davidmerfield/randomColor                          JavaScript       66     3 A color generator for JavaScript.                          
+            | 16 dawn/dawn                                          Ruby             62     2 Docker-based PaaS in Ruby                                  
+            | 17 greatfire/wiki                                                      54     9                                                            
+            | 18 swift-jp/swift-guide                               CSS              45     9 Appleが公表した新プログラミング言語「Swift」についての資...
+            | 19 addyosmani/psi                                     JavaScript       49     0 PageSpeed Insights for Node - with reporting               
+            | 20 mtford90/silk                                      Python           47     0 Silky smooth profiling for Django                          
+            | 21 agaue/agaue                                        Go               47     0 Golang blog framework                                      
+            | 22 mentionapp/mntpulltoreact                          Objective-C      46     1 One gesture, many actions. An evolution of Pull to Refre...
+            | 23 mikepenz/AboutLibraries                            Java             45     0 AboutLibraries is a library to offer some information of...
+            | 24 PistonDevelopers/piston-workspace                  Shell            45     0 Git submodules of Piston projects                          
+            | 25 maxpow4h/swiftz                                    Swift            43     1 Functional programming in Swift                            
+          EOS
+          expect { @cli.invoke(:list, [], {description: 'description'}) }.to output(res).to_stdout
+        end
+      end
+      
+      context 'terminal width is tiny' do
+        before do
+          stub_request_get("trending")
+          ENV['COLUMNS'] = '100' # it is not enough for description.
+          ENV['LINES'] = '40'
+        end
+
+        it 'display daily ranking about the same as no option' do
+          expect { @cli.invoke(:list, [], {description: 'description'}) }.to output(dummy_result_no_options).to_stdout
+        end
       end
     end
 
@@ -517,4 +503,35 @@ RSpec.describe GitTrend::CLI do
           :body => load_http_stub(stub_url))
     end
 
+    def dummy_result_no_options
+      <<-'EOS'.unindent
+        |No. Name                                               Lang           Star  Fork
+        |--- -------------------------------------------------- ------------ ------ -----
+        |  1 prat0318/json_resume                               Ruby            264    15
+        |  2 andlabs/ui                                         Go              185     8
+        |  3 jessepollak/card                                   CSS             174     9
+        |  4 fullstackio/FlappySwift                            Swift           148    44
+        |  5 grant/swift-cheat-sheet                                            153    13
+        |  6 Flolagale/mailin                                   Python          155     3
+        |  7 numbbbbb/the-swift-programming-language-in-chinese JavaScript      120    31
+        |  8 hippyvm/hippyvm                                    PHP             113     1
+        |  9 neovim/neovim                                      C                83     8
+        | 10 hiphopapp/hiphop                                   CoffeeScript     77     8
+        | 11 interagent/http-api-design                                          78     4
+        | 12 austinzheng/swift-2048                             Swift            69    16
+        | 13 mdznr/What-s-New                                   Objective-C      72     2
+        | 14 daneden/animate.css                                CSS              65     6
+        | 15 davidmerfield/randomColor                          JavaScript       66     3
+        | 16 dawn/dawn                                          Ruby             62     2
+        | 17 greatfire/wiki                                                      54     9
+        | 18 swift-jp/swift-guide                               CSS              45     9
+        | 19 addyosmani/psi                                     JavaScript       49     0
+        | 20 mtford90/silk                                      Python           47     0
+        | 21 agaue/agaue                                        Go               47     0
+        | 22 mentionapp/mntpulltoreact                          Objective-C      46     1
+        | 23 mikepenz/AboutLibraries                            Java             45     0
+        | 24 PistonDevelopers/piston-workspace                  Shell            45     0
+        | 25 maxpow4h/swiftz                                    Swift            43     1
+      EOS
+    end
 end
