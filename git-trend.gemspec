@@ -34,8 +34,9 @@ Gem::Specification.new do |spec|
 
   spec.post_install_message = install_message
 
-  spec.add_dependency 'thor',      '~> 0.19.1'
-  spec.add_dependency 'mechanize', '~> 2.7.3'
+  spec.add_dependency 'thor',        '~> 0.19.1'
+  spec.add_dependency 'mechanize',   '~> 2.7.3'
+  spec.add_dependency 'addressable', '~> 2.3.6'
 
   spec.add_development_dependency 'bundler', '~> 1.6'
   spec.add_development_dependency 'rake'
