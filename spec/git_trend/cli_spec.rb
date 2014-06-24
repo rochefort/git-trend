@@ -56,7 +56,7 @@ RSpec.describe GitTrend::CLI do
             | 24 sferik/twitter                           Ruby            0     1
             | 25 rightscale/rightscale_cookbooks          Ruby            0     1
           EOS
-          expect { @cli.invoke(:list, [], {list: language}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], {language: language}) }.to output(res).to_stdout
         end
       end
 
@@ -96,7 +96,7 @@ RSpec.describe GitTrend::CLI do
             | 24 Yonsm/CeleWare                           Objective-C++      0     0
             | 25 ccrma/miniAudicle                        Objective-C++      0     0
           EOS
-          expect { @cli.invoke(:list, [], {list: language}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], {language: language}) }.to output(res).to_stdout
         end
       end
     end
@@ -187,7 +187,7 @@ RSpec.describe GitTrend::CLI do
 
       after do
         ENV['COLUMNS'] = nil
-        ENV['LINES'] = nil        
+        ENV['LINES'] = nil
       end
 
       context 'terminal width is enough' do
@@ -282,7 +282,7 @@ RSpec.describe GitTrend::CLI do
             | 24 chloerei/campo                           Ruby           35     9
             | 25 jordansissel/fpm                         Ruby           35     4
           EOS
-          expect { @cli.invoke(:list, [], {list: language, since: since}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], {language: language, since: since}) }.to output(res).to_stdout
         end
       end
     end
