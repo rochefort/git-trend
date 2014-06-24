@@ -1,4 +1,4 @@
-## unreleased
+## v0.0.6
 
 * Implement terminal width is not enough, does not display description. (7754a71)
 
