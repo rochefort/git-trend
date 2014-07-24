@@ -15,9 +15,9 @@ module GitTrend
     end
 
     desc :list, 'List Trending repository on github (default command)'
-    option :language,    aliases:'-l', required: false
-    option :since,       aliases:'-s', required: false
-    option :description, aliases:'-d', required: false
+    option :language,    aliases: '-l', required: false
+    option :since,       aliases: '-s', required: false
+    option :description, aliases: '-d', required: false
     def list
       scraper = Scraper.new
       projects = scraper.get(options[:language], options[:since])
