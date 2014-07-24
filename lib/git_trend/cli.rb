@@ -14,7 +14,7 @@ module GitTrend
       say "git-trend version: #{VERSION}", :green
     end
 
-    desc :list, 'List Trending repository on github (default command)'
+    desc :list, "\033[32m(DEFAULT COMMAND)\e[0m List Trending repository on github"
     option :language,    aliases: '-l', required: false
     option :since,       aliases: '-s', required: false
     option :description, aliases: '-d', required: false
