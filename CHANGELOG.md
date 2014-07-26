@@ -1,3 +1,7 @@
+## v0.0.7
+
+* Tweak help message.(Accent a green color in help) (9da3e5e)
+
 ## v0.0.6
 
 * Implement terminal width is not enough, does not display description. (7754a71)
