@@ -24,7 +24,7 @@ RSpec.describe GitTrend::CLI do
         before do
           stub_request_get("trending?l=#{language}")
         end
-        let(:language) {'ruby'}
+        let(:language) { 'ruby' }
 
         it 'display daily ranking by language' do
           res = <<-'EOS'.unindent
@@ -56,15 +56,15 @@ RSpec.describe GitTrend::CLI do
             | 24 sferik/twitter                           Ruby            0     1
             | 25 rightscale/rightscale_cookbooks          Ruby            0     1
           EOS
-          expect { @cli.invoke(:list, [], {language: language}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], language: language) }.to output(res).to_stdout
         end
       end
 
       context 'with objective-c++ (including + sign)' do
         before do
-          stub_request_get("trending?l=objective-c%2B%2B")
+          stub_request_get('trending?l=objective-c%2B%2B')
         end
-        let(:language) {'objective-c++'}
+        let(:language) { 'objective-c++' }
 
         it 'display daily ranking by language' do
           res = <<-'EOS'.unindent
@@ -96,7 +96,7 @@ RSpec.describe GitTrend::CLI do
             | 24 Yonsm/CeleWare                           Objective-C++      0     0
             | 25 ccrma/miniAudicle                        Objective-C++      0     0
           EOS
-          expect { @cli.invoke(:list, [], {language: language}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], language: language) }.to output(res).to_stdout
         end
       end
     end
@@ -106,7 +106,7 @@ RSpec.describe GitTrend::CLI do
         before do
           stub_request_get("trending?since=#{since}")
         end
-        let(:since) {'weekly'}
+        let(:since) { 'weekly' }
 
         it 'display daily ranking since weekly' do
           res = <<-'EOS'.unindent
@@ -138,7 +138,7 @@ RSpec.describe GitTrend::CLI do
             | 24 mbostock/d3                                        JavaScript      307   113
             | 25 maxpow4h/swiftz                                    Swift           350    20
           EOS
-          expect { @cli.invoke(:list, [], {since: since}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], since: since) }.to output(res).to_stdout
         end
       end
 
@@ -146,7 +146,7 @@ RSpec.describe GitTrend::CLI do
         before do
           stub_request_get("trending?since=#{since}")
         end
-        let(:since) {'monthly'}
+        let(:since) { 'monthly' }
 
         it 'display daily ranking since monthly' do
           res = <<-'EOS'.unindent
@@ -178,7 +178,7 @@ RSpec.describe GitTrend::CLI do
             | 24 julianshapiro/velocity                             JavaScript     1081    71
             | 25 babun/babun                                        Shell          1068    46
           EOS
-          expect { @cli.invoke(:list, [], {since: since}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], since: since) }.to output(res).to_stdout
         end
       end
     end
@@ -192,7 +192,7 @@ RSpec.describe GitTrend::CLI do
 
       context 'terminal width is enough' do
         before do
-          stub_request_get("trending")
+          stub_request_get('trending')
           ENV['COLUMNS'] = '140'
           ENV['LINES'] = '40'
         end
@@ -227,19 +227,19 @@ RSpec.describe GitTrend::CLI do
             | 24 PistonDevelopers/piston-workspace                  Shell            45     0 Git submodules of Piston projects                          
             | 25 maxpow4h/swiftz                                    Swift            43     1 Functional programming in Swift                            
           EOS
-          expect { @cli.invoke(:list, [], {description: 'description'}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], description: 'description') }.to output(res).to_stdout
         end
       end
-      
+
       context 'terminal width is tiny' do
         before do
-          stub_request_get("trending")
+          stub_request_get('trending')
           ENV['COLUMNS'] = '100' # it is not enough for description.
           ENV['LINES'] = '40'
         end
 
         it 'display daily ranking about the same as no option' do
-          expect { @cli.invoke(:list, [], {description: 'description'}) }.to output(dummy_result_no_options).to_stdout
+          expect { @cli.invoke(:list, [], description: 'description') }.to output(dummy_result_no_options).to_stdout
         end
       end
     end
@@ -249,8 +249,8 @@ RSpec.describe GitTrend::CLI do
         before do
           stub_request_get("trending?l=#{language}&since=#{since}")
         end
-        let(:language) {'ruby'}
-        let(:since) {'weekly'}
+        let(:language) { 'ruby' }
+        let(:since) { 'weekly' }
 
         it 'display daily ranking since weekly' do
           res = <<-'EOS'.unindent
@@ -282,7 +282,7 @@ RSpec.describe GitTrend::CLI do
             | 24 chloerei/campo                           Ruby           35     9
             | 25 jordansissel/fpm                         Ruby           35     4
           EOS
-          expect { @cli.invoke(:list, [], {language: language, since: since}) }.to output(res).to_stdout
+          expect { @cli.invoke(:list, [], language: language, since: since) }.to output(res).to_stdout
         end
       end
     end
@@ -492,47 +492,48 @@ RSpec.describe GitTrend::CLI do
   end
 
   private
-    def stub_request_get(stub_url)
-      url = Scraper::BASE_HOST.dup
-      url << "/#{stub_url}" if stub_url
-      uri = URI.parse(url)
 
-      stub_request(:get, uri).
-        to_return(
-          :status => 200,
-          :headers => {content_type: 'text/html'},
-          :body => load_http_stub(stub_url))
-    end
+  def stub_request_get(stub_url)
+    url = Scraper::BASE_HOST.dup
+    url << "/#{stub_url}" if stub_url
+    uri = URI.parse(url)
 
-    def dummy_result_no_options
-      <<-'EOS'.unindent
-        |No. Name                                               Lang           Star  Fork
-        |--- -------------------------------------------------- ------------ ------ -----
-        |  1 prat0318/json_resume                               Ruby            264    15
-        |  2 andlabs/ui                                         Go              185     8
-        |  3 jessepollak/card                                   CSS             174     9
-        |  4 fullstackio/FlappySwift                            Swift           148    44
-        |  5 grant/swift-cheat-sheet                                            153    13
-        |  6 Flolagale/mailin                                   Python          155     3
-        |  7 numbbbbb/the-swift-programming-language-in-chinese JavaScript      120    31
-        |  8 hippyvm/hippyvm                                    PHP             113     1
-        |  9 neovim/neovim                                      C                83     8
-        | 10 hiphopapp/hiphop                                   CoffeeScript     77     8
-        | 11 interagent/http-api-design                                          78     4
-        | 12 austinzheng/swift-2048                             Swift            69    16
-        | 13 mdznr/What-s-New                                   Objective-C      72     2
-        | 14 daneden/animate.css                                CSS              65     6
-        | 15 davidmerfield/randomColor                          JavaScript       66     3
-        | 16 dawn/dawn                                          Ruby             62     2
-        | 17 greatfire/wiki                                                      54     9
-        | 18 swift-jp/swift-guide                               CSS              45     9
-        | 19 addyosmani/psi                                     JavaScript       49     0
-        | 20 mtford90/silk                                      Python           47     0
-        | 21 agaue/agaue                                        Go               47     0
-        | 22 mentionapp/mntpulltoreact                          Objective-C      46     1
-        | 23 mikepenz/AboutLibraries                            Java             45     0
-        | 24 PistonDevelopers/piston-workspace                  Shell            45     0
-        | 25 maxpow4h/swiftz                                    Swift            43     1
-      EOS
-    end
+    stub_request(:get, uri)
+      .to_return(
+        status: 200,
+        headers: { content_type: 'text/html' },
+        body: load_http_stub(stub_url))
+  end
+
+  def dummy_result_no_options
+    <<-'EOS'.unindent
+      |No. Name                                               Lang           Star  Fork
+      |--- -------------------------------------------------- ------------ ------ -----
+      |  1 prat0318/json_resume                               Ruby            264    15
+      |  2 andlabs/ui                                         Go              185     8
+      |  3 jessepollak/card                                   CSS             174     9
+      |  4 fullstackio/FlappySwift                            Swift           148    44
+      |  5 grant/swift-cheat-sheet                                            153    13
+      |  6 Flolagale/mailin                                   Python          155     3
+      |  7 numbbbbb/the-swift-programming-language-in-chinese JavaScript      120    31
+      |  8 hippyvm/hippyvm                                    PHP             113     1
+      |  9 neovim/neovim                                      C                83     8
+      | 10 hiphopapp/hiphop                                   CoffeeScript     77     8
+      | 11 interagent/http-api-design                                          78     4
+      | 12 austinzheng/swift-2048                             Swift            69    16
+      | 13 mdznr/What-s-New                                   Objective-C      72     2
+      | 14 daneden/animate.css                                CSS              65     6
+      | 15 davidmerfield/randomColor                          JavaScript       66     3
+      | 16 dawn/dawn                                          Ruby             62     2
+      | 17 greatfire/wiki                                                      54     9
+      | 18 swift-jp/swift-guide                               CSS              45     9
+      | 19 addyosmani/psi                                     JavaScript       49     0
+      | 20 mtford90/silk                                      Python           47     0
+      | 21 agaue/agaue                                        Go               47     0
+      | 22 mentionapp/mntpulltoreact                          Objective-C      46     1
+      | 23 mikepenz/AboutLibraries                            Java             45     0
+      | 24 PistonDevelopers/piston-workspace                  Shell            45     0
+      | 25 maxpow4h/swiftz                                    Swift            43     1
+    EOS
+  end
 end

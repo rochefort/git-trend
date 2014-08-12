@@ -19,10 +19,10 @@ RSpec.describe GitTrend::Scraper do
     context 'when a network error occurred' do
       before do
         @scraper = Scraper.new
-        stub_request(:get, Scraper::BASE_URL).
-          to_return(:status => 500, :body => '[]')
+        stub_request(:get, Scraper::BASE_URL)
+          .to_return(status: 500, body: '[]')
       end
-      it { expect{ @scraper.get }.to raise_error(Exception) }
+      it { expect { @scraper.get }.to raise_error(Exception) }
     end
   end
 end

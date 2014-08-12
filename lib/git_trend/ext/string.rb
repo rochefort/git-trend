@@ -21,9 +21,8 @@ class String
     extraction
   end
 
-  def mb_ljust(width, padding=' ')
+  def mb_ljust(width, padding = ' ')
     padding_size = [0, width - mb_width].max
     self + padding * padding_size
   end
-
 end

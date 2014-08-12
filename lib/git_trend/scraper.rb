@@ -3,19 +3,16 @@ require 'addressable/uri'
 
 module GitTrend
   class Scraper
-
     BASE_HOST = 'https://github.com'
     BASE_URL = "#{BASE_HOST}/trending"
 
     def initialize
       @agent = Mechanize.new
       proxy = URI.parse(ENV['http_proxy']) if ENV['http_proxy']
-      if proxy
-        @agent.set_proxy(proxy.host, proxy.port, proxy.user, proxy.password)
-      end
+      @agent.set_proxy(proxy.host, proxy.port, proxy.user, proxy.password) if proxy
     end
 
-    def get(language=nil, since=nil)
+    def get(language = nil, since = nil)
       projects = []
       page = @agent.get(generate_url_for_get(language, since))
 
@@ -46,16 +43,17 @@ module GitTrend
     end
 
     private
-      def generate_url_for_get(language, since)
-        uri = Addressable::URI.parse(BASE_URL)
-        if language or since
-          uri.query_values = { l: language, since: since}.delete_if{ |k,v| v.nil? }
-        end
-        uri.to_s
-      end
 
-      def meta_count(elm)
-        elm.empty? ? 0 : elm[0].parent.text.strip.gsub(',', '').to_i
+    def generate_url_for_get(language, since)
+      uri = Addressable::URI.parse(BASE_URL)
+      if language || since
+        uri.query_values = { l: language, since: since }.delete_if { |_k, v| v.nil? }
       end
+      uri.to_s
+    end
+
+    def meta_count(elm)
+      elm.empty? ? 0 : elm[0].parent.text.strip.gsub(',', '').to_i
+    end
   end
 end
