@@ -1,3 +1,8 @@
+## v0.0.8
+
+* Upgrade simplecov 0.9.0 (5fbcbab)
+* Fix gemspec homepage typo (9bd6b48)
+
 ## v0.0.7
 
 * Tweak help message.(Accent a green color in help) (9da3e5e)
