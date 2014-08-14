@@ -1,6 +1,10 @@
+## v0.1.0
+
+* Tweak help descriptions [0d3e681]
+
 ## v0.0.9
 
-* Change a name of option from `all_language` to `language`. [114e425]
+* Change a name of option from `all_language` to `language` [114e425]
 
 ## v0.0.8
 
