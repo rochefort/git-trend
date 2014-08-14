@@ -109,28 +109,20 @@ RSpec.describe GitTrend::CLI do
     end
 
     describe 'with -s option' do
+      before { stub_request_get("trending?since=#{since}") }
+
       context 'with no option' do
-        before do
-          stub_request_get("trending?since=#{since}")
-        end
         let(:since) { '' }
         it_behaves_like 'since daily ranking'
       end
 
       context 'with daily' do
-        before do
-          stub_request_get("trending?since=#{since}")
-        end
         let(:since) { 'daily' }
         it_behaves_like 'since daily ranking'
       end
 
       context 'with weekly' do
-        before do
-          stub_request_get("trending?since=#{since}")
-        end
         let(:since) { 'weekly' }
-
         it 'display daily ranking since weekly' do
           res = <<-'EOS'.unindent
             |No. Name                                               Lang           Star  Fork
@@ -166,11 +158,7 @@ RSpec.describe GitTrend::CLI do
       end
 
       context 'with monthly' do
-        before do
-          stub_request_get("trending?since=#{since}")
-        end
         let(:since) { 'monthly' }
-
         it 'display daily ranking since monthly' do
           res = <<-'EOS'.unindent
             |No. Name                                               Lang           Star  Fork
