@@ -16,7 +16,7 @@ module GitTrend
       render_to_body(projects)
     end
 
-    def render_all_languages(languages)
+    def render_languages(languages)
       puts languages
       puts
       puts "#{languages.size} languages"

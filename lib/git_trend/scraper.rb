@@ -30,7 +30,7 @@ module GitTrend
       projects
     end
 
-    def list_all_languages
+    def list_languages
       languages = []
       page = @agent.get(BASE_URL)
       page.search('div.select-menu-item a').each do |content|

@@ -27,11 +27,11 @@ module GitTrend
       say e.message
     end
 
-    desc :all_languages, 'Show selectable languages'
-    def all_languages
+    desc :languages, 'Show selectable languages'
+    def languages
       scraper = Scraper.new
-      languages = scraper.list_all_languages
-      render_all_languages(languages)
+      languages = scraper.list_languages
+      render_languages(languages)
     end
   end
 end

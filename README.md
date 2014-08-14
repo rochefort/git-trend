@@ -184,12 +184,12 @@ No. Name                                               Lang         Star  Fork
 
 ### show languages
 
-    git trend all_languages
+    git trend languages
 
 e.g.:
 
 ```
-$ git trend all_languages
+$ git trend languages
 abap
 as3
 ada

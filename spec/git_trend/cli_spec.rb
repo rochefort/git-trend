@@ -288,7 +288,7 @@ RSpec.describe GitTrend::CLI do
     end
   end
 
-  describe '#all_languages' do
+  describe '#languages' do
     before do
       @cli = CLI.new
       stub_request_get('trending')
@@ -486,7 +486,7 @@ RSpec.describe GitTrend::CLI do
           |if languages is unknown, you can specify 'unkown'.
           |
         EOS
-        expect { @cli.all_languages }.to output(res).to_stdout
+        expect { @cli.languages }.to output(res).to_stdout
       end
     end
   end
