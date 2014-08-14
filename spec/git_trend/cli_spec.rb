@@ -2,6 +2,13 @@
 require 'spec_helper'
 
 include GitTrend
+
+RSpec.shared_examples_for 'since daily ranking' do
+  it 'display daily ranking' do
+    expect { @cli.invoke(:list, [], since: since) }.to output(dummy_result_no_options).to_stdout
+  end
+end
+
 RSpec.describe GitTrend::CLI do
 
   describe '#list' do
@@ -102,6 +109,22 @@ RSpec.describe GitTrend::CLI do
     end
 
     describe 'with -s option' do
+      context 'with no option' do
+        before do
+          stub_request_get("trending?since=#{since}")
+        end
+        let(:since) { '' }
+        it_behaves_like 'since daily ranking'
+      end
+
+      context 'with daily' do
+        before do
+          stub_request_get("trending?since=#{since}")
+        end
+        let(:since) { 'daily' }
+        it_behaves_like 'since daily ranking'
+      end
+
       context 'with weekly' do
         before do
           stub_request_get("trending?since=#{since}")
