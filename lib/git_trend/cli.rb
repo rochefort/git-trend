@@ -26,7 +26,7 @@ module GitTrend
       render(projects, !!options[:description])
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
-      say e.message
+      say e.message unless e.class.to_s == e.message
     end
 
     desc :languages, 'Show selectable languages'

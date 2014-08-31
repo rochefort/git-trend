@@ -27,6 +27,7 @@ module GitTrend
 
         projects << project
       end
+      fail ScrapeException if projects.empty?
       projects
     end
 
