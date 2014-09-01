@@ -1,3 +1,7 @@
+## v0.1.1
+
+* Upgrade new github trending layout #1 [9a72e2b]
+
 ## v0.1.0
 
 * Tweak help descriptions [0d3e681]
