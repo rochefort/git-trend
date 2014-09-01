@@ -19,7 +19,7 @@ module GitTrend
       page.search('.repo-list-item').each do |content|
         project = Project.new
         meta_data = content.search('.repo-list-meta').text
-        project.lang, project.star_count = split_lang_and_star_from_meta(meta_data)
+        project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
         project.name        = content.search('.repo-list-name a').text.split.join
         project.description = content.search('.repo-list-description').text.gsub("\n", '').strip
         projects << project
@@ -50,7 +50,7 @@ module GitTrend
       uri.to_s
     end
 
-    def split_lang_and_star_from_meta(text)
+    def extract_lang_and_star_from_meta(text)
       meta_data = text.split('•').map { |x| x.gsub("\n", '').strip }
       if meta_data.size == 3
         lang = meta_data[0]
@@ -61,9 +61,5 @@ module GitTrend
         ['', star_count]
       end
     end
-
-    # def meta_count(elm)
-    #   elm.empty? ? 0 : elm[0].parent.text.strip.gsub(',', '').to_i
-    # end
   end
 end
