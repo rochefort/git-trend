@@ -16,15 +16,12 @@ module GitTrend
       projects = []
       page = @agent.get(generate_url_for_get(language, since))
 
-      page.search('.leaderboard-list-content').each do |content|
+      page.search('.repo-list-item').each do |content|
         project = Project.new
-        project.lang        = content.search('.repo-leaderboard-title .title-meta').text
-        project.name        = content.search('.repo-leaderboard-title a').text
-        project.description = content.search('.repo-leaderboard-description').text
-
-        project.star_count  = meta_count(content.search('.repo-leaderboard-meta .repo-leaderboard-meta-item .octicon-star'))
-        project.fork_count  = meta_count(content.search('.repo-leaderboard-meta .repo-leaderboard-meta-item .octicon-git-branch'))
-
+        meta_data = content.search('.repo-list-meta').text
+        project.lang, project.star_count = split_lang_and_star_from_meta(meta_data)
+        project.name        = content.search('.repo-list-name a').text.split.join
+        project.description = content.search('.repo-list-description').text.gsub("\n", '').strip
         projects << project
       end
       fail ScrapeException if projects.empty?
@@ -53,8 +50,20 @@ module GitTrend
       uri.to_s
     end
 
-    def meta_count(elm)
-      elm.empty? ? 0 : elm[0].parent.text.strip.gsub(',', '').to_i
+    def split_lang_and_star_from_meta(text)
+      meta_data = text.split('•').map { |x| x.gsub("\n", '').strip }
+      if meta_data.size == 3
+        lang = meta_data[0]
+        star_count = meta_data[1].gsub(',', '').to_i
+        [lang, star_count]
+      else
+        star_count = meta_data[0].gsub(',', '').to_i
+        ['', star_count]
+      end
     end
+
+    # def meta_count(elm)
+    #   elm.empty? ? 0 : elm[0].parent.text.strip.gsub(',', '').to_i
+    # end
   end
 end

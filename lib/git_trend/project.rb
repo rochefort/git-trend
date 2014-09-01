@@ -1,9 +1,9 @@
 module GitTrend
   class Project
-    attr_accessor :name, :lang, :description, :star_count, :fork_count
+    attr_accessor :name, :lang, :description, :star_count
 
     def to_a
-      [@name, @lang, @star_count.to_s, @fork_count.to_s]
+      [@name, @lang, @star_count.to_s]
     end
   end
 end

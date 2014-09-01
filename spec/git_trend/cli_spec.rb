@@ -35,33 +35,33 @@ RSpec.describe GitTrend::CLI do
 
         it 'display daily ranking by language' do
           res = <<-'EOS'.unindent
-            |No. Name                                     Lang         Star  Fork
-            |--- ---------------------------------------- ---------- ------ -----
-            |  1 prat0318/json_resume                     Ruby          412    27
-            |  2 dawn/dawn                                Ruby           57     2
-            |  3 Homebrew/homebrew                        Ruby           15     7
-            |  4 etsy/nagios-herald                       Ruby           18     0
-            |  5 jekyll/jekyll                            Ruby           14     4
-            |  6 opf/openproject                          Ruby           11     0
-            |  7 caskroom/homebrew-cask                   Ruby            9     3
-            |  8 rails/rails                              Ruby            6     7
-            |  9 interagent/prmd                          Ruby            9     0
-            | 10 mitchellh/vagrant                        Ruby            8     2
-            | 11 discourse/discourse                      Ruby            7     3
-            | 12 CanCanCommunity/cancancan                Ruby            7     1
-            | 13 venmo/synx                               Ruby            7     0
-            | 14 laravel/homestead                        Shell           6     2
-            | 15 alexreisner/geocoder                     Ruby            6     0
-            | 16 visionmedia/commander                    Ruby            5     0
-            | 17 CocoaPods/Specs                          Ruby            0     3
-            | 18 gitlabhq/gitlabhq                        Ruby            0     2
-            | 19 puppetlabs/puppetlabs-apache             Ruby            0     2
-            | 20 gitlabhq/gitlab-recipes                  Ruby            0     2
-            | 21 Mixd/wp-deploy                           Ruby            0     1
-            | 22 svenfuchs/rails-i18n                     Ruby            0     1
-            | 23 Homebrew/homebrew-php                    Ruby            0     1
-            | 24 sferik/twitter                           Ruby            0     1
-            | 25 rightscale/rightscale_cookbooks          Ruby            0     1
+            |No. Name                                     Lang         Star
+            |--- ---------------------------------------- ---------- ------
+            |  1 discourse/discourse                      Ruby           40
+            |  2 Netflix/Scumblr                          Ruby           24
+            |  3 Homebrew/homebrew                        Ruby           19
+            |  4 remore/burn                              Ruby           23
+            |  5 mina-deploy/mina                         Ruby           17
+            |  6 pragmaticivan/minotauro_vagrant_rails    Ruby           16
+            |  7 rails/rails                              Ruby           11
+            |  8 sass/sass                                Ruby           11
+            |  9 cantino/huginn                           Ruby           10
+            | 10 caskroom/homebrew-cask                   Ruby            8
+            | 11 presidentbeef/brakeman                   Ruby            9
+            | 12 applift/fast_attributes                  Ruby           10
+            | 13 krisleech/wisper                         Ruby           10
+            | 14 jekyll/jekyll                            Ruby            7
+            | 15 intridea/grape                           Ruby            7
+            | 16 mitchellh/vagrant                        Ruby            6
+            | 17 elasticsearch/logstash                   Ruby            6
+            | 18 rightscale/praxis                        Ruby            7
+            | 19 cerebris/jsonapi-resources               Ruby            7
+            | 20 ruby/ruby                                Ruby            6
+            | 21 junegunn/fzf                             Ruby            6
+            | 22 digitaloceancloud/resource_kit           Ruby            6
+            | 23 rapid7/metasploit-framework              Ruby            5
+            | 24 tenderlove/the_metal                     Ruby            6
+            | 25 bbatsov/rubocop                          Ruby            5
           EOS
           expect { @cli.invoke(:list, [], language: language) }.to output(res).to_stdout
         end
@@ -75,33 +75,33 @@ RSpec.describe GitTrend::CLI do
 
         it 'display daily ranking by language' do
           res = <<-'EOS'.unindent
-            |No. Name                                     Lang            Star  Fork
-            |--- ---------------------------------------- ------------- ------ -----
-            |  1 facebook/pop                             Objective-C++      0     0
-            |  2 johnno1962/Xtrace                        Objective-C++      0     0
-            |  3 pivotal/cedar                            Objective-C++      0     0
-            |  4 wetube/bitcloud                          Objective-C++      0     0
-            |  5 jerols/PopTut                            Objective-C++      0     0
-            |  6 otaviocc/OCBorghettiView                 Objective-C++      0     0
-            |  7 droolsjbpm/optaplanner                   Objective-C++      0     0
-            |  8 otaviocc/NHCalendarActivity              Objective-C++      0     0
-            |  9 callmeed/pop-playground                  Objective-C++      0     0
-            | 10 jxd001/POPdemo                           Objective-C++      0     0
-            | 11 couchdeveloper/RXPromise                 Objective-C++      0     0
-            | 12 johnno1962/XprobePlugin                  Objective-C++      0     0
-            | 13 openpeer/opios                           Objective-C++      0     0
-            | 14 pivotal/PivotalCoreKit                   Objective-C++      0     0
-            | 15 rbaumbach/Swizzlean                      Objective-C++      0     0
-            | 16 andreacremaschi/ShapeKit                 Objective-C++      0     0
-            | 17 Smartype/iOS_VPNPlugIn                   Objective-C++      0     0
-            | 18 humblehacker/AutoLayoutDSL               Objective-C++      0     0
-            | 19 hoddez/FFTAccelerate                     Objective-C++      0     0
-            | 20 armadillu/ofxPanZoom                     Objective-C++      0     0
-            | 21 dodikk/CsvToSqlite                       Objective-C++      0     0
-            | 22 hbang/TypeStatus                         Objective-C++      0     0
-            | 23 trentbrooks/ofxCoreMotion                Objective-C++      0     0
-            | 24 Yonsm/CeleWare                           Objective-C++      0     0
-            | 25 ccrma/miniAudicle                        Objective-C++      0     0
+            |No. Name                                     Lang            Star
+            |--- ---------------------------------------- ------------- ------
+            |  1 droolsjbpm/optaplanner                   Objective-C++      0
+            |  2 facebook/pop                             Objective-C++      0
+            |  3 johnno1962/Xtrace                        Objective-C++      0
+            |  4 pivotal/cedar                            Objective-C++      0
+            |  5 wetube/bitcloud                          Objective-C++      0
+            |  6 mousebird/WhirlyGlobe                    Objective-C++      0
+            |  7 deanm/plask                              Objective-C++      0
+            |  8 jerols/PopTut                            Objective-C++      0
+            |  9 otaviocc/OCBorghettiView                 Objective-C++      0
+            | 10 johnno1962/XprobePlugin                  Objective-C++      0
+            | 11 callmeed/pop-playground                  Objective-C++      0
+            | 12 couchdeveloper/RXPromise                 Objective-C++      0
+            | 13 jxd001/POPdemo                           Objective-C++      0
+            | 14 otaviocc/NHCalendarActivity              Objective-C++      0
+            | 15 giladno/UICoreTextView                   Objective-C++      0
+            | 16 jhaynie/titanium_box2d                   Objective-C++      0
+            | 17 openpeer/opios                           Objective-C++      0
+            | 18 pivotal/PivotalCoreKit                   Objective-C++      0
+            | 19 iolate/SimulateTouch                     Objective-C++      0
+            | 20 mapbox/mapbox-gl-cocoa                   Objective-C++      0
+            | 21 freerunnering/SwipeSelection             Objective-C++      0
+            | 22 kseebaldt/deferred                       Objective-C++      0
+            | 23 rbaumbach/Swizzlean                      Objective-C++      0
+            | 24 Smartype/iOS_VPNPlugIn                   Objective-C++      0
+            | 25 swift2js/swift2js                        Objective-C++      0
           EOS
           expect { @cli.invoke(:list, [], language: language) }.to output(res).to_stdout
         end
@@ -125,33 +125,33 @@ RSpec.describe GitTrend::CLI do
         let(:since) { 'weekly' }
         it 'display daily ranking since weekly' do
           res = <<-'EOS'.unindent
-            |No. Name                                               Lang           Star  Fork
-            |--- -------------------------------------------------- ------------ ------ -----
-            |  1 numbbbbb/the-swift-programming-language-in-chinese JavaScript     2495   679
-            |  2 jessepollak/card                                   CSS            2177   153
-            |  3 grant/swift-cheat-sheet                            JavaScript     1906   122
-            |  4 tictail/bounce.js                                  CSS            1540    74
-            |  5 fullstackio/FlappySwift                            Swift          1125   401
-            |  6 GoogleCloudPlatform/kubernetes                     Go             1001    97
-            |  7 andlabs/ui                                         Go             1004    36
-            |  8 facebook/Haxl                                      Haskell         911    53
-            |  9 greatfire/wiki                                                     683   196
-            | 10 interagent/http-api-design                                         757    42
-            | 11 prat0318/json_resume                               Ruby            717    50
-            | 12 lafikl/steady.js                                   JavaScript      717    20
-            | 13 dotcloud/docker                                    Go              617   119
-            | 14 dmytrodanylyk/circular-progress-button             Java            608    69
-            | 15 docker/libswarm                                    Go              606    20
-            | 16 watilde/beeplay                                    JavaScript      594    23
-            | 17 austinzheng/swift-2048                             Swift           518   116
-            | 18 Flolagale/mailin                                   Python          543    14
-            | 19 hiphopapp/hiphop                                   CoffeeScript    507    71
-            | 20 rpicard/explore-flask                              Python          454    27
-            | 21 addyosmani/psi                                     JavaScript      443     8
-            | 22 twbs/bootstrap                                     CSS             290   189
-            | 23 angular/angular.js                                 JavaScript      268   194
-            | 24 mbostock/d3                                        JavaScript      307   113
-            | 25 maxpow4h/swiftz                                    Swift           350    20
+            |No. Name                                     Lang         Star
+            |--- ---------------------------------------- ---------- ------
+            |  1 rxin/db-readings                                      2116
+            |  2 gionkunz/chartist-js                     JavaScript   1652
+            |  3 chriskiehl/Gooey                         Python       1335
+            |  4 masayuki0812/c3                          JavaScript   1233
+            |  5 daimajia/AndroidSwipeLayout              Java          750
+            |  6 gogits/gogs                              Go            751
+            |  7 kitematic/kitematic                      JavaScript    734
+            |  8 tmux-plugins/tmux-resurrect              Shell         737
+            |  9 fastmonkeys/stellar                      Python        642
+            | 10 Yelp/dockersh                            Go            633
+            | 11 sahat/satellizer                         PHP           581
+            | 12 luster-io/impulse                        JavaScript    580
+            | 13 AllThingsSmitty/must-watch-css                         560
+            | 14 duojs/duo                                JavaScript    554
+            | 15 tylertreat/chan                          C             548
+            | 16 angular/angular.js                       JavaScript    378
+            | 17 mattt/Surge                              Swift         459
+            | 18 HubSpot/pace                             CSS           444
+            | 19 trueinteractions/tint2                   C             448
+            | 20 peachananr/onepage-scroll                JavaScript    386
+            | 21 twbs/bootstrap                           CSS           300
+            | 22 google/web-starter-kit                   CSS           372
+            | 23 quasado/gravit                           JavaScript    365
+            | 24 meteor/meteor                            JavaScript    362
+            | 25 Netflix/Scumblr                          Ruby          305
           EOS
           expect { @cli.invoke(:list, [], since: since) }.to output(res).to_stdout
         end
@@ -161,33 +161,33 @@ RSpec.describe GitTrend::CLI do
         let(:since) { 'monthly' }
         it 'display daily ranking since monthly' do
           res = <<-'EOS'.unindent
-            |No. Name                                               Lang           Star  Fork
-            |--- -------------------------------------------------- ------------ ------ -----
-            |  1 fullstackio/FlappySwift                            Swift          5753  1530
-            |  2 interagent/http-api-design                                        4735   214
-            |  3 jessepollak/card                                   CSS            3944   257
-            |  4 numbbbbb/the-swift-programming-language-in-chinese JavaScript     3159   831
-            |  5 calmh/syncthing                                    Go             2738   123
-            |  6 grant/swift-cheat-sheet                            JavaScript     2254   136
-            |  7 atom/atom                                          CoffeeScript   1761   285
-            |  8 angular/angular.js                                 JavaScript     1389   842
-            |  9 schneiderandre/popping                             Objective-C    1681   129
-            | 10 quilljs/quill                                      CoffeeScript   1655    75
-            | 11 twbs/bootstrap                                     CSS            1235   887
-            | 12 tictail/bounce.js                                  CSS            1553    74
-            | 13 venmo/synx                                         Ruby           1545    40
-            | 14 lovell/sharp                                       JavaScript     1528    39
-            | 15 mbostock/d3                                        JavaScript     1101   424
-            | 16 facebook/jest                                      JavaScript     1287    50
-            | 17 octobercms/october                                 PHP            1190   192
-            | 18 buunguyen/octotree                                 JavaScript     1228    90
-            | 19 felipernb/algorithms.js                            JavaScript     1206    90
-            | 20 strongloop/loopback                                JavaScript     1198    61
-            | 21 greatfire/wiki                                                    1067   254
-            | 22 austinzheng/swift-2048                             Swift          1083   218
-            | 23 dotcloud/docker                                    Go             1057   269
-            | 24 julianshapiro/velocity                             JavaScript     1081    71
-            | 25 babun/babun                                        Shell          1068    46
+            |No. Name                                     Lang           Star
+            |--- ---------------------------------------- ------------ ------
+            |  1 sahat/satellizer                         PHP            3066
+            |  2 Ehesp/Responsive-Dashboard               CSS            2975
+            |  3 fastmonkeys/stellar                      Python         2798
+            |  4 Alamofire/Alamofire                      Swift          2579
+            |  5 chriskiehl/Gooey                         Python         2509
+            |  6 rxin/db-readings                                        2139
+            |  7 johnpapa/angularjs-styleguide                           2014
+            |  8 duojs/duo                                JavaScript     1977
+            |  9 limetext/lime                            Go             1895
+            | 10 angular/angular.js                       JavaScript     1412
+            | 11 gionkunz/chartist-js                     JavaScript     1680
+            | 12 twbs/bootstrap                           CSS            1263
+            | 13 gogits/gogs                              Go             1610
+            | 14 bevacqua/js                                             1570
+            | 15 typicode/lowdb                           CoffeeScript   1465
+            | 16 vhf/free-programming-books                              1259
+            | 17 lmccart/p5.js                            JavaScript     1383
+            | 18 weblinc/jquery.smoothState.js            JavaScript     1336
+            | 19 masayuki0812/c3                          JavaScript     1331
+            | 20 deanmalmgren/textract                    Python         1265
+            | 21 ochococo/Design-Patterns-In-Swift        Swift          1230
+            | 22 mbostock/d3                              JavaScript     1008
+            | 23 VodkaBears/Vide                          JavaScript     1136
+            | 24 driftyco/ionic                           JavaScript     1007
+            | 25 fians/marka                              CSS             989
           EOS
           expect { @cli.invoke(:list, [], since: since) }.to output(res).to_stdout
         end
@@ -210,33 +210,33 @@ RSpec.describe GitTrend::CLI do
 
         it 'display daily ranking with description' do
           res = <<-'EOS'.unindent
-            |No. Name                                               Lang           Star  Fork Description                                                
-            |--- -------------------------------------------------- ------------ ------ ----- -----------------------------------------------------------
-            |  1 prat0318/json_resume                               Ruby            264    15 Generates pretty HTML, LaTeX, markdown, with biodata fee...
-            |  2 andlabs/ui                                         Go              185     8 Platform-native GUI library for Go.                        
-            |  3 jessepollak/card                                   CSS             174     9 make your credit card form better in one line of code      
-            |  4 fullstackio/FlappySwift                            Swift           148    44 swift implementation of flappy bird. More at fullstacked...
-            |  5 grant/swift-cheat-sheet                                            153    13 A short guide to using Apple's new programming language,...
-            |  6 Flolagale/mailin                                   Python          155     3 Artisanal inbound emails for every web app                 
-            |  7 numbbbbb/the-swift-programming-language-in-chinese JavaScript      120    31 中文版 Apple 官方 Swift 教程《The Swift Programming Lang...
-            |  8 hippyvm/hippyvm                                    PHP             113     1 HippyVM - an implementation of the PHP language in RPyth...
-            |  9 neovim/neovim                                      C                83     8 vim's rebirth for the 21st century                         
-            | 10 hiphopapp/hiphop                                   CoffeeScript     77     8 Free music streaming app                                   
-            | 11 interagent/http-api-design                                          78     4 HTTP API design guide extracted from work on the Heroku ...
-            | 12 austinzheng/swift-2048                             Swift            69    16 2048 for Swift                                             
-            | 13 mdznr/What-s-New                                   Objective-C      72     2 Easily present the latest changes and features to your u...
-            | 14 daneden/animate.css                                CSS              65     6 A cross-browser library of CSS animations. As easy to us...
-            | 15 davidmerfield/randomColor                          JavaScript       66     3 A color generator for JavaScript.                          
-            | 16 dawn/dawn                                          Ruby             62     2 Docker-based PaaS in Ruby                                  
-            | 17 greatfire/wiki                                                      54     9                                                            
-            | 18 swift-jp/swift-guide                               CSS              45     9 Appleが公表した新プログラミング言語「Swift」についての資...
-            | 19 addyosmani/psi                                     JavaScript       49     0 PageSpeed Insights for Node - with reporting               
-            | 20 mtford90/silk                                      Python           47     0 Silky smooth profiling for Django                          
-            | 21 agaue/agaue                                        Go               47     0 Golang blog framework                                      
-            | 22 mentionapp/mntpulltoreact                          Objective-C      46     1 One gesture, many actions. An evolution of Pull to Refre...
-            | 23 mikepenz/AboutLibraries                            Java             45     0 AboutLibraries is a library to offer some information of...
-            | 24 PistonDevelopers/piston-workspace                  Shell            45     0 Git submodules of Piston projects                          
-            | 25 maxpow4h/swiftz                                    Swift            43     1 Functional programming in Swift                            
+            |No. Name                                       Lang          Star Description                                                               
+            |--- ------------------------------------------ ----------- ------ --------------------------------------------------------------------------
+            |  1 gionkunz/chartist-js                       JavaScript     363 Simple responsive charts                                                  
+            |  2 kitematic/kitematic                        JavaScript     327 Simple Docker App management for Mac OS X.                                
+            |  3 tmux-plugins/tmux-resurrect                Shell          217 Persists tmux environment across system restarts.                         
+            |  4 rxin/db-readings                                          210 Readings in Databases                                                     
+            |  5 daimajia/AndroidSwipeLayout                Java           172 The Most Powerful Swipe Layout!                                           
+            |  6 tylertreat/chan                            C              126 Pure C implementation of Go channels.                                     
+            |  7 AllThingsSmitty/must-watch-css                             93 A useful list of must-watch videos about CSS.                             
+            |  8 masayuki0812/c3                            JavaScript      85 A D3-based reusable chart library                                         
+            |  9 fouber/page-monitor                        JavaScript      74 capture webpage and diff the dom change with phantomjs                    
+            | 10 gogits/gogs                                Go              71 Gogs(Go Git Service) is a painless self-hosted Git Service written in G...
+            | 11 facebook/flux                              JavaScript      72 Application Architecture for Building User Interfaces                     
+            | 12 twbs/bootstrap                             CSS             55 The most popular front-end framework for developing responsive, mobile ...
+            | 13 luster-io/impulse                          JavaScript      68 Dynamics Physics Interactions for the Mobile Web                          
+            | 14 lawloretienne/QuickReturn                  Java            65 Showcases QuickReturn view as a header, footer, and both header and foo...
+            | 15 angular/angular.js                         JavaScript      53 HTML enhanced for web apps                                                
+            | 16 wisk/medusa                                C               60 An open source interactive disassembler                                   
+            | 17 ochococo/Design-Patterns-In-Swift          Swift           60 Design Patterns implemented in Swift                                      
+            | 18 cwRichardKim/RKSwipeBetweenViewControllers Objective-C     59 Swipe between ViewControllers like in the Spotify or Twitter app with a...
+            | 19 google/web-starter-kit                     CSS             59 Google Web Starter Kit (Beta)                                             
+            | 20 syncthing/syncthing                        Go              49 Open Source Continuous File Synchronization                               
+            | 21 ruslanskorb/RSKImageCropper                Objective-C     46 An image cropper for iOS like in the Contacts app with support for land...
+            | 22 kyze8439690/ResideLayout                   Java            44 An Android Layout which has a same function like https://github.com/rom...
+            | 23 ParsePlatform/f8DeveloperConferenceApp     Java            41                                                                           
+            | 24 chriskiehl/Gooey                           Python          41 Turn (almost) any command line program into a full GUI application with...
+            | 25 discourse/discourse                        Ruby            41 A platform for community discussion. Free, open, simple.                  
           EOS
           expect { @cli.invoke(:list, [], description: 'description') }.to output(res).to_stdout
         end
@@ -245,7 +245,7 @@ RSpec.describe GitTrend::CLI do
       context 'terminal width is tiny' do
         before do
           stub_request_get('trending')
-          ENV['COLUMNS'] = '100' # it is not enough for description.
+          ENV['COLUMNS'] = '85' # it is not enough for description.
           ENV['LINES'] = '40'
         end
 
@@ -265,33 +265,33 @@ RSpec.describe GitTrend::CLI do
 
         it 'display daily ranking since weekly' do
           res = <<-'EOS'.unindent
-            |No. Name                                     Lang         Star  Fork
-            |--- ---------------------------------------- ---------- ------ -----
-            |  1 prat0318/json_resume                     Ruby          717    50
-            |  2 dawn/dawn                                Ruby          349    11
-            |  3 newrelic/centurion                       Ruby          213     6
-            |  4 Homebrew/homebrew                        Ruby          107    74
-            |  5 rails/rails                              Ruby          100    74
-            |  6 code-mancers/invoker                     Ruby           97     2
-            |  7 CanCanCommunity/cancancan                Ruby           92     5
-            |  8 etsy/nagios-herald                       Ruby           89     0
-            |  9 jekyll/jekyll                            Ruby           74    25
-            | 10 venmo/synx                               Ruby           82     2
-            | 11 interagent/prmd                          Ruby           74     5
-            | 12 discourse/discourse                      Ruby           64    22
-            | 13 gitlabhq/gitlabhq                        Ruby           56    21
-            | 14 vigetlabs/sass-json-vars                 Ruby           65     0
-            | 15 caskroom/homebrew-cask                   Ruby           49    30
-            | 16 mitchellh/vagrant                        Ruby           53    19
-            | 17 harrystech/seed_migration                Ruby           57     0
-            | 18 twbs/bootstrap-sass                      Ruby           47    17
-            | 19 opal/opal                                Ruby           50     2
-            | 20 plataformatec/devise                     Ruby           39    22
-            | 21 sass/sass                                Ruby           43    12
-            | 22 nickjj/orats                             Ruby           46     2
-            | 23 chrishunt/desktop                        Ruby           39     3
-            | 24 chloerei/campo                           Ruby           35     9
-            | 25 jordansissel/fpm                         Ruby           35     4
+            |No. Name                                     Lang         Star
+            |--- ---------------------------------------- ---------- ------
+            |  1 Netflix/Scumblr                          Ruby          308
+            |  2 tenderlove/the_metal                     Ruby          225
+            |  3 remore/burn                              Ruby          191
+            |  4 Homebrew/homebrew                        Ruby          121
+            |  5 discourse/discourse                      Ruby          135
+            |  6 rightscale/praxis                        Ruby          116
+            |  7 rails/rails                              Ruby           82
+            |  8 cantino/huginn                           Ruby           98
+            |  9 jekyll/jekyll                            Ruby           81
+            | 10 sass/sass                                Ruby           77
+            | 11 orta/cocoapods-keys                      Ruby           81
+            | 12 mitchellh/vagrant                        Ruby           62
+            | 13 gitlabhq/gitlabhq                        Ruby           52
+            | 14 caskroom/homebrew-cask                   Ruby           48
+            | 15 cerebris/jsonapi-resources               Ruby           59
+            | 16 rapid7/metasploit-framework              Ruby           47
+            | 17 winebarrel/ridgepole                     Ruby           57
+            | 18 digitaloceancloud/resource_kit           Ruby           51
+            | 19 bbatsov/rubocop                          Ruby           44
+            | 20 rails/web-console                        Ruby           49
+            | 21 gavinlaking/vedeu                        Ruby           47
+            | 22 ruby/ruby                                Ruby           41
+            | 23 apotonick/paperdragon                    Ruby           46
+            | 24 junegunn/fzf                             Ruby           41
+            | 25 imathis/octopress                        Ruby           36
           EOS
           expect { @cli.invoke(:list, [], language: language, since: since) }.to output(res).to_stdout
         end
@@ -312,9 +312,11 @@ RSpec.describe GitTrend::CLI do
           |as3
           |ada
           |agda
+          |ags-script
           |alloy
           |antlr
           |apex
+          |apl
           |applescript
           |arc
           |arduino
@@ -327,6 +329,7 @@ RSpec.describe GitTrend::CLI do
           |autoit
           |awk
           |blitzbasic
+          |blitzmax
           |bluespec
           |boo
           |brightscript
@@ -335,6 +338,7 @@ RSpec.describe GitTrend::CLI do
           |csharp
           |cpp
           |ceylon
+          |chapel
           |cirru
           |clean
           |clips
@@ -343,13 +347,14 @@ RSpec.describe GitTrend::CLI do
           |coffeescript
           |cfm
           |common-lisp
+          |component-pascal
           |coq
           |crystal
           |css
           |cuda
+          |cycript
           |d
           |dart
-          |dcpu-16-asm
           |dm
           |dogescript
           |dot
@@ -360,6 +365,7 @@ RSpec.describe GitTrend::CLI do
           |elixir
           |elm
           |emacs-lisp
+          |emberscript
           |erlang
           |fsharp
           |factor
@@ -376,6 +382,7 @@ RSpec.describe GitTrend::CLI do
           |gnuplot
           |go
           |gosu
+          |grace
           |grammatical-framework
           |groovy
           |harbour
@@ -387,6 +394,7 @@ RSpec.describe GitTrend::CLI do
           |inform-7
           |io
           |ioke
+          |isabelle
           |j
           |java
           |javascript
@@ -394,10 +402,12 @@ RSpec.describe GitTrend::CLI do
           |julia
           |kotlin
           |krl
+          |labview
           |lasso
           |livescript
           |logos
           |logtalk
+          |lookml
           |lua
           |m
           |markdown
@@ -405,7 +415,7 @@ RSpec.describe GitTrend::CLI do
           |matlab
           |max/msp
           |mercury
-          |ruby
+          |mirah
           |monkey
           |moocode
           |moonscript
@@ -413,6 +423,8 @@ RSpec.describe GitTrend::CLI do
           |nesc
           |netlogo
           |nimrod
+          |nit
+          |nix
           |nu
           |objective-c
           |objective-c++
@@ -421,7 +433,10 @@ RSpec.describe GitTrend::CLI do
           |omgrofl
           |ooc
           |opa
+          |opal
           |openedge-abl
+          |openscad
+          |ox
           |oxygene
           |pan
           |parrot
@@ -430,6 +445,7 @@ RSpec.describe GitTrend::CLI do
           |perl
           |perl6
           |php
+          |piglatin
           |pike
           |pogoscript
           |powershell
@@ -462,6 +478,7 @@ RSpec.describe GitTrend::CLI do
           |slash
           |smalltalk
           |sourcepawn
+          |sqf
           |sql
           |squirrel
           |standard-ml
@@ -476,6 +493,7 @@ RSpec.describe GitTrend::CLI do
           |typescript
           |unrealscript
           |vala
+          |vcl
           |verilog
           |vhdl
           |vim
@@ -485,6 +503,7 @@ RSpec.describe GitTrend::CLI do
           |xbase
           |xc
           |xml
+          |xojo
           |xproc
           |xquery
           |xslt
@@ -492,7 +511,7 @@ RSpec.describe GitTrend::CLI do
           |zephir
           |zimpl
           |
-          |183 languages
+          |202 languages
           |you can get only selected language list with '-l' option.
           |if languages is unknown, you can specify 'unkown'.
           |
@@ -518,33 +537,33 @@ RSpec.describe GitTrend::CLI do
 
   def dummy_result_no_options
     <<-'EOS'.unindent
-      |No. Name                                               Lang           Star  Fork
-      |--- -------------------------------------------------- ------------ ------ -----
-      |  1 prat0318/json_resume                               Ruby            264    15
-      |  2 andlabs/ui                                         Go              185     8
-      |  3 jessepollak/card                                   CSS             174     9
-      |  4 fullstackio/FlappySwift                            Swift           148    44
-      |  5 grant/swift-cheat-sheet                                            153    13
-      |  6 Flolagale/mailin                                   Python          155     3
-      |  7 numbbbbb/the-swift-programming-language-in-chinese JavaScript      120    31
-      |  8 hippyvm/hippyvm                                    PHP             113     1
-      |  9 neovim/neovim                                      C                83     8
-      | 10 hiphopapp/hiphop                                   CoffeeScript     77     8
-      | 11 interagent/http-api-design                                          78     4
-      | 12 austinzheng/swift-2048                             Swift            69    16
-      | 13 mdznr/What-s-New                                   Objective-C      72     2
-      | 14 daneden/animate.css                                CSS              65     6
-      | 15 davidmerfield/randomColor                          JavaScript       66     3
-      | 16 dawn/dawn                                          Ruby             62     2
-      | 17 greatfire/wiki                                                      54     9
-      | 18 swift-jp/swift-guide                               CSS              45     9
-      | 19 addyosmani/psi                                     JavaScript       49     0
-      | 20 mtford90/silk                                      Python           47     0
-      | 21 agaue/agaue                                        Go               47     0
-      | 22 mentionapp/mntpulltoreact                          Objective-C      46     1
-      | 23 mikepenz/AboutLibraries                            Java             45     0
-      | 24 PistonDevelopers/piston-workspace                  Shell            45     0
-      | 25 maxpow4h/swiftz                                    Swift            43     1
+      |No. Name                                       Lang          Star
+      |--- ------------------------------------------ ----------- ------
+      |  1 gionkunz/chartist-js                       JavaScript     363
+      |  2 kitematic/kitematic                        JavaScript     327
+      |  3 tmux-plugins/tmux-resurrect                Shell          217
+      |  4 rxin/db-readings                                          210
+      |  5 daimajia/AndroidSwipeLayout                Java           172
+      |  6 tylertreat/chan                            C              126
+      |  7 AllThingsSmitty/must-watch-css                             93
+      |  8 masayuki0812/c3                            JavaScript      85
+      |  9 fouber/page-monitor                        JavaScript      74
+      | 10 gogits/gogs                                Go              71
+      | 11 facebook/flux                              JavaScript      72
+      | 12 twbs/bootstrap                             CSS             55
+      | 13 luster-io/impulse                          JavaScript      68
+      | 14 lawloretienne/QuickReturn                  Java            65
+      | 15 angular/angular.js                         JavaScript      53
+      | 16 wisk/medusa                                C               60
+      | 17 ochococo/Design-Patterns-In-Swift          Swift           60
+      | 18 cwRichardKim/RKSwipeBetweenViewControllers Objective-C     59
+      | 19 google/web-starter-kit                     CSS             59
+      | 20 syncthing/syncthing                        Go              49
+      | 21 ruslanskorb/RSKImageCropper                Objective-C     46
+      | 22 kyze8439690/ResideLayout                   Java            44
+      | 23 ParsePlatform/f8DeveloperConferenceApp     Java            41
+      | 24 chriskiehl/Gooey                           Python          41
+      | 25 discourse/discourse                        Ruby            41
     EOS
   end
 end

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html class="   ">
+<html lang="en" class="   ">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
     
     
     <title>Trending Objective-C++ repositories on GitHub today · GitHub</title>
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
-    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
-    <meta property="fb:app_id" content="1401488693436528"/>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
 
       <meta property="og:url" content="https://github.com">
       <meta property="og:site_name" content="GitHub">
@@ -44,30 +45,30 @@
     <link rel="conduit-xhr" href="https://ghconduit.com:25035">
     
 
-    <meta name="msapplication-TileImage" content="/windows-tile.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="selected-link" value="trending_repositories" data-pjax-transient />
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="trending_repositories" data-pjax-transient>
       <meta name="google-analytics" content="UA-3769691-2">
 
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="3A9D7ECD:287E:2313829:539481C8" name="octolytics-dimension-request_id" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="3A9D7ECD:7B5F:390229CE:54047EBA" name="octolytics-dimension-request_id" />
     
 
     
     
-    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
 
 
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ui65qwegvxZl8OsBfw8Ytgj2yGbBkljhE18yDI5WQkKbCe6T+ZwDP8tnQ2qOMIkIqhLfIUEsiP+7kEgUxfTC+g==" name="csrf-token" />
+<meta content="Q3w1U1TySW7ip/yF8xJjFX6xc0R/2X2W84qF918edXa74QUe0RsvwzwqJEY9Tqw76Kz4VDg9oJMw8YIeH0diyw==" name="csrf-token" />
 
-    <link href="https://assets-cdn.github.com/assets/github-1aeb426322c64c12b92d56bda5b110fc1093f75e.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="https://assets-cdn.github.com/assets/github2-b2cccfcac1a522b6ce675606f61388d36bf2c080.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github-2cf6fb933f5fa8bc1973edfd9391cdab5ef18561.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-77a12dbff370498e7105b03f9140296f10c4cc26.css" media="all" rel="stylesheet" type="text/css" />
     
 
 
-    <meta http-equiv="x-pjax-version" content="6b9e40027b6fe719e1c3d0a9180a2d6a">
+    <meta http-equiv="x-pjax-version" content="f84a96af2daa4708799396be997573ec">
 
-      <meta name="description" content="Build software better, together." />
+      <meta name="description" content="Build software better, together.">
   </head>
 
 
@@ -93,35 +94,35 @@
       <a class="button signin" href="/login?return_to=%2Ftrending%3Fl%3Dobjective-c%252B%252B">Sign in</a>
     </div>
 
-    <div class="command-bar js-command-bar  ">
-
-      <ul class="top-nav">
-          <li class="explore"><a href="/explore">Explore</a></li>
-        <li class="features"><a href="/features">Features</a></li>
-          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
-          <li class="blog"><a href="/blog">Blog</a></li>
-      </ul>
-        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
-
-<div class="commandbar">
-  <span class="message"></span>
-  <input type="text" data-hotkey="s, /" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
-    
-    
-  >
-  <div class="display hidden"></div>
-</div>
-
-
-  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
-    <span class="octicon octicon-question"></span>
-  </span>
-
-
-  <input type="hidden" name="ref" value="cmdform">
-
+    <div class="site-search  js-site-search">
+      <form accept-charset="UTF-8" action="/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class=""
+    data-hotkey="s"
+    name="q"
+    placeholder="Search GitHub"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
 </form>
     </div>
+
+      <ul class="header-nav left">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog">Blog</a>
+          </li>
+      </ul>
 
   </div>
 </div>
@@ -134,14 +135,16 @@
             
             
 
-
 <div class="pagehead explore-head">
   <div class="container">
     <nav class="pagehead-nav" data-pjax>
-  <a href="/explore" class="js-selected-navigation-item pagehead-nav-item" data-selected-links="explore_main /explore">All</a>
-  <a href="/showcases" class="js-selected-navigation-item pagehead-nav-item" data-selected-links="showcases showcases_search showcases_landing /showcases">Showcases</a>
-  <a href="/trending" class="selected js-selected-navigation-item pagehead-nav-item" data-selected-links="trending_developers trending_repositories /trending">Trending</a>
-</nav>
+  <a href="/explore" class="js-selected-navigation-item pagehead-nav-item" data-selected-links="explore_main /explore">
+        <span class="octicon octicon-home"></span> All
+</a>    <a href="/showcases" class="js-selected-navigation-item pagehead-nav-item" data-selected-links="showcases showcases_search showcases_landing /showcases">
+        <span class="octicon octicon-megaphone"></span> Showcases
+</a>  <a href="/trending" class="selected js-selected-navigation-item pagehead-nav-item" data-selected-links="trending_developers trending_repositories /trending">
+        <span class="octicon octicon-flame"></span> Trending
+</a></nav>
 
     <h1>Explore GitHub</h1>
   </div>
@@ -149,7 +152,7 @@
 
 
 <div class="explore-pjax-container container explore-page js-explore-page">
-  <div class="explore-marketing-header">
+  <div class="explore-marketing-header ">
     <h2>Trending repositories</h2>
     <p class="lead">Find what repositories the GitHub community is most excited about today.</p>
     <p class="call-to-signup"><a href="/join?return_to=%2Ftrending%3Fl%3Dobjective-c%252B%252B" class="minibutton btn-default primary" rel="nofollow">Sign up for free</a> to get started</p>
@@ -168,7 +171,7 @@
     <div class="select-menu-modal">
       <div class="select-menu-header">
         <span class="select-menu-title">Adjust time span</span>
-        <span class="octicon octicon-x js-menu-close"></span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
       </div> <!-- /.select-menu-header -->
 
       <div class="select-menu-list" role="menu">
@@ -202,840 +205,1056 @@
 
       </div>
       <div class="explore-content">
-        <ol class="repo-leaderboard-list leaderboard-list">
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-pop">
-            <a href="#pa-pop" class="leaderboard-list-rank">1</a>
+        <ol class="repo-list">
             
+<li class="repo-list-item" id="pa-optaplanner">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Ffacebook%2Fpop"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fdroolsjbpm%2Foptaplanner"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/facebook/pop" class="repository-name"><span class="owner-name">facebook</span><span class="separator">/</span><strong>pop</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Extensible iOS and OS X animation library.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/facebook/pop/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Kimon Tsinteris" class="avatar js-avatar" data-user="164821" height="20" src="https://avatars1.githubusercontent.com/u/164821?s=140" title="kimon" width="20" />
-          <img alt="Grant Paul" class="avatar js-avatar" data-user="163390" height="20" src="https://avatars3.githubusercontent.com/u/163390?s=140" title="grp" width="20" />
-          <img alt="R. Peres" class="avatar js-avatar" data-user="949286" height="20" src="https://avatars2.githubusercontent.com/u/949286?s=140" title="RuiAAPeres" width="20" />
-          <img alt="Ashton Williams" class="avatar js-avatar" data-user="1650398" height="20" src="https://avatars0.githubusercontent.com/u/1650398?s=140" title="Ashton-W" width="20" />
-          <img alt="Niccolò Passolunghi" class="avatar js-avatar" data-user="1663205" height="20" src="https://avatars2.githubusercontent.com/u/1663205?s=140" title="nicopasso" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-Xtrace">
-            <a href="#pa-Xtrace" class="leaderboard-list-rank">2</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/droolsjbpm/optaplanner">
+      <span class="prefix">droolsjbpm</span>
+      <span class="slash">/</span>
+      optaplanner
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Java planning engine: OptaPlanner optimizes business resource scheduling and planning.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/droolsjbpm/optaplanner/graphs/contributors">
+              <img alt="Geoffrey De Smet" class="avatar" data-user="176880" height="20" src="https://avatars3.githubusercontent.com/u/176880?v=2&amp;s=40" title="ge0ffrey" width="20" />
+              <img alt="mdproctor" class="avatar" data-user="521762" height="20" src="https://avatars3.githubusercontent.com/u/521762?v=2&amp;s=40" title="mdproctor" width="20" />
+              <img alt="Edson Tirelli" class="avatar" data-user="457009" height="20" src="https://avatars1.githubusercontent.com/u/457009?v=2&amp;s=40" title="etirelli" width="20" />
+              <img alt="Kris" class="avatar" data-user="408314" height="20" src="https://avatars1.githubusercontent.com/u/408314?v=2&amp;s=40" title="krisv" width="20" />
+              <img alt="Lukáš Petrovický" class="avatar" data-user="247403" height="20" src="https://avatars3.githubusercontent.com/u/247403?v=2&amp;s=40" title="triceo" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-pop">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fjohnno1962%2FXtrace"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Ffacebook%2Fpop"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/johnno1962/Xtrace" class="repository-name"><span class="owner-name">johnno1962</span><span class="separator">/</span><strong>Xtrace</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Trace Objective-C method calls by class or instance</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/johnno1962/Xtrace/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="John Holdsworth" class="avatar js-avatar" data-user="1786033" height="20" src="https://avatars0.githubusercontent.com/u/1786033?s=140" title="johnno1962" width="20" />
-          <img alt="Jeroen Leenarts" class="avatar js-avatar" data-user="39677" height="20" src="https://avatars3.githubusercontent.com/u/39677?s=140" title="jeroenleenarts" width="20" />
-          <img alt="Michael Haney" class="avatar js-avatar" data-user="1082754" height="20" src="https://avatars1.githubusercontent.com/u/1082754?s=140" title="mikehaney24" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-cedar">
-            <a href="#pa-cedar" class="leaderboard-list-rank">3</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/facebook/pop">
+      <span class="prefix">facebook</span>
+      <span class="slash">/</span>
+      pop
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Extensible iOS and OS X animation library.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/facebook/pop/graphs/contributors">
+              <img alt="Kimon Tsinteris" class="avatar" data-user="164821" height="20" src="https://avatars0.githubusercontent.com/u/164821?v=2&amp;s=40" title="kimon" width="20" />
+              <img alt="Grant Paul" class="avatar" data-user="163390" height="20" src="https://avatars0.githubusercontent.com/u/163390?v=2&amp;s=40" title="grp" width="20" />
+              <img alt="Jean-Charles BERTIN" class="avatar" data-user="107292" height="20" src="https://avatars2.githubusercontent.com/u/107292?v=2&amp;s=40" title="jcbertin" width="20" />
+              <img alt="R. Peres" class="avatar" data-user="949286" height="20" src="https://avatars0.githubusercontent.com/u/949286?v=2&amp;s=40" title="RuiAAPeres" width="20" />
+              <img alt="Ashton Williams" class="avatar" data-user="1650398" height="20" src="https://avatars1.githubusercontent.com/u/1650398?v=2&amp;s=40" title="Ashton-W" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-Xtrace">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fpivotal%2Fcedar"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fjohnno1962%2FXtrace"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/pivotal/cedar" class="repository-name"><span class="owner-name">pivotal</span><span class="separator">/</span><strong>cedar</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">BDD-style testing using Objective-C</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/pivotal/cedar/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Sam Coward" class="avatar js-avatar" data-user="237596" height="20" src="https://avatars3.githubusercontent.com/u/237596?s=140" title="idoru" width="20" />
-          <img alt="Jeff Hui" class="avatar js-avatar" data-user="68616" height="20" src="https://avatars0.githubusercontent.com/u/68616?s=140" title="jeffh" width="20" />
-          <img alt="Dmitriy Kalinin" class="avatar js-avatar" data-user="185847" height="20" src="https://avatars0.githubusercontent.com/u/185847?s=140" title="cppforlife" width="20" />
-          <img alt="Andrew Kitchen" class="avatar js-avatar" data-user="378648" height="20" src="https://avatars2.githubusercontent.com/u/378648?s=140" title="akitchen" width="20" />
-          <img alt="Brian Croom" class="avatar js-avatar" data-user="1062518" height="20" src="https://avatars3.githubusercontent.com/u/1062518?s=140" title="pivotal-brian-croom" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-bitcloud">
-            <a href="#pa-bitcloud" class="leaderboard-list-rank">4</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/johnno1962/Xtrace">
+      <span class="prefix">johnno1962</span>
+      <span class="slash">/</span>
+      Xtrace
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Trace Objective-C method calls by class or instance
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/johnno1962/Xtrace/graphs/contributors">
+              <img alt="John Holdsworth" class="avatar" data-user="1786033" height="20" src="https://avatars0.githubusercontent.com/u/1786033?v=2&amp;s=40" title="johnno1962" width="20" />
+              <img alt="Jeroen Leenarts" class="avatar" data-user="39677" height="20" src="https://avatars2.githubusercontent.com/u/39677?v=2&amp;s=40" title="jeroenleenarts" width="20" />
+              <img alt="Michael Haney" class="avatar" data-user="1082754" height="20" src="https://avatars1.githubusercontent.com/u/1082754?v=2&amp;s=40" title="mikehaney24" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-cedar">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fwetube%2Fbitcloud"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fpivotal%2Fcedar"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/wetube/bitcloud" class="repository-name"><span class="owner-name">wetube</span><span class="separator">/</span><strong>bitcloud</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Bitcloud Project</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/wetube/bitcloud/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="JavierRSobrino" class="avatar js-avatar" data-user="6039997" height="20" src="https://avatars2.githubusercontent.com/u/6039997?s=140" title="JavierRSobrino" width="20" />
-          <img alt="kyletorpey" class="avatar js-avatar" data-user="6266647" height="20" src="https://avatars2.githubusercontent.com/u/6266647?s=140" title="kyletorpey" width="20" />
-          <img alt="cbbcbail" class="avatar js-avatar" data-user="1534910" height="20" src="https://avatars1.githubusercontent.com/u/1534910?s=140" title="cbbcbail" width="20" />
-          <img alt="gga01" class="avatar js-avatar" data-user="5383616" height="20" src="https://avatars1.githubusercontent.com/u/5383616?s=140" title="gga01" width="20" />
-          <img alt="MAT" class="avatar js-avatar" data-user="6550141" height="20" src="https://avatars0.githubusercontent.com/u/6550141?s=140" title="gnostication" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-PopTut">
-            <a href="#pa-PopTut" class="leaderboard-list-rank">5</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/pivotal/cedar">
+      <span class="prefix">pivotal</span>
+      <span class="slash">/</span>
+      cedar
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      BDD-style testing using Objective-C
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/pivotal/cedar/graphs/contributors">
+              <img alt="Sam Coward" class="avatar" data-user="237596" height="20" src="https://avatars1.githubusercontent.com/u/237596?v=2&amp;s=40" title="idoru" width="20" />
+              <img alt="Jeff Hui" class="avatar" data-user="68616" height="20" src="https://avatars3.githubusercontent.com/u/68616?v=2&amp;s=40" title="jeffh" width="20" />
+              <img alt="Dmitriy Kalinin" class="avatar" data-user="185847" height="20" src="https://avatars1.githubusercontent.com/u/185847?v=2&amp;s=40" title="cppforlife" width="20" />
+              <img alt="Andrew Kitchen" class="avatar" data-user="378648" height="20" src="https://avatars3.githubusercontent.com/u/378648?v=2&amp;s=40" title="akitchen" width="20" />
+              <img alt="Brian Croom" class="avatar" data-user="1062518" height="20" src="https://avatars2.githubusercontent.com/u/1062518?v=2&amp;s=40" title="pivotal-brian-croom" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-bitcloud">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fjerols%2FPopTut"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fwetube%2Fbitcloud"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/jerols/PopTut" class="repository-name"><span class="owner-name">jerols</span><span class="separator">/</span><strong>PopTut</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">A simple app demonstrating basic usage of the Pop animation framework.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-OCBorghettiView">
-            <a href="#pa-OCBorghettiView" class="leaderboard-list-rank">6</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/wetube/bitcloud">
+      <span class="prefix">wetube</span>
+      <span class="slash">/</span>
+      bitcloud
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Bitcloud Project
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/wetube/bitcloud/graphs/contributors">
+              <img alt="JavierRSobrino" class="avatar" data-user="6039997" height="20" src="https://avatars0.githubusercontent.com/u/6039997?v=2&amp;s=40" title="JavierRSobrino" width="20" />
+              <img alt="gga01" class="avatar" data-user="5383616" height="20" src="https://avatars2.githubusercontent.com/u/5383616?v=2&amp;s=40" title="gga01" width="20" />
+              <img alt="kyletorpey" class="avatar" data-user="6266647" height="20" src="https://avatars3.githubusercontent.com/u/6266647?v=2&amp;s=40" title="kyletorpey" width="20" />
+              <img alt="cbbcbail" class="avatar" data-user="1534910" height="20" src="https://avatars0.githubusercontent.com/u/1534910?v=2&amp;s=40" title="cbbcbail" width="20" />
+              <img alt="MAT" class="avatar" data-user="6550141" height="20" src="https://avatars3.githubusercontent.com/u/6550141?v=2&amp;s=40" title="gnostication" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-WhirlyGlobe">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fotaviocc%2FOCBorghettiView"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fmousebird%2FWhirlyGlobe"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/otaviocc/OCBorghettiView" class="repository-name"><span class="owner-name">otaviocc</span><span class="separator">/</span><strong>OCBorghettiView</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">An easy to use accordion view for iOS</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/otaviocc/OCBorghettiView/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Otavio Cordeiro" class="avatar js-avatar" data-user="139272" height="20" src="https://avatars0.githubusercontent.com/u/139272?s=140" title="otaviocc" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-optaplanner">
-            <a href="#pa-optaplanner" class="leaderboard-list-rank">7</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/mousebird/WhirlyGlobe">
+      <span class="prefix">mousebird</span>
+      <span class="slash">/</span>
+      WhirlyGlobe
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      WhirlyGlobe Development
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/mousebird/WhirlyGlobe/graphs/contributors">
+              <img alt="Steve Gifford" class="avatar" data-user="1040005" height="20" src="https://avatars0.githubusercontent.com/u/1040005?v=2&amp;s=40" title="mousebird" width="20" />
+              <img alt="Jesse Crocker" class="avatar" data-user="2048291" height="20" src="https://avatars3.githubusercontent.com/u/2048291?v=2&amp;s=40" title="JesseCrocker" width="20" />
+              <img alt="Johan Kool" class="avatar" data-user="68731" height="20" src="https://avatars0.githubusercontent.com/u/68731?v=2&amp;s=40" title="johankool" width="20" />
+              <img alt="Tore Halset" class="avatar" data-user="445229" height="20" src="https://avatars2.githubusercontent.com/u/445229?v=2&amp;s=40" title="halset" width="20" />
+              <img alt="Alberto Asuero" class="avatar" data-user="1161870" height="20" src="https://avatars1.githubusercontent.com/u/1161870?v=2&amp;s=40" title="alasarr" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-plask">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fdroolsjbpm%2Foptaplanner"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fdeanm%2Fplask"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/droolsjbpm/optaplanner" class="repository-name"><span class="owner-name">droolsjbpm</span><span class="separator">/</span><strong>optaplanner</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Java planning engine: OptaPlanner optimizes business resource scheduling and planning.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/droolsjbpm/optaplanner/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Geoffrey De Smet" class="avatar js-avatar" data-user="176880" height="20" src="https://avatars0.githubusercontent.com/u/176880?s=140" title="ge0ffrey" width="20" />
-          <img alt="mdproctor" class="avatar js-avatar" data-user="521762" height="20" src="https://avatars2.githubusercontent.com/u/521762?s=140" title="mdproctor" width="20" />
-          <img alt="laune" class="avatar js-avatar" data-user="525697" height="20" src="https://avatars0.githubusercontent.com/u/525697?s=140" title="laune" width="20" />
-          <img alt="Edson Tirelli" class="avatar js-avatar" data-user="457009" height="20" src="https://avatars1.githubusercontent.com/u/457009?s=140" title="etirelli" width="20" />
-          <img alt="Kris" class="avatar js-avatar" data-user="408314" height="20" src="https://avatars1.githubusercontent.com/u/408314?s=140" title="krisv" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-NHCalendarActivity">
-            <a href="#pa-NHCalendarActivity" class="leaderboard-list-rank">8</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/deanm/plask">
+      <span class="prefix">deanm</span>
+      <span class="slash">/</span>
+      plask
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Plask is a multimedia programming environment.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/deanm/plask/graphs/contributors">
+              <img alt="Dean McNamee" class="avatar" data-user="56582" height="20" src="https://avatars3.githubusercontent.com/u/56582?v=2&amp;s=40" title="deanm" width="20" />
+              <img alt="Ryan Alexander" class="avatar" data-user="27721" height="20" src="https://avatars2.githubusercontent.com/u/27721?v=2&amp;s=40" title="notlion" width="20" />
+              <img alt="pizthewiz" class="avatar" data-user="648369" height="20" src="https://avatars0.githubusercontent.com/u/648369?v=2&amp;s=40" title="pizthewiz" width="20" />
+              <img alt="Marcin Ignac" class="avatar" data-user="171001" height="20" src="https://avatars2.githubusercontent.com/u/171001?v=2&amp;s=40" title="vorg" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-PopTut">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fotaviocc%2FNHCalendarActivity"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fjerols%2FPopTut"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/otaviocc/NHCalendarActivity" class="repository-name"><span class="owner-name">otaviocc</span><span class="separator">/</span><strong>NHCalendarActivity</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">A custom UIActivity that adds events and alarms to the Calendar.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/otaviocc/NHCalendarActivity/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Otavio Cordeiro" class="avatar js-avatar" data-user="139272" height="20" src="https://avatars0.githubusercontent.com/u/139272?s=140" title="otaviocc" width="20" />
-          <img alt="Paweł Wrzosek" class="avatar js-avatar" data-user="599145" height="20" src="https://avatars3.githubusercontent.com/u/599145?s=140" title="wzs" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-pop-playground">
-            <a href="#pa-pop-playground" class="leaderboard-list-rank">9</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/jerols/PopTut">
+      <span class="prefix">jerols</span>
+      <span class="slash">/</span>
+      PopTut
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      A simple app demonstrating basic usage of the Pop animation framework.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-OCBorghettiView">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fcallmeed%2Fpop-playground"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fotaviocc%2FOCBorghettiView"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/callmeed/pop-playground" class="repository-name"><span class="owner-name">callmeed</span><span class="separator">/</span><strong>pop-playground</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Some example animations using Facebook&#39;s Pop animation library</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/callmeed/pop-playground/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Erik Dungan" class="avatar js-avatar" data-user="25090" height="20" src="https://avatars3.githubusercontent.com/u/25090?s=140" title="callmeed" width="20" />
-          <img alt="Francescu Santoni" class="avatar js-avatar" data-user="1433362" height="20" src="https://avatars1.githubusercontent.com/u/1433362?s=140" title="Francescu" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-POPdemo">
-            <a href="#pa-POPdemo" class="leaderboard-list-rank">10</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/otaviocc/OCBorghettiView">
+      <span class="prefix">otaviocc</span>
+      <span class="slash">/</span>
+      OCBorghettiView
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      An easy to use accordion view for iOS
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/otaviocc/OCBorghettiView/graphs/contributors">
+              <img alt="Otavio Cordeiro" class="avatar" data-user="139272" height="20" src="https://avatars3.githubusercontent.com/u/139272?v=2&amp;s=40" title="otaviocc" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-XprobePlugin">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fjxd001%2FPOPdemo"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fjohnno1962%2FXprobePlugin"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/jxd001/POPdemo" class="repository-name"><span class="owner-name">jxd001</span><span class="separator">/</span><strong>POPdemo</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">A simple demo for facebook&#39;s pop framework.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/jxd001/POPdemo/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="jxd001" class="avatar js-avatar" data-user="6147714" height="20" src="https://avatars3.githubusercontent.com/u/6147714?s=140" title="jxd001" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-RXPromise">
-            <a href="#pa-RXPromise" class="leaderboard-list-rank">11</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/johnno1962/XprobePlugin">
+      <span class="prefix">johnno1962</span>
+      <span class="slash">/</span>
+      XprobePlugin
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Live Memory Browser for Objective-C Apps
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/johnno1962/XprobePlugin/graphs/contributors">
+              <img alt="John Holdsworth" class="avatar" data-user="1786033" height="20" src="https://avatars0.githubusercontent.com/u/1786033?v=2&amp;s=40" title="johnno1962" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-pop-playground">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fcouchdeveloper%2FRXPromise"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fcallmeed%2Fpop-playground"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/couchdeveloper/RXPromise" class="repository-name"><span class="owner-name">couchdeveloper</span><span class="separator">/</span><strong>RXPromise</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">An Objective-C Class which implements the Promises/A+ specification.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/couchdeveloper/RXPromise/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Andreas Grosam" class="avatar js-avatar" data-user="1564701" height="20" src="https://avatars3.githubusercontent.com/u/1564701?s=140" title="couchdeveloper" width="20" />
-          <img alt="Luke Melia" class="avatar js-avatar" data-user="353" height="20" src="https://avatars0.githubusercontent.com/u/353?s=140" title="lukemelia" width="20" />
-          <img alt="Rob Ryan" class="avatar js-avatar" data-user="1530768" height="20" src="https://avatars3.githubusercontent.com/u/1530768?s=140" title="robertmryan" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-XprobePlugin">
-            <a href="#pa-XprobePlugin" class="leaderboard-list-rank">12</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/callmeed/pop-playground">
+      <span class="prefix">callmeed</span>
+      <span class="slash">/</span>
+      pop-playground
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Some example animations using Facebook&#39;s Pop animation library
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/callmeed/pop-playground/graphs/contributors">
+              <img alt="Erik Dungan" class="avatar" data-user="25090" height="20" src="https://avatars0.githubusercontent.com/u/25090?v=2&amp;s=40" title="callmeed" width="20" />
+              <img alt="Francescu Santoni" class="avatar" data-user="1433362" height="20" src="https://avatars3.githubusercontent.com/u/1433362?v=2&amp;s=40" title="Francescu" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-RXPromise">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fjohnno1962%2FXprobePlugin"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fcouchdeveloper%2FRXPromise"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/johnno1962/XprobePlugin" class="repository-name"><span class="owner-name">johnno1962</span><span class="separator">/</span><strong>XprobePlugin</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Objective-C Memory Browser for Xcode</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/johnno1962/XprobePlugin/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="John Holdsworth" class="avatar js-avatar" data-user="1786033" height="20" src="https://avatars0.githubusercontent.com/u/1786033?s=140" title="johnno1962" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-opios">
-            <a href="#pa-opios" class="leaderboard-list-rank">13</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/couchdeveloper/RXPromise">
+      <span class="prefix">couchdeveloper</span>
+      <span class="slash">/</span>
+      RXPromise
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      An Objective-C Class which implements the Promises/A+ specification.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/couchdeveloper/RXPromise/graphs/contributors">
+              <img alt="Andreas Grosam" class="avatar" data-user="1564701" height="20" src="https://avatars1.githubusercontent.com/u/1564701?v=2&amp;s=40" title="couchdeveloper" width="20" />
+              <img alt="Luke Melia" class="avatar" data-user="353" height="20" src="https://avatars3.githubusercontent.com/u/353?v=2&amp;s=40" title="lukemelia" width="20" />
+              <img alt="Rob Ryan" class="avatar" data-user="1530768" height="20" src="https://avatars3.githubusercontent.com/u/1530768?v=2&amp;s=40" title="robertmryan" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-POPdemo">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fopenpeer%2Fopios"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fjxd001%2FPOPdemo"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/openpeer/opios" class="repository-name"><span class="owner-name">openpeer</span><span class="separator">/</span><strong>opios</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Open Peer Client SDK for iOS and reference sample application</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/openpeer/opios/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Robin Raymond" class="avatar js-avatar" data-user="2962646" height="20" src="https://avatars0.githubusercontent.com/u/2962646?s=140" title="robin-raymond" width="20" />
-          <img alt="Sergej Jovanovic" class="avatar js-avatar" data-user="3263595" height="20" src="https://avatars0.githubusercontent.com/u/3263595?s=140" title="SergioOpenPeer" width="20" />
-          <img alt="Vladimir Morosev" class="avatar js-avatar" data-user="3501993" height="20" src="https://avatars3.githubusercontent.com/u/3501993?s=140" title="morosev" width="20" />
-          <img alt="lazicb" class="avatar js-avatar" data-user="1027542" height="20" src="https://avatars3.githubusercontent.com/u/1027542?s=140" title="lazicb" width="20" />
-          <img alt="Erik Lagerway" class="avatar js-avatar" data-user="4098156" height="20" src="https://avatars0.githubusercontent.com/u/4098156?s=140" title="elagerway" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-PivotalCoreKit">
-            <a href="#pa-PivotalCoreKit" class="leaderboard-list-rank">14</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/jxd001/POPdemo">
+      <span class="prefix">jxd001</span>
+      <span class="slash">/</span>
+      POPdemo
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      A simple demo for facebook&#39;s pop framework.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/jxd001/POPdemo/graphs/contributors">
+              <img alt="jxd001" class="avatar" data-user="6147714" height="20" src="https://avatars0.githubusercontent.com/u/6147714?v=2&amp;s=40" title="jxd001" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-NHCalendarActivity">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fpivotal%2FPivotalCoreKit"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fotaviocc%2FNHCalendarActivity"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/pivotal/PivotalCoreKit" class="repository-name"><span class="owner-name">pivotal</span><span class="separator">/</span><strong>PivotalCoreKit</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Shared library and test code for Objective-C projects</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/pivotal/PivotalCoreKit/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Andrew Kitchen" class="avatar js-avatar" data-user="378648" height="20" src="https://avatars2.githubusercontent.com/u/378648?s=140" title="akitchen" width="20" />
-          <img alt="pivotalworkstation" class="avatar js-avatar" data-user="1291310" height="20" src="https://avatars0.githubusercontent.com/u/1291310?s=140" title="pivotalworkstation" width="20" />
-          <img alt="Alex Basson" class="avatar js-avatar" data-user="221066" height="20" src="https://avatars3.githubusercontent.com/u/221066?s=140" title="alexbasson" width="20" />
-          <img alt="Wiley Kestner" class="avatar js-avatar" data-user="639729" height="20" src="https://avatars2.githubusercontent.com/u/639729?s=140" title="wileykestner" width="20" />
-          <img alt="Onsi Fakhouri" class="avatar js-avatar" data-user="558230" height="20" src="https://avatars1.githubusercontent.com/u/558230?s=140" title="onsi" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-Swizzlean">
-            <a href="#pa-Swizzlean" class="leaderboard-list-rank">15</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/otaviocc/NHCalendarActivity">
+      <span class="prefix">otaviocc</span>
+      <span class="slash">/</span>
+      NHCalendarActivity
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      A custom UIActivity that adds events and alarms to the Calendar.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/otaviocc/NHCalendarActivity/graphs/contributors">
+              <img alt="Otavio Cordeiro" class="avatar" data-user="139272" height="20" src="https://avatars3.githubusercontent.com/u/139272?v=2&amp;s=40" title="otaviocc" width="20" />
+              <img alt="Paweł Wrzosek" class="avatar" data-user="599145" height="20" src="https://avatars3.githubusercontent.com/u/599145?v=2&amp;s=40" title="wzs" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-UICoreTextView">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Frbaumbach%2FSwizzlean"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fgiladno%2FUICoreTextView"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/rbaumbach/Swizzlean" class="repository-name"><span class="owner-name">rbaumbach</span><span class="separator">/</span><strong>Swizzlean</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Swizzlean, an Objective-C Swizzle Helper Class.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/rbaumbach/Swizzlean/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="" class="avatar js-avatar" data-user="1626595" height="20" src="https://avatars2.githubusercontent.com/u/1626595?s=140" title="rbaumbach" width="20" />
-          <img alt="Aaron Koop" class="avatar js-avatar" data-user="1111704" height="20" src="https://avatars0.githubusercontent.com/u/1111704?s=140" title="aaronkoop" width="20" />
-          <img alt="Erik Stromlund" class="avatar js-avatar" data-user="1281026" height="20" src="https://avatars0.githubusercontent.com/u/1281026?s=140" title="estromlund" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-ShapeKit">
-            <a href="#pa-ShapeKit" class="leaderboard-list-rank">16</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/giladno/UICoreTextView">
+      <span class="prefix">giladno</span>
+      <span class="slash">/</span>
+      UICoreTextView
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Easy to use UIView which supports rendering using CoreText
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/giladno/UICoreTextView/graphs/contributors">
+              <img alt="Gilad Novik" class="avatar" data-user="417148" height="20" src="https://avatars1.githubusercontent.com/u/417148?v=2&amp;s=40" title="giladno" width="20" />
+              <img alt="tothgy" class="avatar" data-user="306784" height="20" src="https://avatars1.githubusercontent.com/u/306784?v=2&amp;s=40" title="tothgy" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-titanium_box2d">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fandreacremaschi%2FShapeKit"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fjhaynie%2Ftitanium_box2d"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/andreacremaschi/ShapeKit" class="repository-name"><span class="owner-name">andreacremaschi</span><span class="separator">/</span><strong>ShapeKit</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">iOS Geometry Library</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/andreacremaschi/ShapeKit/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Andrea Cremaschi" class="avatar js-avatar" data-user="1131165" height="20" src="https://avatars0.githubusercontent.com/u/1131165?s=140" title="andreacremaschi" width="20" />
-          <img alt="Michael Weisman" class="avatar js-avatar" data-user="52495" height="20" src="https://avatars2.githubusercontent.com/u/52495?s=140" title="mweisman" width="20" />
-          <img alt="giladgo" class="avatar js-avatar" data-user="1915716" height="20" src="https://avatars3.githubusercontent.com/u/1915716?s=140" title="giladgo" width="20" />
-          <img alt="Greg Combs" class="avatar js-avatar" data-user="242848" height="20" src="https://avatars3.githubusercontent.com/u/242848?s=140" title="grgcombs" width="20" />
-          <img alt="Johan Karlsteen" class="avatar js-avatar" data-user="910513" height="20" src="https://avatars3.githubusercontent.com/u/910513?s=140" title="snorf" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-iOS_VPNPlugIn">
-            <a href="#pa-iOS_VPNPlugIn" class="leaderboard-list-rank">17</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/jhaynie/titanium_box2d">
+      <span class="prefix">jhaynie</span>
+      <span class="slash">/</span>
+      titanium_box2d
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Titanium Box2D module for iOS
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/jhaynie/titanium_box2d/graphs/contributors">
+              <img alt="Jeff Haynie" class="avatar" data-user="6027" height="20" src="https://avatars3.githubusercontent.com/u/6027?v=2&amp;s=40" title="jhaynie" width="20" />
+              <img alt="Sébastien Arnaud" class="avatar" data-user="9855" height="20" src="https://avatars2.githubusercontent.com/u/9855?v=2&amp;s=40" title="arnaudsj" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-opios">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2FSmartype%2FiOS_VPNPlugIn"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fopenpeer%2Fopios"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/Smartype/iOS_VPNPlugIn" class="repository-name"><span class="owner-name">Smartype</span><span class="separator">/</span><strong>iOS_VPNPlugIn</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">VPN PlugIn API for iOS</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/Smartype/iOS_VPNPlugIn/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Smartype" class="avatar js-avatar" data-user="64790" height="20" src="https://avatars2.githubusercontent.com/u/64790?s=140" title="Smartype" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-AutoLayoutDSL">
-            <a href="#pa-AutoLayoutDSL" class="leaderboard-list-rank">18</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/openpeer/opios">
+      <span class="prefix">openpeer</span>
+      <span class="slash">/</span>
+      opios
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Open Peer Client SDK for iOS and reference sample application
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/openpeer/opios/graphs/contributors">
+              <img alt="Robin Raymond" class="avatar" data-user="2962646" height="20" src="https://avatars2.githubusercontent.com/u/2962646?v=2&amp;s=40" title="robin-raymond" width="20" />
+              <img alt="Sergej Jovanovic" class="avatar" data-user="3263595" height="20" src="https://avatars0.githubusercontent.com/u/3263595?v=2&amp;s=40" title="SergioOpenPeer" width="20" />
+              <img alt="Vladimir Morosev" class="avatar" data-user="3501993" height="20" src="https://avatars1.githubusercontent.com/u/3501993?v=2&amp;s=40" title="morosev" width="20" />
+              <img alt="lazicb" class="avatar" data-user="1027542" height="20" src="https://avatars1.githubusercontent.com/u/1027542?v=2&amp;s=40" title="lazicb" width="20" />
+              <img alt="Erik Lagerway" class="avatar" data-user="4098156" height="20" src="https://avatars2.githubusercontent.com/u/4098156?v=2&amp;s=40" title="elagerway" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-PivotalCoreKit">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fhumblehacker%2FAutoLayoutDSL"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fpivotal%2FPivotalCoreKit"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/humblehacker/AutoLayoutDSL" class="repository-name"><span class="owner-name">humblehacker</span><span class="separator">/</span><strong>AutoLayoutDSL</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">A straightforward C++ DSL to more concisely define iOS Auto Layout constraints.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/humblehacker/AutoLayoutDSL/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="humblehacker" class="avatar js-avatar" data-user="117582" height="20" src="https://avatars3.githubusercontent.com/u/117582?s=140" title="humblehacker" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-FFTAccelerate">
-            <a href="#pa-FFTAccelerate" class="leaderboard-list-rank">19</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/pivotal/PivotalCoreKit">
+      <span class="prefix">pivotal</span>
+      <span class="slash">/</span>
+      PivotalCoreKit
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Shared library and test code for Objective-C projects
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/pivotal/PivotalCoreKit/graphs/contributors">
+              <img alt="Andrew Kitchen" class="avatar" data-user="378648" height="20" src="https://avatars3.githubusercontent.com/u/378648?v=2&amp;s=40" title="akitchen" width="20" />
+              <img alt="pivotalworkstation" class="avatar" data-user="1291310" height="20" src="https://avatars3.githubusercontent.com/u/1291310?v=2&amp;s=40" title="pivotalworkstation" width="20" />
+              <img alt="Alex Basson" class="avatar" data-user="221066" height="20" src="https://avatars0.githubusercontent.com/u/221066?v=2&amp;s=40" title="alexbasson" width="20" />
+              <img alt="Wiley Kestner" class="avatar" data-user="639729" height="20" src="https://avatars0.githubusercontent.com/u/639729?v=2&amp;s=40" title="wileykestner" width="20" />
+              <img alt="Brian Croom" class="avatar" data-user="1062518" height="20" src="https://avatars2.githubusercontent.com/u/1062518?v=2&amp;s=40" title="pivotal-brian-croom" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-SimulateTouch">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fhoddez%2FFFTAccelerate"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fiolate%2FSimulateTouch"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/hoddez/FFTAccelerate" class="repository-name"><span class="owner-name">hoddez</span><span class="separator">/</span><strong>FFTAccelerate</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">A high level class for performing the FFT using the Accelerate framework</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/hoddez/FFTAccelerate/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Tom Hoddes" class="avatar js-avatar" data-user="1078705" height="20" src="https://avatars2.githubusercontent.com/u/1078705?s=140" title="hoddez" width="20" />
-          <img alt="klyatskin" class="avatar js-avatar" data-user="1611725" height="20" src="https://avatars2.githubusercontent.com/u/1611725?s=140" title="klyatskin" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-ofxPanZoom">
-            <a href="#pa-ofxPanZoom" class="leaderboard-list-rank">20</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/iolate/SimulateTouch">
+      <span class="prefix">iolate</span>
+      <span class="slash">/</span>
+      SimulateTouch
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Simulate touch library for iOS
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/iolate/SimulateTouch/graphs/contributors">
+              <img alt="Kim Seung-ho" class="avatar" data-user="1381452" height="20" src="https://avatars1.githubusercontent.com/u/1381452?v=2&amp;s=40" title="iolate" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-mapbox-gl-cocoa">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Farmadillu%2FofxPanZoom"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fmapbox%2Fmapbox-gl-cocoa"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/armadillu/ofxPanZoom" class="repository-name"><span class="owner-name">armadillu</span><span class="separator">/</span><strong>ofxPanZoom</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Simple OpenFrameworks add-on that handles Zooming and Panning on iDevices, allowing to explore 2D space.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/armadillu/ofxPanZoom/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Oriol Ferrer Mesià" class="avatar js-avatar" data-user="167057" height="20" src="https://avatars1.githubusercontent.com/u/167057?s=140" title="armadillu" width="20" />
-          <img alt="Daniel Rosser" class="avatar js-avatar" data-user="830748" height="20" src="https://avatars1.githubusercontent.com/u/830748?s=140" title="danoli3" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-CsvToSqlite">
-            <a href="#pa-CsvToSqlite" class="leaderboard-list-rank">21</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/mapbox/mapbox-gl-cocoa">
+      <span class="prefix">mapbox</span>
+      <span class="slash">/</span>
+      mapbox-gl-cocoa
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Cocoa API bindings for mapbox-gl-native
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/mapbox/mapbox-gl-cocoa/graphs/contributors">
+              <img alt="Justin R. Miller" class="avatar" data-user="17722" height="20" src="https://avatars2.githubusercontent.com/u/17722?v=2&amp;s=40" title="incanus" width="20" />
+              <img alt="Konstantin Käfer" class="avatar" data-user="52399" height="20" src="https://avatars2.githubusercontent.com/u/52399?v=2&amp;s=40" title="kkaefer" width="20" />
+              <img alt="Leo Lou" class="avatar" data-user="97841" height="20" src="https://avatars1.githubusercontent.com/u/97841?v=2&amp;s=40" title="l4u" width="20" />
+              <img alt="Dane Springmeyer" class="avatar" data-user="20300" height="20" src="https://avatars2.githubusercontent.com/u/20300?v=2&amp;s=40" title="springmeyer" width="20" />
+              <img alt="Johan Kool" class="avatar" data-user="68731" height="20" src="https://avatars0.githubusercontent.com/u/68731?v=2&amp;s=40" title="johankool" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-SwipeSelection">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fdodikk%2FCsvToSqlite"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Ffreerunnering%2FSwipeSelection"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/dodikk/CsvToSqlite" class="repository-name"><span class="owner-name">dodikk</span><span class="separator">/</span><strong>CsvToSqlite</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">A library to import CSV data to the SQLite database on your iPhone</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/dodikk/CsvToSqlite/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Oleksandr Dodatko" class="avatar js-avatar" data-user="396451" height="20" src="https://avatars0.githubusercontent.com/u/396451?s=140" title="dodikk" width="20" />
-          <img alt="Bitdeli Chef" class="avatar js-avatar" data-user="3092978" height="20" src="https://avatars1.githubusercontent.com/u/3092978?s=140" title="bitdeli-chef" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-TypeStatus">
-            <a href="#pa-TypeStatus" class="leaderboard-list-rank">22</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/freerunnering/SwipeSelection">
+      <span class="prefix">freerunnering</span>
+      <span class="slash">/</span>
+      SwipeSelection
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      An improvement to iOS&#39;s text editing that allows you to move the cursor and select text using gestures on the keyboard itself.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/freerunnering/SwipeSelection/graphs/contributors">
+              <img alt="Kyle Howells" class="avatar" data-user="301036" height="20" src="https://avatars3.githubusercontent.com/u/301036?v=2&amp;s=40" title="freerunnering" width="20" />
+              <img alt="Youssef Francis" class="avatar" data-user="77566" height="20" src="https://avatars3.githubusercontent.com/u/77566?v=2&amp;s=40" title="yfrancis" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-deferred">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fhbang%2FTypeStatus"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fkseebaldt%2Fdeferred"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/hbang/TypeStatus" class="repository-name"><span class="owner-name">hbang</span><span class="separator">/</span><strong>TypeStatus</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">iMessage typing and read receipt indicators for the iOS status bar</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/hbang/TypeStatus/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Adam D" class="avatar js-avatar" data-user="773309" height="20" src="https://avatars3.githubusercontent.com/u/773309?s=140" title="kirb" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-ofxCoreMotion">
-            <a href="#pa-ofxCoreMotion" class="leaderboard-list-rank">23</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/kseebaldt/deferred">
+      <span class="prefix">kseebaldt</span>
+      <span class="slash">/</span>
+      deferred
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Async library inspired by CommonJS Promises/A spec
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/kseebaldt/deferred/graphs/contributors">
+              <img alt="Kurtis Seebaldt" class="avatar" data-user="4257" height="20" src="https://avatars0.githubusercontent.com/u/4257?v=2&amp;s=40" title="kseebaldt" width="20" />
+              <img alt="Jeff Hui" class="avatar" data-user="68616" height="20" src="https://avatars3.githubusercontent.com/u/68616?v=2&amp;s=40" title="jeffh" width="20" />
+              <img alt="Brian Croom" class="avatar" data-user="1062518" height="20" src="https://avatars2.githubusercontent.com/u/1062518?v=2&amp;s=40" title="pivotal-brian-croom" width="20" />
+              <img alt="Wiley Kestner" class="avatar" data-user="639729" height="20" src="https://avatars0.githubusercontent.com/u/639729?v=2&amp;s=40" title="wileykestner" width="20" />
+              <img alt="christian-smith" class="avatar" data-user="768500" height="20" src="https://avatars0.githubusercontent.com/u/768500?v=2&amp;s=40" title="christian-smith" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-Swizzlean">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Ftrentbrooks%2FofxCoreMotion"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Frbaumbach%2FSwizzlean"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/trentbrooks/ofxCoreMotion" class="repository-name"><span class="owner-name">trentbrooks</span><span class="separator">/</span><strong>ofxCoreMotion</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Openframeworks/ios addon for the Core Motion Framework.</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/trentbrooks/ofxCoreMotion/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Trent Brooks" class="avatar js-avatar" data-user="578782" height="20" src="https://avatars0.githubusercontent.com/u/578782?s=140" title="trentbrooks" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-CeleWare">
-            <a href="#pa-CeleWare" class="leaderboard-list-rank">24</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/rbaumbach/Swizzlean">
+      <span class="prefix">rbaumbach</span>
+      <span class="slash">/</span>
+      Swizzlean
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Swizzlean, an Objective-C Swizzle Helper Class.
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/rbaumbach/Swizzlean/graphs/contributors">
+              <img alt="rbaumbach" class="avatar" data-user="1626595" height="20" src="https://avatars0.githubusercontent.com/u/1626595?v=2&amp;s=40" title="rbaumbach" width="20" />
+              <img alt="Aaron Koop" class="avatar" data-user="1111704" height="20" src="https://avatars1.githubusercontent.com/u/1111704?v=2&amp;s=40" title="aaronkoop" width="20" />
+              <img alt="Ashton Williams" class="avatar" data-user="1650398" height="20" src="https://avatars1.githubusercontent.com/u/1650398?v=2&amp;s=40" title="Ashton-W" width="20" />
+              <img alt="Erik Stromlund" class="avatar" data-user="1281026" height="20" src="https://avatars3.githubusercontent.com/u/1281026?v=2&amp;s=40" title="estromlund" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-iOS_VPNPlugIn">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2FYonsm%2FCeleWare"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2FSmartype%2FiOS_VPNPlugIn"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/Yonsm/CeleWare" class="repository-name"><span class="owner-name">Yonsm</span><span class="separator">/</span><strong>CeleWare</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">Personal Sample and Base Repository</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/Yonsm/CeleWare/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Yonsm" class="avatar js-avatar" data-user="1648076" height="20" src="https://avatars2.githubusercontent.com/u/1648076?s=140" title="Yonsm" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
-          <li class="repo-leaderboard-list-item leaderboard-list-item" id="pa-miniAudicle">
-            <a href="#pa-miniAudicle" class="leaderboard-list-rank">25</a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/Smartype/iOS_VPNPlugIn">
+      <span class="prefix">Smartype</span>
+      <span class="slash">/</span>
+      iOS_VPNPlugIn
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      VPN PlugIn API for iOS
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/Smartype/iOS_VPNPlugIn/graphs/contributors">
+              <img alt="Smartype" class="avatar" data-user="64790" height="20" src="https://avatars1.githubusercontent.com/u/64790?v=2&amp;s=40" title="Smartype" width="20" />
+          </a>
+
+  </p>
+</li>
+
             
+<li class="repo-list-item" id="pa-swift2js">
 
-<span class="mega-octicon octicon-repo"></span>
-<div class="leaderboard-action">  <a href="/login?return_to=%2Fccrma%2FminiAudicle"
+  <div class="repo-list-stats">
+      <a href="/login?return_to=%2Fswift2js%2Fswift2js"
     class="minibutton  star-button tooltipped tooltipped-n"
     aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>Star
+    <span class="octicon octicon-star"></span>
+    Star
   </a>
 
-</div>
-<div class="leaderboard-list-content">
-  <h2 class="repo-leaderboard-title">
-    <a href="/ccrma/miniAudicle" class="repository-name"><span class="owner-name">ccrma</span><span class="separator">/</span><strong>miniAudicle</strong></a>
-      <span class="title-meta">Objective-C++</span>
-    </h2>
-  <p class="repo-leaderboard-description">miniAudicle: integrated development + performance environment for chuck</p>
-  <ul class="repo-leaderboard-meta">
-    
-    
-    
-      <li class="repo-leaderboard-meta-item repo-leaderboard-contributors">
-        <a href="/ccrma/miniAudicle/graphs/contributors">
-        <span class="contributor-avatar-text">built by</span>
-          <img alt="Spencer Salazar" class="avatar js-avatar" data-user="250365" height="20" src="https://avatars2.githubusercontent.com/u/250365?s=140" title="spencersalazar" width="20" />
-        </a>
-      </li>
-  </ul>
-</div>
 
-          </li>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/swift2js/swift2js">
+      <span class="prefix">swift2js</span>
+      <span class="slash">/</span>
+      swift2js
+</a>  </h3>
+  
+    <p class="repo-list-description">
+      Swift/JavaScript Transpiler
+    </p>
+
+  <p class="repo-list-meta">
+      Objective-C++
+      &#8226;
+
+
+    
+      &#8226;
+          Built by
+          <a href="/swift2js/swift2js/graphs/contributors">
+              <img alt="Imanol Fernandez" class="avatar" data-user="1070794" height="20" src="https://avatars3.githubusercontent.com/u/1070794?v=2&amp;s=40" title="MortimerGoro" width="20" />
+              <img alt="Carlos Hernández Gómez" class="avatar" data-user="881069" height="20" src="https://avatars0.githubusercontent.com/u/881069?v=2&amp;s=40" title="karliky" width="20" />
+              <img alt="Javi Jiménez" class="avatar" data-user="559654" height="20" src="https://avatars3.githubusercontent.com/u/559654?v=2&amp;s=40" title="soyjavi" width="20" />
+          </a>
+
+  </p>
+</li>
+
         </ol>
         <div class="context-loader large-format-loader">
   <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
@@ -1045,14 +1264,16 @@
       </div>
     </div>
     <div class="column one-fourth">
-      
-<ul class="filter-list small language-filter-list" data-pjax>
+      <ul class="filter-list small language-filter-list" data-pjax>
   <li>
       <a href="https://github.com/trending" class="filter-item">All languages</a>
   </li>
   <li>
       <a href="https://github.com/trending?l=unknown" class="filter-item">Unknown languages</a>
   </li>
+    <li>
+        <a href="https://github.com/trending?l=c" class="filter-item">C</a>
+    </li>
     <li>
         <a href="https://github.com/trending?l=css" class="filter-item">CSS</a>
     </li>
@@ -1071,9 +1292,6 @@
     <li>
         <a href="https://github.com/trending?l=ruby" class="filter-item">Ruby</a>
     </li>
-    <li>
-        <a href="https://github.com/trending?l=bash" class="filter-item">Shell</a>
-    </li>
 </ul>
 
 <div class="select-menu js-menu-container js-select-menu is-showing-clear-item">
@@ -1087,12 +1305,8 @@
     <div class="select-menu-modal">
       <div class="select-menu-header">
         <span class="select-menu-title">Other Languages</span>
-        <span class="octicon octicon-x js-menu-close"></span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
       </div> <!-- /.select-menu-header -->
-
-      <div class="select-menu-error-shell">
-        <span class="select-menu-error js-select-menu-error">Whoops, there was an error</span>
-      </div>
 
       <div class="select-menu-filters">
         <div class="select-menu-text-filter">
@@ -1126,6 +1340,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ags-script" class="select-menu-item-text js-select-button-text js-navigation-open">AGS Script</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=alloy" class="select-menu-item-text js-select-button-text js-navigation-open">Alloy</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1135,6 +1353,10 @@
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=apex" class="select-menu-item-text js-select-button-text js-navigation-open">Apex</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=apl" class="select-menu-item-text js-select-button-text js-navigation-open">APL</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1186,6 +1408,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=blitzmax" class="select-menu-item-text js-select-button-text js-navigation-open">BlitzMax</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=bluespec" class="select-menu-item-text js-select-button-text js-navigation-open">Bluespec</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1215,6 +1441,10 @@
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=ceylon" class="select-menu-item-text js-select-button-text js-navigation-open">Ceylon</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=chapel" class="select-menu-item-text js-select-button-text js-navigation-open">Chapel</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1250,6 +1480,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=component-pascal" class="select-menu-item-text js-select-button-text js-navigation-open">Component Pascal</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=coq" class="select-menu-item-text js-select-button-text js-navigation-open">Coq</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1266,15 +1500,15 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=cycript" class="select-menu-item-text js-select-button-text js-navigation-open">Cycript</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=d" class="select-menu-item-text js-select-button-text js-navigation-open">D</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=dart" class="select-menu-item-text js-select-button-text js-navigation-open">Dart</a>
-            </div> <!-- /.select-menu-item -->
-            <div class="select-menu-item js-navigation-item " role="menuitem">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="https://github.com/trending?l=dcpu-16-asm" class="select-menu-item-text js-select-button-text js-navigation-open">DCPU-16 ASM</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1315,6 +1549,10 @@
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=emacs-lisp" class="select-menu-item-text js-select-button-text js-navigation-open">Emacs Lisp</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=emberscript" class="select-menu-item-text js-select-button-text js-navigation-open">EmberScript</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1382,6 +1620,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=grace" class="select-menu-item-text js-select-button-text js-navigation-open">Grace</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=grammatical-framework" class="select-menu-item-text js-select-button-text js-navigation-open">Grammatical Framework</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1426,6 +1668,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=isabelle" class="select-menu-item-text js-select-button-text js-navigation-open">Isabelle</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=j" class="select-menu-item-text js-select-button-text js-navigation-open">J</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1454,6 +1700,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=labview" class="select-menu-item-text js-select-button-text js-navigation-open">LabVIEW</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=lasso" class="select-menu-item-text js-select-button-text js-navigation-open">Lasso</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1467,6 +1717,10 @@
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=logtalk" class="select-menu-item-text js-select-button-text js-navigation-open">Logtalk</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=lookml" class="select-menu-item-text js-select-button-text js-navigation-open">LookML</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1498,7 +1752,7 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="https://github.com/trending?l=ruby" class="select-menu-item-text js-select-button-text js-navigation-open">Mirah</a>
+              <a href="https://github.com/trending?l=mirah" class="select-menu-item-text js-select-button-text js-navigation-open">Mirah</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1527,6 +1781,14 @@
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=nimrod" class="select-menu-item-text js-select-button-text js-navigation-open">Nimrod</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nit" class="select-menu-item-text js-select-button-text js-navigation-open">Nit</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=nix" class="select-menu-item-text js-select-button-text js-navigation-open">Nix</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1562,7 +1824,19 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=opal" class="select-menu-item-text js-select-button-text js-navigation-open">Opal</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=openedge-abl" class="select-menu-item-text js-select-button-text js-navigation-open">OpenEdge ABL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=openscad" class="select-menu-item-text js-select-button-text js-navigation-open">OpenSCAD</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=ox" class="select-menu-item-text js-select-button-text js-navigation-open">Ox</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1595,6 +1869,10 @@
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=php" class="select-menu-item-text js-select-button-text js-navigation-open">PHP</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=piglatin" class="select-menu-item-text js-select-button-text js-navigation-open">PigLatin</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -1726,6 +2004,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=sqf" class="select-menu-item-text js-select-button-text js-navigation-open">SQF</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=sql" class="select-menu-item-text js-select-button-text js-navigation-open">SQL</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1782,6 +2064,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=vcl" class="select-menu-item-text js-select-button-text js-navigation-open">VCL</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=verilog" class="select-menu-item-text js-select-button-text js-navigation-open">Verilog</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1818,6 +2104,10 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
               <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/trending?l=xojo" class="select-menu-item-text js-select-button-text js-navigation-open">Xojo</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
               <a href="https://github.com/trending?l=xproc" class="select-menu-item-text js-select-button-text js-navigation-open">XProc</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item " role="menuitem">
@@ -1850,7 +2140,7 @@
 </div> <!-- /.select-menu -->
 
       <div class="callout">
-  <p class="tip"><strong class="protip">ProTip</strong> Looking for recently updated Objective-C++ repositories? <a href="/search?l=objective-c%2B%2B&amp;q=stars%3A%3E1&amp;s=updated&amp;type=Repositories">Try this search</a></p>
+  <p class="tip"><strong class="protip">ProTip</strong> Looking for most starred Objective-C++ repositories? <a href="/search">Try this search</a></p>
 </div>
     </div>
   </div>
@@ -1873,12 +2163,12 @@
 
     </ul>
 
-    <a href="/">
+    <a href="/" aria-label="Homepage">
       <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
     </a>
 
     <ul class="site-footer-links">
-      <li>&copy; 2014 <span title="0.06544s from github-fe127-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2014 <span title="0.08358s from github-fe136-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="/site/terms">Terms</a></li>
         <li><a href="/site/privacy">Privacy</a></li>
         <li><a href="/security">Security</a></li>
@@ -1889,9 +2179,9 @@
 
 
     <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
-  <div class="fullscreen-container js-fullscreen-container">
+  <div class="fullscreen-container js-suggester-container">
     <div class="textarea-wrap">
-      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents js-suggester-field" placeholder=""></textarea>
     </div>
   </div>
   <div class="fullscreen-sidebar">
@@ -1909,13 +2199,13 @@
 
     <div id="ajax-error-message" class="flash flash-error">
       <span class="octicon octicon-alert"></span>
-      <a href="#" class="octicon octicon-x close js-ajax-error-dismiss"></a>
+      <a href="#" class="octicon octicon-x close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
       Something went wrong with that request. Please try again.
     </div>
 
 
-      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-e87aa86ffae369acf33a96bb6567b2b57183be57.js" type="text/javascript"></script>
-      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-100ee281915e20c71d6b0ff254fbbb70b3fcaf3a.js" type="text/javascript"></script>
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-bc28a4f6b05fd6cd91bbc92310bbbc53e54c6ec2.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-46193212c1e9feb8753d1ecfdfcfad0a23a015d2.js" type="text/javascript"></script>
       
       
         <script async src="https://www.google-analytics.com/analytics.js"></script>

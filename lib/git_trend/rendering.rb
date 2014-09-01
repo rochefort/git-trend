@@ -6,7 +6,7 @@ module GitTrend
 
     # header columns:
     # 'No.', 'Name', 'Lang', 'Star', 'Fork', ['Description']
-    DEFAULT_RULED_LINE_SIZE = [3, 40, 10, 6, 5]
+    DEFAULT_RULED_LINE_SIZE = [3, 40, 10, 6]
     DESCRIPTION_MIN_SIZE = 20
 
     def render(projects, describable = false)
@@ -58,11 +58,11 @@ module GitTrend
     def render_to_header
       f = @ruled_line_size
       if @describable
-        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s %-#{f[5]}s"
+        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %-#{f[4]}s"
       else
-        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s"
+        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
       end
-      header = ['No.', 'Name', 'Lang', 'Star', 'Fork']
+      header = ['No.', 'Name', 'Lang', 'Star']
       header << 'Description' if @describable
       puts fmt % header
       puts fmt % @ruled_line_size.map { |field| '-'*field }
@@ -70,7 +70,7 @@ module GitTrend
 
     def render_to_body(projects)
       f = @ruled_line_size
-      fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %#{f[4]}s"
+      fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
       projects.each_with_index do |project, i|
         result = fmt % [i + 1, project.to_a].flatten
         result << ' ' + project.description.mb_slice(f.last).mb_ljust(f.last) if @describable
