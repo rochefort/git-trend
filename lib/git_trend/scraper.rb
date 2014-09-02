@@ -9,6 +9,7 @@ module GitTrend
 
     def initialize
       @agent = Mechanize.new
+      @agent.user_agent = "git-trend #{VERSION}"
       proxy = URI.parse(ENV['http_proxy']) if ENV['http_proxy']
       @agent.set_proxy(proxy.host, proxy.port, proxy.user, proxy.password) if proxy
     end
