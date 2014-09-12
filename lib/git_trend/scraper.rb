@@ -53,7 +53,7 @@ module GitTrend
     end
 
     def extract_lang_and_star_from_meta(text)
-      meta_data = text.split('•').map { |x| x.gsub("\n", '').strip }
+      meta_data = text.split(0x2022.chr 'utf-8').map { |x| x.gsub("\n", '').strip }
       if meta_data.size == 3
         lang = meta_data[0]
         star_count = meta_data[1].gsub(',', '').to_i
