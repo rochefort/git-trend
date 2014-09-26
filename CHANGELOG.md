@@ -1,3 +1,9 @@
+## v0.1.2
+
+* Fix travis ci error #24 [6752e1d]  
+Add a magic comment for ruby1.9 #2
+
+
 ## v0.1.1
 
 * Upgrade new github trending layout #1 [9a72e2b]
