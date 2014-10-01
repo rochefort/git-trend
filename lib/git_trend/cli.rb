@@ -32,7 +32,7 @@ module GitTrend
     desc :languages, 'Show selectable languages'
     def languages
       scraper = Scraper.new
-      languages = scraper.list_languages
+      languages = scraper.languages
       render_languages(languages)
     end
   end
