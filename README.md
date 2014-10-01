@@ -36,70 +36,70 @@ e.g.:
 
 ```
 $ git trend
-No. Name                                               Lang           Star
---- -------------------------------------------------- ------------ ------
-  1 lafikl/steady.js                                   JavaScript      435
-  2 rpicard/explore-flask                              Python          316
-  3 dc-js/dc.js                                        JavaScript      289
-  4 watilde/beeplay                                    JavaScript      272
-  5 grant/swift-cheat-sheet                                            263
-  6 tictail/bounce.js                                  CSS             260
-  7 jessepollak/card                                   CSS             225
-  8 prat0318/json_resume                               Ruby            195
-  9 addyosmani/psi                                     JavaScript      201
- 10 fullstackio/FlappySwift                            Swift           168
- 11 PythonJS/PythonJS                                  JavaScript      185
- 12 numbbbbb/the-swift-programming-language-in-chinese JavaScript      137
- 13 maxpow4h/swiftz                                    Swift           134
- 14 andlabs/ui                                         Go              116
- 15 interagent/http-api-design                                         100
- 16 dotcloud/docker                                    Go               98
- 17 dwightwatson/validating                            PHP              99
- 18 daneden/animate.css                                CSS              92
- 19 daimajia/AndroidImageSlider                        Java             87
- 20 austinzheng/swift-2048                             Swift            73
- 21 Flolagale/mailin                                   Python           77
- 22 hiphopapp/hiphop                                   CoffeeScript     71
- 23 jas/swift-playground-builder                       JavaScript       62
- 24 medyo/dynamicbox                                   Java             59
- 25 twbs/bootstrap                                     CSS              46
+No. Name                                     Lang          Star Description
+--- ---------------------------------------- ----------- ------ ---------------------------------------------------------------------------------------------------
+  1 reddit/reddit                            Python         528 the code that powers reddit.com
+  2 yahoo/gifshot                            JavaScript     485 JavaScript library that can create animated GIFs from media streams, videos, or images
+  3 FezVrasta/bootstrap-material-design      CSS            387 Material design theme for Bootstrap 3
+  4 realm/realm-java                         Java           293 Realm is a mobile database: a replacement for SQLite & ORMs
+  5 Aerolab/midnight.js                      JavaScript     226 A jQuery plugin to switch fixed headers on the fly
+  6 alebcay/awesome-shell                                   220 A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awes...
+  7 jonathanslenders/python-prompt-toolkit   Python         215 Library for building powerful interactive command lines in Python
+  8 willianjusten/awesome-svg                               130 A curated list of SVG.
+  9 usablica/intro.js                        JavaScript     105 A better way for new feature introduction and step-by-step users guide for your website and proj...
+ 10 simoncozens/sile                         C++            102 Simon's Improved Layout Engine
+ 11 sferik/t                                 Ruby            85 A command-line power tool for Twitter.
+ 12 realm/realm-cocoa                        Objective-C     83 Realm is a mobile database: a replacement for Core Data & SQLite
+ 13 mubix/shellshocker-pocs                                  67 Collection of Proof of Concepts and Potential Targets for #ShellShocker
+ 14 hannob/bashcheck                         Shell           60 test script for shellshocker and related vulnerabilities
+ 15 angular/angular.js                       JavaScript      46 HTML enhanced for web apps
+ 16 kenwheeler/slick                         JavaScript      57 the last carousel you'll ever need
+ 17 Squirrel/Squirrel.Windows                C               57 An installation and update framework for Windows desktop apps
+ 18 jshint/fixmyjs                           JavaScript      56 Automatically fix silly lint errors.
+ 19 plivo/sharq-server                       Python          52 A flexible rate limited queueing system
+ 20 marmelab/ng-admin                        JavaScript      49 Add an AngularJS admin GUI to any RESTful API
+ 21 twbs/bootstrap                           CSS             38 The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first pro...
+ 22 CyberAgent/AMBTableViewController        Objective-C     48 Storyboard and Prototype Cells-centric block-based UITableView controller to manage complex layo...
+ 23 google/cadvisor                          Go              48 Analyzes resource usage and performance characteristics of running containers.
+ 24 vladikoff/chromeos-apk                   JavaScript      46 Run Android APKs in Chrome OS OR Chrome in OS X, Linux and Windows.
+ 25 nhanaswigs/htmljs                        JavaScript      47 HTML render engine and data binding (MVVM)
 ```
 
 ### daily trending with description
 
-    git trend -d
+    git trend --no-description
 
 e.g.:
 
 ```
-$ g trend -d
-No. Name                                               Lang          Star Description
---- -------------------------------------------------- ----------- ------ ----------------------------------------------------------------------------
-  1 hummingbird-me/hummingbird                         JavaScript     535 Probably the coolest anime discovery platform around.
-  2 google/flatbuffers                                 Shell          272 Memory Efficient Serialization Library
-  3 jakubroztocil/httpie                               Python         248 HTTPie is a command line HTTP client, a user-friendly cURL replacement.
-  4 mephux/komanda                                     JavaScript     199 IRC for people who write code
-  5 burocratik/outdated-browser                        JavaScript     188 A simple tool to identify and upgrade old browsers.
-  6 numbbbbb/the-swift-programming-language-in-chinese Python         140 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
-  7 pocketjoso/penthouse                               JavaScript     146 Critical Path CSS Generator
-  8 estiens/world_cup_json                             Ruby           126 Rails backend for a scraper that outputs World Cup data as JSON
-  9 medialab/artoo                                     JavaScript     126 The client-side scraping companion.
- 10 justjavac/Google-IPs                                               97 Google 全球 IP 地址库
- 11 thusfresh/switchboard                              Erlang         114 Switchboard Server
- 12 greatfire/wiki                                                     97
- 13 montagejs/collections                              JavaScript      96 This package contains JavaScript implementations of common data structure...
- 14 thumbtack/angular-smarty                           JavaScript      94 Autocomplete UI written with Angular JS.
- 15 Vestorly/torii                                     JavaScript      91 A set of clean abstractions for authentication in Ember.js
- 16 angular/angular.js                                 JavaScript      68 HTML enhanced for web apps
- 17 urish/angular-moment                               JavaScript      79 Angular.JS directives for Moment.JS (timeago alternative)
- 18 mattdonnelly/Swifter                               Swift           76 A Twitter framework for iOS & OS X written in Swift
- 19 nimbly/angular-formly                              JavaScript      72 AngularJS directive which takes JSON representing a form and renders to H...
- 20 julianshapiro/velocity                             JavaScript      71 Accelerated JavaScript animation.
- 21 GoogleCloudPlatform/kubernetes                     Go              64 Container Cluster Manager
- 22 twbs/bootstrap                                     CSS             45 The most popular front-end framework for developing responsive, mobile fi...
- 23 google/cadvisor                                    Go              58 Analyzes resource usage and performance characteristics of running contai...
- 24 CartoDB/odyssey.js                                 JavaScript      57 Making it easy to merge map and narrative
- 25 ra1028/RACollectionViewReorderableTripletLayout    Objective-C     55 The custom collectionView layout that can perform reordering of cells by ...
+$ git trend --no-description
+No. Name                                     Lang          Star
+--- ---------------------------------------- ----------- ------
+  1 reddit/reddit                            Python         528
+  2 yahoo/gifshot                            JavaScript     485
+  3 FezVrasta/bootstrap-material-design      CSS            387
+  4 realm/realm-java                         Java           293
+  5 Aerolab/midnight.js                      JavaScript     226
+  6 alebcay/awesome-shell                                   220
+  7 jonathanslenders/python-prompt-toolkit   Python         215
+  8 willianjusten/awesome-svg                               130
+  9 usablica/intro.js                        JavaScript     105
+ 10 simoncozens/sile                         C++            102
+ 11 sferik/t                                 Ruby            85
+ 12 realm/realm-cocoa                        Objective-C     83
+ 13 mubix/shellshocker-pocs                                  67
+ 14 hannob/bashcheck                         Shell           60
+ 15 angular/angular.js                       JavaScript      46
+ 16 kenwheeler/slick                         JavaScript      57
+ 17 Squirrel/Squirrel.Windows                C               57
+ 18 jshint/fixmyjs                           JavaScript      56
+ 19 plivo/sharq-server                       Python          52
+ 20 marmelab/ng-admin                        JavaScript      49
+ 21 twbs/bootstrap                           CSS             38
+ 22 CyberAgent/AMBTableViewController        Objective-C     48
+ 23 google/cadvisor                          Go              48
+ 24 vladikoff/chromeos-apk                   JavaScript      46
+ 25 nhanaswigs/htmljs                        JavaScript      47
 ```
 
 ### daily trending by language
@@ -110,33 +110,33 @@ e.g.:
 
 ```
 $ git trend -l ruby
-No. Name                                     Lang         Star
---- ---------------------------------------- ---------- ------
-  1 prat0318/json_resume                     Ruby          199
-  2 dawn/dawn                                Ruby           51
-  3 etsy/nagios-herald                       Ruby           27
-  4 Homebrew/homebrew                        Ruby           13
-  5 CanCanCommunity/cancancan                Ruby           16
-  6 venmo/synx                               Ruby           16
-  7 joenorton/rubyretriever                  Ruby           14
-  8 jekyll/jekyll                            Ruby           10
-  9 rapid7/metasploit-framework              Ruby            9
- 10 discourse/discourse                      Ruby            9
- 11 torben/FlappyMotion                      Ruby           10
- 12 rails/rails                              Ruby            6
- 13 visionmedia/commander                    Ruby            9
- 14 interagent/prmd                          Ruby            9
- 15 opf/openproject                          Ruby            9
- 16 mitchellh/vagrant                        Ruby            8
- 17 twbs/bootstrap-sass                      Ruby            8
- 18 sass/sass                                Ruby            7
- 19 github/hub                               Ruby            8
- 20 gitlabhq/gitlabhq                        Ruby            5
- 21 CocoaPods/CocoaPods                      Ruby            7
- 22 plataformatec/devise                     Ruby            5
- 23 wbailey/claws                            Ruby            7
- 24 guard/guard                              Ruby            6
- 25 jordansissel/fpm                         Ruby            6
+No. Name                                     Lang         Star Description
+--- ---------------------------------------- ---------- ------ ----------------------------------------------------------------------------------------------------
+  1 sferik/t                                 Ruby           78 A command-line power tool for Twitter.
+  2 rails/rails                              Ruby           26 Ruby on Rails
+  3 Homebrew/homebrew                        Ruby           23 The missing package manager for OS X.
+  4 ruby/ruby                                Ruby           12 The Ruby Programming Language
+  5 discourse/discourse                      Ruby           10 A platform for community discussion. Free, open, simple.
+  6 diaspora/diaspora                        Ruby           12 Distributed and contextual social networking
+  7 elasticsearch/logstash                   Ruby           10 logstash - logs/event transport, processing, management, search.
+  8 mitchellh/vagrant                        Ruby           10 Vagrant is a tool for building and distributing development environments.
+  9 increments/qiita-rb                      Ruby           10 Qiita API v2 client library and CLI tool, written in Ruby
+ 10 gitlabhq/gitlabhq                        Ruby            8 Open source software to collaborate on code. Follow us on twitter @gitlabhq
+ 11 jekyll/jekyll                            Ruby            7 Jekyll is a blog-aware, static site generator in Ruby
+ 12 bbatsov/ruby-style-guide                 Ruby            9 A community-driven Ruby coding style guide
+ 13 capistrano/capistrano                    Ruby            7 Remote multi-server automation tool
+ 14 intridea/grape                           Ruby            8 An opinionated micro-framework for creating REST-like APIs in Ruby.
+ 15 CocoaPods/CocoaPods                      Ruby            6 The Objective-C library dependency manager.
+ 16 thoughtbot/laptop                        Ruby            6 A shell script which turns your Linux or Mac OS X laptop into an awesome development machine.
+ 17 amatsuda/database_rewinder               Ruby            7 minimalist's tiny and ultra-fast database cleaner
+ 18 voltrb/volt                              Ruby            7 A ruby web framework where your ruby runs on both server and client
+ 19 Homebrew/linuxbrew                       Ruby            6 A fork of Homebrew for Linux
+ 20 davidcelis/spec-me-maybe                 Ruby            7 Introduces the `maybe` syntax to RSpec.
+ 21 peter-murach/tty                         Ruby            6 Toolbox for developing CLI clients.
+ 22 plataformatec/devise                     Ruby            6 Flexible authentication solution for Rails with Warden.
+ 23 fluent/fluentd                           Ruby            6 Fluentd data collector
+ 24 caskroom/homebrew-cask                   Ruby            5 A CLI workflow for the administration of Mac applications distributed as binaries
+ 25 cantino/huginn                           Ruby            5 Build agents that monitor and act on your behalf.  Your agents are standing by!
 ```
 
 ### weekly/monthly trending
@@ -153,33 +153,33 @@ e.g.:
 
 ```
 $ git trend -s weekly
-No. Name                                               Lang         Star
---- -------------------------------------------------- ---------- ------
-  1 numbbbbb/the-swift-programming-language-in-chinese JavaScript   4161
-  2 justjavac/Google-IPs                                            1499
-  3 tictail/bounce.js                                  CSS          1779
-  4 grant/swift-cheat-sheet                            JavaScript   1432
-  5 GoogleCloudPlatform/kubernetes                     Go           1224
-  6 jessepollak/card                                   CSS          1109
-  7 facebook/Haxl                                      Haskell      1003
-  8 greatfire/wiki                                                   845
-  9 docker/libchan                                     Go            945
- 10 lafikl/steady.js                                   JavaScript    783
- 11 dotcloud/docker                                    Go            660
- 12 fullstackio/FlappySwift                            Swift         603
- 13 docker/libswarm                                    Go            691
- 14 uutils/coreutils                                   Rust          610
- 15 watilde/beeplay                                    JavaScript    542
- 16 dmytrodanylyk/circular-progress-button             Java          510
- 17 mooz/percol                                        Python        511
- 18 fengsp/plan                                        Python        496
- 19 interagent/http-api-design                                       481
- 20 rpicard/explore-flask                              Python        477
- 21 jdorn/json-editor                                  JavaScript    387
- 22 twbs/bootstrap                                     CSS           288
- 23 google/cadvisor                                    Go            371
- 24 irssi/irssi                                        C             351
- 25 mbostock/d3                                        JavaScript    288
+No. Name                                     Lang           Star Description
+--- ---------------------------------------- ------------ ------ --------------------------------------------------------------------------------------------------
+  1 FezVrasta/bootstrap-material-design      CSS            2821 Material design theme for Bootstrap 3
+  2 slackhq/SlackTextViewController          Objective-C    1526 A drop-in UIViewController subclass with a growing text input view and other useful messaging f...
+  3 willianjusten/awesome-svg                               1395 A curated list of SVG.
+  4 Aerolab/midnight.js                      JavaScript     1351 A jQuery plugin to switch fixed headers on the fly
+  5 alebcay/awesome-shell                                    743 A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awe...
+  6 jonathanslenders/python-prompt-toolkit   Python          670 Library for building powerful interactive command lines in Python
+  7 vladikoff/chromeos-apk                   JavaScript      608 Run Android APKs in Chrome OS OR Chrome in OS X, Linux and Windows.
+  8 psaravan/JamsMusicPlayer                 Java            533 A free, powerful and elegant music player for Android.
+  9 reddit/reddit                            Python          553 the code that powers reddit.com
+ 10 Alamofire/Alamofire                      Swift           559 Elegant HTTP Networking in Swift
+ 11 vgvassilev/cling                         C++             492 Cling is an interactive C++ interpreter, built on top of Clang and LLVM compiler infrastructure...
+ 12 shu223/iOS8-Sampler                      Objective-C     476 Code examples for the new functions of iOS 8.
+ 13 yahoo/gifshot                            JavaScript      487 JavaScript library that can create animated GIFs from media streams, videos, or images
+ 14 kenwheeler/slick                         JavaScript      439 the last carousel you'll ever need
+ 15 sferik/t                                 Ruby            420 A command-line power tool for Twitter.
+ 16 angular/angular.js                       JavaScript      325 HTML enhanced for web apps
+ 17 mieko/sr-captcha                         CSS             387 Article describing how the technical means by which Silk Road 1's captcha was broken.
+ 18 sofish/wechat.js                         JavaScript      360 微信相关的 js 操作：分享、网络、菜单
+ 19 robertdavidgraham/masscan                C               345 TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes...
+ 20 realm/realm-java                         Java            348 Realm is a mobile database: a replacement for SQLite & ORMs
+ 21 humhub/humhub                            PHP             331 HumHub - Open Source Social Network
+ 22 twbs/bootstrap                           CSS             259 The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first pr...
+ 23 mechio/takana                            CoffeeScript    341 Takana lets you see your SCSS and CSS style changes live, in the browser, as you type them
+ 24 davidtheclark/scalable-css-reading-list                  331 Collected dispatches from The Quest for Scalable CSS
+ 25 addyosmani/timing.js                     JavaScript      335 Navigation Timing API measurement helpers
 ```
 
 ### show languages
