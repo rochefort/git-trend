@@ -65,7 +65,7 @@ No. Name                                     Lang          Star Description
  25 nhanaswigs/htmljs                        JavaScript      47 HTML render engine and data binding (MVVM)
 ```
 
-### daily trending with description
+### daily trending without description
 
     git trend --no-description
 
