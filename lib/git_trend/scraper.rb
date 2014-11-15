@@ -27,7 +27,7 @@ module GitTrend
         projects << project
       end
       fail ScrapeException if projects.empty?
-      projects[0...number]
+      number ? projects[0...number] : projects
     end
 
     def languages
