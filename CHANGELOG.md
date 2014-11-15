@@ -1,3 +1,6 @@
+## v0.1.5
+* Fix a bug. #3
+
 ## v0.1.4
 * Add number option #3 [7cff5b4]
 
