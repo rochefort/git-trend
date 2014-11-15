@@ -16,6 +16,35 @@ RSpec.describe GitTrend::CLI do
       @cli = CLI.new
     end
 
+    describe 'with -n option' do
+      context 'with 3' do
+        before do
+          stub_request_get('trending')
+        end
+        let(:number) { 3 }
+        it 'display daily ranking top 3' do
+          res = <<-'EOS'.unindent
+            |No. Name                                     Lang         Star
+            |--- ---------------------------------------- ---------- ------
+            |  1 gionkunz/chartist-js                     JavaScript    363
+            |  2 kitematic/kitematic                      JavaScript    327
+            |  3 tmux-plugins/tmux-resurrect              Shell         217
+          EOS
+          expect { @cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
+        end
+      end
+
+      context 'with over 25' do
+        before do
+          stub_request_get('trending')
+        end
+        let(:number) { 26 }
+        it 'display daily ranking' do
+          expect { @cli.invoke(:list, [], number: number, description: false) }.to output(dummy_result_without_description).to_stdout
+        end
+      end
+    end
+
     describe 'with -l option' do
       context 'with ruby' do
         before do

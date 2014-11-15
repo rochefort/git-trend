@@ -14,7 +14,7 @@ module GitTrend
       @agent.set_proxy(proxy.host, proxy.port, proxy.user, proxy.password) if proxy
     end
 
-    def get(language = nil, since = nil)
+    def get(language = nil, since = nil, number = nil)
       projects = []
       page = @agent.get(generate_url_for_get(language, since))
 
@@ -27,7 +27,7 @@ module GitTrend
         projects << project
       end
       fail ScrapeException if projects.empty?
-      projects
+      projects[0...number]
     end
 
     def languages

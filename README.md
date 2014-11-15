@@ -182,6 +182,22 @@ No. Name                                     Lang           Star Description
  25 addyosmani/timing.js                     JavaScript      335 Navigation Timing API measurement helpers
 ```
 
+### number of trendings
+
+    git trend -n <number>
+
+e.g.:
+
+```
+$ git trend -n 3
+No. Name                                     Lang         Star Description
+--- ---------------------------------------- ---------- ------ -----------------------------------------------------
+  1 mozilla/metrics-graphics                 JavaScript   1005 A library optimized for concise, principled data g...
+  2 breach/thrust                            C++           574 Chromium-based cross-platform / cross-language app...
+  3 dotnet/corefx                            C#            538 This repository contains the foundational librarie...
+
+```
+
 ### show languages
 
     git trend languages
