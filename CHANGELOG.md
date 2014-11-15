@@ -1,3 +1,6 @@
+## v0.1.4
+* Add number option #3 [7cff5b4]
+
 ## v0.1.3
 * The `descript` option of `list` command was changed into the default. [3602272]
 
