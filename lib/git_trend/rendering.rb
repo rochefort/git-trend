@@ -14,6 +14,7 @@ module GitTrend
       ruled_line_size(projects)
       render_to_header
       render_to_body(projects)
+      render_to_footer
     end
 
     def render_languages(languages)
@@ -76,6 +77,10 @@ module GitTrend
         result << ' ' + project.description.mb_slice(f.last).mb_ljust(f.last) if @describable
         puts result
       end
+    end
+
+    def render_to_footer
+      puts
     end
 
     def command_exists?(command)

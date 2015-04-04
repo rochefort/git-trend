@@ -29,6 +29,7 @@ RSpec.describe GitTrend::CLI do
             |  1 gionkunz/chartist-js                     JavaScript    363
             |  2 kitematic/kitematic                      JavaScript    327
             |  3 tmux-plugins/tmux-resurrect              Shell         217
+
           EOS
           expect { @cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
         end
@@ -81,6 +82,7 @@ RSpec.describe GitTrend::CLI do
             | 23 rapid7/metasploit-framework              Ruby            5
             | 24 tenderlove/the_metal                     Ruby            6
             | 25 bbatsov/rubocop                          Ruby            5
+
           EOS
           expect { @cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
         end
@@ -121,6 +123,7 @@ RSpec.describe GitTrend::CLI do
             | 23 rbaumbach/Swizzlean                      Objective-C++      0
             | 24 Smartype/iOS_VPNPlugIn                   Objective-C++      0
             | 25 swift2js/swift2js                        Objective-C++      0
+
           EOS
           expect { @cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
         end
@@ -171,6 +174,7 @@ RSpec.describe GitTrend::CLI do
             | 23 quasado/gravit                           JavaScript    365
             | 24 meteor/meteor                            JavaScript    362
             | 25 Netflix/Scumblr                          Ruby          305
+
           EOS
           expect { @cli.invoke(:list, [], since: since, description: false) }.to output(res).to_stdout
         end
@@ -207,6 +211,7 @@ RSpec.describe GitTrend::CLI do
             | 23 VodkaBears/Vide                          JavaScript     1136
             | 24 driftyco/ionic                           JavaScript     1007
             | 25 fians/marka                              CSS             989
+
           EOS
           expect { @cli.invoke(:list, [], since: since, description: false) }.to output(res).to_stdout
         end
@@ -286,6 +291,7 @@ RSpec.describe GitTrend::CLI do
             | 23 apotonick/paperdragon                    Ruby           46
             | 24 junegunn/fzf                             Ruby           41
             | 25 imathis/octopress                        Ruby           36
+
           EOS
           expect { @cli.invoke(:list, [], language: language, since: since, description: false) }.to output(res).to_stdout
         end
@@ -558,6 +564,7 @@ RSpec.describe GitTrend::CLI do
       | 23 ParsePlatform/f8DeveloperConferenceApp     Java            41
       | 24 chriskiehl/Gooey                           Python          41
       | 25 discourse/discourse                        Ruby            41
+
     EOS
   end
 
@@ -590,6 +597,7 @@ RSpec.describe GitTrend::CLI do
       | 23 ParsePlatform/f8DeveloperConferenceApp     Java            41                                                                           
       | 24 chriskiehl/Gooey                           Python          41 Turn (almost) any command line program into a full GUI application with...
       | 25 discourse/discourse                        Ruby            41 A platform for community discussion. Free, open, simple.                  
+
     EOS
   end
 end
