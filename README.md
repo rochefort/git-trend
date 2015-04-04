@@ -63,6 +63,7 @@ No. Name                                     Lang          Star Description
  23 google/cadvisor                          Go              48 Analyzes resource usage and performance characteristics of running containers.
  24 vladikoff/chromeos-apk                   JavaScript      46 Run Android APKs in Chrome OS OR Chrome in OS X, Linux and Windows.
  25 nhanaswigs/htmljs                        JavaScript      47 HTML render engine and data binding (MVVM)
+
 ```
 
 ### daily trending without description
@@ -100,6 +101,7 @@ No. Name                                     Lang          Star
  23 google/cadvisor                          Go              48
  24 vladikoff/chromeos-apk                   JavaScript      46
  25 nhanaswigs/htmljs                        JavaScript      47
+
 ```
 
 ### daily trending by language
@@ -137,6 +139,7 @@ No. Name                                     Lang         Star Description
  23 fluent/fluentd                           Ruby            6 Fluentd data collector
  24 caskroom/homebrew-cask                   Ruby            5 A CLI workflow for the administration of Mac applications distributed as binaries
  25 cantino/huginn                           Ruby            5 Build agents that monitor and act on your behalf.  Your agents are standing by!
+
 ```
 
 ### weekly/monthly trending
@@ -180,6 +183,7 @@ No. Name                                     Lang           Star Description
  23 mechio/takana                            CoffeeScript    341 Takana lets you see your SCSS and CSS style changes live, in the browser, as you type them
  24 davidtheclark/scalable-css-reading-list                  331 Collected dispatches from The Quest for Scalable CSS
  25 addyosmani/timing.js                     JavaScript      335 Navigation Timing API measurement helpers
+
 ```
 
 ### number of trendings
