@@ -1,3 +1,7 @@
+## v0.1.6 (Sat Apr 4 2015)
+
+- Add a empty line for output [a30506d]
+
 ## v0.1.5
 * Fix a bug. #3
 
