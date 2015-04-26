@@ -15,16 +15,14 @@ module GitTrend
     end
 
     def get(language = nil, since = nil, number = nil)
-      projects = []
       page = @agent.get(generate_url_for_get(language, since))
-
-      page.search('.repo-list-item').each do |content|
+      projects = page.search('.repo-list-item').map do |content|
         project = Project.new
         meta_data = content.search('.repo-list-meta').text
         project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
         project.name        = content.search('.repo-list-name a').text.split.join
         project.description = content.search('.repo-list-description').text.gsub("\n", '').strip
-        projects << project
+        project
       end
       fail ScrapeException if projects.empty?
       number ? projects[0...number] : projects
