@@ -12,16 +12,6 @@ git-trend is a command line utitlity to show [Trending repositories on GitHub](h
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'git-trend'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install git-trend
 
 ## Usage
