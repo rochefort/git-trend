@@ -21,7 +21,7 @@ module GitTrend
     option :number,      aliases: '-n', required: false, type: :numeric, desc: 'Number of lines'
     option :help,        aliases: '-h', required: false, type: :boolean
     def list
-      help(:list) and return if  options[:help]
+      help(:list) and return if options[:help]
       scraper = Scraper.new
       projects = scraper.get(options[:language], options[:since], options[:number])
       render(projects, !!options[:description])
