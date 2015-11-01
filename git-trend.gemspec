@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.version       = GitTrend::VERSION
   spec.authors       = ['rochefort']
   spec.email         = ['terasawan@gmail.com']
-  spec.summary       = 'cli based; show Trending repository on github'
+  spec.summary       = 'CLI-Based tool that show Trending repository on github'
   spec.description   = spec.summary
   spec.homepage      = 'https://github.com/rochefort/git-trend'
   spec.license       = 'MIT'
