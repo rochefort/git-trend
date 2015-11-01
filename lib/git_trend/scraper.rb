@@ -16,14 +16,7 @@ module GitTrend
 
     def get(language = nil, since = nil, number = nil)
       page = @agent.get(generate_url_for_get(language, since))
-      projects = page.search('.repo-list-item').map do |content|
-        project = Project.new
-        meta_data = content.search('.repo-list-meta').text
-        project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
-        project.name        = content.search('.repo-list-name a').text.split.join
-        project.description = content.search('.repo-list-description').text.gsub("\n", '').strip
-        project
-      end
+      projects = generate_project(page)
       fail ScrapeException if projects.empty?
       number ? projects[0...number] : projects
     end
@@ -34,7 +27,7 @@ module GitTrend
       page.search('div.select-menu-item a').each do |content|
         href = content.attributes['href'].value
         # objective-c++ =>
-        language = href.match(/github.com\/trending\?l=(.+)/).to_a[1]
+        language = href.match(%r{github.com/trending\?l=(.+)}).to_a[1]
         languages << CGI.unescape(language) if language
       end
       languages
@@ -59,6 +52,17 @@ module GitTrend
       else
         star_count = meta_data[0].gsub(',', '').to_i
         ['', star_count]
+      end
+    end
+
+    def generate_project(page)
+      page.search('.repo-list-item').map do |content|
+        project = Project.new
+        meta_data = content.search('.repo-list-meta').text
+        project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
+        project.name        = content.search('.repo-list-name a').text.split.join
+        project.description = content.search('.repo-list-description').text.gsub("\n", '').strip
+        project
       end
     end
   end
