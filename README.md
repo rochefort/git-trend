@@ -176,7 +176,7 @@ No. Name                                     Lang           Star Description
 
 ```
 
-### number of trendings
+### number of trending
 
     git trend -n <number>
 
