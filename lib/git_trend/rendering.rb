@@ -4,11 +4,11 @@ module GitTrend
       base.extend(self)
     end
     HEADER_COLUMNS = %w(no. name lang star description)
-    DEFAULT_COLUMNS_SIZE = [3, 40, 10, 6, 20]
+    DEFAULT_COLUMNS_SIZES = [3, 40, 10, 6, 20]
 
     def render(projects, enable_description = false)
       @enable_description = enable_description
-      rule_columns_size(projects)
+      rule_columns_sizes(projects)
       render_header
       render_body(projects)
       render_footer
@@ -25,19 +25,19 @@ module GitTrend
 
     private
 
-    def rule_columns_size(projects)
-      @columns_size = DEFAULT_COLUMNS_SIZE.dup
+    def rule_columns_sizes(projects)
+      @columns_sizes = DEFAULT_COLUMNS_SIZES.dup
       rule_max_column_size(projects, :name)
       rule_max_column_size(projects, :lang)
       rule_max_description_size if @enable_description
-      @columns_size.pop unless @enable_description
+      @columns_sizes.pop unless @enable_description
     end
 
     def rule_max_description_size
       terminal_width, _terminal_height = detect_terminal_size
-      description_width = terminal_width - @columns_size[0..-2].inject(&:+) - (@columns_size.size - 1)
-      if description_width >= DEFAULT_COLUMNS_SIZE.last
-        @columns_size[-1] = description_width
+      description_width = terminal_width - @columns_sizes[0..-2].inject(&:+) - (@columns_sizes.size - 1)
+      if description_width >= DEFAULT_COLUMNS_SIZES.last
+        @columns_sizes[-1] = description_width
       else
         @enable_description = false
       end
@@ -46,7 +46,7 @@ module GitTrend
     def rule_max_column_size(projects, attr)
       index = HEADER_COLUMNS.index(attr.to_s)
       max_size = max_size_of(projects, attr)
-      @columns_size[index] = max_size if max_size > @columns_size[index]
+      @columns_sizes[index] = max_size if max_size > @columns_sizes[index]
     end
 
     def max_size_of(projects, attr)
@@ -56,17 +56,16 @@ module GitTrend
     def render_header
       header = HEADER_COLUMNS.map(&:capitalize)
       header.pop unless @enable_description
-      f = @columns_size
+      f = @columns_sizes
       fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
       fmt << " %-#{f[4]}s" if @enable_description
 
       puts fmt % header
-      puts fmt % @columns_size.map { |column| '-' * column }
-      @header = header
+      puts fmt % @columns_sizes.map { |column| '-' * column }
     end
 
     def render_body(projects)
-      f = @columns_size
+      f = @columns_sizes
       fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
       fmt << " %-#{f[4]}s" if @enable_description
       projects.each_with_index do |project, i|
