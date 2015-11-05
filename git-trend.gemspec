@@ -36,16 +36,16 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'thor',        '~> 0.19.1'
   spec.add_dependency 'mechanize',   '~> 2.7.3'
-  spec.add_dependency 'addressable', '~> 2.3.6'
+  spec.add_dependency 'addressable', '~> 2.3.8'
 
   spec.add_development_dependency 'bundler', '~> 1.6'
   spec.add_development_dependency 'rake'
 
-  spec.add_development_dependency 'rspec',     '~> 3.2.0'
+  spec.add_development_dependency 'rspec',     '~> 3.3.0'
   spec.add_development_dependency 'rspec-its', '~> 1.2.0'
-  spec.add_development_dependency 'simplecov', '~> 0.9.0'
+  spec.add_development_dependency 'simplecov', '~> 0.10.0'
   spec.add_development_dependency 'safe_yaml', '~> 1.0.4' # for Ruby2.2.0
-  spec.add_development_dependency 'webmock',   '~> 1.20.4'
+  spec.add_development_dependency 'webmock',   '~> 1.22.3'
 
   spec.add_development_dependency 'coveralls'
 end
