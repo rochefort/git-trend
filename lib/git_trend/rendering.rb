@@ -62,14 +62,17 @@ module GitTrend
 
       puts fmt % header
       puts fmt % @columns_size.map { |column| '-' * column }
+      @header = header
     end
 
     def render_body(projects)
       f = @columns_size
       fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
+      fmt << " %-#{f[4]}s" if @enable_description
       projects.each_with_index do |project, i|
-        result = fmt % [i + 1, project.to_a].flatten
-        result << ' ' + project.description.mb_slice(f.last).mb_ljust(f.last) if @enable_description
+        data = [i + 1, project.to_a].flatten
+        data << project.description.mb_slice(f.last) if @enable_description
+        result = fmt % data
         puts result
       end
     end
