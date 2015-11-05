@@ -3,18 +3,15 @@ module GitTrend
     def self.included(base)
       base.extend(self)
     end
+    HEADER_COLUMNS = %w(no. name lang star description)
+    DEFAULT_COLUMNS_SIZE = [3, 40, 10, 6, 20]
 
-    # header columns:
-    # 'No.', 'Name', 'Lang', 'Star', 'Fork', ['Description']
-    DEFAULT_RULED_LINE_SIZE = [3, 40, 10, 6]
-    DESCRIPTION_MIN_SIZE = 20
-
-    def render(projects, describable = false)
-      @describable = describable
-      ruled_line_size(projects)
-      render_to_header
-      render_to_body(projects)
-      render_to_footer
+    def render(projects, enable_description = false)
+      @enable_description = enable_description
+      rule_columns_size(projects)
+      render_header
+      render_body(projects)
+      render_footer
     end
 
     def render_languages(languages)
@@ -28,63 +25,57 @@ module GitTrend
 
     private
 
+    def rule_columns_size(projects)
+      @columns_size = DEFAULT_COLUMNS_SIZE.dup
+      rule_max_column_size(projects, :name)
+      rule_max_column_size(projects, :lang)
+      rule_max_description_size if @enable_description
+      @columns_size.pop unless @enable_description
+    end
+
+    def rule_max_description_size
+      terminal_width, _terminal_height = detect_terminal_size
+      description_width = terminal_width - @columns_size[0..-2].inject(&:+) - (@columns_size.size - 1)
+      if description_width >= DEFAULT_COLUMNS_SIZE.last
+        @columns_size[-1] = description_width
+      else
+        @enable_description = false
+      end
+    end
+
+    def rule_max_column_size(projects, attr)
+      index = HEADER_COLUMNS.index(attr.to_s)
+      max_size = max_size_of(projects, attr)
+      @columns_size[index] = max_size if max_size > @columns_size[index]
+    end
+
     def max_size_of(projects, attr)
       projects.max_by { |project| project.send(attr).size }.send(attr).size
     end
 
-    def ruled_line_size(projects)
-      @ruled_line_size = DEFAULT_RULED_LINE_SIZE.dup
-      max_name_size = max_size_of(projects, :name)
-      if max_name_size > @ruled_line_size[1]
-        @ruled_line_size[1] = max_name_size
-      end
+    def render_header
+      header = HEADER_COLUMNS.map(&:capitalize)
+      header.pop unless @enable_description
+      f = @columns_size
+      fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
+      fmt << " %-#{f[4]}s" if @enable_description
 
-      max_lang_size = max_size_of(projects, :lang)
-      if max_lang_size > @ruled_line_size[2]
-        @ruled_line_size[2] = max_lang_size
-      end
-
-      # setting description size
-      if @describable
-        terminal_width, _terminal_height = detect_terminal_size
-        description_width = terminal_width - @ruled_line_size.inject(&:+) - @ruled_line_size.size
-        if description_width >= DESCRIPTION_MIN_SIZE
-          @ruled_line_size << description_width
-        else
-          @describable = false
-        end
-      end
-    end
-
-    def render_to_header
-      f = @ruled_line_size
-      if @describable
-        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s %-#{f[4]}s"
-      else
-        fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
-      end
-      header = ['No.', 'Name', 'Lang', 'Star']
-      header << 'Description' if @describable
       puts fmt % header
-      puts fmt % @ruled_line_size.map { |field| '-'*field }
+      puts fmt % @columns_size.map { |column| '-' * column }
     end
 
-    def render_to_body(projects)
-      f = @ruled_line_size
+    def render_body(projects)
+      f = @columns_size
       fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
       projects.each_with_index do |project, i|
         result = fmt % [i + 1, project.to_a].flatten
-        result << ' ' + project.description.mb_slice(f.last).mb_ljust(f.last) if @describable
+        result << ' ' + project.description.mb_slice(f.last).mb_ljust(f.last) if @enable_description
         puts result
       end
     end
 
-    def render_to_footer
+    def render_footer
       puts
-    end
-
-    def command_exists?(command)
-      ENV['PATH'].split(File::PATH_SEPARATOR).any? { |d| File.exist? File.join(d, command) }
     end
 
     # https://github.com/cldwalker/hirb/blob/master/lib/hirb/util.rb#L61-71
@@ -100,6 +91,10 @@ module GitTrend
       end
     rescue
       nil
+    end
+
+    def command_exists?(command)
+      ENV['PATH'].split(File::PATH_SEPARATOR).any? { |d| File.exist? File.join(d, command) }
     end
   end
 end
