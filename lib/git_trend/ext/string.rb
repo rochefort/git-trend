@@ -1,8 +1,6 @@
-class String
-  def mb_width
-    each_char.inject(0) { |sum, c| sum += c.ascii_only? ? 1 : 2 }
-  end
+require 'unicode/display_width'
 
+class String
   def mb_slice(width)
     return '' if empty?
 
@@ -10,7 +8,7 @@ class String
     extraction_size = 0
     extraction = ''
     each_char do |c|
-      char_size = c.ascii_only? ? 1 : 2
+      char_size = c.display_width
       if extraction_size + char_size > max_size
         extraction << '...'
         break
@@ -22,7 +20,7 @@ class String
   end
 
   def mb_ljust(width, padding = ' ')
-    padding_size = [0, width - mb_width].max
+    padding_size = [0, width - display_width].max
     self + padding * padding_size
   end
 end
