@@ -44,13 +44,13 @@ module GitTrend
     end
 
     def extract_lang_and_star_from_meta(text)
-      meta_data = text.split('•').map { |x| x.gsub("\n", '').strip }
+      meta_data = text.split('•').map { |x| x.delete("\n").strip }
       if meta_data.size == 3
         lang = meta_data[0]
-        star_count = meta_data[1].gsub(',', '').to_i
+        star_count = meta_data[1].delete(',').to_i
         [lang, star_count]
       else
-        star_count = meta_data[0].gsub(',', '').to_i
+        star_count = meta_data[0].delete(',').to_i
         ['', star_count]
       end
     end
@@ -61,7 +61,7 @@ module GitTrend
         meta_data = content.search('.repo-list-meta').text
         project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
         project.name        = content.search('.repo-list-name a').text.split.join
-        project.description = content.search('.repo-list-description').text.gsub("\n", '').strip
+        project.description = content.search('.repo-list-description').text.delete("\n").strip
         project
       end
     end
