@@ -7,7 +7,7 @@
 
 # git-trend
 
-git-trend is a command line utitlity to show [Trending repositories on GitHub](https://github.com/trending).  
+git-trend is a command line utility to show [Trending repositories on GitHub](https://github.com/trending).  
 
 
 ## Installation
