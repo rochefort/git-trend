@@ -1,3 +1,8 @@
+## v0.1.7 (Fri Nov 27 2015)
+  Update gems and some refactors
+* Use mb_string gem. [4c72add]
+* Use unicode-display_width to detect full-width unicode characters[704ea13]
+
 ## v0.1.6 (Sat Apr 4 2015)
 
 - Add a empty line for output [a30506d]
