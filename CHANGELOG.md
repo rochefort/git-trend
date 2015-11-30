@@ -68,4 +68,4 @@ Add a magic comment for ruby1.9 #2
 
 ## v0.0.1
 
-* Implement basic feuture (show daily trending)
+* Implement basic feature (show daily trending)
