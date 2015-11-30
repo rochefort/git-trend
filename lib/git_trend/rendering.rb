@@ -70,7 +70,7 @@ module GitTrend
       fmt << " %-#{f[4]}s" if @enable_description
       projects.each_with_index do |project, i|
         data = [i + 1, project.to_a].flatten
-        data << project.description.mb_slice(f.last) if @enable_description
+        data << project.description.mb_truncate(f.last) if @enable_description
         result = fmt % data
         puts result
       end

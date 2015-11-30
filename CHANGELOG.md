@@ -1,3 +1,6 @@
+## v0.1.8 (Tue Dec 1 2015)
+Update gems
+
 ## v0.1.7 (Fri Nov 27 2015)
   Update gems and some refactors
 * Use mb_string gem. [4c72add]

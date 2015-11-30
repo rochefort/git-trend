@@ -581,11 +581,11 @@ RSpec.describe GitTrend::CLI do
       |  7 AllThingsSmitty/must-watch-css                             93 A useful list of must-watch videos about CSS.                             
       |  8 masayuki0812/c3                            JavaScript      85 A D3-based reusable chart library                                         
       |  9 fouber/page-monitor                        JavaScript      74 capture webpage and diff the dom change with phantomjs                    
-      | 10 gogits/gogs                                Go              71 Gogs(Go Git Service) is a painless self-hosted Git Service written in G...
+      | 10 gogits/gogs                                Go              71 Gogs(Go Git Service) is a painless self-hosted Git Service written in Go. 
       | 11 facebook/flux                              JavaScript      72 Application Architecture for Building User Interfaces                     
       | 12 twbs/bootstrap                             CSS             55 The most popular front-end framework for developing responsive, mobile ...
       | 13 luster-io/impulse                          JavaScript      68 Dynamics Physics Interactions for the Mobile Web                          
-      | 14 lawloretienne/QuickReturn                  Java            65 Showcases QuickReturn view as a header, footer, and both header and foo...
+      | 14 lawloretienne/QuickReturn                  Java            65 Showcases QuickReturn view as a header, footer, and both header and footer
       | 15 angular/angular.js                         JavaScript      53 HTML enhanced for web apps                                                
       | 16 wisk/medusa                                C               60 An open source interactive disassembler                                   
       | 17 ochococo/Design-Patterns-In-Swift          Swift           60 Design Patterns implemented in Swift                                      
