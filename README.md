@@ -216,6 +216,12 @@ applescript
 .
 ```
 
+## Tips
+I use the alias command like below;
+```
+alias trend='g trend -n 10 && g trend -l ruby -n 5 && g trend -l JavaScript -n 5 && g trend -l objective-c -n 5 && g trend -l swift -n 3 && g trend -l php -n 3'
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/git-trend/fork )
