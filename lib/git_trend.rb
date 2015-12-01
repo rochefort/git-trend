@@ -1,5 +1,4 @@
 require 'mb_string'
-require 'git_trend/ext'
 
 module GitTrend
   class ScrapeException < StandardError; end
