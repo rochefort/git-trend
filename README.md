@@ -9,6 +9,9 @@
 
 git-trend is a command line utility to show [Trending repositories on GitHub](https://github.com/trending).  
 
+## Requirements
+
+Ruby versions is earlier than 2.0.
 
 ## Installation
 
