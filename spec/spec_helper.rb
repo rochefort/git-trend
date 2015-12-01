@@ -17,10 +17,23 @@
 require 'coveralls'
 Coveralls.wear!
 
+require 'simplecov'
+require 'codeclimate-test-reporter'
+dir = File.join(ENV['CIRCLE_ARTIFACTS'] || 'coverage')
+SimpleCov.coverage_dir(dir)
+SimpleCov.start do
+  add_filter '/spec/'
+
+  formatter SimpleCov::Formatter::MultiFormatter.new([
+    SimpleCov::Formatter::HTMLFormatter,
+    CodeClimate::TestReporter::Formatter,
+    Coveralls::SimpleCov::Formatter
+  ])
+end
+
 require 'rspec/its'
 require 'webmock/rspec'
 
-require 'simplecov'
 require 'git_trend'
 SimpleCov.start
 
