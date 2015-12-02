@@ -1,3 +1,6 @@
+## v0.2.0 (Tue Dec 3 2015)
+Update gems
+
 ## v0.1.9 (Tue Dec 2 2015)
 Fix bug #4
 
