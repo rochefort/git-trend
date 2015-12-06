@@ -38,14 +38,14 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'mb_string',   '~> 0.1.3'
   spec.add_dependency 'mechanize',   '~> 2.7.3'
   spec.add_dependency 'thor',        '~> 0.19.1'
-  spec.add_dependency 'unicode-display_width', '~> 0.2.0'
+  spec.add_dependency 'unicode-display_width', '~> 0.3.0'
 
   spec.add_development_dependency 'bundler', '~> 1.6'
   spec.add_development_dependency 'rake'
 
   spec.add_development_dependency 'rspec',     '~> 3.4.0'
   spec.add_development_dependency 'rspec-its', '~> 1.2.0'
-  spec.add_development_dependency 'simplecov', '~> 0.11.0'
+  spec.add_development_dependency 'simplecov', '~> 0.11.1'
   spec.add_development_dependency 'safe_yaml', '~> 1.0.4' # for Ruby2.2.0
   spec.add_development_dependency 'webmock',   '~> 1.22.3'
 
