@@ -67,11 +67,16 @@ module GitTrend
     def render_body(projects)
       f = @columns_sizes
       fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
-      fmt << " %-#{f[4]}s" if @enable_description
+      description_fmt = '';
       projects.each_with_index do |project, i|
         data = [i + 1, project.to_a].flatten
-        data << project.description.mb_truncate(f.last) if @enable_description
-        result = fmt % data
+        if @enable_description
+          description = project.description.mb_truncate(f.last)
+          data << description
+          mb_char_size = description.display_width - description.size
+          description_fmt = " %-#{f.last - mb_char_size}s"
+        end
+        result = "#{fmt}#{description_fmt}" % data
         puts result
       end
     end

@@ -297,6 +297,19 @@ RSpec.describe GitTrend::CLI do
         end
       end
     end
+
+    describe 'without options' do
+      context 'with multibyte chracters' do
+        before do
+          ENV['COLUMNS'] = '140'
+          ENV['LINES'] = '40'
+          stub_request_get('trending', 'trending_including_multibyte_characters')
+        end
+        it 'display daily ranking' do
+          expect { @cli.invoke(:list, []) }.to output(dummy_result_no_options_with_multibyte_characters).to_stdout
+        end
+      end
+    end
   end
 
   describe '#languages' do
@@ -523,16 +536,17 @@ RSpec.describe GitTrend::CLI do
 
   private
 
-  def stub_request_get(stub_url)
+  def stub_request_get(stub_url, stub_file_name = nil)
     url = Scraper::BASE_HOST.dup
     url << "/#{stub_url}" if stub_url
     uri = URI.parse(url)
 
+    stub_file = stub_file_name || stub_url
     stub_request(:get, uri)
       .to_return(
         status: 200,
         headers: { content_type: 'text/html' },
-        body: load_http_stub(stub_url))
+        body: load_http_stub(stub_file))
   end
 
   def dummy_result_without_description
@@ -597,6 +611,39 @@ RSpec.describe GitTrend::CLI do
       | 23 ParsePlatform/f8DeveloperConferenceApp     Java            41                                                                           
       | 24 chriskiehl/Gooey                           Python          41 Turn (almost) any command line program into a full GUI application with...
       | 25 discourse/discourse                        Ruby            41 A platform for community discussion. Free, open, simple.                  
+
+    EOS
+  end
+
+  def dummy_result_no_options_with_multibyte_characters
+    <<-'EOS'.unindent
+      |No. Name                                     Lang         Star Description                                                                  
+      |--- ---------------------------------------- ---------- ------ -----------------------------------------------------------------------------
+      |  1 apple/swift                              C++          1487 The Swift Programming Language                                               
+      |  2 hashcat/hashcat                          C             383 Advanced CPU-based password recovery utility                                 
+      |  3 airbnb/reagent                           JavaScript    416 JavaScript Testing utilities for React                                       
+      |  4 FreeCodeCamp/FreeCodeCamp                JavaScript    381 The http://FreeCodeCamp.com open source codebase and curriculum. Learn to ...
+      |  5 diafygi/acme-tiny                        Python        311 A tiny script to issue and renew TLS certs from Let's Encrypt                
+      |  6 letsencrypt/letsencrypt                  Python        300 This Let's Encrypt repo is an ACME client that can obtain certs and extens...
+      |  7 twitter/labella.js                       JavaScript    248 Placing labels on a timeline without overlap.                                
+      |  8 LeaVerou/bliss                           HTML          228 Blissful JavaScript                                                          
+      |  9 nathancahill/Split.js                    JavaScript    217 Lightweight, unopinionated utility for adjustable split views                
+      | 10 hashcat/oclHashcat                       C             194 World's fastest and most advanced GPGPU-based password recovery utility      
+      | 11 apple/swift-package-manager              Swift         190 The Package Manager for the Swift Programming Language                       
+      | 12 documentationjs/documentation            JavaScript    177 beautiful, flexible, powerful js docs                                        
+      | 13 HospitalRun/hospitalrun-frontend         JavaScript    167 Ember front end for HospitalRun                                              
+      | 14 NARKOZ/hacker-scripts                    JavaScript    139 Based on a true story                                                        
+      | 15 apple/swift-evolution                                  140                                                                              
+      | 16 MaximAbramchuck/awesome-interviews                     139 A curated awesome list of lists of interview questions. Feel free to contr...
+      | 17 adleroliveira/dreamjs                    JavaScript    136 A lightweight json data generator.                                           
+      | 18 huytd/swift-http                         Swift         125 HTTP Implementation for Swift on Linux and Mac OS X                          
+      | 19 diafygi/gethttpsforfree                  JavaScript    118 Source code for https://gethttpsforfree.com/                                 
+      | 20 apple/swift-corelibs-foundation          C              93 The Foundation Project, providing core utilities, internationalization, an...
+      | 21 xenolf/lego                              Go            100 Let's Encrypt client and ACME library written in Go                          
+      | 22 fengyuanchen/cropperjs                   JavaScript     95 JavaScript image cropper.                                                    
+      | 23 proflin/CoolplaySpark                                   85 酷玩 Spark                                                                   
+      | 24 incrediblesound/story-graph              JavaScript     87 The Graph that Generates Stories                                             
+      | 25 geeeeeeeeek/WeChatLuckyMoney             Java           75 微信抢红包插件, an Android app that helps you snatch virtual red envelopes...
 
     EOS
   end
