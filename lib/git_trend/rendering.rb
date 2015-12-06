@@ -67,7 +67,7 @@ module GitTrend
     def render_body(projects)
       f = @columns_sizes
       fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
-      description_fmt = '';
+      description_fmt = ''
       projects.each_with_index do |project, i|
         data = [i + 1, project.to_a].flatten
         if @enable_description
@@ -92,9 +92,7 @@ module GitTrend
       elsif (RUBY_PLATFORM =~ /java/ || (!STDIN.tty? && ENV['TERM'])) && command_exists?('tput')
         [`tput cols`.to_i, `tput lines`.to_i]
       elsif STDIN.tty? && command_exists?('stty')
-        `stty size`.scan(/\d+/).map {  |s| s.to_i }.reverse
-      else
-        nil
+        `stty size`.scan(/\d+/).map(&:to_i).reverse
       end
     rescue
       nil
