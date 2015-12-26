@@ -10,7 +10,6 @@ RSpec.shared_examples_for 'since daily ranking' do
 end
 
 RSpec.describe GitTrend::CLI do
-
   describe '#list' do
     before do
       @cli = CLI.new
