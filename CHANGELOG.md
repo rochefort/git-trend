@@ -1,3 +1,6 @@
+## v0.2.2 (Sun Dec 26 2015)
+- Update gems [29bc2a9]
+
 ## v0.2.1 (Sun Dec 6 2015)
 - Fix #6 redundancy line feeds when including multibyte characters [61fd81c]
 - Update gems [ea5a018]
