@@ -34,8 +34,8 @@ Gem::Specification.new do |spec|
 
   spec.post_install_message = install_message
 
-  spec.add_dependency 'addressable', '~> 2.3.8'
-  spec.add_dependency 'mb_string',   '~> 0.1.3'
+  spec.add_dependency 'addressable', '~> 2.4.0'
+  spec.add_dependency 'mb_string',   '~> 0.1.4'
   spec.add_dependency 'mechanize',   '~> 2.7.3'
   spec.add_dependency 'thor',        '~> 0.19.1'
   spec.add_dependency 'unicode-display_width', '~> 0.3.0'
