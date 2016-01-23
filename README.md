@@ -222,6 +222,12 @@ I use an alias command like below;
 alias trend='g trend -n 10 && g trend -l ruby -n 5 && g trend -l JavaScript -n 5 && g trend -l objective-c -n 5 && g trend -l swift -n 3 && g trend -l php -n 3'
 ```
 
+## Implemantation of other language
+
+* [andygrunwald/go-trending: Go library for accessing trending repositories and developers at Github.](https://github.com/andygrunwald/go-trending)  
+
+
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/git-trend/fork )
