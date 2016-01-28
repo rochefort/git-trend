@@ -1,3 +1,6 @@
+## v0.2.2 (Fri Jan 29 2016)
+- Fix missing languages
+
 ## v0.2.2 (Sun Dec 26 2015)
 - Update gems [29bc2a9]
 
