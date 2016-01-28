@@ -1,0 +1,8 @@
+wget https://github.com/trending
+wget https://github.com/trending\?l=ruby
+wget https://github.com/trending\?l=objective-c%2B%2B
+wget https://github.com/trending\?since=weekly
+wget https://github.com/trending\?since=
+wget https://github.com/trending\?since=daily
+wget https://github.com/trending\?since=monthly
+wget https://github.com/trending\?l\=ruby\&since\=weekly
