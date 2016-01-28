@@ -25,9 +25,9 @@ RSpec.describe GitTrend::CLI do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
-            |  1 gionkunz/chartist-js                     JavaScript    363
-            |  2 kitematic/kitematic                      JavaScript    327
-            |  3 tmux-plugins/tmux-resurrect              Shell         217
+            |  1 HunterLarco/voxel.css                    CSS           941
+            |  2 fengyuanchen/viewerjs                    JavaScript    716
+            |  3 FreeCodeCamp/FreeCodeCamp                JavaScript    614
 
           EOS
           expect { @cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
@@ -56,31 +56,31 @@ RSpec.describe GitTrend::CLI do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
-            |  1 discourse/discourse                      Ruby           40
-            |  2 Netflix/Scumblr                          Ruby           24
-            |  3 Homebrew/homebrew                        Ruby           19
-            |  4 remore/burn                              Ruby           23
-            |  5 mina-deploy/mina                         Ruby           17
-            |  6 pragmaticivan/minotauro_vagrant_rails    Ruby           16
-            |  7 rails/rails                              Ruby           11
-            |  8 sass/sass                                Ruby           11
-            |  9 cantino/huginn                           Ruby           10
-            | 10 caskroom/homebrew-cask                   Ruby            8
-            | 11 presidentbeef/brakeman                   Ruby            9
-            | 12 applift/fast_attributes                  Ruby           10
-            | 13 krisleech/wisper                         Ruby           10
-            | 14 jekyll/jekyll                            Ruby            7
-            | 15 intridea/grape                           Ruby            7
-            | 16 mitchellh/vagrant                        Ruby            6
-            | 17 elasticsearch/logstash                   Ruby            6
-            | 18 rightscale/praxis                        Ruby            7
-            | 19 cerebris/jsonapi-resources               Ruby            7
-            | 20 ruby/ruby                                Ruby            6
-            | 21 junegunn/fzf                             Ruby            6
-            | 22 digitaloceancloud/resource_kit           Ruby            6
-            | 23 rapid7/metasploit-framework              Ruby            5
-            | 24 tenderlove/the_metal                     Ruby            6
-            | 25 bbatsov/rubocop                          Ruby            5
+            |  1 rails/rails                              Ruby           24
+            |  2 thoughtbot/scenic                        Ruby           34
+            |  3 Homebrew/homebrew                        Ruby           26
+            |  4 jekyll/jekyll                            Ruby           23
+            |  5 Thibaut/devdocs                          Ruby           19
+            |  6 jondot/awesome-react-native              Ruby           16
+            |  7 fastlane/fastlane                        Ruby           15
+            |  8 discourse/discourse                      Ruby           13
+            |  9 mitchellh/vagrant                        Ruby           13
+            | 10 caskroom/homebrew-cask                   Ruby           11
+            | 11 shakacode/react_on_rails                 Ruby           14
+            | 12 gitlabhq/gitlabhq                        Ruby           13
+            | 13 samaaron/sonic-pi                        Ruby           12
+            | 14 ruby/ruby                                Ruby           10
+            | 15 twbs/bootstrap-sass                      Ruby           11
+            | 16 rapid7/metasploit-framework              Ruby            8
+            | 17 tmuxinator/tmuxinator                    Ruby           10
+            | 18 CocoaPods/CocoaPods                      Ruby            9
+            | 19 plataformatec/devise                     Ruby            9
+            | 20 saasbook/typo                            Ruby            0
+            | 21 bbatsov/rubocop                          Ruby            7
+            | 22 Shopify/liquid                           Ruby            8
+            | 23 thoughtbot/administrate                  Ruby            7
+            | 24 capistrano/capistrano                    Ruby            7
+            | 25 brandonhilkert/sucker_punch              Ruby            7
 
           EOS
           expect { @cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
@@ -97,31 +97,31 @@ RSpec.describe GitTrend::CLI do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang            Star
             |--- ---------------------------------------- ------------- ------
-            |  1 droolsjbpm/optaplanner                   Objective-C++      0
-            |  2 facebook/pop                             Objective-C++      0
-            |  3 johnno1962/Xtrace                        Objective-C++      0
-            |  4 pivotal/cedar                            Objective-C++      0
-            |  5 wetube/bitcloud                          Objective-C++      0
-            |  6 mousebird/WhirlyGlobe                    Objective-C++      0
-            |  7 deanm/plask                              Objective-C++      0
-            |  8 jerols/PopTut                            Objective-C++      0
-            |  9 otaviocc/OCBorghettiView                 Objective-C++      0
-            | 10 johnno1962/XprobePlugin                  Objective-C++      0
-            | 11 callmeed/pop-playground                  Objective-C++      0
-            | 12 couchdeveloper/RXPromise                 Objective-C++      0
-            | 13 jxd001/POPdemo                           Objective-C++      0
-            | 14 otaviocc/NHCalendarActivity              Objective-C++      0
-            | 15 giladno/UICoreTextView                   Objective-C++      0
-            | 16 jhaynie/titanium_box2d                   Objective-C++      0
-            | 17 openpeer/opios                           Objective-C++      0
-            | 18 pivotal/PivotalCoreKit                   Objective-C++      0
-            | 19 iolate/SimulateTouch                     Objective-C++      0
-            | 20 mapbox/mapbox-gl-cocoa                   Objective-C++      0
-            | 21 freerunnering/SwipeSelection             Objective-C++      0
-            | 22 kseebaldt/deferred                       Objective-C++      0
-            | 23 rbaumbach/Swizzlean                      Objective-C++      0
+            |  1 facebook/pop                             Objective-C++      0
+            |  2 facebook/componentkit                    Objective-C++      0
+            |  3 rsms/fb-mac-messenger                    Objective-C++      0
+            |  4 johnno1962/Xtrace                        Objective-C++      0
+            |  5 pivotal/cedar                            Objective-C++      0
+            |  6 rogual/neovim-dot-app                    Objective-C++      0
+            |  7 mousebird/WhirlyGlobe                    Objective-C++      0
+            |  8 deanm/plask                              Objective-C++      0
+            |  9 jerols/PopTut                            Objective-C++      0
+            | 10 fjolnir/Tranquil                         Objective-C++      0
+            | 11 otaviocc/OCBorghettiView                 Objective-C++      0
+            | 12 jxd001/POPdemo                           Objective-C++      0
+            | 13 foundry/OpenCVSwiftStitch                Objective-C++      0
+            | 14 couchdeveloper/RXPromise                 Objective-C++      0
+            | 15 petegoodliffe/PGMidi                     Objective-C++      0
+            | 16 opensource-apple/objc4                   Objective-C++      0
+            | 17 giladno/UICoreTextView                   Objective-C++      0
+            | 18 iolate/SimulateTouch                     Objective-C++      0
+            | 19 otaviocc/NHCalendarActivity              Objective-C++      0
+            | 20 belkevich/nsdate-calendar                Objective-C++      0
+            | 21 pivotal/PivotalCoreKit                   Objective-C++      0
+            | 22 openpeer/opios                           Objective-C++      0
+            | 23 swift2js/swift2js                        Objective-C++      0
             | 24 Smartype/iOS_VPNPlugIn                   Objective-C++      0
-            | 25 swift2js/swift2js                        Objective-C++      0
+            | 25 ryanb93/Applefy                          Objective-C++      0
 
           EOS
           expect { @cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
@@ -146,33 +146,33 @@ RSpec.describe GitTrend::CLI do
         let(:since) { 'weekly' }
         it 'display daily ranking since weekly' do
           res = <<-'EOS'.unindent
-            |No. Name                                     Lang         Star
-            |--- ---------------------------------------- ---------- ------
-            |  1 rxin/db-readings                                      2116
-            |  2 gionkunz/chartist-js                     JavaScript   1652
-            |  3 chriskiehl/Gooey                         Python       1335
-            |  4 masayuki0812/c3                          JavaScript   1233
-            |  5 daimajia/AndroidSwipeLayout              Java          750
-            |  6 gogits/gogs                              Go            751
-            |  7 kitematic/kitematic                      JavaScript    734
-            |  8 tmux-plugins/tmux-resurrect              Shell         737
-            |  9 fastmonkeys/stellar                      Python        642
-            | 10 Yelp/dockersh                            Go            633
-            | 11 sahat/satellizer                         PHP           581
-            | 12 luster-io/impulse                        JavaScript    580
-            | 13 AllThingsSmitty/must-watch-css                         560
-            | 14 duojs/duo                                JavaScript    554
-            | 15 tylertreat/chan                          C             548
-            | 16 angular/angular.js                       JavaScript    378
-            | 17 mattt/Surge                              Swift         459
-            | 18 HubSpot/pace                             CSS           444
-            | 19 trueinteractions/tint2                   C             448
-            | 20 peachananr/onepage-scroll                JavaScript    386
-            | 21 twbs/bootstrap                           CSS           300
-            | 22 google/web-starter-kit                   CSS           372
-            | 23 quasado/gravit                           JavaScript    365
-            | 24 meteor/meteor                            JavaScript    362
-            | 25 Netflix/Scumblr                          Ruby          305
+            |No. Name                                     Lang          Star
+            |--- ---------------------------------------- ----------- ------
+            |  1 DrkSephy/es6-cheatsheet                  JavaScript    5143
+            |  2 FreeCodeCamp/FreeCodeCamp                JavaScript    4555
+            |  3 Microsoft/CNTK                           C++           3548
+            |  4 jiahaog/nativefier                       JavaScript    2593
+            |  5 HunterLarco/voxel.css                    CSS           2054
+            |  6 samshadwell/TrumpScript                  Python        1824
+            |  7 Yalantis/uCrop                           Java          1731
+            |  8 Soundnode/soundnode-app                  JavaScript    1230
+            |  9 tensorflow/tensorflow                    C++            953
+            | 10 Jam3/devtool                             JavaScript    1170
+            | 11 KnuffApp/Knuff                           Objective-C   1136
+            | 12 brave/browser-laptop                     JavaScript    1030
+            | 13 nlf/dlite                                Go            1051
+            | 14 zquestz/s                                Go             971
+            | 15 milligram/milligram                      CSS            959
+            | 16 themattrix/bash-concurrent               Shell          924
+            | 17 kragniz/json-sempai                      Python         871
+            | 18 loverajoel/jstips                        CSS            841
+            | 19 chinchang/hint.css                       CSS            816
+            | 20 hirak/prestissimo                        PHP            783
+            | 21 rdpeng/ProgrammingAssignment2            R                8
+            | 22 fengyuanchen/viewerjs                    JavaScript     729
+            | 23 vhf/free-programming-books                              620
+            | 24 yamartino/pressure                       JavaScript     695
+            | 25 cdmedia/cms.js                           JavaScript     677
 
           EOS
           expect { @cli.invoke(:list, [], since: since, description: false) }.to output(res).to_stdout
@@ -183,33 +183,33 @@ RSpec.describe GitTrend::CLI do
         let(:since) { 'monthly' }
         it 'display daily ranking since monthly' do
           res = <<-'EOS'.unindent
-            |No. Name                                     Lang           Star
-            |--- ---------------------------------------- ------------ ------
-            |  1 sahat/satellizer                         PHP            3066
-            |  2 Ehesp/Responsive-Dashboard               CSS            2975
-            |  3 fastmonkeys/stellar                      Python         2798
-            |  4 Alamofire/Alamofire                      Swift          2579
-            |  5 chriskiehl/Gooey                         Python         2509
-            |  6 rxin/db-readings                                        2139
-            |  7 johnpapa/angularjs-styleguide                           2014
-            |  8 duojs/duo                                JavaScript     1977
-            |  9 limetext/lime                            Go             1895
-            | 10 angular/angular.js                       JavaScript     1412
-            | 11 gionkunz/chartist-js                     JavaScript     1680
-            | 12 twbs/bootstrap                           CSS            1263
-            | 13 gogits/gogs                              Go             1610
-            | 14 bevacqua/js                                             1570
-            | 15 typicode/lowdb                           CoffeeScript   1465
-            | 16 vhf/free-programming-books                              1259
-            | 17 lmccart/p5.js                            JavaScript     1383
-            | 18 weblinc/jquery.smoothState.js            JavaScript     1336
-            | 19 masayuki0812/c3                          JavaScript     1331
-            | 20 deanmalmgren/textract                    Python         1265
-            | 21 ochococo/Design-Patterns-In-Swift        Swift          1230
-            | 22 mbostock/d3                              JavaScript     1008
-            | 23 VodkaBears/Vide                          JavaScript     1136
-            | 24 driftyco/ionic                           JavaScript     1007
-            | 25 fians/marka                              CSS             989
+            |No. Name                                       Lang          Star
+            |--- ------------------------------------------ ----------- ------
+            |  1 FreeCodeCamp/FreeCodeCamp                  JavaScript   15567
+            |  2 loverajoel/jstips                          CSS           7710
+            |  3 braydie/HowToBeAProgrammer                               6786
+            |  4 DrkSephy/es6-cheatsheet                    JavaScript    5127
+            |  5 matryer/bitbar                             Objective-C   4946
+            |  6 Microsoft/ChakraCore                       JavaScript    4689
+            |  7 VerbalExpressions/JSVerbalExpressions      JavaScript    4758
+            |  8 tldr-pages/tldr                            Shell         4193
+            |  9 jlevy/the-art-of-command-line                            3966
+            | 10 mhinz/vim-galore                           VimL          4062
+            | 11 jiahaog/nativefier                         JavaScript    3932
+            | 12 jlevy/og-equity-compensation                             3797
+            | 13 Microsoft/CNTK                             C++           3537
+            | 14 hacksalot/HackMyResume                     JavaScript    3252
+            | 15 vhf/free-programming-books                               2690
+            | 16 milligram/milligram                        CSS           2876
+            | 17 samshadwell/TrumpScript                    Python        2718
+            | 18 sindresorhus/awesome                                     2640
+            | 19 donnemartin/data-science-ipython-notebooks Python        2424
+            | 20 tensorflow/tensorflow                      C++           2033
+            | 21 os-js/OS.js                                JavaScript    2357
+            | 22 JakeLin/IBAnimatable                       Swift         2345
+            | 23 viljamis/feature.js                        HTML          2239
+            | 24 facebook/react-native                      Java          1962
+            | 25 baidu-research/warp-ctc                    Cuda          1966
 
           EOS
           expect { @cli.invoke(:list, [], since: since, description: false) }.to output(res).to_stdout
@@ -243,7 +243,7 @@ RSpec.describe GitTrend::CLI do
 
       context 'terminal width is tiny' do
         before do
-          ENV['COLUMNS'] = '85' # it is not enough for description.
+          ENV['COLUMNS'] = '84' # it is not enough for description.
           ENV['LINES'] = '40'
         end
 
@@ -265,31 +265,31 @@ RSpec.describe GitTrend::CLI do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
-            |  1 Netflix/Scumblr                          Ruby          308
-            |  2 tenderlove/the_metal                     Ruby          225
-            |  3 remore/burn                              Ruby          191
-            |  4 Homebrew/homebrew                        Ruby          121
-            |  5 discourse/discourse                      Ruby          135
-            |  6 rightscale/praxis                        Ruby          116
-            |  7 rails/rails                              Ruby           82
-            |  8 cantino/huginn                           Ruby           98
-            |  9 jekyll/jekyll                            Ruby           81
-            | 10 sass/sass                                Ruby           77
-            | 11 orta/cocoapods-keys                      Ruby           81
-            | 12 mitchellh/vagrant                        Ruby           62
-            | 13 gitlabhq/gitlabhq                        Ruby           52
-            | 14 caskroom/homebrew-cask                   Ruby           48
-            | 15 cerebris/jsonapi-resources               Ruby           59
-            | 16 rapid7/metasploit-framework              Ruby           47
-            | 17 winebarrel/ridgepole                     Ruby           57
-            | 18 digitaloceancloud/resource_kit           Ruby           51
-            | 19 bbatsov/rubocop                          Ruby           44
-            | 20 rails/web-console                        Ruby           49
-            | 21 gavinlaking/vedeu                        Ruby           47
-            | 22 ruby/ruby                                Ruby           41
-            | 23 apotonick/paperdragon                    Ruby           46
-            | 24 junegunn/fzf                             Ruby           41
-            | 25 imathis/octopress                        Ruby           36
+            |  1 Homebrew/homebrew                        Ruby          166
+            |  2 shakacode/react_on_rails                 Ruby          197
+            |  3 rails/rails                              Ruby          144
+            |  4 jekyll/jekyll                            Ruby          136
+            |  5 powerpak/tqdm-ruby                       Ruby          149
+            |  6 fastlane/fastlane                        Ruby          117
+            |  7 codekitchen/dinghy                       Ruby          116
+            |  8 discourse/discourse                      Ruby           98
+            |  9 jondot/awesome-react-native              Ruby           97
+            | 10 hanami/hanami                            Ruby           96
+            | 11 kciter/simple-slack-bot                  Ruby           95
+            | 12 zverok/worldize                          Ruby           95
+            | 13 mitchellh/vagrant                        Ruby           80
+            | 14 Thibaut/devdocs                          Ruby           82
+            | 15 plataformatec/devise                     Ruby           69
+            | 16 caskroom/homebrew-cask                   Ruby           54
+            | 17 gitlabhq/gitlabhq                        Ruby           60
+            | 18 ruby/ruby                                Ruby           58
+            | 19 jeremyevans/sequel                       Ruby           67
+            | 20 schneems/derailed_benchmarks             Ruby           63
+            | 21 thoughtbot/scenic                        Ruby           62
+            | 22 cantino/huginn                           Ruby           57
+            | 23 sass/sass                                Ruby           53
+            | 24 kilimchoi/engineering-blogs              Ruby           53
+            | 25 thoughtbot/administrate                  Ruby           48
 
           EOS
           expect { @cli.invoke(:list, [], language: language, since: since, description: false) }.to output(res).to_stdout
@@ -320,210 +320,308 @@ RSpec.describe GitTrend::CLI do
     context 'with no option' do
       it 'display daily ranking' do
         res = <<-'EOS'.unindent
-          |abap
-          |as3
-          |ada
-          |agda
-          |ags-script
-          |alloy
-          |antlr
-          |apex
-          |apl
-          |applescript
-          |arc
-          |arduino
-          |aspx-vb
-          |aspectj
-          |nasm
-          |ats
-          |augeas
-          |autohotkey
-          |autoit
-          |awk
-          |blitzbasic
-          |blitzmax
-          |bluespec
-          |boo
-          |brightscript
-          |bro
-          |c
-          |csharp
-          |cpp
-          |ceylon
-          |chapel
-          |cirru
-          |clean
-          |clips
-          |clojure
-          |cobol
-          |coffeescript
-          |cfm
-          |common-lisp
-          |component-pascal
-          |coq
-          |crystal
-          |css
-          |cuda
-          |cycript
-          |d
-          |dart
-          |dm
-          |dogescript
-          |dot
-          |dylan
-          |e
-          |ec
-          |eiffel
-          |elixir
-          |elm
-          |emacs-lisp
-          |emberscript
-          |erlang
-          |fsharp
-          |factor
-          |fancy
-          |fantom
-          |flux
-          |forth
-          |fortran
-          |frege
-          |game-maker-language
-          |gams
-          |gap
-          |glyph
-          |gnuplot
-          |go
-          |gosu
-          |grace
-          |grammatical-framework
-          |groovy
-          |harbour
-          |haskell
-          |haxe
-          |hy
-          |idl
-          |idris
-          |inform-7
-          |io
-          |ioke
-          |isabelle
-          |j
-          |java
-          |javascript
-          |jsoniq
-          |julia
-          |kotlin
-          |krl
-          |labview
-          |lasso
-          |livescript
-          |logos
-          |logtalk
-          |lookml
-          |lua
-          |m
-          |markdown
-          |mathematica
-          |matlab
-          |max/msp
-          |mercury
-          |mirah
-          |monkey
-          |moocode
-          |moonscript
-          |nemerle
-          |nesc
-          |netlogo
-          |nimrod
-          |nit
-          |nix
-          |nu
-          |objective-c
-          |objective-c++
-          |objective-j
-          |ocaml
-          |omgrofl
+          |ABAP
+          |ActionScript
+          |Ada
+          |Agda
+          |AGS Script
+          |Alloy
+          |AMPL
+          |ANTLR
+          |ApacheConf
+          |Apex
+          |API Blueprint
+          |APL
+          |AppleScript
+          |Arc
+          |Arduino
+          |ASP
+          |AspectJ
+          |Assembly
+          |ATS
+          |Augeas
+          |AutoHotkey
+          |AutoIt
+          |Awk
+          |Batchfile
+          |Befunge
+          |Bison
+          |BitBake
+          |BlitzBasic
+          |BlitzMax
+          |Bluespec
+          |Boo
+          |Brainfuck
+          |Brightscript
+          |Bro
+          |C
+          |C#
+          |C++
+          |Cap'n Proto
+          |CartoCSS
+          |Ceylon
+          |Chapel
+          |Charity
+          |ChucK
+          |Cirru
+          |Clarion
+          |Clean
+          |Click
+          |CLIPS
+          |Clojure
+          |CMake
+          |COBOL
+          |CoffeeScript
+          |ColdFusion
+          |Common Lisp
+          |Component Pascal
+          |Cool
+          |Coq
+          |Crystal
+          |CSS
+          |Cucumber
+          |Cuda
+          |Cycript
+          |D
+          |Darcs Patch
+          |Dart
+          |Diff
+          |DIGITAL Command Language
+          |DM
+          |Dogescript
+          |DTrace
+          |Dylan
+          |E
+          |Eagle
+          |eC
+          |ECL
+          |Eiffel
+          |Elixir
+          |Elm
+          |Emacs Lisp
+          |EmberScript
+          |Erlang
+          |F#
+          |Factor
+          |Fancy
+          |Fantom
+          |FLUX
+          |Forth
+          |FORTRAN
+          |FreeMarker
+          |Frege
+          |Game Maker Language
+          |GAMS
+          |GAP
+          |GDScript
+          |Genshi
+          |Gettext Catalog
+          |GLSL
+          |Glyph
+          |Gnuplot
+          |Go
+          |Golo
+          |Gosu
+          |Grace
+          |Grammatical Framework
+          |Groff
+          |Groovy
+          |Hack
+          |Handlebars
+          |Harbour
+          |Haskell
+          |Haxe
+          |HCL
+          |HTML
+          |Hy
+          |HyPhy
+          |IDL
+          |Idris
+          |IGOR Pro
+          |Inform 7
+          |Inno Setup
+          |Io
+          |Ioke
+          |Isabelle
+          |J
+          |Jasmin
+          |Java
+          |JavaScript
+          |JFlex
+          |JSONiq
+          |Julia
+          |Jupyter Notebook
+          |KiCad
+          |Kit
+          |Kotlin
+          |KRL
+          |LabVIEW
+          |Lasso
+          |Lean
+          |Lex
+          |LilyPond
+          |Limbo
+          |Liquid
+          |LiveScript
+          |LLVM
+          |Logos
+          |Logtalk
+          |LOLCODE
+          |LookML
+          |LoomScript
+          |LSL
+          |Lua
+          |M
+          |Makefile
+          |Mako
+          |Markdown
+          |Mask
+          |Mathematica
+          |Matlab
+          |Max
+          |MAXScript
+          |Mercury
+          |Metal
+          |MiniD
+          |Mirah
+          |Modelica
+          |Modula-2
+          |Module Management System
+          |Monkey
+          |Moocode
+          |MoonScript
+          |MTML
+          |mupad
+          |Myghty
+          |NCL
+          |Nemerle
+          |nesC
+          |NetLinx
+          |NetLinx+ERB
+          |NetLogo
+          |NewLisp
+          |Nginx
+          |Nimrod
+          |Nit
+          |Nix
+          |NSIS
+          |Nu
+          |Objective-C
+          |Objective-C++
+          |Objective-J
+          |OCaml
+          |Omgrofl
           |ooc
-          |opa
-          |opal
-          |openedge-abl
-          |openscad
-          |ox
-          |oxygene
-          |pan
-          |parrot
-          |pascal
-          |pawn
-          |perl
-          |perl6
-          |php
-          |piglatin
-          |pike
-          |pogoscript
-          |powershell
-          |processing
-          |prolog
-          |propeller-spin
-          |puppet
-          |pure-data
-          |purescript
-          |python
-          |r
-          |racket
-          |ragel-in-ruby-host
-          |rdoc
-          |realbasic
-          |rebol
-          |red
-          |robotframework
-          |rouge
-          |ruby
-          |rust
-          |sas
-          |scala
-          |scheme
-          |scilab
-          |self
-          |bash
-          |shellsession
-          |shen
-          |slash
-          |smalltalk
-          |sourcepawn
-          |sqf
-          |sql
-          |squirrel
-          |standard-ml
-          |stata
-          |supercollider
-          |swift
-          |systemverilog
-          |tcl
-          |tex
-          |turing
-          |txl
-          |typescript
-          |unrealscript
-          |vala
-          |vcl
-          |verilog
-          |vhdl
-          |vim
-          |visual-basic
-          |volt
+          |Opa
+          |Opal
+          |OpenEdge ABL
+          |OpenSCAD
+          |Ox
+          |Oxygene
+          |Oz
+          |Pan
+          |Papyrus
+          |Parrot
+          |Pascal
+          |PAWN
+          |Perl
+          |Perl6
+          |PHP
+          |PicoLisp
+          |PigLatin
+          |Pike
+          |PLpgSQL
+          |PLSQL
+          |PogoScript
+          |Pony
+          |PostScript
+          |PowerShell
+          |Processing
+          |Prolog
+          |Propeller Spin
+          |Protocol Buffer
+          |Puppet
+          |Pure Data
+          |PureBasic
+          |PureScript
+          |Python
+          |QMake
+          |QML
+          |R
+          |Racket
+          |Ragel in Ruby Host
+          |RAML
+          |RDoc
+          |REALbasic
+          |Rebol
+          |Red
+          |Redcode
+          |RenderScript
+          |RobotFramework
+          |Rouge
+          |Ruby
+          |Rust
+          |SaltStack
+          |SAS
+          |Scala
+          |Scheme
+          |Scilab
+          |Self
+          |Shell
+          |ShellSession
+          |Shen
+          |Slash
+          |Smali
+          |Smalltalk
+          |Smarty
+          |SMT
+          |SourcePawn
+          |SQF
+          |SQL
+          |SQLPL
+          |Squirrel
+          |Stan
+          |Standard ML
+          |Stata
+          |SuperCollider
+          |Swift
+          |SystemVerilog
+          |Tcl
+          |Tea
+          |TeX
+          |Thrift
+          |Turing
+          |TXL
+          |TypeScript
+          |UnrealScript
+          |UrWeb
+          |Vala
+          |VCL
+          |Verilog
+          |VHDL
+          |VimL
+          |Visual Basic
+          |Volt
+          |Vue
+          |Web Ontology Language
+          |WebIDL
           |wisp
-          |xbase
-          |xc
-          |xml
-          |xojo
-          |xproc
-          |xquery
-          |xslt
-          |xtend
-          |zephir
-          |zimpl
+          |X10
+          |xBase
+          |XC
+          |XML
+          |Xojo
+          |XPages
+          |XProc
+          |XQuery
+          |XS
+          |XSLT
+          |Xtend
+          |Yacc
+          |Zephir
+          |Zimpl
           |
-          |202 languages
+          |300 languages
           |you can get only selected language list with '-l' option.
           |if languages is unknown, you can specify 'unkown'.
           |
@@ -550,66 +648,66 @@ RSpec.describe GitTrend::CLI do
 
   def dummy_result_without_description
     <<-'EOS'.unindent
-      |No. Name                                       Lang          Star
-      |--- ------------------------------------------ ----------- ------
-      |  1 gionkunz/chartist-js                       JavaScript     363
-      |  2 kitematic/kitematic                        JavaScript     327
-      |  3 tmux-plugins/tmux-resurrect                Shell          217
-      |  4 rxin/db-readings                                          210
-      |  5 daimajia/AndroidSwipeLayout                Java           172
-      |  6 tylertreat/chan                            C              126
-      |  7 AllThingsSmitty/must-watch-css                             93
-      |  8 masayuki0812/c3                            JavaScript      85
-      |  9 fouber/page-monitor                        JavaScript      74
-      | 10 gogits/gogs                                Go              71
-      | 11 facebook/flux                              JavaScript      72
-      | 12 twbs/bootstrap                             CSS             55
-      | 13 luster-io/impulse                          JavaScript      68
-      | 14 lawloretienne/QuickReturn                  Java            65
-      | 15 angular/angular.js                         JavaScript      53
-      | 16 wisk/medusa                                C               60
-      | 17 ochococo/Design-Patterns-In-Swift          Swift           60
-      | 18 cwRichardKim/RKSwipeBetweenViewControllers Objective-C     59
-      | 19 google/web-starter-kit                     CSS             59
-      | 20 syncthing/syncthing                        Go              49
-      | 21 ruslanskorb/RSKImageCropper                Objective-C     46
-      | 22 kyze8439690/ResideLayout                   Java            44
-      | 23 ParsePlatform/f8DeveloperConferenceApp     Java            41
-      | 24 chriskiehl/Gooey                           Python          41
-      | 25 discourse/discourse                        Ruby            41
+      |No. Name                                     Lang           Star
+      |--- ---------------------------------------- ------------ ------
+      |  1 HunterLarco/voxel.css                    CSS             941
+      |  2 fengyuanchen/viewerjs                    JavaScript      716
+      |  3 FreeCodeCamp/FreeCodeCamp                JavaScript      614
+      |  4 Microsoft/CNTK                           C++             378
+      |  5 cht8687/You-Dont-Need-Lodash-Underscore  JavaScript      333
+      |  6 jgthms/bulma                             CSS             334
+      |  7 developit/preact                         JavaScript      322
+      |  8 twitterdev/furni-ios                     Swift           303
+      |  9 DrkSephy/es6-cheatsheet                  JavaScript      278
+      | 10 chinchang/hint.css                       CSS             242
+      | 11 denysdovhan/bash-handbook                JavaScript      201
+      | 12 yabwe/medium-editor                      JavaScript      192
+      | 13 nlf/dlite                                Go              187
+      | 14 hollance/swift-algorithm-club            Swift           173
+      | 15 jiahaog/nativefier                       JavaScript      163
+      | 16 mxstbr/login-flow                        JavaScript      159
+      | 17 Soundnode/soundnode-app                  JavaScript      146
+      | 18 hirak/prestissimo                        PHP             149
+      | 19 txusballesteros/sliding-deck             Java            140
+      | 20 tensorflow/tensorflow                    C++              86
+      | 21 milligram/milligram                      CSS             113
+      | 22 valentin012/conspeech                    OpenEdge ABL    108
+      | 23 gophergala2016/goad                      CSS             108
+      | 24 Yalantis/uCrop                           Java            103
+      | 25 mpociot/whiteboard                       JavaScript       97
 
     EOS
   end
 
   def dummy_result_no_options
     <<-'EOS'.unindent
-      |No. Name                                       Lang          Star Description                                                               
-      |--- ------------------------------------------ ----------- ------ --------------------------------------------------------------------------
-      |  1 gionkunz/chartist-js                       JavaScript     363 Simple responsive charts                                                  
-      |  2 kitematic/kitematic                        JavaScript     327 Simple Docker App management for Mac OS X.                                
-      |  3 tmux-plugins/tmux-resurrect                Shell          217 Persists tmux environment across system restarts.                         
-      |  4 rxin/db-readings                                          210 Readings in Databases                                                     
-      |  5 daimajia/AndroidSwipeLayout                Java           172 The Most Powerful Swipe Layout!                                           
-      |  6 tylertreat/chan                            C              126 Pure C implementation of Go channels.                                     
-      |  7 AllThingsSmitty/must-watch-css                             93 A useful list of must-watch videos about CSS.                             
-      |  8 masayuki0812/c3                            JavaScript      85 A D3-based reusable chart library                                         
-      |  9 fouber/page-monitor                        JavaScript      74 capture webpage and diff the dom change with phantomjs                    
-      | 10 gogits/gogs                                Go              71 Gogs(Go Git Service) is a painless self-hosted Git Service written in Go. 
-      | 11 facebook/flux                              JavaScript      72 Application Architecture for Building User Interfaces                     
-      | 12 twbs/bootstrap                             CSS             55 The most popular front-end framework for developing responsive, mobile ...
-      | 13 luster-io/impulse                          JavaScript      68 Dynamics Physics Interactions for the Mobile Web                          
-      | 14 lawloretienne/QuickReturn                  Java            65 Showcases QuickReturn view as a header, footer, and both header and footer
-      | 15 angular/angular.js                         JavaScript      53 HTML enhanced for web apps                                                
-      | 16 wisk/medusa                                C               60 An open source interactive disassembler                                   
-      | 17 ochococo/Design-Patterns-In-Swift          Swift           60 Design Patterns implemented in Swift                                      
-      | 18 cwRichardKim/RKSwipeBetweenViewControllers Objective-C     59 Swipe between ViewControllers like in the Spotify or Twitter app with a...
-      | 19 google/web-starter-kit                     CSS             59 Google Web Starter Kit (Beta)                                             
-      | 20 syncthing/syncthing                        Go              49 Open Source Continuous File Synchronization                               
-      | 21 ruslanskorb/RSKImageCropper                Objective-C     46 An image cropper for iOS like in the Contacts app with support for land...
-      | 22 kyze8439690/ResideLayout                   Java            44 An Android Layout which has a same function like https://github.com/rom...
-      | 23 ParsePlatform/f8DeveloperConferenceApp     Java            41                                                                           
-      | 24 chriskiehl/Gooey                           Python          41 Turn (almost) any command line program into a full GUI application with...
-      | 25 discourse/discourse                        Ruby            41 A platform for community discussion. Free, open, simple.                  
+      |No. Name                                     Lang           Star Description                                                                
+      |--- ---------------------------------------- ------------ ------ ---------------------------------------------------------------------------
+      |  1 HunterLarco/voxel.css                    CSS             941 A lightweight 3D CSS voxel library.                                        
+      |  2 fengyuanchen/viewerjs                    JavaScript      716 JavaScript image viewer.                                                   
+      |  3 FreeCodeCamp/FreeCodeCamp                JavaScript      614 The http://FreeCodeCamp.com open source codebase and curriculum. Learn t...
+      |  4 Microsoft/CNTK                           C++             378 Computational Network Toolkit (CNTK)                                       
+      |  5 cht8687/You-Dont-Need-Lodash-Underscore  JavaScript      333 Lists of Javascript methods which you can use natively                     
+      |  6 jgthms/bulma                             CSS             334 Modern CSS framework based on Flexbox                                      
+      |  7 developit/preact                         JavaScript      322 Fast 3kb React alternative with the same ES6 API. Components & Virtual DOM.
+      |  8 twitterdev/furni-ios                     Swift           303 Furni for iOS is a furniture store demo app presented at the Twitter Fli...
+      |  9 DrkSephy/es6-cheatsheet                  JavaScript      278 ES2015 [ES6] cheatsheet containing tips, tricks, best practices and code...
+      | 10 chinchang/hint.css                       CSS             242 A CSS only tooltip library for your lovely websites.                       
+      | 11 denysdovhan/bash-handbook                JavaScript      201 For those who wanna learn Bash                                             
+      | 12 yabwe/medium-editor                      JavaScript      192 Medium.com WYSIWYG editor clone. Uses contenteditable API to implement a...
+      | 13 nlf/dlite                                Go              187 The simplest way to use Docker on OS X                                     
+      | 14 hollance/swift-algorithm-club            Swift           173 Algorithms and data structures in Swift, with explanations!                
+      | 15 jiahaog/nativefier                       JavaScript      163 Wrap any web page natively without even thinking, across Windows, OSX an...
+      | 16 mxstbr/login-flow                        JavaScript      159 A login/register flow built with React&Redux                               
+      | 17 Soundnode/soundnode-app                  JavaScript      146 Soundnode App is the Soundcloud for desktop. Built with NW.js, Angular.j...
+      | 18 hirak/prestissimo                        PHP             149 composer parallel install plugin                                           
+      | 19 txusballesteros/sliding-deck             Java            140 SlidingDeck View for Android                                               
+      | 20 tensorflow/tensorflow                    C++              86 Computation using data flow graphs for scalable machine learning           
+      | 21 milligram/milligram                      CSS             113 A minimalist CSS framework.                                                
+      | 22 valentin012/conspeech                    OpenEdge ABL    108 Political Speech Generator                                                 
+      | 23 gophergala2016/goad                      CSS             108 Goad is an AWS Lambda powered, highly distributed, load testing tool       
+      | 24 Yalantis/uCrop                           Java            103 Image Cropping Library for Android                                         
+      | 25 mpociot/whiteboard                       JavaScript       97 Simply write beautiful API documentation.                                  
 
     EOS
   end
