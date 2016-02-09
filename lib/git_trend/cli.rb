@@ -3,7 +3,7 @@ require 'git_trend/rendering'
 
 module GitTrend
   class CLI < Thor
-    include GitTrend::Rendering
+    include Rendering
 
     map '-v'              => :version,
         '--version'       => :version
