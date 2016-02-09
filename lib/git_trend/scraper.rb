@@ -22,13 +22,10 @@ module GitTrend
     end
 
     def languages
-      languages = []
       page = @agent.get(BASE_URL)
-      page.search('.language-filter-list + .select-menu span.select-menu-item-text').each do |content|
-        language = content.text
-        languages << language if language
+      page.search('.language-filter-list + .select-menu span.select-menu-item-text').inject([]) do |languages, content|
+        languages << content.text if content.text
       end
-      languages
     end
 
     private
