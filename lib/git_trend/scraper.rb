@@ -32,10 +32,21 @@ module GitTrend
 
     def generate_url_for_get(language, since)
       uri = Addressable::URI.parse(BASE_URL)
+      since = convert_url_param_since(since)
       if language || since
         uri.query_values = { l: language, since: since }.delete_if { |_k, v| v.nil? }
       end
       uri.to_s
+    end
+
+    def convert_url_param_since(since)
+      return unless since
+      case since.to_sym
+      when :d, :day,   :daily   then 'daily'
+      when :w, :week,  :weekly  then 'weekly'
+      when :m, :month, :monthly then 'monthly'
+      else ''
+      end
     end
 
     # Pattern 1: lang + stars

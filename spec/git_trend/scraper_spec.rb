@@ -2,7 +2,6 @@ require 'spec_helper'
 
 include GitTrend
 RSpec.describe GitTrend::Scraper do
-
   describe 'settings' do
     before do
       allow(ENV).to receive(:[]).with('http_proxy').and_return('http://proxy_user:proxy_pass@192.168.1.99:9999')

@@ -1,3 +1,7 @@
+## v0.2.3 (unrelease)
+- Add variations of since option [f927ba7]  
+  variations: d, day, w, week, m, month
+
 ## v0.2.2 (Fri Jan 29 2016)
 - Fix missing languages
 

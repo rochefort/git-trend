@@ -138,11 +138,13 @@ No. Name                                     Lang         Star Description
 ### weekly/monthly trending
 
     git trend -s weekly
+    git trend -s week
     git trend -s w
     
     or
     
     git trend -s monthly
+    git trend -s month
     git trend -s m
 
 e.g.:

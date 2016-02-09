@@ -9,6 +9,18 @@ RSpec.shared_examples_for 'since daily ranking' do
   end
 end
 
+RSpec.shared_examples_for 'since weekly ranking' do
+  it 'display weekly ranking' do
+    expect { @cli.invoke(:list, [], since: since, description: false) }.to output(dummy_weekly_result).to_stdout
+  end
+end
+
+RSpec.shared_examples_for 'since monthly ranking' do
+  it 'display monthly ranking' do
+    expect { @cli.invoke(:list, [], since: since, description: false) }.to output(dummy_monthly_result).to_stdout
+  end
+end
+
 RSpec.describe GitTrend::CLI do
   describe '#list' do
     before do
@@ -21,7 +33,7 @@ RSpec.describe GitTrend::CLI do
           stub_request_get('trending')
         end
         let(:number) { 3 }
-        it 'display daily ranking top 3' do
+        it 'display top 3 daily ranking' do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
@@ -130,89 +142,63 @@ RSpec.describe GitTrend::CLI do
     end
 
     describe 'with -s option' do
-      before { stub_request_get("trending?since=#{since}") }
-
       context 'with no option' do
+        before { stub_request_get("trending?since=#{since}") }
         let(:since) { '' }
         it_behaves_like 'since daily ranking'
       end
 
-      context 'with daily' do
-        let(:since) { 'daily' }
-        it_behaves_like 'since daily ranking'
-      end
+      describe 'since daily' do
+        before { stub_request_get('trending?since=daily') }
+        context 'with d' do
+          let(:since) { 'd' }
+          it_behaves_like 'since daily ranking'
+        end
 
-      context 'with weekly' do
-        let(:since) { 'weekly' }
-        it 'display daily ranking since weekly' do
-          res = <<-'EOS'.unindent
-            |No. Name                                     Lang          Star
-            |--- ---------------------------------------- ----------- ------
-            |  1 DrkSephy/es6-cheatsheet                  JavaScript    5143
-            |  2 FreeCodeCamp/FreeCodeCamp                JavaScript    4555
-            |  3 Microsoft/CNTK                           C++           3548
-            |  4 jiahaog/nativefier                       JavaScript    2593
-            |  5 HunterLarco/voxel.css                    CSS           2054
-            |  6 samshadwell/TrumpScript                  Python        1824
-            |  7 Yalantis/uCrop                           Java          1731
-            |  8 Soundnode/soundnode-app                  JavaScript    1230
-            |  9 tensorflow/tensorflow                    C++            953
-            | 10 Jam3/devtool                             JavaScript    1170
-            | 11 KnuffApp/Knuff                           Objective-C   1136
-            | 12 brave/browser-laptop                     JavaScript    1030
-            | 13 nlf/dlite                                Go            1051
-            | 14 zquestz/s                                Go             971
-            | 15 milligram/milligram                      CSS            959
-            | 16 themattrix/bash-concurrent               Shell          924
-            | 17 kragniz/json-sempai                      Python         871
-            | 18 loverajoel/jstips                        CSS            841
-            | 19 chinchang/hint.css                       CSS            816
-            | 20 hirak/prestissimo                        PHP            783
-            | 21 rdpeng/ProgrammingAssignment2            R                8
-            | 22 fengyuanchen/viewerjs                    JavaScript     729
-            | 23 vhf/free-programming-books                              620
-            | 24 yamartino/pressure                       JavaScript     695
-            | 25 cdmedia/cms.js                           JavaScript     677
+        context 'with day' do
+          let(:since) { 'day' }
+          it_behaves_like 'since daily ranking'
+        end
 
-          EOS
-          expect { @cli.invoke(:list, [], since: since, description: false) }.to output(res).to_stdout
+        context 'with daily' do
+          let(:since) { 'daily' }
+          it_behaves_like 'since daily ranking'
         end
       end
 
-      context 'with monthly' do
-        let(:since) { 'monthly' }
-        it 'display daily ranking since monthly' do
-          res = <<-'EOS'.unindent
-            |No. Name                                       Lang          Star
-            |--- ------------------------------------------ ----------- ------
-            |  1 FreeCodeCamp/FreeCodeCamp                  JavaScript   15567
-            |  2 loverajoel/jstips                          CSS           7710
-            |  3 braydie/HowToBeAProgrammer                               6786
-            |  4 DrkSephy/es6-cheatsheet                    JavaScript    5127
-            |  5 matryer/bitbar                             Objective-C   4946
-            |  6 Microsoft/ChakraCore                       JavaScript    4689
-            |  7 VerbalExpressions/JSVerbalExpressions      JavaScript    4758
-            |  8 tldr-pages/tldr                            Shell         4193
-            |  9 jlevy/the-art-of-command-line                            3966
-            | 10 mhinz/vim-galore                           VimL          4062
-            | 11 jiahaog/nativefier                         JavaScript    3932
-            | 12 jlevy/og-equity-compensation                             3797
-            | 13 Microsoft/CNTK                             C++           3537
-            | 14 hacksalot/HackMyResume                     JavaScript    3252
-            | 15 vhf/free-programming-books                               2690
-            | 16 milligram/milligram                        CSS           2876
-            | 17 samshadwell/TrumpScript                    Python        2718
-            | 18 sindresorhus/awesome                                     2640
-            | 19 donnemartin/data-science-ipython-notebooks Python        2424
-            | 20 tensorflow/tensorflow                      C++           2033
-            | 21 os-js/OS.js                                JavaScript    2357
-            | 22 JakeLin/IBAnimatable                       Swift         2345
-            | 23 viljamis/feature.js                        HTML          2239
-            | 24 facebook/react-native                      Java          1962
-            | 25 baidu-research/warp-ctc                    Cuda          1966
+      describe 'since weekly' do
+        before { stub_request_get('trending?since=weekly') }
+        context 'with w' do
+          let(:since) { 'w' }
+          it_behaves_like 'since weekly ranking'
+        end
 
-          EOS
-          expect { @cli.invoke(:list, [], since: since, description: false) }.to output(res).to_stdout
+        context 'with week' do
+          let(:since) { 'week' }
+          it_behaves_like 'since weekly ranking'
+        end
+
+        context 'with weekly' do
+          let(:since) { 'weekly' }
+          it_behaves_like 'since weekly ranking'
+        end
+      end
+
+      describe 'since monthly' do
+        before { stub_request_get('trending?since=monthly') }
+        context 'with m' do
+          let(:since) { 'm' }
+          it_behaves_like 'since monthly ranking'
+        end
+
+        context 'with month' do
+          let(:since) { 'month' }
+          it_behaves_like 'since monthly ranking'
+        end
+
+        context 'with monthly' do
+          let(:since) { 'monthly' }
+          it_behaves_like 'since monthly ranking'
         end
       end
     end
@@ -261,7 +247,7 @@ RSpec.describe GitTrend::CLI do
         let(:language) { 'ruby' }
         let(:since) { 'weekly' }
 
-        it 'display daily ranking since weekly' do
+        it 'display weekly ranking by language' do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
@@ -318,315 +304,8 @@ RSpec.describe GitTrend::CLI do
     end
 
     context 'with no option' do
-      it 'display daily ranking' do
-        res = <<-'EOS'.unindent
-          |ABAP
-          |ActionScript
-          |Ada
-          |Agda
-          |AGS Script
-          |Alloy
-          |AMPL
-          |ANTLR
-          |ApacheConf
-          |Apex
-          |API Blueprint
-          |APL
-          |AppleScript
-          |Arc
-          |Arduino
-          |ASP
-          |AspectJ
-          |Assembly
-          |ATS
-          |Augeas
-          |AutoHotkey
-          |AutoIt
-          |Awk
-          |Batchfile
-          |Befunge
-          |Bison
-          |BitBake
-          |BlitzBasic
-          |BlitzMax
-          |Bluespec
-          |Boo
-          |Brainfuck
-          |Brightscript
-          |Bro
-          |C
-          |C#
-          |C++
-          |Cap'n Proto
-          |CartoCSS
-          |Ceylon
-          |Chapel
-          |Charity
-          |ChucK
-          |Cirru
-          |Clarion
-          |Clean
-          |Click
-          |CLIPS
-          |Clojure
-          |CMake
-          |COBOL
-          |CoffeeScript
-          |ColdFusion
-          |Common Lisp
-          |Component Pascal
-          |Cool
-          |Coq
-          |Crystal
-          |CSS
-          |Cucumber
-          |Cuda
-          |Cycript
-          |D
-          |Darcs Patch
-          |Dart
-          |Diff
-          |DIGITAL Command Language
-          |DM
-          |Dogescript
-          |DTrace
-          |Dylan
-          |E
-          |Eagle
-          |eC
-          |ECL
-          |Eiffel
-          |Elixir
-          |Elm
-          |Emacs Lisp
-          |EmberScript
-          |Erlang
-          |F#
-          |Factor
-          |Fancy
-          |Fantom
-          |FLUX
-          |Forth
-          |FORTRAN
-          |FreeMarker
-          |Frege
-          |Game Maker Language
-          |GAMS
-          |GAP
-          |GDScript
-          |Genshi
-          |Gettext Catalog
-          |GLSL
-          |Glyph
-          |Gnuplot
-          |Go
-          |Golo
-          |Gosu
-          |Grace
-          |Grammatical Framework
-          |Groff
-          |Groovy
-          |Hack
-          |Handlebars
-          |Harbour
-          |Haskell
-          |Haxe
-          |HCL
-          |HTML
-          |Hy
-          |HyPhy
-          |IDL
-          |Idris
-          |IGOR Pro
-          |Inform 7
-          |Inno Setup
-          |Io
-          |Ioke
-          |Isabelle
-          |J
-          |Jasmin
-          |Java
-          |JavaScript
-          |JFlex
-          |JSONiq
-          |Julia
-          |Jupyter Notebook
-          |KiCad
-          |Kit
-          |Kotlin
-          |KRL
-          |LabVIEW
-          |Lasso
-          |Lean
-          |Lex
-          |LilyPond
-          |Limbo
-          |Liquid
-          |LiveScript
-          |LLVM
-          |Logos
-          |Logtalk
-          |LOLCODE
-          |LookML
-          |LoomScript
-          |LSL
-          |Lua
-          |M
-          |Makefile
-          |Mako
-          |Markdown
-          |Mask
-          |Mathematica
-          |Matlab
-          |Max
-          |MAXScript
-          |Mercury
-          |Metal
-          |MiniD
-          |Mirah
-          |Modelica
-          |Modula-2
-          |Module Management System
-          |Monkey
-          |Moocode
-          |MoonScript
-          |MTML
-          |mupad
-          |Myghty
-          |NCL
-          |Nemerle
-          |nesC
-          |NetLinx
-          |NetLinx+ERB
-          |NetLogo
-          |NewLisp
-          |Nginx
-          |Nimrod
-          |Nit
-          |Nix
-          |NSIS
-          |Nu
-          |Objective-C
-          |Objective-C++
-          |Objective-J
-          |OCaml
-          |Omgrofl
-          |ooc
-          |Opa
-          |Opal
-          |OpenEdge ABL
-          |OpenSCAD
-          |Ox
-          |Oxygene
-          |Oz
-          |Pan
-          |Papyrus
-          |Parrot
-          |Pascal
-          |PAWN
-          |Perl
-          |Perl6
-          |PHP
-          |PicoLisp
-          |PigLatin
-          |Pike
-          |PLpgSQL
-          |PLSQL
-          |PogoScript
-          |Pony
-          |PostScript
-          |PowerShell
-          |Processing
-          |Prolog
-          |Propeller Spin
-          |Protocol Buffer
-          |Puppet
-          |Pure Data
-          |PureBasic
-          |PureScript
-          |Python
-          |QMake
-          |QML
-          |R
-          |Racket
-          |Ragel in Ruby Host
-          |RAML
-          |RDoc
-          |REALbasic
-          |Rebol
-          |Red
-          |Redcode
-          |RenderScript
-          |RobotFramework
-          |Rouge
-          |Ruby
-          |Rust
-          |SaltStack
-          |SAS
-          |Scala
-          |Scheme
-          |Scilab
-          |Self
-          |Shell
-          |ShellSession
-          |Shen
-          |Slash
-          |Smali
-          |Smalltalk
-          |Smarty
-          |SMT
-          |SourcePawn
-          |SQF
-          |SQL
-          |SQLPL
-          |Squirrel
-          |Stan
-          |Standard ML
-          |Stata
-          |SuperCollider
-          |Swift
-          |SystemVerilog
-          |Tcl
-          |Tea
-          |TeX
-          |Thrift
-          |Turing
-          |TXL
-          |TypeScript
-          |UnrealScript
-          |UrWeb
-          |Vala
-          |VCL
-          |Verilog
-          |VHDL
-          |VimL
-          |Visual Basic
-          |Volt
-          |Vue
-          |Web Ontology Language
-          |WebIDL
-          |wisp
-          |X10
-          |xBase
-          |XC
-          |XML
-          |Xojo
-          |XPages
-          |XProc
-          |XQuery
-          |XS
-          |XSLT
-          |Xtend
-          |Yacc
-          |Zephir
-          |Zimpl
-          |
-          |300 languages
-          |you can get only selected language list with '-l' option.
-          |if languages is unknown, you can specify 'unkown'.
-          |
-        EOS
-        expect { @cli.languages }.to output(res).to_stdout
+      it 'display languages' do
+        expect { @cli.languages }.to output(dummy_languages).to_stdout
       end
     end
   end
@@ -637,7 +316,6 @@ RSpec.describe GitTrend::CLI do
     url = Scraper::BASE_HOST.dup
     url << "/#{stub_url}" if stub_url
     uri = URI.parse(url)
-
     stub_file = stub_file_name || stub_url
     stub_request(:get, uri)
       .to_return(
@@ -742,6 +420,382 @@ RSpec.describe GitTrend::CLI do
       | 24 incrediblesound/story-graph              JavaScript     87 The Graph that Generates Stories                                             
       | 25 geeeeeeeeek/WeChatLuckyMoney             Java           75 微信抢红包插件, an Android app that helps you snatch virtual red envelopes...
 
+    EOS
+  end
+
+  def dummy_weekly_result
+    <<-'EOS'.unindent
+      |No. Name                                     Lang          Star
+      |--- ---------------------------------------- ----------- ------
+      |  1 DrkSephy/es6-cheatsheet                  JavaScript    5143
+      |  2 FreeCodeCamp/FreeCodeCamp                JavaScript    4555
+      |  3 Microsoft/CNTK                           C++           3548
+      |  4 jiahaog/nativefier                       JavaScript    2593
+      |  5 HunterLarco/voxel.css                    CSS           2054
+      |  6 samshadwell/TrumpScript                  Python        1824
+      |  7 Yalantis/uCrop                           Java          1731
+      |  8 Soundnode/soundnode-app                  JavaScript    1230
+      |  9 tensorflow/tensorflow                    C++            953
+      | 10 Jam3/devtool                             JavaScript    1170
+      | 11 KnuffApp/Knuff                           Objective-C   1136
+      | 12 brave/browser-laptop                     JavaScript    1030
+      | 13 nlf/dlite                                Go            1051
+      | 14 zquestz/s                                Go             971
+      | 15 milligram/milligram                      CSS            959
+      | 16 themattrix/bash-concurrent               Shell          924
+      | 17 kragniz/json-sempai                      Python         871
+      | 18 loverajoel/jstips                        CSS            841
+      | 19 chinchang/hint.css                       CSS            816
+      | 20 hirak/prestissimo                        PHP            783
+      | 21 rdpeng/ProgrammingAssignment2            R                8
+      | 22 fengyuanchen/viewerjs                    JavaScript     729
+      | 23 vhf/free-programming-books                              620
+      | 24 yamartino/pressure                       JavaScript     695
+      | 25 cdmedia/cms.js                           JavaScript     677
+
+    EOS
+  end
+
+  def dummy_monthly_result
+    <<-'EOS'.unindent
+      |No. Name                                       Lang          Star
+      |--- ------------------------------------------ ----------- ------
+      |  1 FreeCodeCamp/FreeCodeCamp                  JavaScript   15567
+      |  2 loverajoel/jstips                          CSS           7710
+      |  3 braydie/HowToBeAProgrammer                               6786
+      |  4 DrkSephy/es6-cheatsheet                    JavaScript    5127
+      |  5 matryer/bitbar                             Objective-C   4946
+      |  6 Microsoft/ChakraCore                       JavaScript    4689
+      |  7 VerbalExpressions/JSVerbalExpressions      JavaScript    4758
+      |  8 tldr-pages/tldr                            Shell         4193
+      |  9 jlevy/the-art-of-command-line                            3966
+      | 10 mhinz/vim-galore                           VimL          4062
+      | 11 jiahaog/nativefier                         JavaScript    3932
+      | 12 jlevy/og-equity-compensation                             3797
+      | 13 Microsoft/CNTK                             C++           3537
+      | 14 hacksalot/HackMyResume                     JavaScript    3252
+      | 15 vhf/free-programming-books                               2690
+      | 16 milligram/milligram                        CSS           2876
+      | 17 samshadwell/TrumpScript                    Python        2718
+      | 18 sindresorhus/awesome                                     2640
+      | 19 donnemartin/data-science-ipython-notebooks Python        2424
+      | 20 tensorflow/tensorflow                      C++           2033
+      | 21 os-js/OS.js                                JavaScript    2357
+      | 22 JakeLin/IBAnimatable                       Swift         2345
+      | 23 viljamis/feature.js                        HTML          2239
+      | 24 facebook/react-native                      Java          1962
+      | 25 baidu-research/warp-ctc                    Cuda          1966
+
+    EOS
+  end
+
+  def dummy_languages
+    <<-'EOS'.unindent
+      |ABAP
+      |ActionScript
+      |Ada
+      |Agda
+      |AGS Script
+      |Alloy
+      |AMPL
+      |ANTLR
+      |ApacheConf
+      |Apex
+      |API Blueprint
+      |APL
+      |AppleScript
+      |Arc
+      |Arduino
+      |ASP
+      |AspectJ
+      |Assembly
+      |ATS
+      |Augeas
+      |AutoHotkey
+      |AutoIt
+      |Awk
+      |Batchfile
+      |Befunge
+      |Bison
+      |BitBake
+      |BlitzBasic
+      |BlitzMax
+      |Bluespec
+      |Boo
+      |Brainfuck
+      |Brightscript
+      |Bro
+      |C
+      |C#
+      |C++
+      |Cap'n Proto
+      |CartoCSS
+      |Ceylon
+      |Chapel
+      |Charity
+      |ChucK
+      |Cirru
+      |Clarion
+      |Clean
+      |Click
+      |CLIPS
+      |Clojure
+      |CMake
+      |COBOL
+      |CoffeeScript
+      |ColdFusion
+      |Common Lisp
+      |Component Pascal
+      |Cool
+      |Coq
+      |Crystal
+      |CSS
+      |Cucumber
+      |Cuda
+      |Cycript
+      |D
+      |Darcs Patch
+      |Dart
+      |Diff
+      |DIGITAL Command Language
+      |DM
+      |Dogescript
+      |DTrace
+      |Dylan
+      |E
+      |Eagle
+      |eC
+      |ECL
+      |Eiffel
+      |Elixir
+      |Elm
+      |Emacs Lisp
+      |EmberScript
+      |Erlang
+      |F#
+      |Factor
+      |Fancy
+      |Fantom
+      |FLUX
+      |Forth
+      |FORTRAN
+      |FreeMarker
+      |Frege
+      |Game Maker Language
+      |GAMS
+      |GAP
+      |GDScript
+      |Genshi
+      |Gettext Catalog
+      |GLSL
+      |Glyph
+      |Gnuplot
+      |Go
+      |Golo
+      |Gosu
+      |Grace
+      |Grammatical Framework
+      |Groff
+      |Groovy
+      |Hack
+      |Handlebars
+      |Harbour
+      |Haskell
+      |Haxe
+      |HCL
+      |HTML
+      |Hy
+      |HyPhy
+      |IDL
+      |Idris
+      |IGOR Pro
+      |Inform 7
+      |Inno Setup
+      |Io
+      |Ioke
+      |Isabelle
+      |J
+      |Jasmin
+      |Java
+      |JavaScript
+      |JFlex
+      |JSONiq
+      |Julia
+      |Jupyter Notebook
+      |KiCad
+      |Kit
+      |Kotlin
+      |KRL
+      |LabVIEW
+      |Lasso
+      |Lean
+      |Lex
+      |LilyPond
+      |Limbo
+      |Liquid
+      |LiveScript
+      |LLVM
+      |Logos
+      |Logtalk
+      |LOLCODE
+      |LookML
+      |LoomScript
+      |LSL
+      |Lua
+      |M
+      |Makefile
+      |Mako
+      |Markdown
+      |Mask
+      |Mathematica
+      |Matlab
+      |Max
+      |MAXScript
+      |Mercury
+      |Metal
+      |MiniD
+      |Mirah
+      |Modelica
+      |Modula-2
+      |Module Management System
+      |Monkey
+      |Moocode
+      |MoonScript
+      |MTML
+      |mupad
+      |Myghty
+      |NCL
+      |Nemerle
+      |nesC
+      |NetLinx
+      |NetLinx+ERB
+      |NetLogo
+      |NewLisp
+      |Nginx
+      |Nimrod
+      |Nit
+      |Nix
+      |NSIS
+      |Nu
+      |Objective-C
+      |Objective-C++
+      |Objective-J
+      |OCaml
+      |Omgrofl
+      |ooc
+      |Opa
+      |Opal
+      |OpenEdge ABL
+      |OpenSCAD
+      |Ox
+      |Oxygene
+      |Oz
+      |Pan
+      |Papyrus
+      |Parrot
+      |Pascal
+      |PAWN
+      |Perl
+      |Perl6
+      |PHP
+      |PicoLisp
+      |PigLatin
+      |Pike
+      |PLpgSQL
+      |PLSQL
+      |PogoScript
+      |Pony
+      |PostScript
+      |PowerShell
+      |Processing
+      |Prolog
+      |Propeller Spin
+      |Protocol Buffer
+      |Puppet
+      |Pure Data
+      |PureBasic
+      |PureScript
+      |Python
+      |QMake
+      |QML
+      |R
+      |Racket
+      |Ragel in Ruby Host
+      |RAML
+      |RDoc
+      |REALbasic
+      |Rebol
+      |Red
+      |Redcode
+      |RenderScript
+      |RobotFramework
+      |Rouge
+      |Ruby
+      |Rust
+      |SaltStack
+      |SAS
+      |Scala
+      |Scheme
+      |Scilab
+      |Self
+      |Shell
+      |ShellSession
+      |Shen
+      |Slash
+      |Smali
+      |Smalltalk
+      |Smarty
+      |SMT
+      |SourcePawn
+      |SQF
+      |SQL
+      |SQLPL
+      |Squirrel
+      |Stan
+      |Standard ML
+      |Stata
+      |SuperCollider
+      |Swift
+      |SystemVerilog
+      |Tcl
+      |Tea
+      |TeX
+      |Thrift
+      |Turing
+      |TXL
+      |TypeScript
+      |UnrealScript
+      |UrWeb
+      |Vala
+      |VCL
+      |Verilog
+      |VHDL
+      |VimL
+      |Visual Basic
+      |Volt
+      |Vue
+      |Web Ontology Language
+      |WebIDL
+      |wisp
+      |X10
+      |xBase
+      |XC
+      |XML
+      |Xojo
+      |XPages
+      |XProc
+      |XQuery
+      |XS
+      |XSLT
+      |Xtend
+      |Yacc
+      |Zephir
+      |Zimpl
+      |
+      |300 languages
+      |you can get only selected language list with '-l' option.
+      |if languages is unknown, you can specify 'unkown'.
+      |
     EOS
   end
 end

@@ -17,7 +17,7 @@ module GitTrend
 
     desc :list, "\033[32m(DEFAULT COMMAND)\e[0m List Trending repository on github [-l, -s, -d]"
     option :language,    aliases: '-l', required: false, desc: 'Specify a language'
-    option :since,       aliases: '-s', required: false, desc: 'Enable: [daily, weekly, monthly]'
+    option :since,       aliases: '-s', required: false, desc: 'Enable: [d, day, daily, w, week, weekly, m, month, monthly]'
     option :description, aliases: '-d', required: false, default: true, type: :boolean, desc: "\033[32m(DEFAULT OPTION)\e[0m Dislpay descriptions"
     option :number,      aliases: '-n', required: false, type: :numeric, desc: 'Number of lines'
     option :help,        aliases: '-h', required: false, type: :boolean
