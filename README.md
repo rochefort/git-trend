@@ -7,21 +7,73 @@
 
 # git-trend
 
-git-trend is a command line utility to show [Trending repositories on GitHub](https://github.com/trending).  
+`git-trend` is a gem that fetches [Trending repositories on GitHub](https://github.com/trending).  
+And this also work as a command line utility.  
 
 ## Requirements
 
-Ruby versions is earlier than 2.0.
+Ruby versions is 2.0 or later.
 
 ## Installation
+Add this line to your application's Gemfile:
+    gem 'git-trend'
 
+And then execute:
+    $bundle
+
+Or install it yourself as:
     $ gem install git-trend
 
-## Usage
+## Usage Of a gem
+
+Require it if you haven't:
+
+    require 'git-trend'
+
+### Fetch trending
+
+    repos = GitTrend.get
+    repos.each do |r|
+      puts "#{r.name} (#{r.star_count} stargazers)"
+      puts "--- #{r.description}\n\n"
+    end
+    
+    # =>
+    # jayphelps/git-blame-someone-else (625 stargazers)
+    # --- Blame someone else for your bad code.
+    #
+    # FreeCodeCamp/FreeCodeCamp (574 stargazers)
+    # --- The http://FreeCodeCamp.com open source codebase and curriculum. Learn to # code and help nonprofits.
+    #
+    # p-e-w/maybe (519 stargazers)
+    # --- See what a program does before deciding whether you really want it to happen.
+    # ...
+
+### Use language and since options
+
+    # language
+    GitTrend.get('ruby')
+    GitTrend.get(:ruby)
+
+    # since
+    GitTrend.get(since: :weekly)
+    GitTrend.get(since: :week)
+    GitTrend.get(since: :w)
+    
+    # language and since
+    GitTrend.get('ruby', 'weekly')
+    GitTrend.get(:ruby, :weekly)
+    GitTrend.get(language: :ruby, since: :weekly)
+
+### Show enable languages
+
+    GitTrend.languages
+
+## Usage Of a command line tool
 
 Use the git-trend as follows:
 
-### daily trending
+### Fetch daily trending
 
     git trend
 
@@ -59,7 +111,7 @@ No. Name                                     Lang          Star Description
 
 ```
 
-### daily trending without description
+### Fetch daily trending without description
 
     git trend --no-description
 
@@ -74,30 +126,11 @@ No. Name                                     Lang          Star
   3 FezVrasta/bootstrap-material-design      CSS            387
   4 realm/realm-java                         Java           293
   5 Aerolab/midnight.js                      JavaScript     226
-  6 alebcay/awesome-shell                                   220
-  7 jonathanslenders/python-prompt-toolkit   Python         215
-  8 willianjusten/awesome-svg                               130
-  9 usablica/intro.js                        JavaScript     105
- 10 simoncozens/sile                         C++            102
- 11 sferik/t                                 Ruby            85
- 12 realm/realm-cocoa                        Objective-C     83
- 13 mubix/shellshocker-pocs                                  67
- 14 hannob/bashcheck                         Shell           60
- 15 angular/angular.js                       JavaScript      46
- 16 kenwheeler/slick                         JavaScript      57
- 17 Squirrel/Squirrel.Windows                C               57
- 18 jshint/fixmyjs                           JavaScript      56
- 19 plivo/sharq-server                       Python          52
- 20 marmelab/ng-admin                        JavaScript      49
- 21 twbs/bootstrap                           CSS             38
- 22 CyberAgent/AMBTableViewController        Objective-C     48
- 23 google/cadvisor                          Go              48
- 24 vladikoff/chromeos-apk                   JavaScript      46
- 25 nhanaswigs/htmljs                        JavaScript      47
+  ...
 
 ```
 
-### daily trending by language
+### Fetch daily trending by language
 
     git trend -l
 
@@ -112,30 +145,10 @@ No. Name                                     Lang         Star Description
   3 Homebrew/homebrew                        Ruby           23 The missing package manager for OS X.
   4 ruby/ruby                                Ruby           12 The Ruby Programming Language
   5 discourse/discourse                      Ruby           10 A platform for community discussion. Free, open, simple.
-  6 diaspora/diaspora                        Ruby           12 Distributed and contextual social networking
-  7 elasticsearch/logstash                   Ruby           10 logstash - logs/event transport, processing, management, search.
-  8 mitchellh/vagrant                        Ruby           10 Vagrant is a tool for building and distributing development environments.
-  9 increments/qiita-rb                      Ruby           10 Qiita API v2 client library and CLI tool, written in Ruby
- 10 gitlabhq/gitlabhq                        Ruby            8 Open source software to collaborate on code. Follow us on twitter @gitlabhq
- 11 jekyll/jekyll                            Ruby            7 Jekyll is a blog-aware, static site generator in Ruby
- 12 bbatsov/ruby-style-guide                 Ruby            9 A community-driven Ruby coding style guide
- 13 capistrano/capistrano                    Ruby            7 Remote multi-server automation tool
- 14 intridea/grape                           Ruby            8 An opinionated micro-framework for creating REST-like APIs in Ruby.
- 15 CocoaPods/CocoaPods                      Ruby            6 The Objective-C library dependency manager.
- 16 thoughtbot/laptop                        Ruby            6 A shell script which turns your Linux or Mac OS X laptop into an awesome development machine.
- 17 amatsuda/database_rewinder               Ruby            7 minimalist's tiny and ultra-fast database cleaner
- 18 voltrb/volt                              Ruby            7 A ruby web framework where your ruby runs on both server and client
- 19 Homebrew/linuxbrew                       Ruby            6 A fork of Homebrew for Linux
- 20 davidcelis/spec-me-maybe                 Ruby            7 Introduces the `maybe` syntax to RSpec.
- 21 peter-murach/tty                         Ruby            6 Toolbox for developing CLI clients.
- 22 plataformatec/devise                     Ruby            6 Flexible authentication solution for Rails with Warden.
- 23 fluent/fluentd                           Ruby            6 Fluentd data collector
- 24 caskroom/homebrew-cask                   Ruby            5 A CLI workflow for the administration of Mac applications distributed as binaries
- 25 cantino/huginn                           Ruby            5 Build agents that monitor and act on your behalf.  Your agents are standing by!
-
+  ...
 ```
 
-### weekly/monthly trending
+### Fetch weekly/monthly trending
 
     git trend -s weekly
     git trend -s week
@@ -158,30 +171,10 @@ No. Name                                     Lang           Star Description
   3 willianjusten/awesome-svg                               1395 A curated list of SVG.
   4 Aerolab/midnight.js                      JavaScript     1351 A jQuery plugin to switch fixed headers on the fly
   5 alebcay/awesome-shell                                    743 A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awe...
-  6 jonathanslenders/python-prompt-toolkit   Python          670 Library for building powerful interactive command lines in Python
-  7 vladikoff/chromeos-apk                   JavaScript      608 Run Android APKs in Chrome OS OR Chrome in OS X, Linux and Windows.
-  8 psaravan/JamsMusicPlayer                 Java            533 A free, powerful and elegant music player for Android.
-  9 reddit/reddit                            Python          553 the code that powers reddit.com
- 10 Alamofire/Alamofire                      Swift           559 Elegant HTTP Networking in Swift
- 11 vgvassilev/cling                         C++             492 Cling is an interactive C++ interpreter, built on top of Clang and LLVM compiler infrastructure...
- 12 shu223/iOS8-Sampler                      Objective-C     476 Code examples for the new functions of iOS 8.
- 13 yahoo/gifshot                            JavaScript      487 JavaScript library that can create animated GIFs from media streams, videos, or images
- 14 kenwheeler/slick                         JavaScript      439 the last carousel you'll ever need
- 15 sferik/t                                 Ruby            420 A command-line power tool for Twitter.
- 16 angular/angular.js                       JavaScript      325 HTML enhanced for web apps
- 17 mieko/sr-captcha                         CSS             387 Article describing how the technical means by which Silk Road 1's captcha was broken.
- 18 sofish/wechat.js                         JavaScript      360 微信相关的 js 操作：分享、网络、菜单
- 19 robertdavidgraham/masscan                C               345 TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes...
- 20 realm/realm-java                         Java            348 Realm is a mobile database: a replacement for SQLite & ORMs
- 21 humhub/humhub                            PHP             331 HumHub - Open Source Social Network
- 22 twbs/bootstrap                           CSS             259 The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first pr...
- 23 mechio/takana                            CoffeeScript    341 Takana lets you see your SCSS and CSS style changes live, in the browser, as you type them
- 24 davidtheclark/scalable-css-reading-list                  331 Collected dispatches from The Quest for Scalable CSS
- 25 addyosmani/timing.js                     JavaScript      335 Navigation Timing API measurement helpers
-
+  ...
 ```
 
-### number of trending
+### Fetch number of trending
 
     git trend -n <number>
 
@@ -197,7 +190,7 @@ No. Name                                     Lang         Star Description
 
 ```
 
-### show languages
+### Show enable languages
 
     git trend languages
 
@@ -213,9 +206,7 @@ alloy
 antlr
 apex
 applescript
-.
-.
-.
+...
 ```
 
 ## Tips
@@ -224,7 +215,7 @@ I use an alias command like below;
 alias trend='g trend -n 10 && g trend -l ruby -n 5 && g trend -l JavaScript -n 5 && g trend -l objective-c -n 5 && g trend -l swift -n 3 && g trend -l php -n 3'
 ```
 
-## Implemantation of other language
+## Implementation of other language
 
 * [andygrunwald/go-trending: Go library for accessing trending repositories and developers at Github.](https://github.com/andygrunwald/go-trending)  
 
