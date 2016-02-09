@@ -1,4 +1,5 @@
 require 'thor'
+require 'git_trend/rendering'
 
 module GitTrend
   class CLI < Thor
