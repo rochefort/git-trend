@@ -1,3 +1,6 @@
+## v1.0.1 (Wed Feb 12 2016)
+- Rename executable file [f0f605b]
+
 ## v1.0.0 (Wed Feb 12 2016)
 - Add module methods as working in ruby scripts [f93011b]
 
