@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 include GitTrend
 
 RSpec.shared_examples_for 'since daily ranking' do

@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 include GitTrend
 RSpec.describe GitTrend do
   before do
