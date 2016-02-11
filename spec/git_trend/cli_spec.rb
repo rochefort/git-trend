@@ -1,18 +1,18 @@
 include GitTrend
 RSpec.describe GitTrend::CLI do
-  shared_examples 'since daily ranking' do
+  shared_examples 'since daily ranking' do |since|
     it 'display daily ranking' do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout
     end
   end
 
-  shared_examples 'since weekly ranking' do
+  shared_examples 'since weekly ranking' do |since|
     it 'display weekly ranking' do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_weekly_result).to_stdout
     end
   end
 
-  shared_examples 'since monthly ranking' do
+  shared_examples 'since monthly ranking' do |since|
     it 'display monthly ranking' do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_monthly_result).to_stdout
     end
@@ -129,62 +129,52 @@ RSpec.describe GitTrend::CLI do
 
     describe 'with -s option' do
       context 'with no option' do
-        before { stub_request_get("trending?since=#{since}") }
-        let(:since) { '' }
-        it_behaves_like 'since daily ranking'
+        before { stub_request_get('trending?since=') }
+        include_examples 'since daily ranking', ''
       end
 
       describe 'since daily' do
         before { stub_request_get('trending?since=daily') }
         context 'with d' do
-          let(:since) { 'd' }
-          it_behaves_like 'since daily ranking'
+          include_examples 'since daily ranking', 'd'
         end
 
         context 'with day' do
-          let(:since) { 'day' }
-          it_behaves_like 'since daily ranking'
+          include_examples 'since daily ranking', 'day'
         end
 
         context 'with daily' do
-          let(:since) { 'daily' }
-          it_behaves_like 'since daily ranking'
+          include_examples 'since daily ranking', 'daily'
         end
       end
 
       describe 'since weekly' do
         before { stub_request_get('trending?since=weekly') }
         context 'with w' do
-          let(:since) { 'w' }
-          it_behaves_like 'since weekly ranking'
+          include_examples 'since weekly ranking', 'w'
         end
 
         context 'with week' do
-          let(:since) { 'week' }
-          it_behaves_like 'since weekly ranking'
+          include_examples 'since weekly ranking', 'week'
         end
 
         context 'with weekly' do
-          let(:since) { 'weekly' }
-          it_behaves_like 'since weekly ranking'
+          include_examples 'since weekly ranking', 'weekly'
         end
       end
 
       describe 'since monthly' do
         before { stub_request_get('trending?since=monthly') }
         context 'with m' do
-          let(:since) { 'm' }
-          it_behaves_like 'since monthly ranking'
+          include_examples 'since monthly ranking', 'm'
         end
 
         context 'with month' do
-          let(:since) { 'month' }
-          it_behaves_like 'since monthly ranking'
+          include_examples 'since monthly ranking', 'month'
         end
 
         context 'with monthly' do
-          let(:since) { 'monthly' }
-          it_behaves_like 'since monthly ranking'
+          include_examples 'since monthly ranking', 'monthly'
         end
       end
     end
