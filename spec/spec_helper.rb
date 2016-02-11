@@ -38,8 +38,22 @@ require 'git_trend'
 SimpleCov.start
 
 RSpec.configure do |config|
+  config.expect_with :rspec do |expectations|
+    expectations.syntax = :expect
+  end
+
+  config.mock_with :rspec do |mocks|
+    mocks.syntax = :expect
+    mocks.verify_partial_doubles = true
+  end
+
+  config.filter_run :focus
+  config.run_all_when_everything_filtered = true
   config.expose_dsl_globally = false
+
+  config.example_status_persistence_file_path = 'spec/examples.txt'
   config.order = :random
+  Kernel.srand config.seed
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
