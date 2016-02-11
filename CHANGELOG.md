@@ -1,4 +1,6 @@
-## v0.2.3 (unrelease)
+## v1.0.0 (Wed Feb 12 2016)
+- Add module methods as working in ruby scripts [f93011b]
+
 - Add variations of since option [f927ba7]  
   variations: d, day, w, week, m, month
 
