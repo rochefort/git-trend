@@ -35,38 +35,42 @@ Require it if you haven't:
 
 ### Fetch trending
 
-    repos = GitTrend.get
-    repos.each do |r|
-      puts "#{r.name} (#{r.star_count} stargazers)"
-      puts "--- #{r.description}\n\n"
-    end
-    
-    # =>
-    # jayphelps/git-blame-someone-else (625 stargazers)
-    # --- Blame someone else for your bad code.
-    #
-    # FreeCodeCamp/FreeCodeCamp (574 stargazers)
-    # --- The http://FreeCodeCamp.com open source codebase and curriculum. Learn to # code and help nonprofits.
-    #
-    # p-e-w/maybe (519 stargazers)
-    # --- See what a program does before deciding whether you really want it to happen.
-    # ...
+```ruby
+repos = GitTrend.get
+repos.each do |r|
+  puts "#{r.name} (#{r.star_count} stargazers)"
+  puts "--- #{r.description}\n\n"
+end
+
+# =>
+# jayphelps/git-blame-someone-else (625 stargazers)
+# --- Blame someone else for your bad code.
+#
+# FreeCodeCamp/FreeCodeCamp (574 stargazers)
+# --- The http://FreeCodeCamp.com open source codebase and curriculum. Learn to # code and help nonprofits.
+#
+# p-e-w/maybe (519 stargazers)
+# --- See what a program does before deciding whether you really want it to happen.
+# ...
+```
 
 ### Use language and since options
 
-    # language
-    GitTrend.get('ruby')
-    GitTrend.get(:ruby)
+```ruby
+# language
+GitTrend.get('ruby')
+GitTrend.get(:ruby)
 
-    # since
-    GitTrend.get(since: :weekly)
-    GitTrend.get(since: :week)
-    GitTrend.get(since: :w)
-    
-    # language and since
-    GitTrend.get('ruby', 'weekly')
-    GitTrend.get(:ruby, :weekly)
-    GitTrend.get(language: :ruby, since: :weekly)
+# since
+GitTrend.get(since: :weekly)
+GitTrend.get(since: :week)
+GitTrend.get(since: :w)
+
+# language and since
+GitTrend.get('ruby', 'weekly')
+GitTrend.get(:ruby, :weekly)
+GitTrend.get(language: :ruby, since: :weekly)
+```
 
 ### Show enable languages
 
@@ -153,15 +157,17 @@ No. Name                                     Lang         Star Description
 
 ### Fetch weekly/monthly trending
 
-    git trend -s weekly
-    git trend -s week
-    git trend -s w
-    
-    or
-    
-    git trend -s monthly
-    git trend -s month
-    git trend -s m
+```ruby
+git trend -s weekly
+git trend -s week
+git trend -s w
+
+or
+
+git trend -s monthly
+git trend -s month
+git trend -s m
+```
 
 e.g.:
 
