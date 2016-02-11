@@ -1,24 +1,23 @@
 include GitTrend
-
-RSpec.shared_examples_for 'since daily ranking' do
-  it 'display daily ranking' do
-    expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout
-  end
-end
-
-RSpec.shared_examples_for 'since weekly ranking' do
-  it 'display weekly ranking' do
-    expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_weekly_result).to_stdout
-  end
-end
-
-RSpec.shared_examples_for 'since monthly ranking' do
-  it 'display monthly ranking' do
-    expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_monthly_result).to_stdout
-  end
-end
-
 RSpec.describe GitTrend::CLI do
+  shared_examples 'since daily ranking' do
+    it 'display daily ranking' do
+      expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout
+    end
+  end
+
+  shared_examples 'since weekly ranking' do
+    it 'display weekly ranking' do
+      expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_weekly_result).to_stdout
+    end
+  end
+
+  shared_examples 'since monthly ranking' do
+    it 'display monthly ranking' do
+      expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_monthly_result).to_stdout
+    end
+  end
+
   describe '#list' do
     let(:cli) { CLI.new }
 
