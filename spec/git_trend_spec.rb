@@ -1,4 +1,3 @@
-include GitTrend
 RSpec.describe GitTrend do
   before do
     stub_request(:get, /.*/)

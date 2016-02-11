@@ -1,4 +1,3 @@
-include GitTrend
 RSpec.describe GitTrend::Scraper do
   let(:scraper) { Scraper.new }
 
