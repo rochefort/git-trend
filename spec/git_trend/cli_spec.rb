@@ -2,33 +2,29 @@ include GitTrend
 
 RSpec.shared_examples_for 'since daily ranking' do
   it 'display daily ranking' do
-    expect { @cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout
+    expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout
   end
 end
 
 RSpec.shared_examples_for 'since weekly ranking' do
   it 'display weekly ranking' do
-    expect { @cli.invoke(:list, [], since: since, description: false) }.to output(dummy_weekly_result).to_stdout
+    expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_weekly_result).to_stdout
   end
 end
 
 RSpec.shared_examples_for 'since monthly ranking' do
   it 'display monthly ranking' do
-    expect { @cli.invoke(:list, [], since: since, description: false) }.to output(dummy_monthly_result).to_stdout
+    expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_monthly_result).to_stdout
   end
 end
 
 RSpec.describe GitTrend::CLI do
   describe '#list' do
-    before do
-      @cli = CLI.new
-    end
+    let(:cli) { CLI.new }
 
     describe 'with -n option' do
       context 'with 3' do
-        before do
-          stub_request_get('trending')
-        end
+        before { stub_request_get('trending') }
         let(:number) { 3 }
         it 'display top 3 daily ranking' do
           res = <<-'EOS'.unindent
@@ -39,26 +35,22 @@ RSpec.describe GitTrend::CLI do
             |  3 FreeCodeCamp/FreeCodeCamp                JavaScript    614
 
           EOS
-          expect { @cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
+          expect { cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
         end
       end
 
       context 'with over 25' do
-        before do
-          stub_request_get('trending')
-        end
+        before { stub_request_get('trending') }
         let(:number) { 26 }
         it 'display daily ranking' do
-          expect { @cli.invoke(:list, [], number: number, description: false) }.to output(dummy_result_without_description).to_stdout
+          expect { cli.invoke(:list, [], number: number, description: false) }.to output(dummy_result_without_description).to_stdout
         end
       end
     end
 
     describe 'with -l option' do
       context 'with ruby' do
-        before do
-          stub_request_get("trending?l=#{language}")
-        end
+        before { stub_request_get("trending?l=#{language}") }
         let(:language) { 'ruby' }
 
         it 'display daily ranking by language' do
@@ -92,14 +84,12 @@ RSpec.describe GitTrend::CLI do
             | 25 brandonhilkert/sucker_punch              Ruby            7
 
           EOS
-          expect { @cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
+          expect { cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
         end
       end
 
       context 'with objective-c++ (including + sign)' do
-        before do
-          stub_request_get('trending?l=objective-c%2B%2B')
-        end
+        before { stub_request_get('trending?l=objective-c%2B%2B') }
         let(:language) { 'objective-c++' }
 
         it 'display daily ranking by language' do
@@ -133,7 +123,7 @@ RSpec.describe GitTrend::CLI do
             | 25 ryanb93/Applefy                          Objective-C++      0
 
           EOS
-          expect { @cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
+          expect { cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
         end
       end
     end
@@ -214,13 +204,13 @@ RSpec.describe GitTrend::CLI do
 
       context 'with no option' do
         it 'display daily ranking' do
-          expect { @cli.invoke(:list, []) }.to output(dummy_result_no_options).to_stdout
+          expect { cli.invoke(:list, []) }.to output(dummy_result_no_options).to_stdout
         end
       end
 
       context 'terminal width is enough' do
         it 'display daily ranking with description' do
-          expect { @cli.invoke(:list, [], description: true) }.to output(dummy_result_no_options).to_stdout
+          expect { cli.invoke(:list, [], description: true) }.to output(dummy_result_no_options).to_stdout
         end
       end
 
@@ -231,16 +221,14 @@ RSpec.describe GitTrend::CLI do
         end
 
         it 'display daily ranking about the same as no option' do
-          expect { @cli.invoke(:list, [], description: true) }.to output(dummy_result_without_description).to_stdout
+          expect { cli.invoke(:list, [], description: true) }.to output(dummy_result_without_description).to_stdout
         end
       end
     end
 
     describe 'with -l and -s option' do
       context 'with ruby and weekly' do
-        before do
-          stub_request_get("trending?l=#{language}&since=#{since}")
-        end
+        before { stub_request_get("trending?l=#{language}&since=#{since}") }
         let(:language) { 'ruby' }
         let(:since) { 'weekly' }
 
@@ -275,7 +263,7 @@ RSpec.describe GitTrend::CLI do
             | 25 thoughtbot/administrate                  Ruby           48
 
           EOS
-          expect { @cli.invoke(:list, [], language: language, since: since, description: false) }.to output(res).to_stdout
+          expect { cli.invoke(:list, [], language: language, since: since, description: false) }.to output(res).to_stdout
         end
       end
     end
@@ -288,21 +276,19 @@ RSpec.describe GitTrend::CLI do
           stub_request_get('trending', 'trending_including_multibyte_characters')
         end
         it 'display daily ranking' do
-          expect { @cli.invoke(:list, []) }.to output(dummy_result_no_options_with_multibyte_characters).to_stdout
+          expect { cli.invoke(:list, []) }.to output(dummy_result_no_options_with_multibyte_characters).to_stdout
         end
       end
     end
   end
 
   describe '#languages' do
-    before do
-      @cli = CLI.new
-      stub_request_get('trending')
-    end
+    before { stub_request_get('trending') }
+    let(:cli) { CLI.new }
 
     context 'with no option' do
       it 'display languages' do
-        expect { @cli.languages }.to output(dummy_languages).to_stdout
+        expect { cli.languages }.to output(dummy_languages).to_stdout
       end
     end
   end
