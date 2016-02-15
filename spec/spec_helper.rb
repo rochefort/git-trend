@@ -31,7 +31,6 @@ SimpleCov.start do
   ])
 end
 
-require 'rspec/its'
 require 'webmock/rspec'
 
 require 'git_trend'
