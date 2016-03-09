@@ -232,7 +232,7 @@ alias trend='g trend -n 10 && g trend -l ruby -n 5 && g trend -l JavaScript -n 5
 
 ## Contributing
 
-1. Fork it ( https://github.com/[rochefort]/git-trend/fork )
+1. Fork it ( https://github.com/rochefort/git-trend/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
