@@ -1,3 +1,6 @@
+## v1.0.2 (Fri Apr  1 2016)
+- Update gems [0d24fae]
+
 ## v1.0.1 (Wed Feb 12 2016)
 - Rename executable file [f0f605b]
 
