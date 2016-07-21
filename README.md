@@ -27,7 +27,7 @@ Or install it yourself as:
 
     $ gem install git-trend
 
-## Usage Of a gem
+## Usage of a gem
 
 Require it if you haven't:
 
@@ -76,7 +76,7 @@ GitTrend.get(language: :ruby, since: :weekly)
 
     GitTrend.languages
 
-## Usage Of a command line tool
+## Usage of a command line tool
 
 Use the git-trend as follows:
 
