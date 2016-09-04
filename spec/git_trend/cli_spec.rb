@@ -1,3 +1,4 @@
+# rubocop:disable Style/TrailingWhitespace
 include GitTrend
 RSpec.describe GitTrend::CLI do
   shared_examples "since daily ranking" do |since|

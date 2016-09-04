@@ -29,54 +29,54 @@ module GitTrend
 
     private
 
-    def generate_url_for_get(language, since)
-      uri = Addressable::URI.parse(BASE_URL)
-      since = convert_url_param_since(since)
-      if language || since
-        uri.query_values = { l: language, since: since }.delete_if { |_k, v| v.nil? }
+      def generate_url_for_get(language, since)
+        uri = Addressable::URI.parse(BASE_URL)
+        since = convert_url_param_since(since)
+        if language || since
+          uri.query_values = { l: language, since: since }.delete_if { |_k, v| v.nil? }
+        end
+        uri.to_s
       end
-      uri.to_s
-    end
 
-    def convert_url_param_since(since)
-      return unless since
-      case since.to_sym
-      when :d, :day,   :daily   then "daily"
-      when :w, :week,  :weekly  then "weekly"
-      when :m, :month, :monthly then "monthly"
-      else ""
-      end
-    end
-
-    # Pattern 1: lang + stars
-    #  Ruby • 24 stars today • Built by
-    # Pattern 2: only stars
-    #  85 stars today • Built by
-    # Pattern 3: only lang
-    #  ASP • Built by
-    def extract_lang_and_star_from_meta(text)
-      meta_data = text.split("•").map { |x| x.delete("\n").strip }
-      meta_data.pop # remove "Build by"
-      if meta_data.size == 2
-        [meta_data[0], meta_data[1].delete(",").to_i]
-      else
-        if meta_data[0].include?("stars")
-          ["", meta_data[0].delete(",").to_i]
-        else
-          [meta_data[0], 0]
+      def convert_url_param_since(since)
+        return unless since
+        case since.to_sym
+        when :d, :day,   :daily   then "daily"
+        when :w, :week,  :weekly  then "weekly"
+        when :m, :month, :monthly then "monthly"
+        else ""
         end
       end
-    end
 
-    def generate_project(page)
-      page.search(".repo-list-item").map do |content|
-        project = Project.new
-        meta_data = content.search(".repo-list-meta").text
-        project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
-        project.name        = content.search(".repo-list-name a").text.split.join
-        project.description = content.search(".repo-list-description").text.delete("\n").strip
-        project
+      # Pattern 1: lang + stars
+      #  Ruby • 24 stars today • Built by
+      # Pattern 2: only stars
+      #  85 stars today • Built by
+      # Pattern 3: only lang
+      #  ASP • Built by
+      def extract_lang_and_star_from_meta(text)
+        meta_data = text.split("•").map { |x| x.delete("\n").strip }
+        meta_data.pop # remove "Build by"
+        if meta_data.size == 2
+          [meta_data[0], meta_data[1].delete(",").to_i]
+        else
+          if meta_data[0].include?("stars")
+            ["", meta_data[0].delete(",").to_i]
+          else
+            [meta_data[0], 0]
+          end
+        end
       end
-    end
+
+      def generate_project(page)
+        page.search(".repo-list-item").map do |content|
+          project = Project.new
+          meta_data = content.search(".repo-list-meta").text
+          project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
+          project.name        = content.search(".repo-list-name a").text.split.join
+          project.description = content.search(".repo-list-description").text.delete("\n").strip
+          project
+        end
+      end
   end
 end
