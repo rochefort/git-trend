@@ -1,19 +1,19 @@
 include GitTrend
 RSpec.describe GitTrend::CLI do
-  shared_examples 'since daily ranking' do |since|
-    it 'display daily ranking' do
+  shared_examples "since daily ranking" do |since|
+    it "display daily ranking" do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout
     end
   end
 
-  shared_examples 'since weekly ranking' do |since|
-    it 'display weekly ranking' do
+  shared_examples "since weekly ranking" do |since|
+    it "display weekly ranking" do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_weekly_result).to_stdout
     end
   end
 
-  shared_examples 'since monthly ranking' do |since|
-    it 'display monthly ranking' do
+  shared_examples "since monthly ranking" do |since|
+    it "display monthly ranking" do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_monthly_result).to_stdout
     end
   end
@@ -21,11 +21,11 @@ RSpec.describe GitTrend::CLI do
   describe '#list' do
     let(:cli) { CLI.new }
 
-    describe 'with -n option' do
-      context 'with 3' do
-        before { stub_request_get('trending') }
+    describe "with -n option" do
+      context "with 3" do
+        before { stub_request_get("trending") }
         let(:number) { 3 }
-        it 'display top 3 daily ranking' do
+        it "display top 3 daily ranking" do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
@@ -38,21 +38,21 @@ RSpec.describe GitTrend::CLI do
         end
       end
 
-      context 'with over 25' do
-        before { stub_request_get('trending') }
+      context "with over 25" do
+        before { stub_request_get("trending") }
         let(:number) { 26 }
-        it 'display daily ranking' do
+        it "display daily ranking" do
           expect { cli.invoke(:list, [], number: number, description: false) }.to output(dummy_result_without_description).to_stdout
         end
       end
     end
 
-    describe 'with -l option' do
-      context 'with ruby' do
+    describe "with -l option" do
+      context "with ruby" do
         before { stub_request_get("trending?l=#{language}") }
-        let(:language) { 'ruby' }
+        let(:language) { "ruby" }
 
-        it 'display daily ranking by language' do
+        it "display daily ranking by language" do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
@@ -87,11 +87,11 @@ RSpec.describe GitTrend::CLI do
         end
       end
 
-      context 'with objective-c++ (including + sign)' do
-        before { stub_request_get('trending?l=objective-c%2B%2B') }
-        let(:language) { 'objective-c++' }
+      context "with objective-c++ (including + sign)" do
+        before { stub_request_get("trending?l=objective-c%2B%2B") }
+        let(:language) { "objective-c++" }
 
-        it 'display daily ranking by language' do
+        it "display daily ranking by language" do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang            Star
             |--- ---------------------------------------- ------------- ------
@@ -127,101 +127,101 @@ RSpec.describe GitTrend::CLI do
       end
     end
 
-    describe 'with -s option' do
-      context 'with no option' do
-        before { stub_request_get('trending?since=') }
-        include_examples 'since daily ranking', ''
+    describe "with -s option" do
+      context "with no option" do
+        before { stub_request_get("trending?since=") }
+        include_examples "since daily ranking", ""
       end
 
-      describe 'since daily' do
-        before { stub_request_get('trending?since=daily') }
-        context 'with d' do
-          include_examples 'since daily ranking', 'd'
+      describe "since daily" do
+        before { stub_request_get("trending?since=daily") }
+        context "with d" do
+          include_examples "since daily ranking", "d"
         end
 
-        context 'with day' do
-          include_examples 'since daily ranking', 'day'
+        context "with day" do
+          include_examples "since daily ranking", "day"
         end
 
-        context 'with daily' do
-          include_examples 'since daily ranking', 'daily'
-        end
-      end
-
-      describe 'since weekly' do
-        before { stub_request_get('trending?since=weekly') }
-        context 'with w' do
-          include_examples 'since weekly ranking', 'w'
-        end
-
-        context 'with week' do
-          include_examples 'since weekly ranking', 'week'
-        end
-
-        context 'with weekly' do
-          include_examples 'since weekly ranking', 'weekly'
+        context "with daily" do
+          include_examples "since daily ranking", "daily"
         end
       end
 
-      describe 'since monthly' do
-        before { stub_request_get('trending?since=monthly') }
-        context 'with m' do
-          include_examples 'since monthly ranking', 'm'
+      describe "since weekly" do
+        before { stub_request_get("trending?since=weekly") }
+        context "with w" do
+          include_examples "since weekly ranking", "w"
         end
 
-        context 'with month' do
-          include_examples 'since monthly ranking', 'month'
+        context "with week" do
+          include_examples "since weekly ranking", "week"
         end
 
-        context 'with monthly' do
-          include_examples 'since monthly ranking', 'monthly'
+        context "with weekly" do
+          include_examples "since weekly ranking", "weekly"
+        end
+      end
+
+      describe "since monthly" do
+        before { stub_request_get("trending?since=monthly") }
+        context "with m" do
+          include_examples "since monthly ranking", "m"
+        end
+
+        context "with month" do
+          include_examples "since monthly ranking", "month"
+        end
+
+        context "with monthly" do
+          include_examples "since monthly ranking", "monthly"
         end
       end
     end
 
-    describe 'with -d option (or with no option)' do
+    describe "with -d option (or with no option)" do
       after do
-        ENV['COLUMNS'] = nil
-        ENV['LINES'] = nil
+        ENV["COLUMNS"] = nil
+        ENV["LINES"] = nil
       end
 
       before do
-        stub_request_get('trending')
-        ENV['COLUMNS'] = '140'
-        ENV['LINES'] = '40'
+        stub_request_get("trending")
+        ENV["COLUMNS"] = "140"
+        ENV["LINES"] = "40"
       end
 
-      context 'with no option' do
-        it 'display daily ranking' do
+      context "with no option" do
+        it "display daily ranking" do
           expect { cli.invoke(:list, []) }.to output(dummy_result_no_options).to_stdout
         end
       end
 
-      context 'terminal width is enough' do
-        it 'display daily ranking with description' do
+      context "terminal width is enough" do
+        it "display daily ranking with description" do
           expect { cli.invoke(:list, [], description: true) }.to output(dummy_result_no_options).to_stdout
         end
       end
 
-      context 'terminal width is tiny' do
+      context "terminal width is tiny" do
         before do
-          ENV['COLUMNS'] = '84' # it is not enough for description.
-          ENV['LINES'] = '40'
+          ENV["COLUMNS"] = "84" # it is not enough for description.
+          ENV["LINES"] = "40"
         end
 
-        it 'display daily ranking about the same as no option' do
+        it "display daily ranking about the same as no option" do
           expect { cli.invoke(:list, [], description: true) }.to output(dummy_result_without_description).to_stdout
         end
       end
     end
 
-    describe 'with -l and -s option' do
-      context 'with ruby and weekly' do
+    describe "with -l and -s option" do
+      context "with ruby and weekly" do
         before { stub_request_get("trending?l=#{language}&since=#{since}") }
-        let(:language) { 'ruby' }
-        let(:since) { 'weekly' }
+        let(:language) { "ruby" }
+        let(:since) { "weekly" }
 
-        it 'display weekly ranking by language' do
+        it "display weekly ranking by language" do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
@@ -257,14 +257,14 @@ RSpec.describe GitTrend::CLI do
       end
     end
 
-    describe 'without options' do
-      context 'with multibyte chracters' do
+    describe "without options" do
+      context "with multibyte chracters" do
         before do
-          ENV['COLUMNS'] = '140'
-          ENV['LINES'] = '40'
-          stub_request_get('trending', 'trending_including_multibyte_characters')
+          ENV["COLUMNS"] = "140"
+          ENV["LINES"] = "40"
+          stub_request_get("trending", "trending_including_multibyte_characters")
         end
-        it 'display daily ranking' do
+        it "display daily ranking" do
           expect { cli.invoke(:list, []) }.to output(dummy_result_no_options_with_multibyte_characters).to_stdout
         end
       end
@@ -272,11 +272,11 @@ RSpec.describe GitTrend::CLI do
   end
 
   describe '#languages' do
-    before { stub_request_get('trending') }
+    before { stub_request_get("trending") }
     let(:cli) { CLI.new }
 
-    context 'with no option' do
-      it 'display languages' do
+    context "with no option" do
+      it "display languages" do
         expect { cli.languages }.to output(dummy_languages).to_stdout
       end
     end
@@ -292,7 +292,7 @@ RSpec.describe GitTrend::CLI do
     stub_request(:get, uri)
       .to_return(
         status: 200,
-        headers: { content_type: 'text/html' },
+        headers: { content_type: "text/html" },
         body: load_http_stub(stub_file))
   end
 

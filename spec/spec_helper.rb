@@ -14,15 +14,15 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-require 'coveralls'
+require "coveralls"
 Coveralls.wear!
 
-require 'simplecov'
-require 'codeclimate-test-reporter'
-dir = File.join(ENV['CIRCLE_ARTIFACTS'] || 'coverage')
+require "simplecov"
+require "codeclimate-test-reporter"
+dir = File.join(ENV["CIRCLE_ARTIFACTS"] || "coverage")
 SimpleCov.coverage_dir(dir)
 SimpleCov.start do
-  add_filter '/spec/'
+  add_filter "/spec/"
 
   formatter SimpleCov::Formatter::MultiFormatter.new([
     SimpleCov::Formatter::HTMLFormatter,
@@ -31,9 +31,9 @@ SimpleCov.start do
   ])
 end
 
-require 'webmock/rspec'
+require "webmock/rspec"
 
-require 'git_trend'
+require "git_trend"
 SimpleCov.start
 
 RSpec.configure do |config|
@@ -50,7 +50,7 @@ RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
   config.expose_dsl_globally = false
 
-  config.example_status_persistence_file_path = 'spec/examples.txt'
+  config.example_status_persistence_file_path = "spec/examples.txt"
   config.order = :random
   Kernel.srand config.seed
 # The settings below are suggested to provide a good initial experience
@@ -116,12 +116,12 @@ RSpec.configure do |config|
 end
 
 def load_http_stub(file_name)
-  file_path = File.join(File.dirname(__FILE__), 'fixtures', file_name)
+  file_path = File.join(File.dirname(__FILE__), "fixtures", file_name)
   File.read(file_path)
 end
 
 class String
   def unindent
-    gsub(/^\s+\|/, '')
+    gsub(/^\s+\|/, "")
   end
 end

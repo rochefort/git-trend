@@ -61,13 +61,13 @@ module GitTrend
       fmt << " %-#{f[4]}s" if @enable_description
 
       puts fmt % header
-      puts fmt % @columns_sizes.map { |column| '-' * column }
+      puts fmt % @columns_sizes.map { |column| "-" * column }
     end
 
     def render_body(projects)
       f = @columns_sizes
       fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
-      description_fmt = ''
+      description_fmt = ""
       projects.each_with_index do |project, i|
         data = [i + 1, project.to_a].flatten
         if @enable_description
@@ -87,11 +87,11 @@ module GitTrend
 
     # https://github.com/cldwalker/hirb/blob/master/lib/hirb/util.rb#L61-71
     def detect_terminal_size
-      if (ENV['COLUMNS'] =~ /^\d+$/) && (ENV['LINES'] =~ /^\d+$/)
-        [ENV['COLUMNS'].to_i, ENV['LINES'].to_i]
-      elsif (RUBY_PLATFORM =~ /java/ || (!STDIN.tty? && ENV['TERM'])) && command_exists?('tput')
+      if (ENV["COLUMNS"] =~ /^\d+$/) && (ENV["LINES"] =~ /^\d+$/)
+        [ENV["COLUMNS"].to_i, ENV["LINES"].to_i]
+      elsif (RUBY_PLATFORM =~ /java/ || (!STDIN.tty? && ENV["TERM"])) && command_exists?("tput")
         [`tput cols`.to_i, `tput lines`.to_i]
-      elsif STDIN.tty? && command_exists?('stty')
+      elsif STDIN.tty? && command_exists?("stty")
         `stty size`.scan(/\d+/).map(&:to_i).reverse
       end
     rescue
@@ -99,7 +99,7 @@ module GitTrend
     end
 
     def command_exists?(command)
-      ENV['PATH'].split(File::PATH_SEPARATOR).any? { |d| File.exist? File.join(d, command) }
+      ENV["PATH"].split(File::PATH_SEPARATOR).any? { |d| File.exist? File.join(d, command) }
     end
   end
 end
