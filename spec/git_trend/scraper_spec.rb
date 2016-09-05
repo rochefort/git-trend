@@ -22,7 +22,7 @@ RSpec.describe GitTrend::Scraper do
     end
   end
 
-  describe '#get' do
+  describe "#get" do
     context "when a network error occurred" do
       before do
         stub_request(:get, Scraper::BASE_URL)

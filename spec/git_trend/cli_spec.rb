@@ -19,7 +19,7 @@ RSpec.describe GitTrend::CLI do
     end
   end
 
-  describe '#list' do
+  describe "#list" do
     let(:cli) { CLI.new }
 
     describe "with -n option" do
@@ -272,7 +272,7 @@ RSpec.describe GitTrend::CLI do
     end
   end
 
-  describe '#languages' do
+  describe "#languages" do
     before { stub_request_get("trending") }
     let(:cli) { CLI.new }
 
