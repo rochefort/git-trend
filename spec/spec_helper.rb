@@ -116,6 +116,7 @@ end
 
 def load_http_stub(file_name)
   file_path = File.join(File.dirname(__FILE__), "fixtures", file_name)
+  file_path = File.join(file_path, "index") if File.directory? file_path
   File.read(file_path)
 end
 

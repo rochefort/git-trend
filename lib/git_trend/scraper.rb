@@ -14,7 +14,7 @@ module GitTrend
     end
 
     def get(language = nil, since = nil, number = nil)
-      page = @agent.get(generate_url_for_get(language, since))
+      page = @agent.get(generate_url(language, since))
       projects = generate_project(page)
       fail ScrapeException if projects.empty?
       number ? projects[0...number] : projects
@@ -29,11 +29,13 @@ module GitTrend
 
     private
 
-      def generate_url_for_get(language, since)
-        uri = Addressable::URI.parse(BASE_URL)
+      def generate_url(language, since)
+        url = BASE_URL.dup
+        url << "/#{language}" if language
+        uri = Addressable::URI.parse(url)
         since = convert_url_param_since(since)
-        if language || since
-          uri.query_values = { l: language, since: since }.delete_if { |_k, v| v.nil? }
+        if since
+          uri.query_values = { since: since }.delete_if { |_k, v| v.nil? }
         end
         uri.to_s
       end
@@ -48,34 +50,15 @@ module GitTrend
         end
       end
 
-      # Pattern 1: lang + stars
-      #  Ruby • 24 stars today • Built by
-      # Pattern 2: only stars
-      #  85 stars today • Built by
-      # Pattern 3: only lang
-      #  ASP • Built by
-      def extract_lang_and_star_from_meta(text)
-        meta_data = text.split("•").map { |x| x.delete("\n").strip }
-        meta_data.pop # remove "Build by"
-        if meta_data.size == 2
-          [meta_data[0], meta_data[1].delete(",").to_i]
-        else
-          if meta_data[0].include?("stars")
-            ["", meta_data[0].delete(",").to_i]
-          else
-            [meta_data[0], 0]
-          end
-        end
-      end
-
       def generate_project(page)
-        page.search(".repo-list-item").map do |content|
-          project = Project.new
-          meta_data = content.search(".repo-list-meta").text
-          project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
-          project.name        = content.search(".repo-list-name a").text.split.join
-          project.description = content.search(".repo-list-description").text.delete("\n").strip
-          project
+        content = page.search(".repo-list li").map do |content|
+          Project.new(
+            name: content.search("h3 a").attr("href").to_s.sub(/\A\//, ""),
+            description: content.search(".py-1").text.strip,
+            lang: content.search('span[itemprop="programmingLanguage"]').text.strip,
+            star_count: content.search('a[aria-label="Stargazers"]').text.strip.to_i,
+            fork_count: content.search('a[aria-label="Forks"]').text.strip.to_i,
+          )
         end
       end
   end
