@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
 
   spec.post_install_message = install_message
 
-  spec.add_dependency "addressable", "~> 2.4.0"
+  spec.add_dependency "addressable", "~> 2.5.0"
   spec.add_dependency "mb_string",   "~> 0.1.7"
   spec.add_dependency "mechanize",   "~> 2.7.4"
   spec.add_dependency "thor",        "~> 0.19.1"
