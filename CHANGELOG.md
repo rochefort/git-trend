@@ -1,3 +1,7 @@
+## v1.1.0 (Sat Nov  5 2016)
+- Adapted new github trending [49abccb]
+- Update gems [4051404]
+
 ## v1.0.2 (Fri Apr  1 2016)
 - Update gems [0d24fae]
 
