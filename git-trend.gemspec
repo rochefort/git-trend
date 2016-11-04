@@ -36,19 +36,19 @@ Gem::Specification.new do |spec|
   spec.post_install_message = install_message
 
   spec.add_dependency "addressable", "~> 2.4.0"
-  spec.add_dependency "mb_string",   "~> 0.1.6"
+  spec.add_dependency "mb_string",   "~> 0.1.7"
   spec.add_dependency "mechanize",   "~> 2.7.4"
   spec.add_dependency "thor",        "~> 0.19.1"
-  spec.add_dependency "unicode-display_width", "~> 1.0.3"
+  spec.add_dependency "unicode-display_width", "~> 1.1.1"
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake",    "~> 11.1.2"
+  spec.add_development_dependency "rake",    "~> 11.3.0"
 
-  spec.add_development_dependency "rspec",     "~> 3.4.0"
-  spec.add_development_dependency "simplecov", "~> 0.11.2"
+  spec.add_development_dependency "rspec",     "~> 3.5.0"
+  spec.add_development_dependency "simplecov", "~> 0.12.0"
   spec.add_development_dependency "safe_yaml", "~> 1.0.4" # for Ruby2.2.0
-  spec.add_development_dependency "webmock",   "~> 1.24.2"
+  spec.add_development_dependency "webmock",   "~> 2.1.0"
 
-  spec.add_development_dependency "coveralls"
-  spec.add_development_dependency "codeclimate-test-reporter"
+  spec.add_development_dependency "coveralls", "~> 0.8.15"
+  spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0.0"
 end
