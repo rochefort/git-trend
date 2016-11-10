@@ -56,8 +56,9 @@ module GitTrend
             name: content.search("h3 a").attr("href").to_s.sub(/\A\//, ""),
             description: content.search(".py-1").text.strip,
             lang: content.search('span[itemprop="programmingLanguage"]').text.strip,
-            star_count: content.search('a[aria-label="Stargazers"]').text.strip.delete(",").to_i,
+            all_star_count: content.search('a[aria-label="Stargazers"]').text.strip.delete(",").to_i,
             fork_count: content.search('a[aria-label="Forks"]').text.strip.delete(",").to_i,
+            star_count: content.search("span.float-right").text.strip.match(/(\d+)? stars/).to_a[1].to_i
           )
         end
       end

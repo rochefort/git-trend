@@ -30,9 +30,9 @@ RSpec.describe GitTrend::CLI do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
-            |  1 Bilibili/flv.js                          JavaScript   3782
-            |  2 drathier/stack-overflow-import           Python        589
-            |  3 FreeCodeCamp/FreeCodeCamp                JavaScript 191056
+            |  1 Bilibili/flv.js                          JavaScript    503
+            |  2 drathier/stack-overflow-import           Python        514
+            |  3 FreeCodeCamp/FreeCodeCamp                JavaScript    491
 
           EOS
           expect { cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
@@ -57,31 +57,31 @@ RSpec.describe GitTrend::CLI do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
-            |  1 webgradus/kms                            Ruby          115
-            |  2 shakacode/react_on_rails                 Ruby         2111
-            |  3 Homebrew/brew                            Ruby         4409
-            |  4 rails/rails                              Ruby        33266
-            |  5 jondot/awesome-react-native              Ruby         8260
-            |  6 fastlane/fastlane                        Ruby        12056
-            |  7 mitchellh/vagrant                        Ruby        13443
-            |  8 discourse/discourse                      Ruby        19670
-            |  9 jekyll/jekyll                            Ruby        27457
-            | 10 caskroom/homebrew-cask                   Ruby         9882
-            | 11 Thibaut/devdocs                          Ruby        10699
-            | 12 rapid7/metasploit-framework              Ruby         6996
-            | 13 CocoaPods/CocoaPods                      Ruby         8715
-            | 14 rails-api/active_model_serializers       Ruby         3837
-            | 15 kilimchoi/engineering-blogs              Ruby         8631
-            | 16 plataformatec/devise                     Ruby        16116
-            | 17 gettalong/hexapdf                        Ruby          300
-            | 18 Gargron/mastodon                         Ruby          824
-            | 19 mperham/sidekiq                          Ruby         6826
-            | 20 bkeepers/dotenv                          Ruby         3691
-            | 21 skywinder/github-changelog-generator     Ruby         2655
-            | 22 gitlabhq/gitlabhq                        Ruby        18633
-            | 23 Tim9Liu9/TimLiu-iOS                      Ruby         4830
-            | 24 elastic/logstash                         Ruby         6637
-            | 25 shakacode/react-webpack-rails-tutorial   Ruby         1118
+            |  1 webgradus/kms                            Ruby           35
+            |  2 shakacode/react_on_rails                 Ruby           27
+            |  3 Homebrew/brew                            Ruby           19
+            |  4 rails/rails                              Ruby           13
+            |  5 jondot/awesome-react-native              Ruby           20
+            |  6 fastlane/fastlane                        Ruby           20
+            |  7 mitchellh/vagrant                        Ruby           15
+            |  8 discourse/discourse                      Ruby           13
+            |  9 jekyll/jekyll                            Ruby           10
+            | 10 caskroom/homebrew-cask                   Ruby            9
+            | 11 Thibaut/devdocs                          Ruby           12
+            | 12 rapid7/metasploit-framework              Ruby           12
+            | 13 CocoaPods/CocoaPods                      Ruby            9
+            | 14 rails-api/active_model_serializers       Ruby            7
+            | 15 kilimchoi/engineering-blogs              Ruby            9
+            | 16 plataformatec/devise                     Ruby            8
+            | 17 gettalong/hexapdf                        Ruby            9
+            | 18 Gargron/mastodon                         Ruby            8
+            | 19 mperham/sidekiq                          Ruby            8
+            | 20 bkeepers/dotenv                          Ruby            8
+            | 21 skywinder/github-changelog-generator     Ruby            6
+            | 22 gitlabhq/gitlabhq                        Ruby            5
+            | 23 Tim9Liu9/TimLiu-iOS                      Ruby            7
+            | 24 elastic/logstash                         Ruby            7
+            | 25 shakacode/react-webpack-rails-tutorial   Ruby            6
 
           EOS
           expect { cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
@@ -187,31 +187,31 @@ RSpec.describe GitTrend::CLI do
           res = <<-'EOS'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
-            |  1 Homebrew/brew                            Ruby         4410
-            |  2 fastlane/fastlane                        Ruby        12057
-            |  3 jondot/awesome-react-native              Ruby         8262
-            |  4 iberianpig/fusuma                        Ruby          129
-            |  5 rails/rails                              Ruby        33266
-            |  6 jekyll/jekyll                            Ruby        27459
-            |  7 Gargron/mastodon                         Ruby          826
-            |  8 gettalong/hexapdf                        Ruby          303
-            |  9 Tim9Liu9/TimLiu-iOS                      Ruby         4830
-            | 10 rapid7/metasploit-framework              Ruby         6996
-            | 11 mitchellh/vagrant                        Ruby        13443
-            | 12 discourse/discourse                      Ruby        19671
-            | 13 cookpad/kuroko2                          Ruby           85
-            | 14 shakacode/react_on_rails                 Ruby         2114
-            | 15 caskroom/homebrew-cask                   Ruby         9883
-            | 16 Thibaut/devdocs                          Ruby        10699
-            | 17 plataformatec/devise                     Ruby        16116
-            | 18 ruby/ruby                                Ruby        10880
-            | 19 sass/sass                                Ruby         8825
-            | 20 logstash-plugins/logstash-patterns-core  Ruby          420
-            | 21 webgradus/kms                            Ruby          117
-            | 22 CocoaPods/CocoaPods                      Ruby         8715
-            | 23 Homebrew/homebrew-core                   Ruby          979
-            | 24 cantino/huginn                           Ruby        15035
-            | 25 twbs/bootstrap-sass                      Ruby        11486
+            |  1 Homebrew/brew                            Ruby          137
+            |  2 fastlane/fastlane                        Ruby          136
+            |  3 jondot/awesome-react-native              Ruby          125
+            |  4 iberianpig/fusuma                        Ruby          128
+            |  5 rails/rails                              Ruby           88
+            |  6 jekyll/jekyll                            Ruby          104
+            |  7 Gargron/mastodon                         Ruby          115
+            |  8 gettalong/hexapdf                        Ruby          108
+            |  9 Tim9Liu9/TimLiu-iOS                      Ruby           73
+            | 10 rapid7/metasploit-framework              Ruby           64
+            | 11 mitchellh/vagrant                        Ruby           69
+            | 12 discourse/discourse                      Ruby           61
+            | 13 cookpad/kuroko2                          Ruby           74
+            | 14 shakacode/react_on_rails                 Ruby           64
+            | 15 caskroom/homebrew-cask                   Ruby           43
+            | 16 Thibaut/devdocs                          Ruby           55
+            | 17 plataformatec/devise                     Ruby           51
+            | 18 ruby/ruby                                Ruby           49
+            | 19 sass/sass                                Ruby           50
+            | 20 logstash-plugins/logstash-patterns-core  Ruby           46
+            | 21 webgradus/kms                            Ruby           52
+            | 22 CocoaPods/CocoaPods                      Ruby           44
+            | 23 Homebrew/homebrew-core                   Ruby           21
+            | 24 cantino/huginn                           Ruby           44
+            | 25 twbs/bootstrap-sass                      Ruby           35
 
           EOS
           expect { cli.invoke(:list, [], language: language, since: since, description: false) }.to output(res).to_stdout
@@ -249,31 +249,31 @@ RSpec.describe GitTrend::CLI do
     <<-'EOS'.unindent
       |No. Name                                     Lang          Star
       |--- ---------------------------------------- ----------- ------
-      |  1 Bilibili/flv.js                          JavaScript    3782
-      |  2 drathier/stack-overflow-import           Python         589
-      |  3 FreeCodeCamp/FreeCodeCamp                JavaScript  191056
-      |  4 alexjc/neural-enhance                    Python        4380
-      |  5 mzabriskie/axios                         JavaScript    7565
-      |  6 airbnb/knowledge-repo                    Python         621
-      |  7 skatejs/skatejs                          JavaScript    1482
-      |  8 UFreedom/FloatingView                    Java           304
-      |  9 verekia/js-stack-from-scratch            JavaScript    7684
-      | 10 portainer/portainer                      JavaScript     463
-      | 11 CISOfy/lynis                             Shell         1480
-      | 12 vuejs/vue                                JavaScript   32676
-      | 13 th0r/webpack-bundle-analyzer             JavaScript    1438
-      | 14 thunderrise/android-TNRAnimationHelper   Java           487
-      | 15 Jasonette/JASONETTE-iOS                  Objective-C    164
-      | 16 justjavac/awesome-wechat-weapp           JavaScript    3859
-      | 17 yarnpkg/yarn                             JavaScript   18470
-      | 18 jwasham/google-interview-university                   19524
-      | 19 lengstrom/fast-style-transfer            Python        1654
-      | 20 FreeCodeCampChina/freecodecamp.cn        CSS           3016
-      | 21 minoca/os                                C             1616
-      | 22 facebook/react                           JavaScript   53230
-      | 23 sqreen/awesome-nodejs-projects                         1454
-      | 24 tensorflow/tensorflow                    C++          36152
-      | 25 andyxialm/TyperEditText                  Java           110
+      |  1 Bilibili/flv.js                          JavaScript     503
+      |  2 drathier/stack-overflow-import           Python         514
+      |  3 FreeCodeCamp/FreeCodeCamp                JavaScript     491
+      |  4 alexjc/neural-enhance                    Python         402
+      |  5 mzabriskie/axios                         JavaScript     392
+      |  6 airbnb/knowledge-repo                    Python         295
+      |  7 skatejs/skatejs                          JavaScript     291
+      |  8 UFreedom/FloatingView                    Java           261
+      |  9 verekia/js-stack-from-scratch            JavaScript     260
+      | 10 portainer/portainer                      JavaScript     253
+      | 11 CISOfy/lynis                             Shell          195
+      | 12 vuejs/vue                                JavaScript     172
+      | 13 th0r/webpack-bundle-analyzer             JavaScript     171
+      | 14 thunderrise/android-TNRAnimationHelper   Java           154
+      | 15 Jasonette/JASONETTE-iOS                  Objective-C    135
+      | 16 justjavac/awesome-wechat-weapp           JavaScript     127
+      | 17 yarnpkg/yarn                             JavaScript     124
+      | 18 jwasham/google-interview-university                     111
+      | 19 lengstrom/fast-style-transfer            Python         119
+      | 20 FreeCodeCampChina/freecodecamp.cn        CSS            112
+      | 21 minoca/os                                C              106
+      | 22 facebook/react                           JavaScript     100
+      | 23 sqreen/awesome-nodejs-projects                          109
+      | 24 tensorflow/tensorflow                    C++             79
+      | 25 andyxialm/TyperEditText                  Java           100
 
     EOS
   end
@@ -282,31 +282,31 @@ RSpec.describe GitTrend::CLI do
     <<-'EOS'.unindent
       |No. Name                                     Lang          Star Description                                                                 
       |--- ---------------------------------------- ----------- ------ ----------------------------------------------------------------------------
-      |  1 Bilibili/flv.js                          JavaScript    3782 HTML5 FLV Player                                                            
-      |  2 drathier/stack-overflow-import           Python         589 Import arbitrary code from Stack Overflow as Python modules.                
-      |  3 FreeCodeCamp/FreeCodeCamp                JavaScript  191056 The https://FreeCodeCamp.com open source codebase and curriculum. Learn t...
-      |  4 alexjc/neural-enhance                    Python        4380 Super Resolution for images using deep learning.                            
-      |  5 mzabriskie/axios                         JavaScript    7565 Promise based HTTP client for the browser and node.js                       
-      |  6 airbnb/knowledge-repo                    Python         621 A next-generation curated knowledge sharing platform for data scientists ...
-      |  7 skatejs/skatejs                          JavaScript    1482 SkateJS is a web component library designed to give you an augmentation o...
-      |  8 UFreedom/FloatingView                    Java           304 FloatingView can make the target view floating above the anchor view with...
-      |  9 verekia/js-stack-from-scratch            JavaScript    7684 Step-by-step tutorial to build a modern JavaScript stack from scratch       
-      | 10 portainer/portainer                      JavaScript     463 Simple management UI for Docker                                             
-      | 11 CISOfy/lynis                             Shell         1480 Lynis - Security auditing tool for Linux, macOS, and UNIX-based systems. ...
-      | 12 vuejs/vue                                JavaScript   32676 Simple yet powerful library for building modern web interfaces.             
-      | 13 th0r/webpack-bundle-analyzer             JavaScript    1438 Webpack plugin and CLI utility that represents bundle content as convenie...
-      | 14 thunderrise/android-TNRAnimationHelper   Java           487 This is a library that contains practical animations: Rotation, Flip, Hor...
-      | 15 Jasonette/JASONETTE-iOS                  Objective-C    164 📡 Native App over HTTP                                                     
-      | 16 justjavac/awesome-wechat-weapp           JavaScript    3859 微信小程序开发资源汇总 wechat weapp                                         
-      | 17 yarnpkg/yarn                             JavaScript   18470 📦🐈 Fast, reliable, and secure dependency management.                      
-      | 18 jwasham/google-interview-university                   19524 A complete daily plan for studying to become a Google software engineer.    
-      | 19 lengstrom/fast-style-transfer            Python        1654 Fast Style Transfer in TensorFlow                                           
-      | 20 FreeCodeCampChina/freecodecamp.cn        CSS           3016 看源码请到Code，提问请到Issues，提交代码请到Pull requests，看学习心得请到...
-      | 21 minoca/os                                C             1616 Minoca operating system                                                     
-      | 22 facebook/react                           JavaScript   53230 A declarative, efficient, and flexible JavaScript library for building us...
-      | 23 sqreen/awesome-nodejs-projects                         1454 Curated list of awesome open-source applications made with Node.js          
-      | 24 tensorflow/tensorflow                    C++          36152 Computation using data flow graphs for scalable machine learning            
-      | 25 andyxialm/TyperEditText                  Java           110 Typewriter                                                                  
+      |  1 Bilibili/flv.js                          JavaScript     503 HTML5 FLV Player                                                            
+      |  2 drathier/stack-overflow-import           Python         514 Import arbitrary code from Stack Overflow as Python modules.                
+      |  3 FreeCodeCamp/FreeCodeCamp                JavaScript     491 The https://FreeCodeCamp.com open source codebase and curriculum. Learn t...
+      |  4 alexjc/neural-enhance                    Python         402 Super Resolution for images using deep learning.                            
+      |  5 mzabriskie/axios                         JavaScript     392 Promise based HTTP client for the browser and node.js                       
+      |  6 airbnb/knowledge-repo                    Python         295 A next-generation curated knowledge sharing platform for data scientists ...
+      |  7 skatejs/skatejs                          JavaScript     291 SkateJS is a web component library designed to give you an augmentation o...
+      |  8 UFreedom/FloatingView                    Java           261 FloatingView can make the target view floating above the anchor view with...
+      |  9 verekia/js-stack-from-scratch            JavaScript     260 Step-by-step tutorial to build a modern JavaScript stack from scratch       
+      | 10 portainer/portainer                      JavaScript     253 Simple management UI for Docker                                             
+      | 11 CISOfy/lynis                             Shell          195 Lynis - Security auditing tool for Linux, macOS, and UNIX-based systems. ...
+      | 12 vuejs/vue                                JavaScript     172 Simple yet powerful library for building modern web interfaces.             
+      | 13 th0r/webpack-bundle-analyzer             JavaScript     171 Webpack plugin and CLI utility that represents bundle content as convenie...
+      | 14 thunderrise/android-TNRAnimationHelper   Java           154 This is a library that contains practical animations: Rotation, Flip, Hor...
+      | 15 Jasonette/JASONETTE-iOS                  Objective-C    135 📡 Native App over HTTP                                                     
+      | 16 justjavac/awesome-wechat-weapp           JavaScript     127 微信小程序开发资源汇总 wechat weapp                                         
+      | 17 yarnpkg/yarn                             JavaScript     124 📦🐈 Fast, reliable, and secure dependency management.                      
+      | 18 jwasham/google-interview-university                     111 A complete daily plan for studying to become a Google software engineer.    
+      | 19 lengstrom/fast-style-transfer            Python         119 Fast Style Transfer in TensorFlow                                           
+      | 20 FreeCodeCampChina/freecodecamp.cn        CSS            112 看源码请到Code，提问请到Issues，提交代码请到Pull requests，看学习心得请到...
+      | 21 minoca/os                                C              106 Minoca operating system                                                     
+      | 22 facebook/react                           JavaScript     100 A declarative, efficient, and flexible JavaScript library for building us...
+      | 23 sqreen/awesome-nodejs-projects                          109 Curated list of awesome open-source applications made with Node.js          
+      | 24 tensorflow/tensorflow                    C++             79 Computation using data flow graphs for scalable machine learning            
+      | 25 andyxialm/TyperEditText                  Java           100 Typewriter                                                                  
 
     EOS
   end
@@ -315,31 +315,31 @@ RSpec.describe GitTrend::CLI do
     <<-'EOS'.unindent
       |No. Name                                           Lang         Star
       |--- ---------------------------------------------- ---------- ------
-      |  1 verekia/js-stack-from-scratch                  JavaScript   7704
-      |  2 alexjc/neural-enhance                          Python       4401
-      |  3 FreeCodeCamp/FreeCodeCamp                      JavaScript 191088
-      |  4 witheve/Eve                                    JavaScript   4896
-      |  5 Bilibili/flv.js                                JavaScript   3796
-      |  6 lengstrom/fast-style-transfer                  Python       1663
-      |  7 VoLuong/Begin-Latex-in-minutes                              1652
-      |  8 minoca/os                                      C            1622
-      |  9 sqreen/awesome-nodejs-projects                              1455
-      | 10 th0r/webpack-bundle-analyzer                   JavaScript   1446
-      | 11 blue-yonder/tsfresh                            Python       1419
-      | 12 zeit/next.js                                   JavaScript   5191
-      | 13 GoogleChrome/lighthouse                        JavaScript   3962
-      | 14 jwasham/google-interview-university                        19533
-      | 15 mas-cli/mas                                    Swift        2261
-      | 16 mattrajca/sudo-touchid                         C             884
-      | 17 songrotek/Deep-Learning-Papers-Reading-Roadmap Python       7241
-      | 18 yarnpkg/yarn                                   JavaScript  18477
+      |  1 verekia/js-stack-from-scratch                  JavaScript    179
+      |  2 alexjc/neural-enhance                          Python        370
+      |  3 FreeCodeCamp/FreeCodeCamp                      JavaScript    902
+      |  4 witheve/Eve                                    JavaScript    894
+      |  5 Bilibili/flv.js                                JavaScript    867
+      |  6 lengstrom/fast-style-transfer                  Python        652
+      |  7 VoLuong/Begin-Latex-in-minutes                               649
+      |  8 minoca/os                                      C             613
+      |  9 sqreen/awesome-nodejs-projects                               450
+      | 10 th0r/webpack-bundle-analyzer                   JavaScript    419
+      | 11 blue-yonder/tsfresh                            Python        338
+      | 12 zeit/next.js                                   JavaScript    134
+      | 13 GoogleChrome/lighthouse                        JavaScript     56
+      | 14 jwasham/google-interview-university                          867
+      | 15 mas-cli/mas                                    Swift         926
+      | 16 mattrajca/sudo-touchid                         C             880
+      | 17 songrotek/Deep-Learning-Papers-Reading-Roadmap Python        792
+      | 18 yarnpkg/yarn                                   JavaScript    810
       | 19 ImmortalZ/TransitionHelper                     Java          790
-      | 20 the-control-group/voyager                      PHP           818
-      | 21 vuejs/vue                                      JavaScript  32693
-      | 22 jobbole/awesome-programming-books                            821
-      | 23 tensorflow/tensorflow                          C++         36159
-      | 24 BelooS/ChipsLayoutManager                      Java          714
-      | 25 krisk/Fuse                                     JavaScript   3369
+      | 20 the-control-group/voyager                      PHP           782
+      | 21 vuejs/vue                                      JavaScript    756
+      | 22 jobbole/awesome-programming-books                            685
+      | 23 tensorflow/tensorflow                          C++           549
+      | 24 BelooS/ChipsLayoutManager                      Java          705
+      | 25 krisk/Fuse                                     JavaScript    730
 
     EOS
   end
@@ -348,31 +348,31 @@ RSpec.describe GitTrend::CLI do
     <<-'EOS'.unindent
       |No. Name                                           Lang         Star
       |--- ---------------------------------------------- ---------- ------
-      |  1 verekia/js-stack-from-scratch                  JavaScript   7704
-      |  2 alexjc/neural-enhance                          Python       4401
-      |  3 FreeCodeCamp/FreeCodeCamp                      JavaScript 191088
-      |  4 witheve/Eve                                    JavaScript   4896
-      |  5 Bilibili/flv.js                                JavaScript   3796
-      |  6 lengstrom/fast-style-transfer                  Python       1663
-      |  7 VoLuong/Begin-Latex-in-minutes                              1652
-      |  8 minoca/os                                      C            1622
-      |  9 sqreen/awesome-nodejs-projects                              1455
-      | 10 th0r/webpack-bundle-analyzer                   JavaScript   1446
-      | 11 blue-yonder/tsfresh                            Python       1419
-      | 12 zeit/next.js                                   JavaScript   5191
-      | 13 GoogleChrome/lighthouse                        JavaScript   3962
-      | 14 jwasham/google-interview-university                        19533
-      | 15 mas-cli/mas                                    Swift        2261
-      | 16 mattrajca/sudo-touchid                         C             884
-      | 17 songrotek/Deep-Learning-Papers-Reading-Roadmap Python       7241
-      | 18 yarnpkg/yarn                                   JavaScript  18477
+      |  1 verekia/js-stack-from-scratch                  JavaScript    179
+      |  2 alexjc/neural-enhance                          Python        370
+      |  3 FreeCodeCamp/FreeCodeCamp                      JavaScript    902
+      |  4 witheve/Eve                                    JavaScript    894
+      |  5 Bilibili/flv.js                                JavaScript    867
+      |  6 lengstrom/fast-style-transfer                  Python        652
+      |  7 VoLuong/Begin-Latex-in-minutes                               649
+      |  8 minoca/os                                      C             613
+      |  9 sqreen/awesome-nodejs-projects                               450
+      | 10 th0r/webpack-bundle-analyzer                   JavaScript    419
+      | 11 blue-yonder/tsfresh                            Python        338
+      | 12 zeit/next.js                                   JavaScript    134
+      | 13 GoogleChrome/lighthouse                        JavaScript     56
+      | 14 jwasham/google-interview-university                          867
+      | 15 mas-cli/mas                                    Swift         926
+      | 16 mattrajca/sudo-touchid                         C             880
+      | 17 songrotek/Deep-Learning-Papers-Reading-Roadmap Python        792
+      | 18 yarnpkg/yarn                                   JavaScript    810
       | 19 ImmortalZ/TransitionHelper                     Java          790
-      | 20 the-control-group/voyager                      PHP           818
-      | 21 vuejs/vue                                      JavaScript  32693
-      | 22 jobbole/awesome-programming-books                            821
-      | 23 tensorflow/tensorflow                          C++         36159
-      | 24 BelooS/ChipsLayoutManager                      Java          714
-      | 25 krisk/Fuse                                     JavaScript   3369
+      | 20 the-control-group/voyager                      PHP           782
+      | 21 vuejs/vue                                      JavaScript    756
+      | 22 jobbole/awesome-programming-books                            685
+      | 23 tensorflow/tensorflow                          C++           549
+      | 24 BelooS/ChipsLayoutManager                      Java          705
+      | 25 krisk/Fuse                                     JavaScript    730
 
     EOS
   end
