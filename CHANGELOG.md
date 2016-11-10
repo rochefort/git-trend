@@ -1,3 +1,6 @@
+## v1.1.1 (Sat Nov 10 2016)
+- Fix bug: Consider comma in counts [b0eab23]
+
 ## v1.1.0 (Sat Nov  5 2016)
 - Adapted new github trending [49abccb]
 - Update gems [4051404]
