@@ -1,4 +1,7 @@
-## v1.1.1 (Sat Nov 10 2016)
+## v1.1.2 (Thu Nov 10 2016)
+- Change display column as `Star` from all_star_count to star_count [4b78ae3]
+
+## v1.1.1 (Thu Nov 10 2016)
 - Fix bug: Consider comma in counts [b0eab23]
 
 ## v1.1.0 (Sat Nov  5 2016)
