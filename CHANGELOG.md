@@ -1,3 +1,6 @@
+## v1.1.3 (Tue Nov 22 2016)
+- Fix comma-separated numbers for star count [5b32fa3]
+
 ## v1.1.2 (Thu Nov 10 2016)
 - Change display column as `Star` from all_star_count to star_count [4b78ae3]
 
