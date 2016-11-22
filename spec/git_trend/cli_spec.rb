@@ -315,19 +315,19 @@ RSpec.describe GitTrend::CLI do
     <<-'EOS'.unindent
       |No. Name                                           Lang         Star
       |--- ---------------------------------------------- ---------- ------
-      |  1 verekia/js-stack-from-scratch                  JavaScript    179
-      |  2 alexjc/neural-enhance                          Python        370
-      |  3 FreeCodeCamp/FreeCodeCamp                      JavaScript    902
-      |  4 witheve/Eve                                    JavaScript    894
-      |  5 Bilibili/flv.js                                JavaScript    867
-      |  6 lengstrom/fast-style-transfer                  Python        652
-      |  7 VoLuong/Begin-Latex-in-minutes                               649
-      |  8 minoca/os                                      C             613
-      |  9 sqreen/awesome-nodejs-projects                               450
-      | 10 th0r/webpack-bundle-analyzer                   JavaScript    419
-      | 11 blue-yonder/tsfresh                            Python        338
-      | 12 zeit/next.js                                   JavaScript    134
-      | 13 GoogleChrome/lighthouse                        JavaScript     56
+      |  1 verekia/js-stack-from-scratch                  JavaScript   5179
+      |  2 alexjc/neural-enhance                          Python       4370
+      |  3 FreeCodeCamp/FreeCodeCamp                      JavaScript   2902
+      |  4 witheve/Eve                                    JavaScript   2894
+      |  5 Bilibili/flv.js                                JavaScript   1867
+      |  6 lengstrom/fast-style-transfer                  Python       1652
+      |  7 VoLuong/Begin-Latex-in-minutes                              1649
+      |  8 minoca/os                                      C            1613
+      |  9 sqreen/awesome-nodejs-projects                              1450
+      | 10 th0r/webpack-bundle-analyzer                   JavaScript   1419
+      | 11 blue-yonder/tsfresh                            Python       1338
+      | 12 zeit/next.js                                   JavaScript   1134
+      | 13 GoogleChrome/lighthouse                        JavaScript   1056
       | 14 jwasham/google-interview-university                          867
       | 15 mas-cli/mas                                    Swift         926
       | 16 mattrajca/sudo-touchid                         C             880
@@ -348,19 +348,19 @@ RSpec.describe GitTrend::CLI do
     <<-'EOS'.unindent
       |No. Name                                           Lang         Star
       |--- ---------------------------------------------- ---------- ------
-      |  1 verekia/js-stack-from-scratch                  JavaScript    179
-      |  2 alexjc/neural-enhance                          Python        370
-      |  3 FreeCodeCamp/FreeCodeCamp                      JavaScript    902
-      |  4 witheve/Eve                                    JavaScript    894
-      |  5 Bilibili/flv.js                                JavaScript    867
-      |  6 lengstrom/fast-style-transfer                  Python        652
-      |  7 VoLuong/Begin-Latex-in-minutes                               649
-      |  8 minoca/os                                      C             613
-      |  9 sqreen/awesome-nodejs-projects                               450
-      | 10 th0r/webpack-bundle-analyzer                   JavaScript    419
-      | 11 blue-yonder/tsfresh                            Python        338
-      | 12 zeit/next.js                                   JavaScript    134
-      | 13 GoogleChrome/lighthouse                        JavaScript     56
+      |  1 verekia/js-stack-from-scratch                  JavaScript   5179
+      |  2 alexjc/neural-enhance                          Python       4370
+      |  3 FreeCodeCamp/FreeCodeCamp                      JavaScript   2902
+      |  4 witheve/Eve                                    JavaScript   2894
+      |  5 Bilibili/flv.js                                JavaScript   1867
+      |  6 lengstrom/fast-style-transfer                  Python       1652
+      |  7 VoLuong/Begin-Latex-in-minutes                              1649
+      |  8 minoca/os                                      C            1613
+      |  9 sqreen/awesome-nodejs-projects                              1450
+      | 10 th0r/webpack-bundle-analyzer                   JavaScript   1419
+      | 11 blue-yonder/tsfresh                            Python       1338
+      | 12 zeit/next.js                                   JavaScript   1134
+      | 13 GoogleChrome/lighthouse                        JavaScript   1056
       | 14 jwasham/google-interview-university                          867
       | 15 mas-cli/mas                                    Swift         926
       | 16 mattrajca/sudo-touchid                         C             880

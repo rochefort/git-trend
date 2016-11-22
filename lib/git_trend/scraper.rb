@@ -52,15 +52,22 @@ module GitTrend
 
       def generate_project(page)
         content = page.search(".repo-list li").map do |content|
+          all_star_count = comma_to_i(content.search('a[aria-label="Stargazers"]').text.strip)
+          fork_count = comma_to_i(content.search('a[aria-label="Forks"]').text.strip)
+          star_count = comma_to_i(content.search("span.float-right").text.strip.match(/(.+)? stars/).to_a[1])
           Project.new(
             name: content.search("h3 a").attr("href").to_s.sub(/\A\//, ""),
             description: content.search(".py-1").text.strip,
             lang: content.search('span[itemprop="programmingLanguage"]').text.strip,
-            all_star_count: content.search('a[aria-label="Stargazers"]').text.strip.delete(",").to_i,
-            fork_count: content.search('a[aria-label="Forks"]').text.strip.delete(",").to_i,
-            star_count: content.search("span.float-right").text.strip.match(/(.+)? stars/).to_a[1].delete(",").to_i
+            all_star_count: all_star_count,
+            fork_count: fork_count,
+            star_count: star_count
           )
         end
+      end
+
+      def comma_to_i(obj)
+        obj.to_s.delete(",").to_i
       end
   end
 end
