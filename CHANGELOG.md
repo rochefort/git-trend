@@ -1,3 +1,7 @@
+## v1.1.4 (Tue Nov 22 2016)
+
+- Fix nil could not be considered when converting to integer [6be798a]
+
 ## v1.1.3 (Tue Nov 22 2016)
 - Fix comma-separated numbers for star count [5b32fa3]
 
