@@ -1,3 +1,7 @@
+## v1.1.5 (Sat Jul 15 2017)
+
+- Correspond to the new structure of html [22189f6]
+
 ## v1.1.4 (Tue Nov 22 2016)
 
 - Fix nil could not be considered when converting to integer [6be798a]
