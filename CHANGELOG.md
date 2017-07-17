@@ -1,3 +1,7 @@
+## v1.1.6 (Mon Jul 17 2017)
+
+- Update gems; unicode-display_width... [8e6ca0a]
+
 ## v1.1.5 (Sat Jul 15 2017)
 
 - Correspond to the new structure of html [22189f6]
