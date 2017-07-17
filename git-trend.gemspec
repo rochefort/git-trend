@@ -42,7 +42,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "thor",        "~> 0.19.4"
   spec.add_dependency "unicode-display_width", "~> 1.3.0"
 
-  spec.add_development_dependency "bundler", "~> 1.15.1"
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake",    "~> 12.0.0"
 
   spec.add_development_dependency "rspec",     "~> 3.5.0"
