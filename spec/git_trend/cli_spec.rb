@@ -87,6 +87,45 @@ RSpec.describe GitTrend::CLI do
           expect { cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
         end
       end
+
+      context "with alloy : when star and fork count is nothing" do
+        before { stub_request_get("trending/#{language}") }
+        let(:language) { "alloy" }
+
+        it "display daily ranking by language" do
+          res = <<-'EOS'.unindent
+            |No. Name                                        Lang         Star
+            |--- ------------------------------------------- ---------- ------
+            |  1 danielbayley/Ableton-Live-tools             Alloy           0
+            |  2 DavW/midihack                               Alloy           0
+            |  3 mark-henry/ableton-experiment               Alloy           0
+            |  4 Iyouboushi/mIRC-BattleArena                 Alloy           0
+            |  5 adamjmurray/js-live-api-humanize-midi-clips Alloy           0
+            |  6 Binomio/bootstrap-base-song-for-live9       Alloy           0
+            |  7 lorin/alloy-fish                            Alloy           0
+            |  8 devd/websecmodel                            Alloy           0
+            |  9 kepae/alloy-coin                            Alloy           0
+            | 10 pron/amazon-snapshot-spec                   Alloy           0
+            | 11 SaberMirzaei/Alloy-Model-of-MCA             Alloy           0
+            | 12 rossgore/alloy-tutorial                     Alloy           0
+            | 13 uwplse/memsynth                             Alloy           0
+            | 14 fstakem/alloy_book                          Alloy           0
+            | 15 aishamidori/cs195y-final                    Alloy           0
+            | 16 samueltcsantos/logica.alloy                 Alloy           0
+            | 17 mravella/maya_model                         Alloy           0
+            | 18 salesfelipe/projetoDeLogica                 Alloy           0
+            | 19 BGCX261/zigbee-alloy-svn-to-git             Alloy           0
+            | 20 millerns/ReliableDataTransfer               Alloy           0
+            | 21 ArcherCraftStore/ArcherCraft_Maya           Alloy           0
+            | 22 cpmpercussion/teslamusic                    Alloy           0
+            | 23 z64/track-52314                             Alloy           0
+            | 24 kmcallister/gc-models                       Alloy           0
+            | 25 Echtzeitsysteme/cardygan                    Alloy           0
+
+          EOS
+          expect { cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
+        end
+      end
     end
 
     describe "with -s option" do
