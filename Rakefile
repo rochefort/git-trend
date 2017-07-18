@@ -9,6 +9,7 @@ desc "update fixtures"
 task :update_fixtures do
   sh "curl -o spec/fixtures/trending/index https://github.com/trending"
   sh "curl -o spec/fixtures/trending/ruby https://github.com/trending/ruby"
+  sh "curl -o spec/fixtures/trending/alloy https://github.com/trending/alloy"
   sh "curl -o spec/fixtures/trending/ruby?since=weekly https://github.com/trending/ruby?since=weekly"
 
   sh "curl -o spec/fixtures/trending?since= https://github.com/trending?since="
