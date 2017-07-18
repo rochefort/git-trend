@@ -1,3 +1,7 @@
+## v1.1.7 (Tue Jul 18 2017)
+
+- Fix NoMethodError when fork count is nothing #10 [6bdf1f6]
+
 ## v1.1.6 (Mon Jul 17 2017)
 
 - Update gems; unicode-display_width... [8e6ca0a]
