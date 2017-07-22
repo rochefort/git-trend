@@ -10,6 +10,15 @@
 `git-trend` is a gem that fetches [Trending repositories on GitHub](https://github.com/trending).  
 And this also work as a command line utility.  
 
+# TOC
+ * [Requirements](#requirements)
+ * [Installation](#installation)
+ * [Usage of a gem](#usage-of-a-gem)
+ * [Usage of a command line tool](#usage-of-a-command-line-tool)
+ * [Tips](#tips)
+ * [Implementation of other language](#implementation-of-other-language)
+ * [Contributing](#contributing)
+
 ## Requirements
 
 Ruby versions is 2.0 or later.
