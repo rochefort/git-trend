@@ -1,10 +1,7 @@
 require "thor"
-require "git_trend/rendering"
 
 module GitTrend
   class CLI < Thor
-    include Rendering
-
     map "-v"              => :version,
         "--version"       => :version
 
@@ -19,23 +16,27 @@ module GitTrend
     option :language,    aliases: "-l", required: false, desc: "Specify a language"
     option :since,       aliases: "-s", required: false, desc: "Enable: [d, day, daily, w, week, weekly, m, month, monthly]"
     option :description, aliases: "-d", required: false, default: true, type: :boolean, desc: "\033[32m(DEFAULT OPTION)\e[0m Dislpay descriptions"
+    option :format,      aliases: "-f", required: false, default: "text", desc: "Choose a formatter as text or json. Enable: [t, text, j, json]"
     option :number,      aliases: "-n", required: false, type: :numeric, desc: "Number of lines"
     option :help,        aliases: "-h", required: false, type: :boolean
     def list
       help(:list) && return if options[:help]
       scraper = Scraper.new
       projects = scraper.get(options[:language], options[:since], options[:number])
-      render(projects, !!options[:description])
+      formatter = Formatter.new(options[:format])
+      formatter.print(projects, enable_description: !!options[:description])
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
       say e.message unless e.class.to_s == e.message
     end
 
     desc :languages, "Show selectable languages"
+    option :format,      aliases: "-f", required: false, default: "text", desc: "Choose a formatter as text or json. Enable: [t, text, j, json]"
     def languages
       scraper = Scraper.new
       languages = scraper.languages
-      render_languages(languages)
+      formatter = Formatter.new(options[:format])
+      formatter.print_languages(languages)
     end
   end
 end

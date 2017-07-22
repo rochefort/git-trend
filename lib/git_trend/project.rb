@@ -11,8 +11,15 @@ module GitTrend
       self.star_count = star_count
     end
 
-    def to_a
-      [@name, @lang, @star_count.to_s]
+    def to_h
+      {
+        name: name,
+        description: description,
+        lang: lang,
+        all_star_count: all_star_count,
+        fork_count: fork_count,
+        star_count: star_count,
+      }
     end
   end
 end
