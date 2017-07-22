@@ -1,20 +1,17 @@
-module GitTrend
-  module Rendering
-    def self.included(base)
-      base.extend(self)
-    end
+module GitTrend::Formatters
+  class TextFormatter
     HEADER_COLUMNS = %w(no. name lang star description)
     DEFAULT_COLUMNS_SIZES = [3, 40, 10, 6, 20]
 
-    def render(projects, enable_description = false)
-      @enable_description = enable_description
+    def print(projects, options)
+      @enable_description = options[:enable_description]
       rule_columns_sizes(projects)
       render_header
       render_body(projects)
       render_footer
     end
 
-    def render_languages(languages)
+    def print_languages(languages)
       puts languages
       puts
       puts "#{languages.size} languages"
@@ -69,7 +66,7 @@ module GitTrend
         fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
         description_fmt = ""
         projects.each_with_index do |project, i|
-          data = [i + 1, project.to_a].flatten
+          data = [i + 1, [project.name, project.lang, project.star_count.to_s]].flatten
           if @enable_description
             description = project.description.mb_truncate(f.last)
             data << description
