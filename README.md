@@ -118,6 +118,44 @@ No. Name                                     Lang          Star Description
 
 ```
 
+### Fetch daily trending with JSON format
+
+    git trend -f json
+    git trend -f j
+
+e.g.:
+
+```
+$ git trend -f json -n 3 | jq
+[
+  {
+    "name": "lord/slate",
+    "description": "Beautiful static documentation for your API",
+    "lang": "JavaScript",
+    "all_star_count": 16701,
+    "fork_count": 9313,
+    "star_count": 361
+  },
+  {
+    "name": "chrispsn/mesh",
+    "description": "Visualise data and edit JavaScript code using a spreadsheet interface.",
+    "lang": "JavaScript",
+    "all_star_count": 320,
+    "fork_count": 8,
+    "star_count": 303
+  },
+  {
+    "name": "polyaxon/polyaxon",
+    "description": "A platform that helps you build, manage and monitor deep learning models",
+    "lang": "Python",
+    "all_star_count": 488,
+    "fork_count": 36,
+    "star_count": 261
+  }
+]
+
+```
+
 ### Fetch daily trending without description
 
     git trend --no-description
