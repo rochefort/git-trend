@@ -1,3 +1,7 @@
+## v1.1.8 (Sat Jul 22 2017)
+
+- Add the format option[f0136a3]
+
 ## v1.1.7 (Tue Jul 18 2017)
 
 - Fix NoMethodError when fork count is nothing #10 [6bdf1f6]
