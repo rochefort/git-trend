@@ -6,6 +6,7 @@ module GitTrend
         "--version"       => :version
 
     default_command :list
+    class_option :verbose, type: :boolean
 
     desc :version, "show version"
     def version
@@ -28,6 +29,8 @@ module GitTrend
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
       say e.message unless e.class.to_s == e.message
+
+      puts exception.backtrace if options[:verbose]
     end
 
     desc :languages, "Show selectable languages"
