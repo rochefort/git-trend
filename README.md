@@ -42,7 +42,7 @@ Require it if you haven't:
 
     require 'git-trend'
 
-### Fetch trending
+### Fetch trends
 
 ```ruby
 repos = GitTrend.get
@@ -67,7 +67,7 @@ end
 
 ```ruby
 # language
-GitTrend.get('ruby')
+GitTrend.get("ruby")
 GitTrend.get(:ruby)
 
 # since
@@ -76,7 +76,7 @@ GitTrend.get(since: :week)
 GitTrend.get(since: :w)
 
 # language and since
-GitTrend.get('ruby', 'weekly')
+GitTrend.get("ruby", "weekly")
 GitTrend.get(:ruby, :weekly)
 GitTrend.get(language: :ruby, since: :weekly)
 ```
