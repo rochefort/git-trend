@@ -3,6 +3,7 @@
 .DS_Store
 .bundle
 .config
+.tags
 .rubocop-*
 .yardoc
 Gemfile.lock
