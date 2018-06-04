@@ -48,7 +48,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec",     "~> 3.5.0"
   spec.add_development_dependency "simplecov", "~> 0.12.0"
   spec.add_development_dependency "safe_yaml", "~> 1.0.4" # for Ruby2.2.0
-  spec.add_development_dependency "webmock",   "~> 3.0.1"
+  spec.add_development_dependency "webmock",   "~> 3.4.2"
 
   spec.add_development_dependency "coveralls", "~> 0.8.19"
   spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0.8"
