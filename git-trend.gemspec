@@ -39,14 +39,14 @@ Gem::Specification.new do |spec|
   spec.add_dependency "addressable", "~> 2.5.1"
   spec.add_dependency "mb_string",   "~> 0.1.8"
   spec.add_dependency "mechanize",   "~> 2.7.5"
-  spec.add_dependency "thor",        ">= 0.19.4", "< 0.21.0"
+  spec.add_dependency "thor",        ">= 0.20.0", "< 0.21.0"
   spec.add_dependency "unicode-display_width", ">= 1.3", "< 1.5"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake",    "~> 12.3.1"
 
   spec.add_development_dependency "rspec",     "~> 3.8.0"
-  spec.add_development_dependency "simplecov", "~> 0.12.0"
+  spec.add_development_dependency "simplecov", "~> 0.16.1"
   spec.add_development_dependency "safe_yaml", "~> 1.0.4" # for Ruby2.2.0
   spec.add_development_dependency "webmock",   "~> 3.4.2"
 
