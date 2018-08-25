@@ -1,14 +1,15 @@
 [![Build Status](http://img.shields.io/travis/rochefort/git-trend.svg?style=flat)](http://travis-ci.org/rochefort/git-trend)
 [![Dependency Status](http://img.shields.io/gemnasium/rochefort/git-trend.svg?style=flat)](https://gemnasium.com/rochefort/git-trend)
 [![Coverage Status](http://img.shields.io/coveralls/rochefort/git-trend.svg?style=flat)](https://coveralls.io/r/rochefort/git-trend)
-[![Code Climate](http://img.shields.io/codeclimate/github/rochefort/git-trend.svg?style=flat)](https://codeclimate.com/github/rochefort/git-trend)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/rochefort/git-trend.svg)](https://codeclimate.com/github/rochefort/git-trend/maintainability)
+[![Code Climate](https://img.shields.io/codeclimate/coverage/rochefort/git-trend.svg)](https://codeclimate.com/github/rochefort/git-trend/test_coverage)
 [![Gem Version](http://img.shields.io/gem/v/git-trend.svg?style=flat)](http://badge.fury.io/rb/git-trend)
 
 
 # git-trend
 
-`git-trend` is a gem that fetches [Trending repositories on GitHub](https://github.com/trending).  
-And this also work as a command line utility.  
+`git-trend` is a gem that fetches [Trending repositories on GitHub](https://github.com/trending).
+And this also work as a command line utility.
 
 # TOC
  * [Requirements](#requirements)
@@ -273,7 +274,7 @@ alias trend='g trend -n 10 && g trend -l ruby -n 5 && g trend -l JavaScript -n 5
 
 ## Implementation of other language
 
-* [andygrunwald/go-trending: Go library for accessing trending repositories and developers at Github.](https://github.com/andygrunwald/go-trending)  
+* [andygrunwald/go-trending: Go library for accessing trending repositories and developers at Github.](https://github.com/andygrunwald/go-trending)
 
 
 
