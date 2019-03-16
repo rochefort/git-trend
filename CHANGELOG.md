@@ -1,3 +1,7 @@
+## v1.1.9 (Sat Mar 16 2017)
+
+- Fix lagungage result is zero (#24) [9bb8785]
+
 ## v1.1.8 (Sat Jul 22 2017)
 
 - Add the format option[f0136a3]
@@ -40,7 +44,7 @@
 ## v1.0.0 (Wed Feb 12 2016)
 - Add module methods as working in ruby scripts [f93011b]
 
-- Add variations of since option [f927ba7]  
+- Add variations of since option [f927ba7]
   variations: d, day, w, week, m, month
 
 ## v0.2.2 (Fri Jan 29 2016)
@@ -80,7 +84,7 @@
 - The `descript` option of `list` command was changed into the default. [3602272]
 
 ## v0.1.2
-- Fix travis ci error #24 [6752e1d]  
+- Fix travis ci error #24 [6752e1d]
 Add a magic comment for ruby1.9 #2
 
 
