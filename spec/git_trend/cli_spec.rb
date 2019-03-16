@@ -28,11 +28,11 @@ RSpec.describe GitTrend::CLI do
         let(:number) { 3 }
         it "display top 3 daily ranking" do
           res = <<-'EOS'.unindent
-            |No. Name                                     Lang         Star
-            |--- ---------------------------------------- ---------- ------
-            |  1 alexanderepstein/Bash-Snippets           Shell        1111
-            |  2 jaredreich/pell                          JavaScript    665
-            |  3 azat-co/practicalnode                    JavaScript    440
+            |No. Name                                     Lang               Star
+            |--- ---------------------------------------- ---------------- ------
+            |  1 ShiqiYu/libfacedetection                 C++                1237
+            |  2 selfteaching/the-craft-of-selfteaching   Jupyter Notebook    614
+            |  3 codercom/code-server                     TypeScript          628
 
           EOS
           expect { cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
@@ -286,66 +286,66 @@ RSpec.describe GitTrend::CLI do
 
     def dummy_result_without_description
       <<-'EOS'.unindent
-        |No. Name                                     Lang               Star
-        |--- ---------------------------------------- ---------------- ------
-        |  1 alexanderepstein/Bash-Snippets           Shell              1111
-        |  2 jaredreich/pell                          JavaScript          665
-        |  3 azat-co/practicalnode                    JavaScript          440
-        |  4 shieldfy/API-Security-Checklist                              427
-        |  5 d4l3k/go-pry                             Go                  419
-        |  6 Kristories/awesome-guidelines                                382
-        |  7 iogf/sukhoi                              Python              302
-        |  8 wearehive/project-guidelines             JavaScript          254
-        |  9 gpujs/gpu.js                             JavaScript          260
-        | 10 geekplux/markvis                         JavaScript          230
-        | 11 tensorflow/nmt                           Python              212
-        | 12 gitpoint/git-point                       JavaScript          212
-        | 13 coells/100days                           Jupyter Notebook    199
-        | 14 scwang90/SmartRefreshLayout              Java                198
-        | 15 zeit/now                                 JavaScript          197
-        | 16 walmik/scribbletune                      JavaScript          174
-        | 17 cdflynn/turn-layout-manager              Java                165
-        | 18 vuejs/vue                                JavaScript          157
-        | 19 sdras/intro-to-vue                       Vue                 153
-        | 20 moinism/botui                            JavaScript          150
-        | 21 Tanibox/tania                            CSS                 153
-        | 22 tensorflow/tensorflow                    C++                 116
-        | 23 tarek360/RichPath                        Java                150
-        | 24 woxingxiao/SlidingUpPanelLayout          Java                143
-        | 25 kristian-lange/net-glimpse               JavaScript          141
+        |No. Name                                           Lang               Star
+        |--- ---------------------------------------------- ---------------- ------
+        |  1 ShiqiYu/libfacedetection                       C++                1237
+        |  2 selfteaching/the-craft-of-selfteaching         Jupyter Notebook    614
+        |  3 codercom/code-server                           TypeScript          628
+        |  4 alexfoxy/laxxx                                 JavaScript          518
+        |  5 phoenixframework/phoenix_live_view             Elixir              374
+        |  6 mozilla/send                                   JavaScript          309
+        |  7 clone95/Machine-Learning-Study-Path-March-2019                     241
+        |  8 Microsoft/calculator                           C++                 241
+        |  9 jkup/awesome-personal-blogs                                        191
+        | 10 timvisee/ffsend                                Rust                178
+        | 11 NationalSecurityAgency/ghidra                                      164
+        | 12 Snailclimb/JavaGuide                           Java                152
+        | 13 sindresorhus/type-fest                         TypeScript          169
+        | 14 PaddlePaddle/LARK                              Python              151
+        | 15 slackhq/PanModal                               Swift               160
+        | 16 fitzgen/dodrio                                 Rust                158
+        | 17 dcloudio/uni-app                               Vue                 141
+        | 18 CyC2018/CS-Notes                                                   126
+        | 19 zhaoolee/ChromeAppHeroes                       Python              135
+        | 20 dgryski/go-perfbook                                                140
+        | 21 openacid/slim                                  Go                  136
+        | 22 Microsoft/vscode                               TypeScript          127
+        | 23 flutter/flutter                                Dart                118
+        | 24 infinitered/nsfwjs                             JavaScript          121
+        | 25 lyricat/wechat-format                          JavaScript          120
 
       EOS
     end
 
     def dummy_result_no_options
       <<-'EOS'.unindent
-        |No. Name                                     Lang               Star Description                                                            
-        |--- ---------------------------------------- ---------------- ------ -----------------------------------------------------------------------
-        |  1 alexanderepstein/Bash-Snippets           Shell              1111 A collection of small bash scripts for heavy terminal users            
-        |  2 jaredreich/pell                          JavaScript          665 📝 the simplest and smallest (1kB) WYSIWYG text editor for web, with...
-        |  3 azat-co/practicalnode                    JavaScript          440 Practical Node.js, 1st and 2nd Editions [Apress]                       
-        |  4 shieldfy/API-Security-Checklist                              427 Checklist of the most important security countermeasures when design...
-        |  5 d4l3k/go-pry                             Go                  419 An interactive REPL for Go that allows you to drop into your code at...
-        |  6 Kristories/awesome-guidelines                                382 A curated list of high quality coding style conventions and standards. 
-        |  7 iogf/sukhoi                              Python              302 Minimalist and powerful Web Crawler.                                   
-        |  8 wearehive/project-guidelines             JavaScript          254 A set of best practices for JavaScript projects                        
-        |  9 gpujs/gpu.js                             JavaScript          260 GPU Accelerated JavaScript                                             
-        | 10 geekplux/markvis                         JavaScript          230 make visualization in markdown. 📊📈                                   
-        | 11 tensorflow/nmt                           Python              212 TensorFlow Neural Machine Translation Tutorial                         
-        | 12 gitpoint/git-point                       JavaScript          212 ⚡️ GitHub for iOS. Built with React Native.                            
-        | 13 coells/100days                           Jupyter Notebook    199 100 days of algorithms                                                 
-        | 14 scwang90/SmartRefreshLayout              Java                198 Android智能下拉刷新框架，支持越界回弹，集成了几十种炫酷的Header和 Fo...
-        | 15 zeit/now                                 JavaScript          197 Universal, serverless, single-command deployment                       
-        | 16 walmik/scribbletune                      JavaScript          174 Generate musical patterns with JavaScript and export as MIDI files u...
-        | 17 cdflynn/turn-layout-manager              Java                165 A carousel layout manager for RecyclerView                             
-        | 18 vuejs/vue                                JavaScript          157 A progressive, incrementally-adoptable JavaScript framework for buil...
-        | 19 sdras/intro-to-vue                       Vue                 153 Workshop Materials for my Introduction to Vue.js Workshop              
-        | 20 moinism/botui                            JavaScript          150 🤖 A JavaScript framework to create conversational UIs                 
-        | 21 Tanibox/tania                            CSS                 153 A PHP based, free, and open source farming management system.          
-        | 22 tensorflow/tensorflow                    C++                 116 Computation using data flow graphs for scalable machine learning       
-        | 23 tarek360/RichPath                        Java                150 💪 Rich Android Path. 🤡 Draw as you want. 🎉 Animate much as you can. 
-        | 24 woxingxiao/SlidingUpPanelLayout          Java                143 A vertical-handled and multi-panel support SlidingPanelLayout. 一个... 
-        | 25 kristian-lange/net-glimpse               JavaScript          141 1) Real-time visualization of network traffic (Ethernet and Internet...
+        |No. Name                                           Lang               Star Description                                                      
+        |--- ---------------------------------------------- ---------------- ------ -----------------------------------------------------------------
+        |  1 ShiqiYu/libfacedetection                       C++                1237 An open source library for face detection in images. The face ...
+        |  2 selfteaching/the-craft-of-selfteaching         Jupyter Notebook    614 One has no future if he couldn't teach himself.                  
+        |  3 codercom/code-server                           TypeScript          628 Run VS Code on a remote server.                                  
+        |  4 alexfoxy/laxxx                                 JavaScript          518 Simple & light weight (2kb minified & zipped) vanilla javascri...
+        |  5 phoenixframework/phoenix_live_view             Elixir              374 Rich, real-time user experiences with server-rendered HTML       
+        |  6 mozilla/send                                   JavaScript          309 Simple, private file sharing from the makers of Firefox          
+        |  7 clone95/Machine-Learning-Study-Path-March-2019                     241 A complete ML study path, focused on TensorFlow and Scikit-Learn 
+        |  8 Microsoft/calculator                           C++                 241 Windows Calculator: A simple yet powerful calculator that ship...
+        |  9 jkup/awesome-personal-blogs                                        191 A delightful list of personal tech blogs                         
+        | 10 timvisee/ffsend                                Rust                178 📬 Easily and securely share files from the command line. A fu...
+        | 11 NationalSecurityAgency/ghidra                                      164 Ghidra is a software reverse engineering (SRE) framework         
+        | 12 Snailclimb/JavaGuide                           Java                152 【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心...
+        | 13 sindresorhus/type-fest                         TypeScript          169 A collection of essential TypeScript types                       
+        | 14 PaddlePaddle/LARK                              Python              151 LAnguage Representations Kit                                     
+        | 15 slackhq/PanModal                               Swift               160 PanModal is an elegant and highly customizable presentation AP...
+        | 16 fitzgen/dodrio                                 Rust                158 A fast, bump-allocated virtual DOM library for Rust and WebAss...
+        | 17 dcloudio/uni-app                               Vue                 141 使用 Vue.js 开发跨平台应用的前端框架                             
+        | 18 CyC2018/CS-Notes                                                   126 😋 技术面试必备基础知识                                          
+        | 19 zhaoolee/ChromeAppHeroes                       Python              135 🌈Chrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chro...
+        | 20 dgryski/go-perfbook                                                140 Thoughts on Go performance optimization                          
+        | 21 openacid/slim                                  Go                  136 Unbelievably space efficient data structures in Golang.          
+        | 22 Microsoft/vscode                               TypeScript          127 Visual Studio Code                                               
+        | 23 flutter/flutter                                Dart                118 Flutter makes it easy and fast to build beautiful mobile apps.   
+        | 24 infinitered/nsfwjs                             JavaScript          121 NSFW detection on the client-side via Tensorflow JS              
+        | 25 lyricat/wechat-format                          JavaScript          120 微信公众号排版编辑器，转化 Markdown 微信特制的 HTML              
 
       EOS
     end
@@ -423,11 +423,13 @@ RSpec.describe GitTrend::CLI do
         |ABNF
         |ActionScript
         |Ada
+        |Adobe Font Metrics
         |Agda
         |AGS Script
         |Alloy
         |Alpine Abuild
         |AMPL
+        |AngelScript
         |Ant Build System
         |ANTLR
         |ApacheConf
@@ -437,17 +439,18 @@ RSpec.describe GitTrend::CLI do
         |Apollo Guidance Computer
         |AppleScript
         |Arc
-        |Arduino
         |AsciiDoc
         |ASN.1
         |ASP
         |AspectJ
         |Assembly
+        |Asymptote
         |ATS
         |Augeas
         |AutoHotkey
         |AutoIt
         |Awk
+        |Ballerina
         |Batchfile
         |Befunge
         |Bison
@@ -478,6 +481,7 @@ RSpec.describe GitTrend::CLI do
         |CLIPS
         |Clojure
         |Closure Templates
+        |Cloud Firestore Security Rules
         |CMake
         |COBOL
         |CoffeeScript
@@ -485,7 +489,9 @@ RSpec.describe GitTrend::CLI do
         |ColdFusion CFC
         |COLLADA
         |Common Lisp
+        |Common Workflow Language
         |Component Pascal
+        |CoNLL-U
         |Cool
         |Coq
         |Cpp-ObjDump
@@ -497,7 +503,6 @@ RSpec.describe GitTrend::CLI do
         |Csound Score
         |CSS
         |CSV
-        |Gherkin
         |Cuda
         |CWeb
         |Cycript
@@ -506,6 +511,7 @@ RSpec.describe GitTrend::CLI do
         |D-ObjDump
         |Darcs Patch
         |Dart
+        |DataWeave
         |desktop
         |Diff
         |DIGITAL Command Language
@@ -517,11 +523,13 @@ RSpec.describe GitTrend::CLI do
         |Dylan
         |E
         |Eagle
+        |Easybuild
         |EBNF
         |eC
         |Ecere Projects
         |ECL
         |ECLiPSe
+        |Edje Data Collection
         |edn
         |Eiffel
         |EJS
@@ -529,12 +537,15 @@ RSpec.describe GitTrend::CLI do
         |Elm
         |Emacs Lisp
         |EmberScript
+        |EML
         |EQ
         |Erlang
         |F#
+        |F*
         |Factor
         |Fancy
         |Fantom
+        |FIGlet Font
         |Filebench WML
         |Filterscript
         |fish
@@ -555,10 +566,12 @@ RSpec.describe GitTrend::CLI do
         |Genshi
         |Gentoo Ebuild
         |Gentoo Eclass
+        |Gerber Image
         |Gettext Catalog
         |Gherkin
         |GLSL
         |Glyph
+        |Glyph Bitmap Distribution Format
         |GN
         |Gnuplot
         |Go
@@ -575,10 +588,12 @@ RSpec.describe GitTrend::CLI do
         |Hack
         |Haml
         |Handlebars
+        |HAProxy
         |Harbour
         |Haskell
         |Haxe
         |HCL
+        |HiveQL
         |HLSL
         |HTML
         |HTML+Django
@@ -586,7 +601,9 @@ RSpec.describe GitTrend::CLI do
         |HTML+EEX
         |HTML+ERB
         |HTML+PHP
+        |HTML+Razor
         |HTTP
+        |HXML
         |Hy
         |HyPhy
         |IDL
@@ -603,6 +620,7 @@ RSpec.describe GitTrend::CLI do
         |J
         |Jasmin
         |Java
+        |Java Properties
         |Java Server Pages
         |JavaScript
         |JFlex
@@ -610,13 +628,17 @@ RSpec.describe GitTrend::CLI do
         |Jison Lex
         |Jolie
         |JSON
+        |JSON with Comments
         |JSON5
         |JSONiq
         |JSONLD
+        |Jsonnet
         |JSX
         |Julia
         |Jupyter Notebook
-        |KiCad
+        |KiCad Layout
+        |KiCad Legacy Layout
+        |KiCad Schematic
         |Kit
         |Kotlin
         |KRL
@@ -653,10 +675,11 @@ RSpec.describe GitTrend::CLI do
         |Marko
         |Mask
         |Mathematica
-        |Matlab
+        |MATLAB
         |Maven POM
         |Max
         |MAXScript
+        |mcfunction
         |MediaWiki
         |Mercury
         |Meson
@@ -665,6 +688,7 @@ RSpec.describe GitTrend::CLI do
         |Mirah
         |Modelica
         |Modula-2
+        |Modula-3
         |Module Management System
         |Monkey
         |Moocode
@@ -676,12 +700,14 @@ RSpec.describe GitTrend::CLI do
         |mupad
         |Myghty
         |NCL
+        |Nearley
         |Nemerle
         |nesC
         |NetLinx
         |NetLinx+ERB
         |NetLogo
         |NewLisp
+        |Nextflow
         |Nginx
         |Nim
         |Ninja
@@ -716,10 +742,10 @@ RSpec.describe GitTrend::CLI do
         |Parrot Assembly
         |Parrot Internal Representation
         |Pascal
-        |PAWN
+        |Pawn
         |Pep8
         |Perl
-        |Perl6
+        |Perl 6
         |PHP
         |Pic
         |Pickle
@@ -729,8 +755,10 @@ RSpec.describe GitTrend::CLI do
         |PLpgSQL
         |PLSQL
         |Pod
+        |Pod 6
         |PogoScript
         |Pony
+        |PostCSS
         |PostScript
         |POV-Ray SDL
         |PowerBuilder
@@ -748,8 +776,10 @@ RSpec.describe GitTrend::CLI do
         |Python
         |Python console
         |Python traceback
+        |q
         |QMake
         |QML
+        |Quake
         |R
         |Racket
         |Ragel
@@ -768,10 +798,13 @@ RSpec.describe GitTrend::CLI do
         |reStructuredText
         |REXX
         |RHTML
+        |Rich Text Format
+        |Ring
         |RMarkdown
         |RobotFramework
         |Roff
         |Rouge
+        |RPC
         |RPM Spec
         |Ruby
         |RUNOFF
@@ -785,17 +818,20 @@ RSpec.describe GitTrend::CLI do
         |Scheme
         |Scilab
         |SCSS
+        |sed
         |Self
         |ShaderLab
         |Shell
         |ShellSession
         |Shen
         |Slash
+        |Slice
         |Slim
         |Smali
         |Smalltalk
         |Smarty
         |SMT
+        |Solidity
         |SourcePawn
         |SPARQL
         |Spline Font Database
@@ -809,8 +845,8 @@ RSpec.describe GitTrend::CLI do
         |Stata
         |STON
         |Stylus
-        |Sublime Text Config
         |SubRip Text
+        |SugarSS
         |SuperCollider
         |SVG
         |Swift
@@ -830,6 +866,7 @@ RSpec.describe GitTrend::CLI do
         |Turtle
         |Twig
         |TXL
+        |Type Language
         |TypeScript
         |Unified Parallel C
         |Unity3D Asset
@@ -842,16 +879,21 @@ RSpec.describe GitTrend::CLI do
         |Verilog
         |VHDL
         |Vim script
-        |Vim script
         |Visual Basic
         |Volt
         |Vue
         |Wavefront Material
         |Wavefront Object
+        |wdl
         |Web Ontology Language
+        |WebAssembly
         |WebIDL
+        |Windows Registry Entries
         |wisp
         |World of Warcraft Addon Data
+        |X BitMap
+        |X Font Directory Index
+        |X PixMap
         |X10
         |xBase
         |XC
@@ -867,10 +909,13 @@ RSpec.describe GitTrend::CLI do
         |Yacc
         |YAML
         |YANG
+        |YARA
+        |YASnippet
         |Zephir
+        |Zig
         |Zimpl
         |
-        |451 languages
+        |496 languages
         |you can get only selected language list with '-l' option.
         |if languages is unknown, you can specify 'unkown'.
         |
