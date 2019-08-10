@@ -40,7 +40,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "mb_string",   "~> 0.1.8"
   spec.add_dependency "mechanize",   "~> 2.7.5"
   spec.add_dependency "thor",        ">= 0.20.0", "< 0.21.0"
-  spec.add_dependency "unicode-display_width", ">= 1.3", "< 1.5"
+  spec.add_dependency "unicode-display_width", ">= 1.3", "< 1.7"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake",    "~> 12.3.1"
