@@ -9,8 +9,6 @@ require "git_trend/scraper"
 require "git_trend/version"
 
 module GitTrend
-  class ScrapeException < StandardError; end
-
   # GitTrend.get
   # GitTrend.get('ruby')
   # GitTrend.get(:ruby)

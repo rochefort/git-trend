@@ -16,13 +16,12 @@ module GitTrend
     def get(language = nil, since = nil, number = nil)
       page = @agent.get(generate_url(language, since))
       projects = generate_project(page)
-      fail ScrapeException if projects.empty?
       number ? projects[0...number] : projects
     end
 
     def languages
       page = @agent.get(BASE_URL)
-      page.search(".col-md-3 details-menu span[data-menu-button-text]").inject([]) do |languages, content|
+      page.search('#select-menu-language .select-menu-list .select-menu-item-text').inject([]) do |languages, content|
         languages << content.text if content.text
       end
     end
@@ -51,18 +50,15 @@ module GitTrend
       end
 
       def generate_project(page)
-        page.search(".repo-list li").map do |content|
-          all_star_count = comma_to_i(content.search('svg[aria-label="star"]')[0].parent.text.strip)
-          fork_elm = content.search('svg[aria-label="fork"]')[0]
-          fork_count = fork_elm ? comma_to_i(fork_elm.parent.text.strip) : 0
-          star_count = comma_to_i(content.search("span.float-sm-right").text.strip.match(/(.+)? stars/).to_a[1])
+        page.search(".Box-row").map do |content|
+          icon_area = content.search('.f6.text-gray.mt-2')
           Project.new(
-            name: content.search("h3 a").attr("href").to_s.sub(/\A\//, ""),
-            description: content.search(".py-1").text.strip,
+            name: content.search("h1 a").attr("href").to_s.sub(/\A\//, ""),
+            description: content.search(".col-9.text-gray.my-1.pr-4").text.strip,
             lang: content.search('span[itemprop="programmingLanguage"]').text.strip,
-            all_star_count: all_star_count,
-            fork_count: fork_count,
-            star_count: star_count
+            all_star_count: comma_to_i(icon_area.search('a:has(svg.octicon-star)').text.strip),
+            fork_count: comma_to_i(icon_area.search('a:has(svg.octicon-repo-forked)').text.strip),
+            star_count: comma_to_i(icon_area.search('a:has(svg.octicon-star)').text.strip)
           )
         end
       end
