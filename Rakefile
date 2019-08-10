@@ -14,6 +14,6 @@ task :update_fixtures do
 
   sh "curl -o spec/fixtures/trending?since= https://github.com/trending?since="
   sh "curl -o spec/fixtures/trending?since=daily https://github.com/trending?since=daily"
-  sh "curl -o spec/fixtures/trending?since=monthly https://github.com/trending?since=monthly"
   sh "curl -o spec/fixtures/trending?since=weekly https://github.com/trending?since=weekly"
+  sh "curl -o spec/fixtures/trending?since=monthly https://github.com/trending?since=monthly"
 end

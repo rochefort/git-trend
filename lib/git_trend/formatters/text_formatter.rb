@@ -4,6 +4,10 @@ module GitTrend::Formatters
     DEFAULT_COLUMNS_SIZES = [3, 40, 10, 6, 20]
 
     def print(projects, options)
+      if projects.empty?
+        render_zero
+        return
+      end
       @enable_description = options[:enable_description]
       rule_columns_sizes(projects)
       render_header
@@ -21,6 +25,10 @@ module GitTrend::Formatters
     end
 
     private
+      def render_zero
+        puts "It looks like we don’t have any trending repositories."
+        puts
+      end
 
       def rule_columns_sizes(projects)
         @columns_sizes = DEFAULT_COLUMNS_SIZES.dup

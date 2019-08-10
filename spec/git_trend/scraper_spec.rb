@@ -30,13 +30,5 @@ RSpec.describe GitTrend::Scraper do
       end
       it { expect { scraper.get }.to raise_error(Exception) }
     end
-
-    context "when a scraping error occurred" do
-      before do
-        stub_request(:get, Scraper::BASE_URL)
-          .to_return(status: 200, headers: { content_type: "text/html" }, body: "")
-      end
-      it { expect { scraper.get }.to raise_error(ScrapeException) }
-    end
   end
 end
