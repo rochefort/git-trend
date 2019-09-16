@@ -1,3 +1,11 @@
+## v1.2.1 (Mon Sep 16 2019)
+
+- Display today's star #37 #38 [d8012fb]
+
+## v1.2.0 (Sat Aug 10 2019)
+
+- Fix changing HTML structure #29 [158a35c]
+
 ## v1.1.9 (Sat Mar 16 2017)
 
 - Fix lagungage result is zero (#24) [9bb8785]
