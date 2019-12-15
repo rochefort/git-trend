@@ -1,3 +1,7 @@
+## v1.2.2 (Sun Dec 15)
+
+- Update gem [4f11bc0]
+
 ## v1.2.1 (Mon Sep 16 2019)
 
 - Display today's star #37 #38 [d8012fb]
