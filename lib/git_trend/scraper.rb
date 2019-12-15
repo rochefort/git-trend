@@ -21,13 +21,12 @@ module GitTrend
 
     def languages
       page = @agent.get(BASE_URL)
-      page.search('#select-menu-language .select-menu-list .select-menu-item-text').inject([]) do |languages, content|
+      page.search("#select-menu-language .select-menu-list .select-menu-item-text").inject([]) do |languages, content|
         languages << content.text if content.text
       end
     end
 
     private
-
       def generate_url(language, since)
         url = BASE_URL.dup
         url << "/#{language}" if language
@@ -51,14 +50,14 @@ module GitTrend
 
       def generate_project(page)
         page.search(".Box-row").map do |content|
-          icon_area = content.search('.f6.text-gray.mt-2')
+          icon_area = content.search(".f6.text-gray.mt-2")
           Project.new(
             name: content.search("h1 a").attr("href").to_s.sub(/\A\//, ""),
             description: content.search(".col-9.text-gray.my-1.pr-4").text.strip,
             lang: content.search('span[itemprop="programmingLanguage"]').text.strip,
-            all_star_count: comma_to_i(icon_area.search('a:has(svg.octicon-star)').text.strip),
-            fork_count: comma_to_i(icon_area.search('a:has(svg.octicon-repo-forked)').text.strip),
-            star_count: comma_to_i(icon_area.search('.float-sm-right').text.to_i)
+            all_star_count: comma_to_i(icon_area.search("a:has(svg.octicon-star)").text.strip),
+            fork_count: comma_to_i(icon_area.search("a:has(svg.octicon-repo-forked)").text.strip),
+            star_count: comma_to_i(icon_area.search(".float-sm-right").text.to_i)
           )
         end
       end
