@@ -1,5 +1,3 @@
-require "mb_string"
-
 require "git_trend/cli"
 require "git_trend/formatter"
 require "git_trend/formatters/text_formatter"
