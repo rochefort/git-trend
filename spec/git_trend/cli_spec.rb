@@ -327,29 +327,29 @@ RSpec.describe GitTrend::CLI do
       <<-'EOS'.unindent
         |No. Name                                                       Lang               Star
         |--- ---------------------------------------------------------- ---------------- ------
-        |  1 0voice/interview_internal_reference                        Python               15
-        |  2 chinese-poetry/chinese-poetry                              JavaScript            4
-        |  3 peterq/pan-light                                           Go                    5
-        |  4 sherlock-project/sherlock                                  Python                2
-        |  5 facebook/hermes                                            C++                   4
-        |  6 alipay/SoloPi                                              Java                  2
-        |  7 lenve/vhr                                                  Java                  3
-        |  8 jwasham/coding-interview-university                                              6
-        |  9 qiurunze123/miaosha                                        Java                  2
-        | 10 scutan90/DeepLearning-500-questions                                              4
-        | 11 haotian-wang/google-access-helper                          JavaScript            1
-        | 12 dianping/cat                                               Java                  1
+        |  1 0voice/interview_internal_reference                        Python            15391
+        |  2 chinese-poetry/chinese-poetry                              JavaScript         4400
+        |  3 peterq/pan-light                                           Go                 5905
+        |  4 sherlock-project/sherlock                                  Python             2525
+        |  5 facebook/hermes                                            C++                4173
+        |  6 alipay/SoloPi                                              Java               2089
+        |  7 lenve/vhr                                                  Java               3284
+        |  8 jwasham/coding-interview-university                                           6212
+        |  9 qiurunze123/miaosha                                        Java               2287
+        | 10 scutan90/DeepLearning-500-questions                                           4175
+        | 11 haotian-wang/google-access-helper                          JavaScript         1082
+        | 12 dianping/cat                                               Java               1060
         | 13 crmeb/CRMEB                                                JavaScript          642
         | 14 ardanlabs/gotraining                                       Go                  942
-        | 15 lenve/VBlog                                                TSQL                  1
-        | 16 zhaoolee/ChineseBQB                                        CSS                   2
+        | 15 lenve/VBlog                                                TSQL               1090
+        | 16 zhaoolee/ChineseBQB                                        CSS                2605
         | 17 fastai/course-nlp                                          Jupyter Notebook    802
         | 18 aosabook/500lines                                          JavaScript          846
-        | 19 alibaba/spring-cloud-alibaba                               Java                  1
+        | 19 alibaba/spring-cloud-alibaba                               Java               1140
         | 20 macrozheng/mall-learning                                   Java                798
-        | 21 OpenFlutter/Flutter-Notebook                               Dart                  1
-        | 22 huggingface/pytorch-transformers                           Python                2
-        | 23 amejiarosario/dsa.js-data-structures-algorithms-javascript JavaScript            1
+        | 21 OpenFlutter/Flutter-Notebook                               Dart               1236
+        | 22 huggingface/pytorch-transformers                           Python             2938
+        | 23 amejiarosario/dsa.js-data-structures-algorithms-javascript JavaScript         1573
 
       EOS
     end
@@ -358,29 +358,29 @@ RSpec.describe GitTrend::CLI do
       <<-'EOS'.unindent
         |No. Name                                                       Lang               Star
         |--- ---------------------------------------------------------- ---------------- ------
-        |  1 0voice/interview_internal_reference                        Python               15
-        |  2 chinese-poetry/chinese-poetry                              JavaScript            4
-        |  3 peterq/pan-light                                           Go                    5
-        |  4 sherlock-project/sherlock                                  Python                2
-        |  5 facebook/hermes                                            C++                   4
-        |  6 alipay/SoloPi                                              Java                  2
-        |  7 lenve/vhr                                                  Java                  3
-        |  8 jwasham/coding-interview-university                                              6
-        |  9 qiurunze123/miaosha                                        Java                  2
-        | 10 scutan90/DeepLearning-500-questions                                              4
-        | 11 haotian-wang/google-access-helper                          JavaScript            1
-        | 12 dianping/cat                                               Java                  1
+        |  1 0voice/interview_internal_reference                        Python            15391
+        |  2 chinese-poetry/chinese-poetry                              JavaScript         4400
+        |  3 peterq/pan-light                                           Go                 5905
+        |  4 sherlock-project/sherlock                                  Python             2525
+        |  5 facebook/hermes                                            C++                4173
+        |  6 alipay/SoloPi                                              Java               2089
+        |  7 lenve/vhr                                                  Java               3283
+        |  8 jwasham/coding-interview-university                                           6212
+        |  9 qiurunze123/miaosha                                        Java               2287
+        | 10 scutan90/DeepLearning-500-questions                                           4175
+        | 11 haotian-wang/google-access-helper                          JavaScript         1082
+        | 12 dianping/cat                                               Java               1060
         | 13 crmeb/CRMEB                                                JavaScript          642
         | 14 ardanlabs/gotraining                                       Go                  942
-        | 15 lenve/VBlog                                                TSQL                  1
-        | 16 zhaoolee/ChineseBQB                                        CSS                   2
+        | 15 lenve/VBlog                                                TSQL               1090
+        | 16 zhaoolee/ChineseBQB                                        CSS                2605
         | 17 fastai/course-nlp                                          Jupyter Notebook    802
         | 18 aosabook/500lines                                          JavaScript          846
-        | 19 alibaba/spring-cloud-alibaba                               Java                  1
+        | 19 alibaba/spring-cloud-alibaba                               Java               1140
         | 20 macrozheng/mall-learning                                   Java                798
-        | 21 OpenFlutter/Flutter-Notebook                               Dart                  1
-        | 22 huggingface/pytorch-transformers                           Python                2
-        | 23 amejiarosario/dsa.js-data-structures-algorithms-javascript JavaScript            1
+        | 21 OpenFlutter/Flutter-Notebook                               Dart               1236
+        | 22 huggingface/pytorch-transformers                           Python             2936
+        | 23 amejiarosario/dsa.js-data-structures-algorithms-javascript JavaScript         1573
 
       EOS
     end

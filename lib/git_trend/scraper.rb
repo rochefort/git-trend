@@ -57,7 +57,7 @@ module GitTrend
             lang: content.search('span[itemprop="programmingLanguage"]').text.strip,
             all_star_count: comma_to_i(icon_area.search("a:has(svg.octicon-star)").text.strip),
             fork_count: comma_to_i(icon_area.search("a:has(svg.octicon-repo-forked)").text.strip),
-            star_count: comma_to_i(icon_area.search(".float-sm-right").text.to_i)
+            star_count: comma_to_i(icon_area.search(".float-sm-right").text)
           )
         end
       end
