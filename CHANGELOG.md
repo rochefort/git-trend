@@ -1,3 +1,7 @@
+## v1.2.3 (Mon Mar 2)
+
+- Fix wrong interger format of star [dbdc344]
+
 ## v1.2.2 (Sun Dec 15)
 
 - Update gem [4f11bc0]
