@@ -1,3 +1,7 @@
+## v1.2.4 (Mon Mar 2)
+
+- Fix languages without linefeeds [ecc63af]
+
 ## v1.2.3 (Mon Mar 2)
 
 - Fix wrong interger format of star [dbdc344]
