@@ -22,7 +22,8 @@ module GitTrend
     def languages
       page = @agent.get(BASE_URL)
       page.search("#select-menu-language .select-menu-list .select-menu-item-text").inject([]) do |languages, content|
-        languages << content.text if content.text
+        language = content.text.strip
+        languages << language if language
       end
     end
 
