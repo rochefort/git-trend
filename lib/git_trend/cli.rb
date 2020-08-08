@@ -8,6 +8,12 @@ module GitTrend
     default_command :list
     class_option :verbose, type: :boolean
 
+    class << self
+      def exit_on_failure?
+        true
+      end
+    end
+
     desc :version, "show version"
     def version
       say "git-trend version: #{VERSION}", :green
