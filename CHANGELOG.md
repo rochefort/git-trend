@@ -1,3 +1,7 @@
+## v1.2.5 (Sat Aug 8)
+
+- Eliminate a warning of Thor [781baf4]
+
 ## v1.2.4 (Mon Mar 2)
 
 - Fix languages without linefeeds [ecc63af]
