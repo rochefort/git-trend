@@ -17,6 +17,7 @@
 # require "coveralls"
 # Coveralls.wear!
 
+require "pry"
 require "simplecov"
 # require "codeclimate-test-reporter"
 dir = File.join(ENV["CIRCLE_ARTIFACTS"] || "coverage")
