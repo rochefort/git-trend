@@ -20,10 +20,8 @@ module GitTrend
   # GitTrend.get(language: :ruby, since: :weekly)
   def self.get(*opts)
     if opts[0].instance_of?(Hash)
-      hash = opts[0]
-      language = hash.key?(:language) ? hash[:language] : nil
-      since = hash.key?(:since) ? hash[:since] : nil
-      Scraper.new.get(language, since)
+      opt = opts[0]
+      Scraper.new.get(opt[:language], opt[:since])
     else
       Scraper.new.get(*opts)
     end
