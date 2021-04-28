@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: mechanize
+    versions:
+    - 2.8.0
+  - dependency-name: webmock
+    versions:
+    - 3.12.0
