@@ -1,3 +1,7 @@
+## v1.2.7 (Sun Aug 8)
+
+- Correspond to the new structure of HTML [a708fd4]
+
 ## v1.2.6 (Sun Aug 8)
 
 - Update gems
@@ -44,7 +48,7 @@
 
 ## v1.1.5 (Sat Jul 15 2017)
 
-- Correspond to the new structure of html [22189f6]
+- Correspond to the new structure of HTML [22189f6]
 
 ## v1.1.4 (Tue Nov 22 2016)
 
