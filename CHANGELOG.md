@@ -1,3 +1,7 @@
+## v1.2.6 (Sun Aug 8)
+
+- Update gems
+
 ## v1.2.5 (Sat Aug 8)
 
 - Eliminate a warning of Thor [781baf4]
