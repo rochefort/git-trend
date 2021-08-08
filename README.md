@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.com/rochefort/git-trend.svg?branch=master)](https://travis-ci.com/rochefort/git-trend)
 [![Coverage Status](https://coveralls.io/repos/github/rochefort/git-trend/badge.svg?branch=master)](https://coveralls.io/github/rochefort/git-trend?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/rochefort/git-trend.svg)](https://codeclimate.com/github/rochefort/git-trend/maintainability)
-[![Code Climate](https://img.shields.io/codeclimate/coverage/rochefort/git-trend.svg)](https://codeclimate.com/github/rochefort/git-trend/test_coverage)
 [![Gem Version](http://img.shields.io/gem/v/git-trend.svg?style=flat)](http://badge.fury.io/rb/git-trend)
 
 
