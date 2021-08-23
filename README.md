@@ -20,7 +20,7 @@ And this also work as a command line utility.
 
 ## Requirements
 
-Ruby versions is 2.0 or later.
+Ruby versions is 2.4 or later.
 
 ## Installation
 Add this line to your application's Gemfile:
