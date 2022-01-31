@@ -67,7 +67,7 @@ module GitTrend::Formatters
         fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
         fmt << " %-#{f[4]}s" if @enable_description
 
-        puts fmt % header
+        puts (fmt % header).rstrip
         puts fmt % @columns_sizes.map { |column| "-" * column }
       end
 
@@ -84,7 +84,7 @@ module GitTrend::Formatters
             description_fmt = " %-#{f.last - mb_char_size}s"
           end
           result = "#{fmt}#{description_fmt}" % data
-          puts result
+          puts result.rstrip
         end
       end
 
