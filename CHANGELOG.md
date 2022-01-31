@@ -1,3 +1,7 @@
+## v1.2.8 (Mon Jan 31)
+
+- Fix changing HTML structure [524bed8]
+
 ## v1.2.7 (Sun Aug 8)
 
 - Correspond to the new structure of HTML [a708fd4]
