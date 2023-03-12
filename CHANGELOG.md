@@ -1,28 +1,32 @@
-## v1.2.8 (Mon Jan 31)
+## v1.2.9 (Mon Mar 13 2023)
+
+- Upgrade gem [3f79648]
+
+## v1.2.8 (Mon Jan 31 2022)
 
 - Fix changing HTML structure [524bed8]
 
-## v1.2.7 (Sun Aug 8)
+## v1.2.7 (Sun Aug 8 2021)
 
 - Correspond to the new structure of HTML [a708fd4]
 
-## v1.2.6 (Sun Aug 8)
+## v1.2.6 (Sun Aug 8 2021)
 
 - Update gems
 
-## v1.2.5 (Sat Aug 8)
+## v1.2.5 (Sat Aug 8 2020)
 
 - Eliminate a warning of Thor [781baf4]
 
-## v1.2.4 (Mon Mar 2)
+## v1.2.4 (Mon Mar 2 2020)
 
 - Fix languages without linefeeds [ecc63af]
 
-## v1.2.3 (Mon Mar 2)
+## v1.2.3 (Mon Mar 2 2020)
 
 - Fix wrong interger format of star [dbdc344]
 
-## v1.2.2 (Sun Dec 15)
+## v1.2.2 (Sun Dec 15 2019)
 
 - Update gem [4f11bc0]
 
