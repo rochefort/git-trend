@@ -24,11 +24,11 @@
 
 ## v1.2.4 (Mon Mar 2 2020)
 
-- Fix languages without linefeeds [ecc63af]
+- Fix languages without linefeed [ecc63af]
 
 ## v1.2.3 (Mon Mar 2 2020)
 
-- Fix wrong interger format of star [dbdc344]
+- Fix wrong integer format of star [dbdc344]
 
 ## v1.2.2 (Sun Dec 15 2019)
 
