@@ -1,3 +1,7 @@
+## v1.4.0 (Mon Mar 13 2023)
+
+- Drop support of Ruby 2.6 and earlier [41e871e]
+
 ## v1.3.0 (Mon Mar 13 2023)
 
 - Fix changing HTML structure [8de4920]
