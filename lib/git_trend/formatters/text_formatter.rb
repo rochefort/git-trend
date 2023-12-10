@@ -72,6 +72,7 @@ module GitTrend::Formatters
         puts fmt % @columns_sizes.map { |column| "-" * column }
       end
 
+      # rubocop:disable Metrics/AbcSize
       def render_body(projects)
         f = @columns_sizes
         fmt = "%#{f[0]}s %-#{f[1]}s %-#{f[2]}s %#{f[3]}s"
@@ -88,6 +89,7 @@ module GitTrend::Formatters
           puts result.rstrip
         end
       end
+      # rubocop:enable Metrics/AbcSize
 
       def render_footer
         puts
