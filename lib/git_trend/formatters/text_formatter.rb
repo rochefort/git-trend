@@ -102,7 +102,7 @@ module GitTrend::Formatters
         elsif STDIN.tty? && command_exists?("stty")
           `stty size`.scan(/\d+/).map(&:to_i).reverse
         end
-      rescue
+      rescue # rubocop:disable Style/RescueStandardError
         nil
       end
 
