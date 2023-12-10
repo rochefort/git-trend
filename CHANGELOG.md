@@ -44,7 +44,7 @@
 
 ## v1.1.9 (Sat Mar 16 2017)
 
-- Fix lagungage result is zero (#24) [9bb8785]
+- Fix language result is zero (#24) [9bb8785]
 
 ## v1.1.8 (Sat Jul 22 2017)
 
@@ -98,7 +98,7 @@
 - Update gems [29bc2a9]
 
 ## v0.2.1 (Sun Dec 6 2015)
-- Fix #6 redundancy line feeds when including multibyte characters [61fd81c]
+- Fix #6 redundancy line feeds when including multi-byte characters [61fd81c]
 - Update gems [ea5a018]
 
 ## v0.2.0 (Tue Dec 3 2015)
@@ -156,7 +156,7 @@ Add a magic comment for ruby1.9 #2
 - Fix lack of addressable gem when installing [54ca275]
 
 ## v0.0.4
-- Implement descrition option [4587e56]
+- Implement description option [4587e56]
 
 ## v0.0.3
 - Implement since option [04f1978]
