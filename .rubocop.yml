@@ -9,6 +9,7 @@ AllCops:
   Exclude:
     - '**/tmp/**/*'
     - '**/vendor/**/*'
+  NewCops: enable
 
 # ドキュメントの無い public class を許可する
 Style/Documentation:
