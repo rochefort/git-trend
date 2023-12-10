@@ -1,1 +1,1 @@
-require "git_trend"
+require "git_trend" # rubocop:disable Naming/FileName
