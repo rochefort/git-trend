@@ -3,8 +3,8 @@ require "addressable/uri"
 
 module GitTrend
   class Scraper
-    BASE_HOST = "https://github.com"
-    BASE_URL = "#{BASE_HOST}/trending"
+    BASE_HOST = "https://github.com".freeze
+    BASE_URL = "#{BASE_HOST}/trending".freeze
 
     def initialize
       @agent = Mechanize.new

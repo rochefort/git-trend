@@ -2,8 +2,8 @@ require "mb_string"
 
 module GitTrend::Formatters
   class TextFormatter
-    HEADER_COLUMNS = %w(no. name lang star description)
-    DEFAULT_COLUMNS_SIZES = [3, 40, 10, 6, 20]
+    HEADER_COLUMNS = %w(no. name lang star description).freeze
+    DEFAULT_COLUMNS_SIZES = [3, 40, 10, 6, 20].freeze
 
     def print(projects, options)
       if projects.empty?
