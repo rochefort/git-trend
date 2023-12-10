@@ -32,18 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "thor",        ">= 0.20.0", "< 1.3.0"
   spec.add_dependency "unicode-display_width"
 
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake", "~> 13.0.0"
-
-  spec.add_development_dependency "rubocop"
-  spec.add_development_dependency "rubocop-performance"
-  spec.add_development_dependency "rubocop-rspec"
-
-  spec.add_development_dependency "irb"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "simplecov", "~>0.16.1"
-  spec.add_development_dependency "webmock",   "~> 3.18.1"
-
-  spec.add_development_dependency "coveralls", "~> 0.8.23"
   spec.metadata["rubygems_mfa_required"] = "true"
 end
