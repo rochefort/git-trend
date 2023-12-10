@@ -27,14 +27,14 @@ RSpec.describe GitTrend::CLI do
         before { stub_request_get("trending") }
         let(:number) { 3 }
         it "display top 3 daily ranking" do
-          res = <<-'EOS'.unindent
+          res = <<-'OUTPUT'.unindent
             |No. Name                                     Lang               Star
             |--- ---------------------------------------- ---------------- ------
             |  1 linexjlin/GPTs                                               445
             |  2 ml-explore/mlx-examples                  Python              161
             |  3 PRIS-CV/DemoFusion                       Jupyter Notebook    169
 
-          EOS
+          OUTPUT
           expect { cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
         end
       end
@@ -54,7 +54,7 @@ RSpec.describe GitTrend::CLI do
         let(:language) { "ruby" }
 
         it "display daily ranking by language" do
-          res = <<-'EOS'.unindent
+          res = <<-'OUTPUT'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
             |  1 greatghoul/remote-working                Ruby           34
@@ -83,7 +83,7 @@ RSpec.describe GitTrend::CLI do
             | 24 chef/chef                                Ruby            0
             | 25 instructure/canvas-lms                   Ruby            0
 
-          EOS
+          OUTPUT
           expect { cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
         end
       end
@@ -93,10 +93,10 @@ RSpec.describe GitTrend::CLI do
         let(:language) { "alloy" }
 
         it "display the 0cases message" do
-          res = <<-'EOS'.unindent
+          res = <<-'OUTPUT'.unindent
             |It looks like we don’t have any trending repositories.
 
-          EOS
+          OUTPUT
           expect { cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
         end
       end
@@ -197,7 +197,7 @@ RSpec.describe GitTrend::CLI do
         let(:since) { "weekly" }
 
         it "display weekly ranking by language" do
-          res = <<-'EOS'.unindent
+          res = <<-'OUTPUT'.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
             |  1 mastodon/mastodon                        Ruby          115
@@ -226,7 +226,7 @@ RSpec.describe GitTrend::CLI do
             | 24 rubocop/rubocop                          Ruby           10
             | 25 paper-trail-gem/paper_trail              Ruby            3
 
-          EOS
+          OUTPUT
           expect { cli.invoke(:list, [], language: language, since: since, description: false) }.to output(res).to_stdout
         end
       end
@@ -258,7 +258,7 @@ RSpec.describe GitTrend::CLI do
     end
 
     def dummy_result_without_description
-      <<-'EOS'.unindent
+      <<-'OUTPUT'.unindent
         |No. Name                                       Lang               Star
         |--- ------------------------------------------ ---------------- ------
         |  1 linexjlin/GPTs                                                 445
@@ -287,11 +287,11 @@ RSpec.describe GitTrend::CLI do
         | 24 ytdl-org/youtube-dl                        Python               24
         | 25 dunglas/frankenphp                         Go                   53
 
-      EOS
+      OUTPUT
     end
 
     def dummy_result_no_options
-      <<-'EOS'.unindent
+      <<-'OUTPUT'.unindent
         |No. Name                                       Lang               Star Description
         |--- ------------------------------------------ ---------------- ------ ---------------------------------------------------------------------
         |  1 linexjlin/GPTs                                                 445 leaked prompts of GPTs
@@ -320,11 +320,11 @@ RSpec.describe GitTrend::CLI do
         | 24 ytdl-org/youtube-dl                        Python               24 Command-line program to download videos from YouTube.com and other...
         | 25 dunglas/frankenphp                         Go                   53 The modern PHP app server
 
-      EOS
+      OUTPUT
     end
 
     def dummy_weekly_result
-      <<-'EOS'.unindent
+      <<-'OUTPUT'.unindent
         |No. Name                                       Lang               Star
         |--- ------------------------------------------ ---------------- ------
         |  1 LC044/WeChatMsg                            Python            10719
@@ -353,11 +353,11 @@ RSpec.describe GitTrend::CLI do
         | 24 coolsnowwolf/lede                          C                   132
         | 25 QwenLM/Qwen                                Python              377
 
-      EOS
+      OUTPUT
     end
 
     def dummy_monthly_result
-      <<-'EOS'.unindent
+      <<-'OUTPUT'.unindent
         |No. Name                                     Lang               Star
         |--- ---------------------------------------- ---------------- ------
         |  1 SawyerHood/draw-a-ui                     TypeScript        11761
@@ -386,6 +386,6 @@ RSpec.describe GitTrend::CLI do
         | 24 SillyTavern/SillyTavern                  JavaScript         1566
         | 25 1Panel-dev/1Panel                        Go                 1950
 
-      EOS
+      OUTPUT
     end
 end
