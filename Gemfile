@@ -13,5 +13,3 @@ gem "irb"
 gem "rspec"
 gem "simplecov", "~>0.16.1"
 gem "webmock",   "~> 3.18.1"
-
-# gem "coveralls", "~> 0.8.23"
