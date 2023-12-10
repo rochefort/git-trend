@@ -40,7 +40,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-performance"
   spec.add_development_dependency "rubocop-rails"
 
-  spec.add_development_dependency "pry-byebug"
+  spec.add_development_dependency "irb"
   spec.add_development_dependency "rspec",     "~> 3.12.0"
   spec.add_development_dependency "simplecov", "~>0.16.1"
   spec.add_development_dependency "webmock",   "~> 3.18.1"
