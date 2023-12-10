@@ -11,5 +11,6 @@ gem "rubocop-rspec"
 
 gem "irb"
 gem "rspec"
-gem "simplecov", "~>0.16.1"
-gem "webmock",   "~> 3.18.1"
+gem 'simplecov'
+gem 'simplecov-lcov'
+gem "webmock", "~> 3.18.1"

@@ -18,18 +18,26 @@
 # Coveralls.wear!
 
 require "simplecov"
+require 'simplecov-lcov'
 require "webmock/rspec"
 require "git_trend"
 
 # require "codeclimate-test-reporter"
 dir = File.join(ENV["CIRCLE_ARTIFACTS"] || "coverage")
 SimpleCov.coverage_dir(dir)
+
+SimpleCov::Formatter::LcovFormatter.config do |config|
+  # Coverallsはデフォルトではcoverage/lcov.infoの結果を送信する
+  config.report_with_single_file = true
+  config.single_report_path = 'coverage/lcov.info'
+end
+
 SimpleCov.start do
   add_filter "/spec/"
 
   formatter SimpleCov::Formatter::MultiFormatter.new([
     SimpleCov::Formatter::HTMLFormatter,
-    # Coveralls::SimpleCov::Formatter
+    SimpleCov::Formatter::LcovFormatter
   ])
 end
 
