@@ -239,7 +239,7 @@ RSpec.describe GitTrend::CLI do
 
     context "with no option" do
       it "display languages" do
-        expect { cli.languages }.to output(match("C++").and match("HTML").and match("Ruby")).to_stdout
+        expect { cli.languages }.to output(include("C++", "HTML", "Ruby")).to_stdout
       end
     end
   end
