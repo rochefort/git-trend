@@ -27,6 +27,7 @@ module GitTrend::Formatters
     end
 
     private
+
       def render_zero
         puts "It looks like we don’t have any trending repositories."
         puts

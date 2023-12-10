@@ -13,6 +13,7 @@ module GitTrend
     end
 
     private
+
       def formatter_class(key)
         case key
         when "j", "json" then Formatters::JsonFormatter

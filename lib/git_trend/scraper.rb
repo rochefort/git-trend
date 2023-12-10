@@ -28,6 +28,7 @@ module GitTrend
     end
 
     private
+
       def generate_url(language, since)
         url = BASE_URL.dup
         url << "/#{language}" if language
