@@ -74,7 +74,7 @@ Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
 RSpec/NestedGroups:
-  MaxNesting: 5
+  Max: 5
 
 RSpec/ContextWording:
   Enabled: false
