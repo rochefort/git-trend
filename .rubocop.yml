@@ -1,5 +1,76 @@
-inherit_from:
-  - https://raw.githubusercontent.com/rails/rails/master/.rubocop.yml
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-performance
+  # - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.7
+  Exclude:
+    - '**/tmp/**/*'
+    - '**/vendor/**/*'
+
+# ドキュメントの無い public class を許可する
+Style/Documentation:
+  Enabled: false
+
+# special_inside_parentheses (default) と比べて
+# * 横に長くなりづらい
+# * メソッド名の長さが変わったときに diff が少ない
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+# private/protected は一段深くインデントする
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Layout/LineLength:
+  Max: 160
+
+Layout/LineLength:
+  Exclude:
+    - "spec/**/*.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "Rakefile"
+    - "**/*.rake"
+    - "spec/**/*.rb"
+    - "Gemfile"
+    - "*.gemspec"
+
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - "spec/**/*.rb"
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+# namespace 付きのクラスはかなり頻繁に作るので簡単に書きたい。
+Style/ClassAndModuleChildren:
+  Enabled: false
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+# 無指定だと StandardError を rescue するのは常識の範疇なので。
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+
+# * 式展開したい場合に書き換えるのが面倒
+# * 文章ではダブルクォートよりもシングルクォートの方が頻出する
+# ことから EnforcedStyle: double_quotes 推奨
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# 複数行の場合はケツカンマを入れる(Arrayリテラル)
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+# 複数行の場合はケツカンマを入れる(Hashリテラル)
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
