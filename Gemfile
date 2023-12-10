@@ -6,6 +6,7 @@ gemspec
 gem "rake"
 gem "rubocop"
 gem "rubocop-performance"
+gem "rubocop-rake"
 gem "rubocop-rspec"
 
 gem "irb"
