@@ -25,11 +25,9 @@ Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
 
 Layout/LineLength:
-  Max: 160
-
-Layout/LineLength:
   Exclude:
     - "spec/**/*.rb"
+  Max: 160
 
 Metrics/BlockLength:
   Exclude:
