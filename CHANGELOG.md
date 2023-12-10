@@ -125,7 +125,7 @@
 - Add number option #3 [7cff5b4]
 
 ## v0.1.3
-- The `descript` option of `list` command was changed into the default. [3602272]
+- The `description` option of `list` command was changed into the default. [3602272]
 
 ## v0.1.2
 - Fix travis ci error #24 [6752e1d]
