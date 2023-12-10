@@ -74,3 +74,15 @@ Style/TrailingCommaInArrayLiteral:
 # 複数行の場合はケツカンマを入れる(Hashリテラル)
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
+
+RSpec/NestedGroups:
+  MaxNesting: 5
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
