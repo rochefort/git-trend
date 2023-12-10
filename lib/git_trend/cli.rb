@@ -1,6 +1,6 @@
 require "thor"
 
-# rubocop:disable Layout/LineLength, Metrics/AbcSize
+# rubocop:disable Metrics/AbcSize
 module GitTrend
   class CLI < Thor
     map "-v" => :version, "--version" => :version
@@ -50,4 +50,4 @@ module GitTrend
     end
   end
 end
-# rubocop:enable Layout/LineLength, Metrics/AbcSize
+# rubocop:enable Metrics/AbcSize
