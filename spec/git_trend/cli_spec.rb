@@ -29,7 +29,7 @@ RSpec.describe GitTrend::CLI do
         let(:number) { 3 }
 
         it "display top 3 daily ranking" do
-          res = <<-'OUTPUT'.unindent
+          res = <<-OUTPUT.unindent
             |No. Name                                     Lang               Star
             |--- ---------------------------------------- ---------------- ------
             |  1 linexjlin/GPTs                                               445
@@ -59,7 +59,7 @@ RSpec.describe GitTrend::CLI do
         let(:language) { "ruby" }
 
         it "display daily ranking by language" do
-          res = <<-'OUTPUT'.unindent
+          res = <<-OUTPUT.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
             |  1 greatghoul/remote-working                Ruby           34
@@ -99,7 +99,7 @@ RSpec.describe GitTrend::CLI do
         let(:language) { "alloy" }
 
         it "display the 0cases message" do
-          res = <<-'OUTPUT'.unindent
+          res = <<-OUTPUT.unindent
             |It looks like we don’t have any trending repositories.
 
           OUTPUT
@@ -208,7 +208,7 @@ RSpec.describe GitTrend::CLI do
         let(:since) { "weekly" }
 
         it "display weekly ranking by language" do
-          res = <<-'OUTPUT'.unindent
+          res = <<-OUTPUT.unindent
             |No. Name                                     Lang         Star
             |--- ---------------------------------------- ---------- ------
             |  1 mastodon/mastodon                        Ruby          115
@@ -272,7 +272,7 @@ RSpec.describe GitTrend::CLI do
     end
 
     def dummy_result_without_description
-      <<-'OUTPUT'.unindent
+      <<-OUTPUT.unindent
         |No. Name                                       Lang               Star
         |--- ------------------------------------------ ---------------- ------
         |  1 linexjlin/GPTs                                                 445
@@ -305,7 +305,7 @@ RSpec.describe GitTrend::CLI do
     end
 
     def dummy_result_no_options
-      <<-'OUTPUT'.unindent
+      <<-OUTPUT.unindent
         |No. Name                                       Lang               Star Description
         |--- ------------------------------------------ ---------------- ------ ---------------------------------------------------------------------
         |  1 linexjlin/GPTs                                                 445 leaked prompts of GPTs
@@ -338,7 +338,7 @@ RSpec.describe GitTrend::CLI do
     end
 
     def dummy_weekly_result
-      <<-'OUTPUT'.unindent
+      <<-OUTPUT.unindent
         |No. Name                                       Lang               Star
         |--- ------------------------------------------ ---------------- ------
         |  1 LC044/WeChatMsg                            Python            10719
@@ -371,7 +371,7 @@ RSpec.describe GitTrend::CLI do
     end
 
     def dummy_monthly_result
-      <<-'OUTPUT'.unindent
+      <<-OUTPUT.unindent
         |No. Name                                     Lang               Star
         |--- ---------------------------------------- ---------------- ------
         |  1 SawyerHood/draw-a-ui                     TypeScript        11761

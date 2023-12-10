@@ -22,7 +22,6 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0")
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
   spec.post_install_message = install_message
@@ -46,4 +45,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock",   "~> 3.18.1"
 
   spec.add_development_dependency "coveralls", "~> 0.8.23"
+  spec.metadata["rubygems_mfa_required"] = "true"
 end
