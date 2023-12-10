@@ -254,7 +254,8 @@ RSpec.describe GitTrend::CLI do
         .to_return(
           status: 200,
           headers: { content_type: "text/html" },
-          body: load_http_stub(stub_file))
+          body: load_http_stub(stub_file)
+        )
     end
 
     def dummy_result_without_description
