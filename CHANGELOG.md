@@ -1,3 +1,7 @@
+## v1.3.0 (Mon Mar 13 2023)
+
+- Fix changing HTML structure [8de4920]
+
 ## v1.2.9 (Mon Mar 13 2023)
 
 - Upgrade gem [3f79648]
