@@ -1,5 +1,5 @@
 # rubocop:disable Style/TrailingWhitespace
-include GitTrend
+include GitTrend # rubocop:disable Style/MixinUsage
 RSpec.describe GitTrend::CLI do
   shared_examples "since daily ranking" do |since|
     it "display daily ranking" do
