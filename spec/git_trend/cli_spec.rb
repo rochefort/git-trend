@@ -245,6 +245,7 @@ RSpec.describe GitTrend::CLI do
   end
 
   private
+
     def stub_request_get(stub_url_path, stub_file_name = nil)
       url = Scraper::BASE_HOST.dup
       url << "/#{stub_url_path}" if stub_url_path
