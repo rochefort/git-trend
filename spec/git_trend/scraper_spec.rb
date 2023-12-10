@@ -1,6 +1,7 @@
 include GitTrend # rubocop:disable Style/MixinUsage
 RSpec.describe GitTrend::Scraper do
   let(:scraper) { Scraper.new }
+
   describe "settings" do
     subject { scraper.instance_variable_get(:@agent) }
 
