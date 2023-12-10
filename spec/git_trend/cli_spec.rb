@@ -24,7 +24,9 @@ RSpec.describe GitTrend::CLI do
     describe "with -n option" do
       context "with 3" do
         before { stub_request_get("trending") }
+
         let(:number) { 3 }
+
         it "display top 3 daily ranking" do
           res = <<-'OUTPUT'.unindent
             |No. Name                                     Lang               Star
@@ -40,7 +42,9 @@ RSpec.describe GitTrend::CLI do
 
       context "with over 25" do
         before { stub_request_get("trending") }
+
         let(:number) { 26 }
+
         it "display daily ranking" do
           expect { cli.invoke(:list, [], number: number, description: false) }.to output(dummy_result_without_description).to_stdout
         end
@@ -50,6 +54,7 @@ RSpec.describe GitTrend::CLI do
     describe "with -l option" do
       context "with ruby" do
         before { stub_request_get("trending/#{language}") }
+
         let(:language) { "ruby" }
 
         it "display daily ranking by language" do
@@ -89,6 +94,7 @@ RSpec.describe GitTrend::CLI do
 
       context "with alloy : when trending is nothing" do
         before { stub_request_get("trending/#{language}") }
+
         let(:language) { "alloy" }
 
         it "display the 0cases message" do
@@ -104,11 +110,13 @@ RSpec.describe GitTrend::CLI do
     describe "with -s option" do
       context "with no option" do
         before { stub_request_get("trending?since=") }
+
         include_examples "since daily ranking", ""
       end
 
       describe "since daily" do
         before { stub_request_get("trending?since=daily") }
+
         context "with d" do
           include_examples "since daily ranking", "d"
         end
@@ -124,6 +132,7 @@ RSpec.describe GitTrend::CLI do
 
       describe "since weekly" do
         before { stub_request_get("trending?since=weekly") }
+
         context "with w" do
           include_examples "since weekly ranking", "w"
         end
@@ -139,6 +148,7 @@ RSpec.describe GitTrend::CLI do
 
       describe "since monthly" do
         before { stub_request_get("trending?since=monthly") }
+
         context "with m" do
           include_examples "since monthly ranking", "m"
         end
@@ -192,6 +202,7 @@ RSpec.describe GitTrend::CLI do
     describe "with -l and -s option" do
       context "with ruby and weekly" do
         before { stub_request_get("trending/#{language}?since=#{since}") }
+
         let(:language) { "ruby" }
         let(:since) { "weekly" }
 
@@ -234,6 +245,7 @@ RSpec.describe GitTrend::CLI do
 
   describe "#languages" do
     before { stub_request_get("trending") }
+
     let(:cli) { CLI.new }
 
     context "with no option" do
