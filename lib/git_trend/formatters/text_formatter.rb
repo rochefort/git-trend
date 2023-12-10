@@ -2,7 +2,7 @@ require "mb_string"
 
 module GitTrend::Formatters
   class TextFormatter
-    HEADER_COLUMNS = %w(no. name lang star description).freeze
+    HEADER_COLUMNS = %w[no. name lang star description].freeze
     DEFAULT_COLUMNS_SIZES = [3, 40, 10, 6, 20].freeze
 
     def print(projects, options)
