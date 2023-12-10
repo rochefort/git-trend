@@ -1,5 +1,6 @@
-include GitTrend # rubocop:disable Style/MixinUsage
 RSpec.describe GitTrend::CLI do
+  include GitTrend
+
   shared_examples "since daily ranking" do |since|
     it "display daily ranking" do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout

@@ -1,5 +1,5 @@
-include GitTrend
 RSpec.describe GitTrend do
+  include GitTrend
   let(:scraper_mock) { instance_double(Scraper) }
 
   before do
