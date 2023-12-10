@@ -53,7 +53,7 @@ module GitTrend
         page.search(".Box-row").map do |content|
           icon_area = content.search(".f6.color-fg-muted.mt-2")
           Project.new(
-            name: content.search("h1 a").attr("href").to_s.sub(/\A\//, ""),
+            name: content.search("h2 a").attr("href").to_s.sub(/\A\//, ""),
             description: content.search(".col-9.color-fg-muted.my-1.pr-4").text.strip,
             lang: content.search('span[itemprop="programmingLanguage"]').text.strip,
             all_star_count: comma_to_i(icon_area.search("a:has(svg.octicon-star)").text.strip),

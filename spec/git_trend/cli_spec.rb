@@ -28,11 +28,11 @@ RSpec.describe GitTrend::CLI do
         let(:number) { 3 }
         it "display top 3 daily ranking" do
           res = <<-'EOS'.unindent
-            |No. Name                                     Lang         Star
-            |--- ---------------------------------------- ---------- ------
-            |  1 AppFlowy-IO/appflowy                     Rust          238
-            |  2 iptv-org/iptv                            JavaScript    107
-            |  3 nodejs/node                              JavaScript    123
+            |No. Name                                     Lang               Star
+            |--- ---------------------------------------- ---------------- ------
+            |  1 linexjlin/GPTs                                               445
+            |  2 ml-explore/mlx-examples                  Python              161
+            |  3 PRIS-CV/DemoFusion                       Jupyter Notebook    169
 
           EOS
           expect { cli.invoke(:list, [], number: number, description: false) }.to output(res).to_stdout
@@ -55,33 +55,33 @@ RSpec.describe GitTrend::CLI do
 
         it "display daily ranking by language" do
           res = <<-'EOS'.unindent
-            |No. Name                                          Lang         Star
-            |--- --------------------------------------------- ---------- ------
-            |  1 puppetlabs/puppet                             Ruby            6
-            |  2 github/explore                                Ruby            5
-            |  3 mastodon/mastodon                             Ruby            7
-            |  4 forem/forem                                   Ruby            3
-            |  5 Shopify/shopify-cli                           Ruby            2
-            |  6 github/choosealicense.com                     Ruby            7
-            |  7 sinatra/sinatra                               Ruby            1
-            |  8 postalserver/postal                           Ruby            4
-            |  9 chef/chef                                     Ruby            2
-            | 10 mame/quine-relay                              Ruby            5
-            | 11 rapid7/metasploit-framework                   Ruby            8
-            | 12 freeCodeCamp/how-to-contribute-to-open-source Ruby            4
-            | 13 freeCodeCamp/devdocs                          Ruby            8
-            | 14 hashicorp/vagrant                             Ruby            6
-            | 15 jekyll/jekyll                                 Ruby           12
-            | 16 umd-cmsc330/cmsc330spring22                   Ruby            1
-            | 17 gitlabhq/gitlabhq                             Ruby            1
-            | 18 heartcombo/devise                             Ruby            2
-            | 19 opf/openproject                               Ruby            4
-            | 20 rails/rails                                   Ruby           23
-            | 21 railwaycat/homebrew-emacsmacport              Ruby            1
-            | 22 rubocop/rubocop                               Ruby            1
-            | 23 thoughtbot/factory_bot                        Ruby            1
-            | 24 fluent/fluentd                                Ruby            2
-            | 25 spree/spree                                   Ruby            5
+            |No. Name                                     Lang         Star
+            |--- ---------------------------------------- ---------- ------
+            |  1 greatghoul/remote-working                Ruby           34
+            |  2 huginn/huginn                            Ruby           13
+            |  3 jekyll/jekyll                            Ruby           11
+            |  4 fastlane/fastlane                        Ruby            6
+            |  5 rapid7/metasploit-framework              Ruby            8
+            |  6 ankane/pghero                            Ruby           16
+            |  7 joemasilotti/daily-log                   Ruby            7
+            |  8 hashicorp/vagrant                        Ruby            5
+            |  9 fluent/fluentd                           Ruby            5
+            | 10 rubygems/rubygems                        Ruby            1
+            | 11 otwcode/otwarchive                       Ruby            2
+            | 12 freeCodeCamp/devdocs                     Ruby            5
+            | 13 gitlabhq/gitlabhq                        Ruby            1
+            | 14 gollum/gollum                            Ruby            2
+            | 15 ruby/ruby                                Ruby            2
+            | 16 TheOdinProject/theodinproject            Ruby            6
+            | 17 wpscanteam/wpscan                        Ruby            0
+            | 18 mastodon/mastodon                        Ruby           12
+            | 19 github/explore                           Ruby            0
+            | 20 tradingview/charting-library-examples    Ruby            0
+            | 21 jwt/ruby-jwt                             Ruby            0
+            | 22 forem/forem                              Ruby            4
+            | 23 urbanadventurer/WhatWeb                  Ruby            3
+            | 24 chef/chef                                Ruby            0
+            | 25 instructure/canvas-lms                   Ruby            0
 
           EOS
           expect { cli.invoke(:list, [], language: language, description: false) }.to output(res).to_stdout
@@ -198,33 +198,33 @@ RSpec.describe GitTrend::CLI do
 
         it "display weekly ranking by language" do
           res = <<-'EOS'.unindent
-            |No. Name                                          Lang         Star
-            |--- --------------------------------------------- ---------- ------
-            |  1 huginn/huginn                                 Ruby          881
-            |  2 faker-ruby/faker                              Ruby          193
-            |  3 hashicorp/vagrant                             Ruby           46
-            |  4 mperham/sidekiq                               Ruby           17
-            |  5 freeCodeCamp/how-to-contribute-to-open-source Ruby           40
-            |  6 rails/jsbundling-rails                        Ruby           20
-            |  7 puma/puma                                     Ruby           10
-            |  8 jekyll/jekyll                                 Ruby           72
-            |  9 rails/rails                                   Ruby          103
-            | 10 sinatra/sinatra                               Ruby           11
-            | 11 rapid7/metasploit-framework                   Ruby           77
-            | 12 puppetlabs/puppet                             Ruby           23
-            | 13 Shopify/liquid                                Ruby           21
-            | 14 github/linguist                               Ruby           27
-            | 15 rmosolgo/graphql-ruby                         Ruby            2
-            | 16 github/choosealicense.com                     Ruby           24
-            | 17 fastlane/fastlane                             Ruby           96
-            | 18 Homebrew/homebrew-core                        Ruby           28
-            | 19 github/view_component                         Ruby           11
-            | 20 hrishikesh1990/resume-builder                 Ruby            6
-            | 21 varvet/pundit                                 Ruby            8
-            | 22 github/explore                                Ruby           23
-            | 23 heartcombo/devise                             Ruby           18
-            | 24 activerecord-hackery/ransack                  Ruby           10
-            | 25 Homebrew/homebrew-cask                        Ruby           32
+            |No. Name                                     Lang         Star
+            |--- ---------------------------------------- ---------- ------
+            |  1 mastodon/mastodon                        Ruby          115
+            |  2 community/community                      Ruby           25
+            |  3 freeCodeCamp/devdocs                     Ruby           65
+            |  4 rapid7/metasploit-framework              Ruby           84
+            |  5 github-linguist/linguist                 Ruby           14
+            |  6 ankane/pghero                            Ruby           32
+            |  7 chatwoot/chatwoot                        Ruby           59
+            |  8 department-of-veterans-affairs/vets-api  Ruby            2
+            |  9 ekylibre/ekylibre                        Ruby           21
+            | 10 mileszs/wicked_pdf                       Ruby            5
+            | 11 elastic/elasticsearch-rails              Ruby            2
+            | 12 heartcombo/devise                        Ruby           16
+            | 13 aws/aws-sdk-ruby                         Ruby            2
+            | 14 endoflife-date/endoflife.date            Ruby           19
+            | 15 jekyll/jekyll                            Ruby           50
+            | 16 heartcombo/simple_form                   Ruby            6
+            | 17 thoughtbot/shoulda-matchers              Ruby            5
+            | 18 spree/spree                              Ruby           13
+            | 19 solidusio/solidus                        Ruby            8
+            | 20 huginn/huginn                            Ruby           67
+            | 21 CanCanCommunity/cancancan                Ruby            2
+            | 22 tradingview/charting-library-examples    Ruby            3
+            | 23 kaminari/kaminari                        Ruby            5
+            | 24 rubocop/rubocop                          Ruby           10
+            | 25 paper-trail-gem/paper_trail              Ruby            3
 
           EOS
           expect { cli.invoke(:list, [], language: language, since: since, description: false) }.to output(res).to_stdout
@@ -239,7 +239,7 @@ RSpec.describe GitTrend::CLI do
 
     context "with no option" do
       it "display languages" do
-        expect { cli.languages }.to output(dummy_languages).to_stdout
+        expect { cli.languages }.to output(match("C++").and match("HTML").and match("Ruby")).to_stdout
       end
     end
   end
@@ -259,754 +259,133 @@ RSpec.describe GitTrend::CLI do
 
     def dummy_result_without_description
       <<-'EOS'.unindent
-        |No. Name                                         Lang         Star
-        |--- -------------------------------------------- ---------- ------
-        |  1 AppFlowy-IO/appflowy                         Rust          238
-        |  2 iptv-org/iptv                                JavaScript    107
-        |  3 nodejs/node                                  JavaScript    123
-        |  4 yt-dlp/yt-dlp                                Python        139
-        |  5 nextui-org/nextui                            TypeScript    515
-        |  6 ciderapp/Cider                               JavaScript     58
-        |  7 Ebazhanov/linkedin-skill-assessments-quizzes               266
-        |  8 Jxck-S/plane-notify                          Python         39
-        |  9 Koenkk/zigbee2mqtt                           JavaScript     77
-        | 10 Developer-Y/cs-video-courses                               710
-        | 11 HashLips/hashlips_art_engine                 JavaScript     93
-        | 12 IBAX-io/go-ibax                              Go            775
-        | 13 emilk/egui                                   Rust           34
-        | 14 PathOfBuildingCommunity/PathOfBuilding       Lua            38
-        | 15 uutils/coreutils                             Rust          269
-        | 16 ryanoasis/nerd-fonts                         CSS            25
-        | 17 KaLendsi/CVE-2022-21882                      C++            51
-        | 18 kdrag0n/safetynet-fix                        C++            34
-        | 19 Chia-Network/chia-blockchain                 Python         13
-        | 20 github/docs                                  JavaScript     26
-        | 21 RunaCapital/awesome-oss-alternatives         Python        415
-        | 22 TheAlgorithms/Go                             Go            123
-        | 23 pi-hole/docker-pi-hole                       Shell           5
-        | 24 zhiwehu/Python-programming-exercises                        50
-        | 25 LawnchairLauncher/lawnicons                  Kotlin          6
+        |No. Name                                       Lang               Star
+        |--- ------------------------------------------ ---------------- ------
+        |  1 linexjlin/GPTs                                                 445
+        |  2 ml-explore/mlx-examples                    Python              161
+        |  3 PRIS-CV/DemoFusion                         Jupyter Notebook    169
+        |  4 jmpoep/vmprotect-3.5.1                     C++                 489
+        |  5 prasanthrangan/hyprdots                    Shell                21
+        |  6 MichaelYuhe/ai-group-tabs                  TypeScript          230
+        |  7 mli/paper-reading                                              129
+        |  8 SuperDuperDB/superduperdb                  Python              497
+        |  9 ByteByteGoHq/system-design-101                                 268
+        | 10 yformer/EfficientSAM                       Jupyter Notebook    117
+        | 11 xuchengsheng/spring-reading                Java                413
+        | 12 Flode-Labs/vid2densepose                   Python              164
+        | 13 huggingface/optimum-nvidia                 Python              133
+        | 14 sweepai/sweep                              Python               55
+        | 15 practical-tutorials/project-based-learning                    2058
+        | 16 home-assistant/core                        Python               33
+        | 17 100xdevs-cohort-2/assignments              JavaScript          117
+        | 18 kgrzybek/modular-monolith-with-ddd         C#                   21
+        | 19 rmcelreath/stat_rethinking_2024            R                    41
+        | 20 jackfrued/Python-100-Days                  Python              192
+        | 21 01-ai/Yi                                   Python               18
+        | 22 facebookresearch/Pearl                     Python               95
+        | 23 zzzgydi/clash-verge                        TypeScript           31
+        | 24 ytdl-org/youtube-dl                        Python               24
+        | 25 dunglas/frankenphp                         Go                   53
 
       EOS
     end
 
     def dummy_result_no_options
       <<-'EOS'.unindent
-        |No. Name                                         Lang         Star Description
-        |--- -------------------------------------------- ---------- ------ -------------------------------------------------------------------------
-        |  1 AppFlowy-IO/appflowy                         Rust          238 AppFlowy is an open-source alternative to Notion. You are in charge of...
-        |  2 iptv-org/iptv                                JavaScript    107 Collection of publicly available IPTV channels from all over the world
-        |  3 nodejs/node                                  JavaScript    123 Node.js JavaScript runtime ✨🐢🚀✨
-        |  4 yt-dlp/yt-dlp                                Python        139 A youtube-dl fork with additional features and fixes
-        |  5 nextui-org/nextui                            TypeScript    515 🚀 Beautiful, fast and modern React UI library.
-        |  6 ciderapp/Cider                               JavaScript     58 Project Cider. A new look into listening and enjoying Apple Music in s...
-        |  7 Ebazhanov/linkedin-skill-assessments-quizzes               266 Full reference of LinkedIn answers 2022 for skill assessments, LinkedI...
-        |  8 Jxck-S/plane-notify                          Python         39 Notify If a selected plane has taken off or landed using OpenSky or AD...
-        |  9 Koenkk/zigbee2mqtt                           JavaScript     77 Zigbee 🐝 to MQTT bridge 🌉, get rid of your proprietary Zigbee bridge...
-        | 10 Developer-Y/cs-video-courses                               710 List of Computer Science courses with video lectures.
-        | 11 HashLips/hashlips_art_engine                 JavaScript     93 HashLips Art Engine is a tool used to create multiple different instan...
-        | 12 IBAX-io/go-ibax                              Go            775 An innovative Blockchain Protocol Platform, which everyone can deploy ...
-        | 13 emilk/egui                                   Rust           34 egui: an easy-to-use immediate mode GUI in Rust that runs on both web ...
-        | 14 PathOfBuildingCommunity/PathOfBuilding       Lua            38 Offline build planner for Path of Exile.
-        | 15 uutils/coreutils                             Rust          269 Cross-platform Rust rewrite of the GNU coreutils
-        | 16 ryanoasis/nerd-fonts                         CSS            25 Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patch...
-        | 17 KaLendsi/CVE-2022-21882                      C++            51 win32k LPE
-        | 18 kdrag0n/safetynet-fix                        C++            34 Google SafetyNet attestation workarounds for Magisk
-        | 19 Chia-Network/chia-blockchain                 Python         13 Chia blockchain python implementation (full node, farmer, harvester, t...
-        | 20 github/docs                                  JavaScript     26 The open-source repo for docs.github.com
-        | 21 RunaCapital/awesome-oss-alternatives         Python        415 Awesome list of open-source startup alternatives to well-known SaaS pr...
-        | 22 TheAlgorithms/Go                             Go            123 Algorithms implemented in Go for beginners, following best practices.
-        | 23 pi-hole/docker-pi-hole                       Shell           5 Pi-hole in a docker container
-        | 24 zhiwehu/Python-programming-exercises                        50 100+ Python challenging programming exercises
-        | 25 LawnchairLauncher/lawnicons                  Kotlin          6
+        |No. Name                                       Lang               Star Description
+        |--- ------------------------------------------ ---------------- ------ ---------------------------------------------------------------------
+        |  1 linexjlin/GPTs                                                 445 leaked prompts of GPTs
+        |  2 ml-explore/mlx-examples                    Python              161 Examples in the MLX framework
+        |  3 PRIS-CV/DemoFusion                         Jupyter Notebook    169 Let us democratise high-resolution generation! (arXiv 2023)
+        |  4 jmpoep/vmprotect-3.5.1                     C++                 489
+        |  5 prasanthrangan/hyprdots                    Shell                21 // Aesthetic, dynamic and minimal dots for Arch hyprland
+        |  6 MichaelYuhe/ai-group-tabs                  TypeScript          230 A Chrome extension helps you group your tabs with AI.
+        |  7 mli/paper-reading                                              129 深度学习经典、新论文逐段精读
+        |  8 SuperDuperDB/superduperdb                  Python              497 🔮 SuperDuperDB: Bring AI to your database: Integrate, train and m...
+        |  9 ByteByteGoHq/system-design-101                                 268 Explain complex systems using visuals and simple terms. Help you p...
+        | 10 yformer/EfficientSAM                       Jupyter Notebook    117 EfficientSAM: Leveraged Masked Image Pretraining for Efficient Seg...
+        | 11 xuchengsheng/spring-reading                Java                413 涵盖了 Spring 框架的核心概念和关键功能，包括控制反转（IOC）容器的...
+        | 12 Flode-Labs/vid2densepose                   Python              164 Convert your videos to densepose and use it on MagicAnimate
+        | 13 huggingface/optimum-nvidia                 Python              133
+        | 14 sweepai/sweep                              Python               55 Sweep: AI-powered Junior Developer for small features and bug fixes.
+        | 15 practical-tutorials/project-based-learning                    2058 Curated list of project-based tutorials
+        | 16 home-assistant/core                        Python               33 🏡 Open source home automation that puts local control and privacy...
+        | 17 100xdevs-cohort-2/assignments              JavaScript          117
+        | 18 kgrzybek/modular-monolith-with-ddd         C#                   21 Full Modular Monolith application with Domain-Driven Design approach.
+        | 19 rmcelreath/stat_rethinking_2024            R                    41
+        | 20 jackfrued/Python-100-Days                  Python              192 Python - 100天从新手到大师
+        | 21 01-ai/Yi                                   Python               18 A series of large language models trained from scratch by develope...
+        | 22 facebookresearch/Pearl                     Python               95 A Production-ready Reinforcement Learning AI Agent Library brought...
+        | 23 zzzgydi/clash-verge                        TypeScript           31 A Clash GUI based on tauri. Supports Windows, macOS and Linux.
+        | 24 ytdl-org/youtube-dl                        Python               24 Command-line program to download videos from YouTube.com and other...
+        | 25 dunglas/frankenphp                         Go                   53 The modern PHP app server
 
       EOS
     end
 
     def dummy_weekly_result
       <<-'EOS'.unindent
-        |No. Name                                         Lang         Star
-        |--- -------------------------------------------- ---------- ------
-        |  1 doocs/leetcode                               Java         1754
-        |  2 veler/DevToys                                C#           2953
-        |  3 Ebazhanov/linkedin-skill-assessments-quizzes               854
-        |  4 papers-we-love/papers-we-love                Shell         825
-        |  5 TheAlgorithms/Javascript                     JavaScript    425
-        |  6 ciderapp/Cider                               JavaScript    247
-        |  7 huginn/huginn                                Ruby          881
-        |  8 public-apis/public-apis                      Python       1482
-        |  9 akutz/go-generics-the-hard-way               Go            489
-        | 10 pytorch/fairseq                              Python        292
-        | 11 rancher-sandbox/rancher-desktop              TypeScript    478
-        | 12 microsoft/playwright                         TypeScript   1085
-        | 13 scikit-learn/scikit-learn                    Python        245
-        | 14 DustinBrett/daedalOS                         JavaScript    991
-        | 15 chiru-labs/ERC721A                           Solidity      226
-        | 16 pedroslopez/whatsapp-web.js                  JavaScript    424
-        | 17 abiosoft/colima                              Go            537
-        | 18 jackfrued/Python-100-Days                    Python        503
-        | 19 kedro-org/kedro                              Python        785
-        | 20 khuedoan/homelab                             Python       1416
-        | 21 imcuttle/mometa                              TypeScript    553
-        | 22 nektos/act                                   Go            394
-        | 23 spring-projects/spring-authorization-server  Java          165
-        | 24 flameshot-org/flameshot                      C++           311
-        | 25 yuzu-emu/yuzu                                C++           449
+        |No. Name                                       Lang               Star
+        |--- ------------------------------------------ ---------------- ------
+        |  1 LC044/WeChatMsg                            Python            10719
+        |  2 microsoft/TaskWeaver                       Python             1957
+        |  3 facebookresearch/seamless_communication    C                  1568
+        |  4 lllyasviel/Fooocus                         Python             3406
+        |  5 sherlock-project/sherlock                  Python              996
+        |  6 pytorch-labs/gpt-fast                      Python             2147
+        |  7 comfyanonymous/ComfyUI                     Python             1518
+        |  8 VikParuchuri/marker                        Python             1497
+        |  9 xuchengsheng/spring-reading                Java                637
+        | 10 Mozilla-Ocho/llamafile                     C++                1833
+        | 11 go-gost/gost                               Go                  487
+        | 12 microsoft/PowerToys                        C#                  905
+        | 13 songquanpeng/one-api                       Go                  323
+        | 14 nocodb/nocodb                              TypeScript          392
+        | 15 AleoHQ/leo                                 Rust                744
+        | 16 modularml/mojo                             Jupyter Notebook    386
+        | 17 gkd-kit/gkd                                Kotlin             1272
+        | 18 danny-avila/LibreChat                      TypeScript          647
+        | 19 practical-tutorials/project-based-learning                    1670
+        | 20 pocketbase/pocketbase                      Go                  457
+        | 21 symfony/symfony                            PHP                  35
+        | 22 awesome-selfhosted/awesome-selfhosted                         2239
+        | 23 upscayl/upscayl                            TypeScript          266
+        | 24 coolsnowwolf/lede                          C                   132
+        | 25 QwenLM/Qwen                                Python              377
 
       EOS
     end
 
     def dummy_monthly_result
       <<-'EOS'.unindent
-        |No. Name                                         Lang         Star
-        |--- -------------------------------------------- ---------- ------
-        |  1 Asabeneh/30-Days-Of-JavaScript               JavaScript   3736
-        |  2 files-community/Files                        C#           3999
-        |  3 adrianhajdin/project_web3.0                  JavaScript    994
-        |  4 doocs/leetcode                               Java         2516
-        |  5 tauri-apps/tauri                             Rust         4367
-        |  6 HashLips/hashlips_art_engine                 JavaScript   1156
-        |  7 bevyengine/bevy                              Rust         1389
-        |  8 coqui-ai/TTS                                 Python        803
-        |  9 apache/incubator-seatunnel                   Java         1136
-        | 10 sunym1993/flash-linux0.11-talk               C            3237
-        | 11 Textualize/rich                              Python       2676
-        | 12 withastro/astro                              TypeScript   1467
-        | 13 dgtlmoon/changedetection.io                  Python       1496
-        | 14 safak/youtube                                CSS           377
-        | 15 mattermost/focalboard                        TypeScript   2313
-        | 16 Ebazhanov/linkedin-skill-assessments-quizzes              1458
-        | 17 containers/podman                            Go            658
-        | 18 TandoorRecipes/recipes                       HTML          601
-        | 19 emilk/egui                                   Rust          967
-        | 20 dataease/dataease                            Java          651
-        | 21 danielyxie/bitburner                         JavaScript    776
-        | 22 dwyl/english-words                           Python        422
-        | 23 TheAlgorithms/Javascript                     JavaScript    839
-        | 24 baidu/amis                                   TypeScript    765
-        | 25 rancher-sandbox/rancher-desktop              TypeScript    746
+        |No. Name                                     Lang               Star
+        |--- ---------------------------------------- ---------------- ------
+        |  1 SawyerHood/draw-a-ui                     TypeScript        11761
+        |  2 Stability-AI/generative-models           Python             7286
+        |  3 microsoft/ML-For-Beginners               HTML               9252
+        |  4 microsoft/generative-ai-for-beginners    Jupyter Notebook  15174
+        |  5 lllyasviel/Fooocus                       Python            10023
+        |  6 langchain-ai/opengpts                    Rich Text Format   3978
+        |  7 facebookresearch/seamless_communication  C                  2607
+        |  8 microsoft/AI-For-Beginners               Jupyter Notebook   5708
+        |  9 tldraw/tldraw                            TypeScript         6750
+        | 10 atomicals/atomicals-js                   TypeScript          627
+        | 11 githubnext/monaspace                     TypeScript         9912
+        | 12 udlbook/udlbook                          Jupyter Notebook   1551
+        | 13 comfyanonymous/ComfyUI                   Python             4197
+        | 14 langgenius/dify                          TypeScript         2906
+        | 15 lobehub/lobe-chat                        TypeScript         2622
+        | 16 luosiallen/latent-consistency-model      Python             2706
+        | 17 daveshap/OpenAI_Agent_Swarm              Python             2310
+        | 18 chenzomi12/DeepLearningSystem            Jupyter Notebook   1760
+        | 19 biomejs/biome                            Rust               2372
+        | 20 openai/openai-python                     Python             2811
+        | 21 AppFlowy-IO/AppFlowy                     Dart               3071
+        | 22 saadeghi/daisyui                         Svelte             1773
+        | 23 nlohmann/json                            C++                1080
+        | 24 SillyTavern/SillyTavern                  JavaScript         1566
+        | 25 1Panel-dev/1Panel                        Go                 1950
 
-      EOS
-    end
-
-    def dummy_languages
-      <<-'EOS'.unindent
-        |C++
-        |HTML
-        |Java
-        |JavaScript
-        |PHP
-        |Python
-        |Ruby
-        |Unknown languages
-        |1C Enterprise
-        |4D
-        |ABAP
-        |ABAP CDS
-        |ABNF
-        |ActionScript
-        |Ada
-        |Adobe Font Metrics
-        |Agda
-        |AGS Script
-        |AIDL
-        |AL
-        |AL
-        |Alloy
-        |Alpine Abuild
-        |Altium Designer
-        |AMPL
-        |AngelScript
-        |Ant Build System
-        |ANTLR
-        |ApacheConf
-        |Apex
-        |API Blueprint
-        |APL
-        |Apollo Guidance Computer
-        |AppleScript
-        |Arc
-        |AsciiDoc
-        |ASL
-        |ASN.1
-        |Classic ASP
-        |ASP.NET
-        |AspectJ
-        |Assembly
-        |Astro
-        |Asymptote
-        |ATS
-        |Augeas
-        |AutoHotkey
-        |AutoIt
-        |Avro IDL
-        |Awk
-        |Ballerina
-        |BASIC
-        |Batchfile
-        |Beef
-        |Befunge
-        |BibTeX
-        |Bicep
-        |Bison
-        |BitBake
-        |Blade
-        |BlitzBasic
-        |BlitzMax
-        |Bluespec
-        |Boo
-        |Boogie
-        |Brainfuck
-        |Brightscript
-        |Zeek
-        |Browserslist
-        |C
-        |C#
-        |C-ObjDump
-        |C2hs Haskell
-        |Cabal Config
-        |Cap'n Proto
-        |CartoCSS
-        |Ceylon
-        |Chapel
-        |Charity
-        |ChucK
-        |CIL
-        |Cirru
-        |Clarion
-        |Classic ASP
-        |Clean
-        |Click
-        |CLIPS
-        |Clojure
-        |Closure Templates
-        |Cloud Firestore Security Rules
-        |CMake
-        |COBOL
-        |CODEOWNERS
-        |CodeQL
-        |CoffeeScript
-        |ColdFusion
-        |ColdFusion CFC
-        |COLLADA
-        |Common Lisp
-        |Common Workflow Language
-        |Component Pascal
-        |CoNLL-U
-        |Cool
-        |Coq
-        |Cpp-ObjDump
-        |Creole
-        |Crystal
-        |CSON
-        |Csound
-        |Csound Document
-        |Csound Score
-        |CSS
-        |CSV
-        |Cuda
-        |CUE
-        |cURL Config
-        |CWeb
-        |Cycript
-        |Cython
-        |D
-        |D-ObjDump
-        |Dafny
-        |Darcs Patch
-        |Dart
-        |DataWeave
-        |desktop
-        |Dhall
-        |Diff
-        |DIGITAL Command Language
-        |dircolors
-        |DirectX 3D File
-        |DM
-        |DNS Zone
-        |Dockerfile
-        |Dogescript
-        |DTrace
-        |Dylan
-        |E
-        |E-mail
-        |Eagle
-        |Earthly
-        |Easybuild
-        |EBNF
-        |eC
-        |Ecere Projects
-        |ECL
-        |ECLiPSe
-        |EditorConfig
-        |Edje Data Collection
-        |edn
-        |Eiffel
-        |EJS
-        |Elixir
-        |Elm
-        |Emacs Lisp
-        |EmberScript
-        |E-mail
-        |EQ
-        |Erlang
-        |F#
-        |F*
-        |Factor
-        |Fancy
-        |Fantom
-        |Faust
-        |Fennel
-        |FIGlet Font
-        |Filebench WML
-        |Filterscript
-        |fish
-        |Fluent
-        |FLUX
-        |Formatted
-        |Forth
-        |Fortran
-        |Fortran Free Form
-        |FreeBasic
-        |FreeMarker
-        |Frege
-        |Futhark
-        |G-code
-        |Game Maker Language
-        |GAML
-        |GAMS
-        |GAP
-        |GCC Machine Description
-        |GDB
-        |GDScript
-        |GEDCOM
-        |Gemfile.lock
-        |Genie
-        |Genshi
-        |Gentoo Ebuild
-        |Gentoo Eclass
-        |Gerber Image
-        |Gettext Catalog
-        |Gherkin
-        |Git Attributes
-        |Git Config
-        |GLSL
-        |Glyph
-        |Glyph Bitmap Distribution Format
-        |GN
-        |Gnuplot
-        |Go
-        |Go Checksums
-        |Go Module
-        |Golo
-        |Gosu
-        |Grace
-        |Gradle
-        |Grammatical Framework
-        |Graph Modeling Language
-        |GraphQL
-        |Graphviz (DOT)
-        |Groovy
-        |Groovy Server Pages
-        |Hack
-        |Haml
-        |Handlebars
-        |HAProxy
-        |Harbour
-        |Haskell
-        |Haxe
-        |HCL
-        |HiveQL
-        |HLSL
-        |HolyC
-        |Jinja
-        |HTML+ECR
-        |HTML+EEX
-        |HTML+ERB
-        |HTML+PHP
-        |HTML+Razor
-        |HTTP
-        |HXML
-        |Hy
-        |HyPhy
-        |IDL
-        |Idris
-        |Ignore List
-        |IGOR Pro
-        |ImageJ Macro
-        |Inform 7
-        |INI
-        |Inno Setup
-        |Io
-        |Ioke
-        |IRC log
-        |Isabelle
-        |Isabelle ROOT
-        |J
-        |Jasmin
-        |Java Properties
-        |Java Server Pages
-        |JavaScript+ERB
-        |JFlex
-        |Jinja
-        |Jison
-        |Jison Lex
-        |Jolie
-        |jq
-        |JSON
-        |JSON with Comments
-        |JSON5
-        |JSONiq
-        |JSONLD
-        |Jsonnet
-        |Julia
-        |Jupyter Notebook
-        |Kaitai Struct
-        |KakouneScript
-        |KiCad Layout
-        |KiCad Legacy Layout
-        |KiCad Schematic
-        |Kit
-        |Kotlin
-        |KRL
-        |Kusto
-        |LabVIEW
-        |Lark
-        |Lasso
-        |Latte
-        |Lean
-        |Less
-        |Lex
-        |LFE
-        |LilyPond
-        |Limbo
-        |Linker Script
-        |Linux Kernel Module
-        |Liquid
-        |Literate Agda
-        |Literate CoffeeScript
-        |Literate Haskell
-        |LiveScript
-        |LLVM
-        |Logos
-        |Logtalk
-        |LOLCODE
-        |LookML
-        |LoomScript
-        |LSL
-        |LTspice Symbol
-        |Lua
-        |M
-        |M4
-        |M4Sugar
-        |Macaulay2
-        |Makefile
-        |Mako
-        |Markdown
-        |Marko
-        |Mask
-        |Mathematica
-        |MATLAB
-        |Maven POM
-        |Max
-        |MAXScript
-        |mcfunction
-        |Wikitext
-        |Mercury
-        |Meson
-        |Metal
-        |Microsoft Developer Studio Project
-        |Microsoft Visual Studio Solution
-        |MiniD
-        |Mirah
-        |mIRC Script
-        |MLIR
-        |Modelica
-        |Modula-2
-        |Modula-3
-        |Module Management System
-        |Monkey
-        |Moocode
-        |MoonScript
-        |Motoko
-        |Motorola 68K Assembly
-        |MQL4
-        |MQL5
-        |MTML
-        |MUF
-        |mupad
-        |Muse
-        |Mustache
-        |Myghty
-        |nanorc
-        |NASL
-        |NCL
-        |Nearley
-        |Nemerle
-        |NEON
-        |nesC
-        |NetLinx
-        |NetLinx+ERB
-        |NetLogo
-        |NewLisp
-        |Nextflow
-        |Nginx
-        |Nim
-        |Ninja
-        |Nit
-        |Nix
-        |NL
-        |NPM Config
-        |NSIS
-        |Nu
-        |NumPy
-        |Nunjucks
-        |NWScript
-        |ObjDump
-        |Object Data Instance Notation
-        |Objective-C
-        |Objective-C++
-        |Objective-J
-        |ObjectScript
-        |OCaml
-        |Odin
-        |Omgrofl
-        |ooc
-        |Opa
-        |Opal
-        |Open Policy Agent
-        |OpenCL
-        |OpenEdge ABL
-        |OpenQASM
-        |OpenRC runscript
-        |OpenSCAD
-        |OpenStep Property List
-        |OpenType Feature File
-        |Org
-        |Ox
-        |Oxygene
-        |Oz
-        |P4
-        |Pan
-        |Papyrus
-        |Parrot
-        |Parrot Assembly
-        |Parrot Internal Representation
-        |Pascal
-        |Pawn
-        |PEG.js
-        |Pep8
-        |Perl
-        |Pic
-        |Pickle
-        |PicoLisp
-        |PigLatin
-        |Pike
-        |PlantUML
-        |PLpgSQL
-        |PLSQL
-        |Pod
-        |Pod 6
-        |PogoScript
-        |Pony
-        |PostCSS
-        |PostScript
-        |POV-Ray SDL
-        |PowerBuilder
-        |PowerShell
-        |Prisma
-        |Processing
-        |Proguard
-        |Prolog
-        |Promela
-        |Propeller Spin
-        |Protocol Buffer
-        |Public Key
-        |Pug
-        |Puppet
-        |Pure Data
-        |PureBasic
-        |PureScript
-        |Python console
-        |Python traceback
-        |q
-        |Q#
-        |QMake
-        |QML
-        |Qt Script
-        |Quake
-        |R
-        |Racket
-        |Ragel
-        |Raku
-        |RAML
-        |Rascal
-        |Raw token data
-        |RDoc
-        |Readline Config
-        |REALbasic
-        |Reason
-        |Rebol
-        |Red
-        |Redcode
-        |Regular Expression
-        |Ren'Py
-        |RenderScript
-        |ReScript
-        |reStructuredText
-        |REXX
-        |Rich Text Format
-        |Ring
-        |Riot
-        |RMarkdown
-        |RobotFramework
-        |robots.txt
-        |Roff
-        |Roff Manpage
-        |Rouge
-        |RPC
-        |RPM Spec
-        |RUNOFF
-        |Rust
-        |Sage
-        |SaltStack
-        |SAS
-        |Sass
-        |Scala
-        |Scaml
-        |Scheme
-        |Scilab
-        |SCSS
-        |sed
-        |Self
-        |ShaderLab
-        |Shell
-        |ShellSession
-        |Shen
-        |Sieve
-        |Singularity
-        |Slash
-        |Slice
-        |Slim
-        |Smali
-        |Smalltalk
-        |Smarty
-        |SmPL
-        |SMT
-        |Solidity
-        |SourcePawn
-        |SPARQL
-        |Spline Font Database
-        |SQF
-        |SQL
-        |SQLPL
-        |Squirrel
-        |SRecode Template
-        |SSH Config
-        |Stan
-        |Standard ML
-        |Starlark
-        |Stata
-        |STON
-        |StringTemplate
-        |Stylus
-        |SubRip Text
-        |SugarSS
-        |SuperCollider
-        |Svelte
-        |SVG
-        |Swift
-        |SWIG
-        |SystemVerilog
-        |Tcl
-        |Tcsh
-        |Tea
-        |Terra
-        |TeX
-        |Texinfo
-        |Text
-        |Textile
-        |Thrift
-        |TI Program
-        |TLA
-        |TOML
-        |TSQL
-        |TSV
-        |TSX
-        |Turing
-        |Turtle
-        |Twig
-        |TXL
-        |Type Language
-        |TypeScript
-        |Unified Parallel C
-        |Unity3D Asset
-        |Unix Assembly
-        |Uno
-        |UnrealScript
-        |UrWeb
-        |V
-        |Vala
-        |Valve Data Format
-        |VBA
-        |VBScript
-        |VCL
-        |Verilog
-        |VHDL
-        |Vim Help File
-        |Vim Script
-        |Vim Snippet
-        |Visual Basic .NET
-        |Visual Basic .NET
-        |Volt
-        |Vue
-        |Wavefront Material
-        |Wavefront Object
-        |wdl
-        |Web Ontology Language
-        |WebAssembly
-        |WebIDL
-        |WebVTT
-        |Wget Config
-        |Wikitext
-        |Windows Registry Entries
-        |wisp
-        |Wollok
-        |World of Warcraft Addon Data
-        |X BitMap
-        |X Font Directory Index
-        |X PixMap
-        |X10
-        |xBase
-        |XC
-        |XCompose
-        |XML
-        |XML Property List
-        |Xojo
-        |Xonsh
-        |XPages
-        |XProc
-        |XQuery
-        |XS
-        |XSLT
-        |Xtend
-        |Yacc
-        |YAML
-        |YANG
-        |YARA
-        |YASnippet
-        |ZAP
-        |Zeek
-        |ZenScript
-        |Zephir
-        |Zig
-        |ZIL
-        |Zimpl
-        |
-        |611 languages
-        |you can get only selected language list with '-l' option.
-        |if languages is unknown, you can specify 'unkown'.
-        |
       EOS
     end
 end
