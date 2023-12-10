@@ -34,7 +34,7 @@ module GitTrend
         url << "/#{language}" if language
         uri = Addressable::URI.parse(url)
         since = convert_url_param_since(since)
-        uri.query_values = { since: since }.delete_if { |_k, v| v.nil? } if since
+        uri.query_values = { since: since }.compact if since
         uri.to_s
       end
 

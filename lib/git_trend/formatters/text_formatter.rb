@@ -43,7 +43,7 @@ module GitTrend::Formatters
 
       def rule_max_description_size
         terminal_width, _terminal_height = detect_terminal_size
-        description_width = terminal_width - @columns_sizes[0..-2].inject(&:+) - (@columns_sizes.size - 1)
+        description_width = terminal_width - @columns_sizes[0..-2].sum - (@columns_sizes.size - 1)
         if description_width >= DEFAULT_COLUMNS_SIZES.last
           @columns_sizes[-1] = description_width
         else
