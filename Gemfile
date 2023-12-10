@@ -4,13 +4,14 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake"
-gem "rubocop"
-gem "rubocop-performance"
-gem "rubocop-rake"
-gem "rubocop-rspec"
+gem "rubocop", require: false
+gem "rubocop-performance", require: false
+gem "rubocop-rake", require: false
+gem "rubocop-rspec", require: false
 
-gem "irb"
-gem "rspec"
-gem "simplecov"
-gem "simplecov-lcov"
-gem "webmock", "~> 3.18.1"
+gem "coveralls", require: false
+gem "irb", require: false
+gem "rspec", require: false
+gem "simplecov", require: false
+gem "simplecov-lcov", require: false
+gem "webmock", "~> 3.18.1", require: false
