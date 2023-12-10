@@ -13,6 +13,7 @@ RSpec.describe GitTrend do
       before do
         allow(scraper_mock).to receive(:get)
       end
+
       context "without options" do
         it "Scraper#get call without options" do
           described_class.get
@@ -87,6 +88,7 @@ RSpec.describe GitTrend do
       before do
         allow(scraper_mock).to receive(:languages)
       end
+
       it "Scraper#languages call" do
         described_class.languages
         expect(scraper_mock).to have_received(:languages).with(no_args)
