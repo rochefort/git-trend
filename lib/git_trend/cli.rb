@@ -28,6 +28,7 @@ module GitTrend
     option :help,        aliases: "-h", required: false, type: :boolean
     def list
       help(:list) && return if options[:help]
+
       scraper = Scraper.new
       projects = scraper.get(options[:language], options[:since], options[:number])
       formatter = Formatter.new(options[:format])

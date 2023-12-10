@@ -41,6 +41,7 @@ module GitTrend
 
       def convert_url_param_since(since)
         return unless since
+
         case since.to_sym
         when :d, :day,   :daily   then "daily"
         when :w, :week,  :weekly  then "weekly"
