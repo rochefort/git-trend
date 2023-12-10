@@ -41,7 +41,7 @@ module GitTrend
     end
 
     desc :languages, "Show selectable languages"
-    option :format,      aliases: "-f", required: false, default: "text", desc: "Choose a formatter as text or json. Enable: [t, text, j, json]"
+    option :format, aliases: "-f", required: false, default: "text", desc: "Choose a formatter as text or json. Enable: [t, text, j, json]"
     def languages
       scraper = Scraper.new
       languages = scraper.languages

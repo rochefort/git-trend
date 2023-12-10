@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "unicode-display_width"
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake",    "~> 13.0.0"
+  spec.add_development_dependency "rake", "~> 13.0.0"
 
   spec.add_development_dependency "rubocop"
   spec.add_development_dependency "rubocop-performance"
