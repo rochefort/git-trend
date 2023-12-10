@@ -94,6 +94,7 @@ module GitTrend::Formatters
       end
 
       # https://github.com/cldwalker/hirb/blob/master/lib/hirb/util.rb#L61-71
+      # rubocop:disable all
       def detect_terminal_size
         if (ENV["COLUMNS"] =~ /^\d+$/) && (ENV["LINES"] =~ /^\d+$/)
           [ENV["COLUMNS"].to_i, ENV["LINES"].to_i]
@@ -102,9 +103,10 @@ module GitTrend::Formatters
         elsif STDIN.tty? && command_exists?("stty")
           `stty size`.scan(/\d+/).map(&:to_i).reverse
         end
-      rescue # rubocop:disable Style/RescueStandardError
+      rescue
         nil
       end
+      # rubocop:enable all
 
       def command_exists?(command)
         ENV["PATH"].split(File::PATH_SEPARATOR).any? { |d| File.exist? File.join(d, command) }
