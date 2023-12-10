@@ -8,74 +8,74 @@ RSpec.describe GitTrend do
     context "without options" do
       it "Scraper#get call without options" do
         expect_any_instance_of(Scraper).to receive(:get).with(no_args)
-        GitTrend.get
+        described_class.get
       end
     end
 
     context "parameter is 'ruby'" do
       it "Scraper#get call with 'ruby'" do
         expect_any_instance_of(Scraper).to receive(:get).with("ruby")
-        GitTrend.get("ruby")
+        described_class.get("ruby")
       end
     end
 
     context "parameter is :ruby" do
       it "Scraper#get call with :ruby" do
         expect_any_instance_of(Scraper).to receive(:get).with(:ruby)
-        GitTrend.get(:ruby)
+        described_class.get(:ruby)
       end
     end
 
     context "parameter is since: :weekly" do
       it "Scraper#get call with [nil, :weekly]" do
         expect_any_instance_of(Scraper).to receive(:get).with(nil, :weekly)
-        GitTrend.get(since: :weekly)
+        described_class.get(since: :weekly)
       end
     end
 
     context "parameter is since: :week" do
       it "Scraper#get call with [nil, :week]" do
         expect_any_instance_of(Scraper).to receive(:get).with(nil, :week)
-        GitTrend.get(since: :week)
+        described_class.get(since: :week)
       end
     end
 
     context "parameter is since: :w" do
       it "Scraper#get call with [nil, :w]" do
         expect_any_instance_of(Scraper).to receive(:get).with(nil, :w)
-        GitTrend.get(since: :w)
+        described_class.get(since: :w)
       end
     end
 
     context "parameters are 'ruby', 'weekly'" do
       it "Scraper#get call with ['ruby', 'weekly']" do
         expect_any_instance_of(Scraper).to receive(:get).with("ruby", "weekly")
-        GitTrend.get("ruby", "weekly")
+        described_class.get("ruby", "weekly")
       end
     end
 
     context "parameters are :ruby, :weekly" do
       it "Scraper#get call with [:ruby, :weekly]" do
         expect_any_instance_of(Scraper).to receive(:get).with(:ruby, :weekly)
-        GitTrend.get(:ruby, :weekly)
+        described_class.get(:ruby, :weekly)
       end
     end
 
     context "parameters are language: :ruby, since: :weekly" do
       it "Scraper#get call with [:ruby, :weekly]" do
         expect_any_instance_of(Scraper).to receive(:get).with(:ruby, :weekly)
-        GitTrend.get(language: :ruby, since: :weekly)
+        described_class.get(language: :ruby, since: :weekly)
       end
     end
 
     context "when too many parameters" do
-      it { expect { GitTrend.get("ruby", "weekly", "many_params") }.to raise_error(Exception) }
+      it { expect { described_class.get("ruby", "weekly", "many_params") }.to raise_error(Exception) }
     end
 
     describe "#languages" do
       it "Scraper#languages call" do
         expect_any_instance_of(Scraper).to receive(:languages).with(no_args)
-        GitTrend.languages
+        described_class.languages
       end
     end
   end
