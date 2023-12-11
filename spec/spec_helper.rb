@@ -15,12 +15,6 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require "simplecov"
-# require "simplecov-cobertura"
-
-# require "codeclimate-test-reporter"
-dir = File.join(ENV["CIRCLE_ARTIFACTS"] || "coverage")
-SimpleCov.coverage_dir(dir)
-
 SimpleCov.start do
   add_filter "/spec/"
 
