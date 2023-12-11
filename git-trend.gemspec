@@ -32,5 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "thor",        ">= 0.20.0", "< 1.3.0"
   spec.add_dependency "unicode-display_width"
 
-  spec.metadata["rubygems_mfa_required"] = "true"
+  spec.metadata["rubygems_mfa_required"] = "false" # FIXME: mfa
 end
