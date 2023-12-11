@@ -14,13 +14,8 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-# require "coveralls"
-# Coveralls.wear!
-
-require "coveralls"
 require "simplecov"
-require "webmock/rspec"
-require "git_trend"
+# require "simplecov-cobertura"
 
 # require "codeclimate-test-reporter"
 dir = File.join(ENV["CIRCLE_ARTIFACTS"] || "coverage")
@@ -29,11 +24,18 @@ SimpleCov.coverage_dir(dir)
 SimpleCov.start do
   add_filter "/spec/"
 
-  formatter SimpleCov::Formatter::MultiFormatter.new([
-    SimpleCov::Formatter::HTMLFormatter,
-    Coveralls::SimpleCov::Formatter,
-  ])
+  if ENV["CI"]
+    formatter SimpleCov::Formatter::SimpleFormatter
+  else
+    formatter SimpleCov::Formatter::MultiFormatter.new([
+      SimpleCov::Formatter::SimpleFormatter,
+      SimpleCov::Formatter::HTMLFormatter,
+    ])
+  end
 end
+
+require "webmock/rspec"
+require "git_trend"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
