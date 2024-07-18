@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "addressable", "~> 2.8"
   spec.add_dependency "mb_string"
-  spec.add_dependency "mechanize",   ">= 2.8.5", "< 2.11.0"
+  spec.add_dependency "mechanize",   ">= 2.8.5", "< 2.12.0"
   spec.add_dependency "thor",        ">= 0.20.0", "< 1.4.0"
   spec.add_dependency "unicode-display_width"
 
