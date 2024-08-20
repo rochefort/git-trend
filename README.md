@@ -7,6 +7,10 @@
 `git-trend` is a gem that fetches [Trending repositories on GitHub](https://github.com/trending).
 And this also work as a command line utility.
 
+## Buy me a coffee
+
+If you can contribute or you want to, feel free to do it at [__Buy me a coffee! :coffee:__](https://www.buymeacoffee.com/rochefort), I will be really thankfull for anything even if it is a coffee or just a kind comment towards my work, because that helps me a lot. Whenever you contribute with a donation, I will read your message and it will be shown in my main site.
+
 # TOC
  * [Requirements](#requirements)
  * [Installation](#installation)
