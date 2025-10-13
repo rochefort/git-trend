@@ -22,7 +22,7 @@ If you can contribute or you want to, feel free to do it at [__Buy me a coffee! 
 
 ## Requirements
 
-Ruby versions is 2.7 or later.
+Ruby versions is 3.2 or later.
 
 ## Installation
 Add this line to your application's Gemfile:
