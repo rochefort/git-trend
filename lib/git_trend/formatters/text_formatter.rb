@@ -1,5 +1,3 @@
-require "mb_string"
-
 module GitTrend::Formatters
   class TextFormatter
     HEADER_COLUMNS = %w[no. name lang star description].freeze
