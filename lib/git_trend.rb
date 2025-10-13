@@ -1,4 +1,5 @@
 require "git_trend/cli"
+require "git_trend/core_ext/string"
 require "git_trend/formatter"
 require "git_trend/formatters/text_formatter"
 require "git_trend/formatters/json_formatter"
