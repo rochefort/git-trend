@@ -1,6 +1,6 @@
-RSpec.describe GitTrend::CLI do
-  include GitTrend
+require "git_trend/scraper"
 
+RSpec.describe GitTrend::CLI do
   shared_examples "since daily ranking" do |since|
     it "display daily ranking" do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout
@@ -20,7 +20,7 @@ RSpec.describe GitTrend::CLI do
   end
 
   describe "#list" do
-    let(:cli) { CLI.new }
+    let(:cli) { described_class.new }
 
     describe "with -n option" do
       context "with 3" do
@@ -112,22 +112,22 @@ RSpec.describe GitTrend::CLI do
       context "with no option" do
         before { stub_request_get("trending?since=") }
 
-        include_examples "since daily ranking", ""
+        it_behaves_like "since daily ranking", ""
       end
 
       describe "since daily" do
         before { stub_request_get("trending?since=daily") }
 
         context "with d" do
-          include_examples "since daily ranking", "d"
+          it_behaves_like "since daily ranking", "d"
         end
 
         context "with day" do
-          include_examples "since daily ranking", "day"
+          it_behaves_like "since daily ranking", "day"
         end
 
         context "with daily" do
-          include_examples "since daily ranking", "daily"
+          it_behaves_like "since daily ranking", "daily"
         end
       end
 
@@ -135,15 +135,15 @@ RSpec.describe GitTrend::CLI do
         before { stub_request_get("trending?since=weekly") }
 
         context "with w" do
-          include_examples "since weekly ranking", "w"
+          it_behaves_like "since weekly ranking", "w"
         end
 
         context "with week" do
-          include_examples "since weekly ranking", "week"
+          it_behaves_like "since weekly ranking", "week"
         end
 
         context "with weekly" do
-          include_examples "since weekly ranking", "weekly"
+          it_behaves_like "since weekly ranking", "weekly"
         end
       end
 
@@ -151,15 +151,15 @@ RSpec.describe GitTrend::CLI do
         before { stub_request_get("trending?since=monthly") }
 
         context "with m" do
-          include_examples "since monthly ranking", "m"
+          it_behaves_like "since monthly ranking", "m"
         end
 
         context "with month" do
-          include_examples "since monthly ranking", "month"
+          it_behaves_like "since monthly ranking", "month"
         end
 
         context "with monthly" do
-          include_examples "since monthly ranking", "monthly"
+          it_behaves_like "since monthly ranking", "monthly"
         end
       end
     end
@@ -247,7 +247,7 @@ RSpec.describe GitTrend::CLI do
   describe "#languages" do
     before { stub_request_get("trending") }
 
-    let(:cli) { CLI.new }
+    let(:cli) { described_class.new }
 
     context "with no option" do
       it "display languages" do
@@ -259,7 +259,7 @@ RSpec.describe GitTrend::CLI do
   private
 
     def stub_request_get(stub_url_path, stub_file_name = nil)
-      url = Scraper::BASE_HOST.dup
+      url = GitTrend::Scraper::BASE_HOST.dup
       url << "/#{stub_url_path}" if stub_url_path
       uri = URI.parse(url)
       stub_file = stub_file_name || stub_url_path

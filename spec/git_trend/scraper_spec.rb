@@ -1,4 +1,5 @@
 include GitTrend # rubocop:disable Style/MixinUsage
+
 RSpec.describe GitTrend::Scraper do
   let(:scraper) { Scraper.new }
 

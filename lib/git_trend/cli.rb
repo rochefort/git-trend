@@ -35,7 +35,7 @@ module GitTrend
       formatter.print(projects, enable_description: !!options[:description])
     rescue => e
       say "An unexpected #{e.class} has occurred.", :red
-      say e.message unless e.instance_of?(e.message) # エラー内容がクラス名の場合は表示しない
+      say e.message unless e.message == e.class.to_s # エラー内容がクラス名の場合は表示しない
 
       puts exception.backtrace if options[:verbose]
     end
