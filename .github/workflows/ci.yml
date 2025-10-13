@@ -5,64 +5,24 @@ on:
   pull_request:
 
 jobs:
-  ruby32:
+  test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    strategy:
+      matrix:
+        ruby-version: ['3.2.9', '3.3.9', '3.4.7']
+        include:
+          - ruby-version: '3.4.7'
+            upload-coverage: true
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.9'
-          bundler-cache: true
-
-      - name: Show ruby version
-        run: ruby -v
-
-      - name: Run tests
-        run: bundle exec rspec
-
-      - name: Run lint
-        run: bundle exec rubocop
-
-  ruby33:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3.9'
-          bundler-cache: true
-
-      - name: Show ruby version
-        run: ruby -v
-
-      - name: Run tests
-        run: bundle exec rspec
-
-      - name: Run lint
-        run: bundle exec rubocop
-
-  ruby34:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.4.7'
+          ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
 
       - name: Show ruby version
@@ -75,6 +35,7 @@ jobs:
         run: bundle exec rubocop
 
       - name: Upload coverage reports to Codecov
+        if: matrix.upload-coverage
         uses: codecov/codecov-action@v3
         with:
           files: ./coverage/.resultset.json
