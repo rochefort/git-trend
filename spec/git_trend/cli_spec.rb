@@ -1,6 +1,6 @@
-RSpec.describe GitTrend::CLI do
-  include GitTrend
+require "git_trend/scraper"
 
+RSpec.describe GitTrend::CLI do
   shared_examples "since daily ranking" do |since|
     it "display daily ranking" do
       expect { cli.invoke(:list, [], since: since, description: false) }.to output(dummy_result_without_description).to_stdout
@@ -20,7 +20,7 @@ RSpec.describe GitTrend::CLI do
   end
 
   describe "#list" do
-    let(:cli) { CLI.new }
+    let(:cli) { described_class.new }
 
     describe "with -n option" do
       context "with 3" do
@@ -247,7 +247,7 @@ RSpec.describe GitTrend::CLI do
   describe "#languages" do
     before { stub_request_get("trending") }
 
-    let(:cli) { CLI.new }
+    let(:cli) { described_class.new }
 
     context "with no option" do
       it "display languages" do
@@ -259,7 +259,7 @@ RSpec.describe GitTrend::CLI do
   private
 
     def stub_request_get(stub_url_path, stub_file_name = nil)
-      url = Scraper::BASE_HOST.dup
+      url = GitTrend::Scraper::BASE_HOST.dup
       url << "/#{stub_url_path}" if stub_url_path
       uri = URI.parse(url)
       stub_file = stub_file_name || stub_url_path
