@@ -112,22 +112,22 @@ RSpec.describe GitTrend::CLI do
       context "with no option" do
         before { stub_request_get("trending?since=") }
 
-        include_examples "since daily ranking", ""
+        it_behaves_like "since daily ranking", ""
       end
 
       describe "since daily" do
         before { stub_request_get("trending?since=daily") }
 
         context "with d" do
-          include_examples "since daily ranking", "d"
+          it_behaves_like "since daily ranking", "d"
         end
 
         context "with day" do
-          include_examples "since daily ranking", "day"
+          it_behaves_like "since daily ranking", "day"
         end
 
         context "with daily" do
-          include_examples "since daily ranking", "daily"
+          it_behaves_like "since daily ranking", "daily"
         end
       end
 
@@ -135,15 +135,15 @@ RSpec.describe GitTrend::CLI do
         before { stub_request_get("trending?since=weekly") }
 
         context "with w" do
-          include_examples "since weekly ranking", "w"
+          it_behaves_like "since weekly ranking", "w"
         end
 
         context "with week" do
-          include_examples "since weekly ranking", "week"
+          it_behaves_like "since weekly ranking", "week"
         end
 
         context "with weekly" do
-          include_examples "since weekly ranking", "weekly"
+          it_behaves_like "since weekly ranking", "weekly"
         end
       end
 
@@ -151,15 +151,15 @@ RSpec.describe GitTrend::CLI do
         before { stub_request_get("trending?since=monthly") }
 
         context "with m" do
-          include_examples "since monthly ranking", "m"
+          it_behaves_like "since monthly ranking", "m"
         end
 
         context "with month" do
-          include_examples "since monthly ranking", "month"
+          it_behaves_like "since monthly ranking", "month"
         end
 
         context "with monthly" do
-          include_examples "since monthly ranking", "monthly"
+          it_behaves_like "since monthly ranking", "monthly"
         end
       end
     end
