@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.post_install_message = install_message
 
   spec.add_dependency "addressable", "~> 2.8"
-  spec.add_dependency "mechanize",   ">= 2.8.5", "< 2.11.0"
+  spec.add_dependency "mechanize",   ">= 2.8.5", "< 2.13.0"
   spec.add_dependency "thor",        ">= 0.20.0", "< 1.4.0"
 
   # FIXME: mfa
