@@ -31,5 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "thor",        ">= 0.20.0", "< 1.4.0"
 
   # FIXME: mfa
-  spec.metadata["rubygems_mfa_required"] = "false" # rubocop:disable Gemspec/RequireMFA
+  spec.metadata["rubygems_mfa_required"] = "true"
 end
