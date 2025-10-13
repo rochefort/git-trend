@@ -1,3 +1,6 @@
+## v1.4.1 (Tue Oct 14 2025)
+- Drop support of Ruby 3.1 and earlier [d2b4080]
+
 ## v1.4.0 (Mon Mar 13 2023)
 
 - Drop support of Ruby 2.6 and earlier [41e871e]
