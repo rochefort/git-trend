@@ -23,7 +23,7 @@ module GitTrend::Formatters
       puts
       puts "#{languages.size} languages"
       puts "you can get only selected language list with '-l' option."
-      puts "if languages is unknown, you can specify 'unkown'."
+      puts "if languages is unknown, you can specify 'unknown'."
       puts
     end
 
