@@ -2,3 +2,4 @@
 --warnings
 --require spec_helper
 --format doc
+--order random
