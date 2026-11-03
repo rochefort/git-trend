@@ -201,6 +201,17 @@ RSpec.describe GitTrend::CLI do
           expect { cli.invoke(:list, []) }.to output(dummy_result_without_description).to_stdout
         end
       end
+
+      context "when getting the terminal width raises an error" do
+        before do
+          ENV["COLUMNS"] = nil
+          allow(IO).to receive(:console).and_raise(Errno::ENOTTY)
+        end
+
+        it "display daily ranking with the default width" do
+          expect { cli.invoke(:list, []) }.to output(dummy_result_without_description).to_stdout
+        end
+      end
     end
 
     describe "with -l and -s option" do
@@ -243,6 +254,31 @@ RSpec.describe GitTrend::CLI do
       end
     end
 
+    describe "with -f option" do
+      before { stub_request_get("trending") }
+
+      %w[j json].each do |format|
+        context "with #{format}" do
+          let(:projects) { JSON.parse(capture_stdout { cli.invoke(:list, [], format: format) }, symbolize_names: true) }
+
+          it "display daily ranking as json" do
+            expect(projects.size).to eq 13
+          end
+
+          it "display project attributes" do
+            expect(projects.first).to include(name: "thedotmack/claude-mem", lang: "TypeScript", star_count: 1138)
+              .and(match(a_hash_including(:description, :all_star_count, :fork_count)))
+          end
+        end
+      end
+    end
+
+    describe "with -h option" do
+      it "display help of list command" do
+        expect { cli.invoke(:list, [], help: true) }.to output(/Usage:.*list/m).to_stdout
+      end
+    end
+
     describe "with --verbose option" do
       context "when a network error occurred" do
         before { stub_request(:get, GitTrend::Scraper::BASE_URL).to_return(status: 500) }
@@ -264,9 +300,38 @@ RSpec.describe GitTrend::CLI do
         expect { cli.languages }.to output(include("C++", "HTML", "Ruby")).to_stdout
       end
     end
+
+    context "with json format" do
+      let(:cli) { described_class.new([], format: "json") }
+
+      it "display languages as json" do
+        expect(JSON.parse(capture_stdout { cli.languages })).to include("C++", "HTML", "Ruby")
+      end
+    end
+  end
+
+  describe "#version" do
+    let(:cli) { described_class.new }
+
+    it "display version" do
+      expect { cli.version }.to output(/git-trend version: #{Regexp.escape(GitTrend::VERSION)}/o).to_stdout
+    end
+  end
+
+  describe ".exit_on_failure?" do
+    it { expect(described_class.exit_on_failure?).to be true }
   end
 
   private
+
+    def capture_stdout
+      original = $stdout
+      $stdout = StringIO.new
+      yield
+      $stdout.string
+    ensure
+      $stdout = original
+    end
 
     def stub_request_get(stub_url_path, stub_file_name = nil)
       url = GitTrend::Scraper::BASE_HOST.dup
