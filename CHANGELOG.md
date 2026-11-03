@@ -1,3 +1,8 @@
+## v1.4.2 (Tue Nov 3 2026)
+
+- Security fixes [aea1049, 08e02ee]
+- Drop support of Ruby 3.2 [863597c]
+
 ## v1.4.1 (Tue Oct 14 2025)
 - Drop support of Ruby 3.1 and earlier [d2b4080]
 
