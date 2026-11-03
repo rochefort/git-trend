@@ -1,7 +1,10 @@
+require "io/console"
+
 module GitTrend::Formatters
   class TextFormatter
     HEADER_COLUMNS = %w[no. name lang star description].freeze
     DEFAULT_COLUMNS_SIZES = [3, 40, 10, 6, 20].freeze
+    DEFAULT_TERMINAL_WIDTH = 80
 
     def print(projects, options)
       if projects.empty?
@@ -40,8 +43,7 @@ module GitTrend::Formatters
       end
 
       def rule_max_description_size
-        terminal_width, _terminal_height = detect_terminal_size
-        description_width = terminal_width - @columns_sizes[0..-2].sum - (@columns_sizes.size - 1)
+        description_width = detect_terminal_width - @columns_sizes[0..-2].sum - (@columns_sizes.size - 1)
         if description_width >= DEFAULT_COLUMNS_SIZES.last
           @columns_sizes[-1] = description_width
         else
@@ -92,23 +94,12 @@ module GitTrend::Formatters
         puts
       end
 
-      # https://github.com/cldwalker/hirb/blob/master/lib/hirb/util.rb#L61-71
-      # rubocop:disable all
-      def detect_terminal_size
-        if (ENV["COLUMNS"] =~ /^\d+$/) && (ENV["LINES"] =~ /^\d+$/)
-          [ENV["COLUMNS"].to_i, ENV["LINES"].to_i]
-        elsif (RUBY_PLATFORM =~ /java/ || (!STDIN.tty? && ENV["TERM"])) && command_exists?("tput")
-          [`tput cols`.to_i, `tput lines`.to_i]
-        elsif STDIN.tty? && command_exists?("stty")
-          `stty size`.scan(/\d+/).map(&:to_i).reverse
-        end
-      rescue
-        nil
-      end
-      # rubocop:enable all
+      def detect_terminal_width
+        return ENV["COLUMNS"].to_i if ENV["COLUMNS"]&.match?(/\A\d+\z/)
 
-      def command_exists?(command)
-        ENV["PATH"].split(File::PATH_SEPARATOR).any? { |d| File.exist? File.join(d, command) }
+        IO.console&.winsize&.last || DEFAULT_TERMINAL_WIDTH
+      rescue SystemCallError
+        DEFAULT_TERMINAL_WIDTH
       end
   end
 end

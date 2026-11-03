@@ -198,6 +198,17 @@ RSpec.describe GitTrend::CLI do
           expect { cli.invoke(:list, [], description: false) }.to output(dummy_result_without_description).to_stdout
         end
       end
+
+      context "terminal width is unknown" do
+        before do
+          ENV["COLUMNS"] = nil
+          allow(IO).to receive(:console).and_return(nil)
+        end
+
+        it "display daily ranking with the default width" do
+          expect { cli.invoke(:list, []) }.to output(dummy_result_without_description).to_stdout
+        end
+      end
     end
 
     describe "with -l and -s option" do
