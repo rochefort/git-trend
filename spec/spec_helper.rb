@@ -32,8 +32,7 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  config.filter_run :focus
-  config.run_all_when_everything_filtered = true
+  config.filter_run_when_matching :focus
   config.expose_dsl_globally = false
 
   # Emoji width depends on the terminal, so fix it to get stable results.
