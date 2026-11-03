@@ -1,45 +1,45 @@
 require "spec_helper"
 
-RSpec.shared_examples_for "truncate" do |examples|
-  examples.each do |example|
-    input = example[:inputs]
-    it "truncate(#{example[:object].inspect}, #{input}) should return #{example[:expected].inspect}" do
-      expect(GitTrend::DisplayText.truncate(example[:object], input)).to eq example[:expected]
-    end
-  end
-end
-
 RSpec.describe GitTrend::DisplayText do
   describe ".truncate" do
     context "ascii strings" do
-      examples = [
-        { object: "abc",   inputs: 2, expected: "..." },
-        { object: "abc",   inputs: 3, expected: "abc" },
-        { object: "abcde", inputs: 3, expected: "..." },
-        { object: "abcde", inputs: 4, expected: "a..." },
-        { object: "abcde", inputs: 5, expected: "abcde" },
-      ]
-      it_behaves_like "truncate", examples
+      [
+        ["abc",   2, "..."],
+        ["abc",   3, "abc"],
+        ["abcde", 3, "..."],
+        ["abcde", 4, "a..."],
+        ["abcde", 5, "abcde"],
+      ].each do |str, truncate_at, expected|
+        it "truncate(#{str.inspect}, #{truncate_at}) should return #{expected.inspect}" do
+          expect(described_class.truncate(str, truncate_at)).to eq expected
+        end
+      end
     end
 
     context "multi-bytes strings" do
-      examples = [
-        { object: "あいう", inputs: 2, expected: "..." },
-        { object: "あいう", inputs: 3, expected: "..." },
-        { object: "あいう", inputs: 4, expected: "..." },
-        { object: "あいう", inputs: 5, expected: "あ..." },
-        { object: "あいう", inputs: 6, expected: "あいう" },
-      ]
-      it_behaves_like "truncate", examples
+      [
+        ["あいう", 2, "..."],
+        ["あいう", 3, "..."],
+        ["あいう", 4, "..."],
+        ["あいう", 5, "あ..."],
+        ["あいう", 6, "あいう"],
+      ].each do |str, truncate_at, expected|
+        it "truncate(#{str.inspect}, #{truncate_at}) should return #{expected.inspect}" do
+          expect(described_class.truncate(str, truncate_at)).to eq expected
+        end
+      end
     end
 
     context "narrow multi-bytes strings" do
-      examples = [
-        { object: "café au lait", inputs: 12, expected: "café au lait" },
-        { object: "café au lait", inputs: 7, expected: "café..." },
-        { object: "café au lait", inputs: 7, expected: "café..." },
-      ]
-      it_behaves_like "truncate", examples
+      [
+        ["caf\u00e9 au lait", 12, "caf\u00e9 au lait"],
+        ["caf\u00e9 au lait", 7,  "caf\u00e9..."],
+        ["cafe\u0301 au lait", 7,  "cafe\u0301..."],
+      ].each do |str, truncate_at, expected|
+        it "truncate(#{str.inspect}, #{truncate_at}) should return #{expected.inspect}" do
+          expect(described_class.truncate(str, truncate_at)).to eq expected
+        end
+      end
     end
   end
 
