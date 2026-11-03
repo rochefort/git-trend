@@ -49,7 +49,7 @@ module GitTrend
         end
       end
 
-      # rubocop:disable Metrics/AbcSize
+      # rubocop:disable-next Metrics/AbcSize
       def generate_project(page)
         page.search(".Box-row").map do |content|
           icon_area = content.search(".f6.color-fg-muted.mt-2")
@@ -63,7 +63,6 @@ module GitTrend
           )
         end
       end
-      # rubocop:enable Metrics/AbcSize
 
       def comma_to_i(obj)
         obj.to_s.delete(",").to_i

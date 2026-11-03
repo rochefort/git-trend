@@ -1,6 +1,6 @@
 require "thor"
 
-# rubocop:disable Metrics/AbcSize
+# rubocop:disable-next Metrics/AbcSize
 module GitTrend
   class CLI < Thor
     map "-v" => :version, "--version" => :version
@@ -50,4 +50,3 @@ module GitTrend
     end
   end
 end
-# rubocop:enable Metrics/AbcSize
