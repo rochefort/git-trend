@@ -1,47 +1,55 @@
 [![codecov](https://codecov.io/gh/rochefort/git-trend/graph/badge.svg?token=rbh4fONhKx)](https://codecov.io/gh/rochefort/git-trend)
-[![Gem Version](http://img.shields.io/gem/v/git-trend.svg?style=flat)](http://badge.fury.io/rb/git-trend)
+[![Gem Version](https://img.shields.io/gem/v/git-trend.svg?style=flat)](https://rubygems.org/gems/git-trend)
 
 
 # git-trend
 
 `git-trend` is a gem that fetches [Trending repositories on GitHub](https://github.com/trending).
-And this also work as a command line utility.
+It also works as a command-line tool.
 
 ## Buy me a coffee
 
 If you'd like to support my work, you can [__buy me a coffee :coffee:__](https://www.buymeacoffee.com/rochefort). Any support, even just a kind word, is greatly appreciated!
 
-# TOC
+## TOC
  * [Requirements](#requirements)
  * [Installation](#installation)
  * [Usage of a gem](#usage-of-a-gem)
  * [Usage of a command line tool](#usage-of-a-command-line-tool)
  * [Tips](#tips)
- * [Implementation of other language](#implementation-of-other-language)
+ * [Implementations in other languages](#implementations-in-other-languages)
  * [Contributing](#contributing)
 
 ## Requirements
 
-Ruby versions is 3.3 or later.
+Ruby 3.3 or later.
 
 ## Installation
 Add this line to your application's Gemfile:
 
-    gem 'git-trend'
+```ruby
+gem 'git-trend'
+```
 
 And then execute:
 
-    $ bundle
+```sh
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install git-trend
+```sh
+$ gem install git-trend
+```
 
 ## Usage of a gem
 
 Require it if you haven't:
 
-    require 'git-trend'
+```ruby
+require 'git-trend'
+```
 
 ### Fetch trends
 
@@ -53,14 +61,14 @@ repos.each do |r|
 end
 
 # =>
-# jayphelps/git-blame-someone-else (625 stargazers)
-# --- Blame someone else for your bad code.
+# thedotmack/claude-mem (1138 stargazers)
+# --- Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More
 #
-# FreeCodeCamp/FreeCodeCamp (574 stargazers)
-# --- The http://FreeCodeCamp.com open source codebase and curriculum. Learn to # code and help nonprofits.
+# vercel-labs/agent-desktop (3792 stargazers)
+# --- Computer use CLI for AI agents
 #
-# p-e-w/maybe (519 stargazers)
-# --- See what a program does before deciding whether you really want it to happen.
+# max-sixty/worktrunk (437 stargazers)
+# --- Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows
 # ...
 ```
 
@@ -82,9 +90,11 @@ GitTrend.get(:ruby, :weekly)
 GitTrend.get(language: :ruby, since: :weekly)
 ```
 
-### Show enable languages
+### Show available languages
 
-    GitTrend.languages
+```ruby
+GitTrend.languages
+```
 
 ## Usage of a command line tool
 
@@ -92,46 +102,33 @@ Use the git-trend as follows:
 
 ### Fetch daily trending
 
-    git trend
+```sh
+git trend
+```
 
 e.g.:
 
 ```
 $ git trend
-No. Name                                     Lang          Star Description
---- ---------------------------------------- ----------- ------ ---------------------------------------------------------------------------------------------------
-  1 reddit/reddit                            Python         528 the code that powers reddit.com
-  2 yahoo/gifshot                            JavaScript     485 JavaScript library that can create animated GIFs from media streams, videos, or images
-  3 FezVrasta/bootstrap-material-design      CSS            387 Material design theme for Bootstrap 3
-  4 realm/realm-java                         Java           293 Realm is a mobile database: a replacement for SQLite & ORMs
-  5 Aerolab/midnight.js                      JavaScript     226 A jQuery plugin to switch fixed headers on the fly
-  6 alebcay/awesome-shell                                   220 A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awes...
-  7 jonathanslenders/python-prompt-toolkit   Python         215 Library for building powerful interactive command lines in Python
-  8 willianjusten/awesome-svg                               130 A curated list of SVG.
-  9 usablica/intro.js                        JavaScript     105 A better way for new feature introduction and step-by-step users guide for your website and proj...
- 10 simoncozens/sile                         C++            102 Simon's Improved Layout Engine
- 11 sferik/t                                 Ruby            85 A command-line power tool for Twitter.
- 12 realm/realm-cocoa                        Objective-C     83 Realm is a mobile database: a replacement for Core Data & SQLite
- 13 mubix/shellshocker-pocs                                  67 Collection of Proof of Concepts and Potential Targets for #ShellShocker
- 14 hannob/bashcheck                         Shell           60 test script for shellshocker and related vulnerabilities
- 15 angular/angular.js                       JavaScript      46 HTML enhanced for web apps
- 16 kenwheeler/slick                         JavaScript      57 the last carousel you'll ever need
- 17 Squirrel/Squirrel.Windows                C               57 An installation and update framework for Windows desktop apps
- 18 jshint/fixmyjs                           JavaScript      56 Automatically fix silly lint errors.
- 19 plivo/sharq-server                       Python          52 A flexible rate limited queueing system
- 20 marmelab/ng-admin                        JavaScript      49 Add an AngularJS admin GUI to any RESTful API
- 21 twbs/bootstrap                           CSS             38 The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first pro...
- 22 CyberAgent/AMBTableViewController        Objective-C     48 Storyboard and Prototype Cells-centric block-based UITableView controller to manage complex layo...
- 23 google/cadvisor                          Go              48 Analyzes resource usage and performance characteristics of running containers.
- 24 vladikoff/chromeos-apk                   JavaScript      46 Run Android APKs in Chrome OS OR Chrome in OS X, Linux and Windows.
- 25 nhanaswigs/htmljs                        JavaScript      47 HTML render engine and data binding (MVVM)
-
+No. Name                                     Lang         Star Description
+--- ---------------------------------------- ---------- ------ -----------------------------------------------------------------------------
+  1 thedotmack/claude-mem                    TypeScript   1138 Persistent Context Across Sessions for Every Agent – Captures everything y...
+  2 vercel-labs/agent-desktop                Rust         3792 Computer use CLI for AI agents
+  3 max-sixty/worktrunk                      Rust          437 Worktrunk is a CLI for Git worktree management, designed for parallel AI a...
+  4 JustVugg/colibri                         C             803 A hierarchical inference engine for frontier MoE models: hot experts on th...
+  5 mattpocock/skills                        Shell        1164 Skills for Real Engineers. Straight from my .agents directory.
+  6 p-e-w/heretic                            Python        699 Training-free language model modification: Remove censorship, suppress slo...
+  7 spotify/portal-ai-plugins                TypeScript     94
+  8 floci-io/floci                           Java          219 Light, fluffy, and always free - The AWS Local Emulator alternative
+  ...
 ```
 
 ### Fetch daily trending with JSON format
 
-    git trend -f json
-    git trend -f j
+```sh
+git trend -f json
+git trend -f j
+```
 
 e.g.:
 
@@ -139,79 +136,83 @@ e.g.:
 $ git trend -f json -n 3 | jq
 [
   {
-    "name": "lord/slate",
-    "description": "Beautiful static documentation for your API",
-    "lang": "JavaScript",
-    "all_star_count": 16701,
-    "fork_count": 9313,
-    "star_count": 361
+    "name": "thedotmack/claude-mem",
+    "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+    "lang": "TypeScript",
+    "all_star_count": 111442,
+    "fork_count": 9710,
+    "star_count": 1138
   },
   {
-    "name": "chrispsn/mesh",
-    "description": "Visualise data and edit JavaScript code using a spreadsheet interface.",
-    "lang": "JavaScript",
-    "all_star_count": 320,
-    "fork_count": 8,
-    "star_count": 303
+    "name": "vercel-labs/agent-desktop",
+    "description": "Computer use CLI for AI agents",
+    "lang": "Rust",
+    "all_star_count": 11848,
+    "fork_count": 807,
+    "star_count": 3792
   },
   {
-    "name": "polyaxon/polyaxon",
-    "description": "A platform that helps you build, manage and monitor deep learning models",
-    "lang": "Python",
-    "all_star_count": 488,
-    "fork_count": 36,
-    "star_count": 261
+    "name": "max-sixty/worktrunk",
+    "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+    "lang": "Rust",
+    "all_star_count": 10304,
+    "fork_count": 370,
+    "star_count": 437
   }
 ]
-
 ```
 
 ### Fetch daily trending without description
 
-    git trend --no-description
+```sh
+git trend --no-description
+```
 
 e.g.:
 
 ```
 $ git trend --no-description
-No. Name                                     Lang          Star
---- ---------------------------------------- ----------- ------
-  1 reddit/reddit                            Python         528
-  2 yahoo/gifshot                            JavaScript     485
-  3 FezVrasta/bootstrap-material-design      CSS            387
-  4 realm/realm-java                         Java           293
-  5 Aerolab/midnight.js                      JavaScript     226
+No. Name                                     Lang         Star
+--- ---------------------------------------- ---------- ------
+  1 thedotmack/claude-mem                    TypeScript   1138
+  2 vercel-labs/agent-desktop                Rust         3792
+  3 max-sixty/worktrunk                      Rust          437
+  4 JustVugg/colibri                         C             803
+  5 mattpocock/skills                        Shell        1164
   ...
-
 ```
 
 ### Fetch daily trending by language
 
-    git trend -l
+```sh
+git trend -l <language>
+```
 
 e.g.:
 
 ```
 $ git trend -l ruby
 No. Name                                     Lang         Star Description
---- ---------------------------------------- ---------- ------ ----------------------------------------------------------------------------------------------------
-  1 sferik/t                                 Ruby           78 A command-line power tool for Twitter.
-  2 rails/rails                              Ruby           26 Ruby on Rails
-  3 Homebrew/homebrew                        Ruby           23 The missing package manager for OS X.
-  4 ruby/ruby                                Ruby           12 The Ruby Programming Language
-  5 discourse/discourse                      Ruby           10 A platform for community discussion. Free, open, simple.
+--- ---------------------------------------- ---------- ------ -----------------------------------------------------------------------------
+  1 Homebrew/homebrew-cask                   Ruby            4 🍻 Default casks (upstream binary packages) for the package manager for ev...
+  2 we-promise/sure                          Ruby           20 The personal finance app for everyone (by everyone)
+  3 matteocrippa/awesome-swift               Ruby            1 A collaborative list of awesome Swift libraries and resources. Feel free t...
+  4 rails/rails                              Ruby            3 Ruby on Rails
+  5 huginn/huginn                            Ruby           23 Create agents that monitor and act on your behalf. Your agents are standin...
   ...
 ```
 
 ### Fetch weekly/monthly trending
 
-```ruby
+```sh
 git trend -s weekly
 git trend -s week
 git trend -s w
+```
 
 or
 
+```sh
 git trend -s monthly
 git trend -s month
 git trend -s m
@@ -221,67 +222,73 @@ e.g.:
 
 ```
 $ git trend -s weekly
-No. Name                                     Lang           Star Description
---- ---------------------------------------- ------------ ------ --------------------------------------------------------------------------------------------------
-  1 FezVrasta/bootstrap-material-design      CSS            2821 Material design theme for Bootstrap 3
-  2 slackhq/SlackTextViewController          Objective-C    1526 A drop-in UIViewController subclass with a growing text input view and other useful messaging f...
-  3 willianjusten/awesome-svg                               1395 A curated list of SVG.
-  4 Aerolab/midnight.js                      JavaScript     1351 A jQuery plugin to switch fixed headers on the fly
-  5 alebcay/awesome-shell                                    743 A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awe...
+No. Name                                     Lang         Star Description
+--- ---------------------------------------- ---------- ------ -----------------------------------------------------------------------------
+  1 Nutlope/hallmark                         CSS         10517 Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
+  2 thedotmack/claude-mem                    TypeScript   7255 Persistent Context Across Sessions for Every Agent – Captures everything y...
+  3 pingdotgg/t3code                         TypeScript   9770
+  4 obra/superpowers                         Shell        5956 An agentic skills framework & software development methodology that works.
+  5 pbakaus/impeccable                       Rust        11754 The design vocabulary for your coding agent. Steer with polish and bolder,...
   ...
 ```
 
 ### Fetch number of trending
 
-    git trend -n <number>
+```sh
+git trend -n <number>
+```
 
 e.g.:
 
 ```
 $ git trend -n 3
 No. Name                                     Lang         Star Description
---- ---------------------------------------- ---------- ------ -----------------------------------------------------
-  1 mozilla/metrics-graphics                 JavaScript   1005 A library optimized for concise, principled data g...
-  2 breach/thrust                            C++           574 Chromium-based cross-platform / cross-language app...
-  3 dotnet/corefx                            C#            538 This repository contains the foundational librarie...
-
+--- ---------------------------------------- ---------- ------ -----------------------------------------------------------------------------
+  1 thedotmack/claude-mem                    TypeScript   1138 Persistent Context Across Sessions for Every Agent – Captures everything y...
+  2 vercel-labs/agent-desktop                Rust         3792 Computer use CLI for AI agents
+  3 max-sixty/worktrunk                      Rust          437 Worktrunk is a CLI for Git worktree management, designed for parallel AI a...
 ```
 
-### Show enable languages
+### Show available languages
 
-    git trend languages
+```sh
+git trend languages
+```
 
 e.g.:
 
 ```
 $ git trend languages
-abap
-as3
-ada
-agda
-alloy
-antlr
-apex
-applescript
+Unknown languages
+1C Enterprise
+2-Dimensional Array
+4D
+ABAP
+ABAP CDS
 ...
+Zmodel
+
+846 languages
+you can get only selected language list with '-l' option.
+if languages is unknown, you can specify 'unknown'.
 ```
 
 ## Tips
-I use an alias command like below;
-```
+I use an alias like this:
+
+```sh
 alias trend='git trend -n 10 && git trend -l ruby -n 5 && git trend -l JavaScript -n 5'
 ```
 
-## Implementation of other language
+## Implementations in other languages
 
 * [andygrunwald/go-trending: Go library for accessing trending repositories and developers at Github.](https://github.com/andygrunwald/go-trending)
-
 
 
 ## Contributing
 
 1. Fork it ( https://github.com/rochefort/git-trend/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
+2. Create your feature branch (`git switch -c my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
