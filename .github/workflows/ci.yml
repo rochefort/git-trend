@@ -10,9 +10,9 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        ruby-version: ['3.2.9', '3.3.9', '3.4.7']
+        ruby-version: ['3.3.13', '3.4.12', '4.0.9']
         include:
-          - ruby-version: '3.4.7'
+          - ruby-version: '3.4.12'
             upload-coverage: true
 
     steps:
