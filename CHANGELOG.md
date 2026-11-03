@@ -1,3 +1,13 @@
+## v1.4.3 (Wed Nov 4 2026)
+
+- Fix changing HTML structure: descriptions were always empty [3003619]
+- Fix NameError when showing backtrace with --verbose [3266694]
+- Fix crash when the terminal width cannot be detected [a51276c]
+- Fix load path in exe/git-trend [4827161]
+- Fix misaligned descriptions containing multi-byte characters such as "é" or emoji by using unicode-display_width [f7a3e7a]
+- Exclude spec files from the gem package [f5b6ddc]
+- Fix typos [db9877b]
+
 ## v1.4.2 (Tue Nov 3 2026)
 
 - Security fixes [aea1049, 08e02ee]
