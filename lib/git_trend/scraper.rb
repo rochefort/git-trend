@@ -55,7 +55,7 @@ module GitTrend
           icon_area = content.search(".f6.color-fg-muted.mt-2")
           Project.new(
             name: content.search("h2 a").attr("href").to_s.delete_prefix("/"),
-            description: content.search(".col-9.color-fg-muted.my-1.pr-4").text.strip,
+            description: content.search("p.col-9").text.strip,
             lang: content.search('span[itemprop="programmingLanguage"]').text.strip,
             all_star_count: comma_to_i(icon_area.search("a:has(svg.octicon-star)").text.strip),
             fork_count: comma_to_i(icon_area.search("a:has(svg.octicon-repo-forked)").text.strip),
