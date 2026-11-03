@@ -37,7 +37,7 @@ module GitTrend
       say "An unexpected #{e.class} has occurred.", :red
       say e.message unless e.message == e.class.to_s # エラー内容がクラス名の場合は表示しない
 
-      puts exception.backtrace if options[:verbose]
+      puts e.backtrace if options[:verbose]
     end
 
     desc :languages, "Show selectable languages"

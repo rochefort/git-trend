@@ -242,6 +242,16 @@ RSpec.describe GitTrend::CLI do
         end
       end
     end
+
+    describe "with --verbose option" do
+      context "when a network error occurred" do
+        before { stub_request(:get, GitTrend::Scraper::BASE_URL).to_return(status: 500) }
+
+        it "display the error and its backtrace" do
+          expect { cli.invoke(:list, [], verbose: true) }.to output(/An unexpected .+ has occurred.+scraper\.rb:\d+/m).to_stdout
+        end
+      end
+    end
   end
 
   describe "#languages" do
