@@ -36,6 +36,11 @@ RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
   config.expose_dsl_globally = false
 
+  # Emoji width depends on the terminal, so fix it to get stable results.
+  config.before do
+    allow(Unicode::DisplayWidth::EmojiSupport).to receive(:recommended).and_return(:all)
+  end
+
   config.example_status_persistence_file_path = "spec/examples.txt"
   config.order = :random
   Kernel.srand config.seed

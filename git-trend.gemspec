@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "addressable", "~> 2.9", ">= 2.9.1"
   spec.add_dependency "mechanize",   ">= 2.14.1", "< 2.15.0"
   spec.add_dependency "thor",        ">= 0.20.0", "< 1.4.0"
+  spec.add_dependency "unicode-display_width", "~> 3.2"
 
   spec.metadata["rubygems_mfa_required"] = "true"
 end

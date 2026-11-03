@@ -80,9 +80,9 @@ module GitTrend::Formatters
         projects.each_with_index do |project, i|
           data = [i + 1, [project.name, project.lang, project.star_count.to_s]].flatten
           if @enable_description
-            description = project.description.mb_truncate(f.last)
+            description = GitTrend::DisplayText.truncate(project.description, f.last)
             data << description
-            mb_char_size = description.display_width - description.size
+            mb_char_size = GitTrend::DisplayText.width(description) - description.size
             description_fmt = " %-#{f.last - mb_char_size}s"
           end
           result = "#{fmt}#{description_fmt}" % data
